@@ -1,12 +1,13 @@
-# 🇮🇹 Italy 2027 — GPS 語音導覽網站
+# 🇫🇷🇮🇹🇩🇪 Italy 2027 — GPS 語音導覽網站
 
-義大利 21 天行程（佛羅倫斯 → 羅馬 → 多洛米蒂 Alta Via 1 → 國王湖 → 慕尼黑）的
+巴黎 + 義大利 + 多洛米蒂 + 慕尼黑 21 天行程（巴黎 → 羅馬 → 佛羅倫斯 →
+波爾扎諾 → Val Gardena → Val di Funes → Tre Cime → Alta Via 1 → Cortina → 慕尼黑）的
 **GPS 定位語音導覽網站**：地圖即時追蹤你的位置，走到景點附近（預設 10 公尺）
 自動用 **台灣口音中文（zh-TW）** 播放該景點的語音導覽。
 
 ## ✨ 功能
 
-- 🗺️ **Leaflet + OpenStreetMap 地圖**，152 個景點涵蓋全部 21 天行程
+- 🗺️ **Leaflet + OpenStreetMap 地圖**，173 個景點涵蓋全部 21 天行程（含羅馬競技場內部 6 個細部解說點、Alta Via 1 沿線一戰戰場遺跡）
 - 📍 **GPS 即時追蹤**（`watchPosition`，高精度模式），藍點 + 精度圈
 - 🔊 **接近自動播放**：進入觸發半徑（10–100 公尺可調，預設 10）自動朗讀中文導覽
 - 🗣️ **台灣口音**：自動優先挑選裝置上的 zh-TW 語音（iPhone「美佳 Mei-Jia」、Android「Google 國語（臺灣）」、Windows「Microsoft HsiaoChen 曉臻」）
@@ -62,7 +63,7 @@ italy2027/
 ├── index.html      # 主頁面
 ├── css/style.css   # 樣式
 ├── js/app.js       # 地圖、GPS 追蹤、地理圍欄、zh-TW 語音合成
-├── js/pois.js      # 152 個景點資料庫（座標 + 中文導覽稿）
+├── js/pois.js      # 173 個景點資料庫（座標 + 中文導覽稿）
 └── README.md
 ```
 
@@ -70,17 +71,19 @@ italy2027/
 
 | 區域 | 天數 | 景點數 |
 |---|---|---|
-| 佛羅倫斯 | Day 1–3 | 26 |
-| 比薩 | Day 2 | 10 |
-| 羅馬 | Day 4–6 | 28 |
-| 梵蒂岡 | Day 6 | 12 |
-| 波爾扎諾 | Day 7 | 8 |
-| Val Gardena（Seceda / Alpe di Siusi） | Day 8–9 | 10 |
-| Dobbiaco / Tre Cime / Misurina | Day 9–11 | 13 |
-| Alta Via 1（Braies → Falzarego） | Day 12–15 | 13 |
-| Cortina / Lago di Sorapis | Day 15–16 | 6 |
-| 國王湖 / 貝希特斯加登 | Day 17–18 | 9 |
-| 慕尼黑 | Day 19–21 | 17 |
+| 巴黎 | Day 1 | 13 |
+| 羅馬（含競技場內部細解） | Day 2–4 | 34 |
+| 梵蒂岡 | Day 4 | 12 |
+| 佛羅倫斯 | Day 4–6 | 26 |
+| 比薩 | Day 5 | 10 |
+| 波爾扎諾 | Day 6 | 8 |
+| 卡雷扎湖 | Day 7 | 2 |
+| Val Gardena（Seceda / Alpe di Siusi / Sassolungo） | Day 7–10 | 10 |
+| Val di Funes 富內斯山谷 | Day 11 | 4 |
+| Dobbiaco / Tre Cime / Misurina | Day 11–13 | 13 |
+| Alta Via 1（Braies → Falzarego，含一戰遺跡） | Day 14–17 | 18 |
+| Cortina（Sorapis + Tofana di Mezzo） | Day 17–19 | 9 |
+| 慕尼黑 | Day 20–21 | 14 |
 
 > 山屋與步道點位（Alta Via 1、Tre Cime 等）座標為近似值，觸發半徑建議調大；
 > 想修改或新增景點，直接編輯 `js/pois.js` 即可，格式一看就懂。

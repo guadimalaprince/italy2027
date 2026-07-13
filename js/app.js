@@ -24,16 +24,18 @@
   try { visited = JSON.parse(localStorage.getItem("italy2027_visited") || "{}"); } catch (e) { visited = {}; }
 
   var AREA_COLORS = {
-    "佛羅倫斯": "#c0392b",
-    "比薩": "#d35400",
+    "巴黎": "#d81b60",
     "羅馬": "#8e44ad",
     "梵蒂岡": "#f1c40f",
+    "佛羅倫斯": "#c0392b",
+    "比薩": "#d35400",
     "波爾扎諾": "#16a085",
+    "卡雷扎湖": "#1abc9c",
     "Val Gardena": "#27ae60",
+    "Val di Funes": "#8d6e63",
     "Dobbiaco / Tre Cime": "#2980b9",
     "Alta Via 1": "#2c3e50",
     "Cortina": "#e67e22",
-    "國王湖 / 貝希特斯加登": "#1abc9c",
     "慕尼黑": "#3498db"
   };
 
