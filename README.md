@@ -15,6 +15,7 @@
 - 🧪 **模擬模式**：在家點擊地圖假裝走到該處，測試觸發與語音
 - 📋 **景點側欄**：依區域/天數分組，顯示與你的即時距離，可手動播放任一景點
 - 📱 手機優先設計；追蹤時嘗試保持螢幕喚醒（Wake Lock）
+- 📅 **行程總覽分頁**（itinerary.html）：21 天卡片式行程，含每段交通方式／時間／Google Maps 路線連結、住宿資訊（羅馬已確認、其餘為建議）、每日景點照片牆（照片由瀏覽器向 Wikipedia API 抓取並快取，點卡片跳回地圖開啟該景點）
 
 ## 🚀 部署（GitHub Pages）
 
@@ -60,10 +61,15 @@ python3 -m http.server 8000
 
 ```
 italy2027/
-├── index.html      # 主頁面
-├── css/style.css   # 樣式
-├── js/app.js       # 地圖、GPS 追蹤、地理圍欄、zh-TW 語音合成
-├── js/pois.js      # 173 個景點資料庫（座標 + 中文導覽稿）
+├── index.html         # 導覽地圖主頁
+├── itinerary.html     # 行程總覽分頁（交通/住宿/照片）
+├── css/style.css      # 地圖頁樣式
+├── css/itinerary.css  # 行程頁樣式
+├── js/app.js          # 地圖、GPS 追蹤、地理圍欄、zh-TW 語音合成
+├── js/pois.js         # 173 個景點資料庫（座標 + 中文導覽稿 + 維基條目）
+├── js/itinerary.js    # 21 天行程資料（交通、住宿、注意事項）
+├── js/itinerary-app.js# 行程頁渲染
+├── js/photos.js       # Wikipedia 照片批次載入與快取
 └── README.md
 ```
 

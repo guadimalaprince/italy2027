@@ -195,6 +195,7 @@
     var popupEl = document.createElement("div");
     popupEl.className = "poi-popup";
     popupEl.innerHTML =
+      '<div class="popup-photo"></div>' +
       "<h3>" + poi.name + "</h3>" +
       '<div class="en">' + poi.en + "</div>" +
       '<span class="day-tag">Day ' + poi.day + "｜" + poi.area + "</span>" +
@@ -204,6 +205,20 @@
     btn.addEventListener("click", function () { enqueuePoi(poi); });
     popupEl.appendChild(btn);
     marker.bindPopup(popupEl);
+
+    // 開啟彈窗時補上維基照片（若已載入）
+    marker.on("popupopen", function () {
+      var slot = popupEl.querySelector(".popup-photo");
+      var src = (window.Photos && Photos.get(poi.wiki)) || "";
+      if (src && slot && !slot.firstChild) {
+        var img = document.createElement("img");
+        img.alt = "";
+        img.onload = function () { marker.getPopup().update(); };
+        img.onerror = function () { slot.innerHTML = ""; };
+        img.src = src;
+        slot.appendChild(img);
+      }
+    });
 
     poiLayers[poi.id] = { marker: marker, circle: circle, listEl: null };
   }
@@ -443,6 +458,21 @@
   buildAreaFilter();
   buildList();
   bindUI();
+
+  // 背景載入景點照片（Wikipedia）
+  if (window.Photos) {
+    Photos.loadAll(POIS.map(function (p) { return p.wiki; }), null, null);
+  }
+
+  // 從行程頁點景點跳轉：index.html?poi=<id> → 置中並打開彈窗
+  var qp = /[?&]poi=([^&]+)/.exec(location.search);
+  if (qp) {
+    var target = poiById[decodeURIComponent(qp[1])];
+    if (target) {
+      map.setView([target.lat, target.lng], 17);
+      setTimeout(function () { poiLayers[target.id].marker.openPopup(); }, 300);
+    }
+  }
 
   // 測試用掛鉤：可在瀏覽器 console 呼叫 __tour.simulateAt(緯度, 經度) 模擬走到某處
   window.__tour = {
