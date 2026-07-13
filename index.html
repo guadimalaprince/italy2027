@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#1a3a5c">
+<title>義大利 2027 GPS 語音導覽 | Italy 2027 Audio Tour</title>
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header id="topbar">
+  <div id="title-row">
+    <h1>🇮🇹 義大利 2027 語音導覽 🇩🇪</h1>
+    <button id="btn-panel" title="行程景點列表">☰ 景點</button>
+  </div>
+  <div id="controls">
+    <button id="btn-start" class="primary">▶ 開始 GPS 導覽</button>
+    <button id="btn-stop" class="hidden">⏹ 停止追蹤</button>
+    <button id="btn-test-voice" title="測試中文語音">🔊 測試語音</button>
+    <label id="sim-label" title="模擬模式：點擊地圖假裝走到該處，用來在家測試">
+      <input type="checkbox" id="chk-sim"> 模擬模式
+    </label>
+    <label id="radius-label">
+      觸發距離 <span id="radius-value">10</span> 公尺
+      <input type="range" id="radius" min="10" max="100" step="5" value="10">
+    </label>
+    <select id="area-filter" title="篩選區域">
+      <option value="">全部區域</option>
+    </select>
+  </div>
+  <div id="status">
+    <span id="gps-status">GPS：尚未啟動</span>
+    <span id="nearest">—</span>
+  </div>
+</header>
+
+<div id="map"></div>
+
+<aside id="panel" class="hidden">
+  <div id="panel-header">
+    <h2>行程景點（依天數）</h2>
+    <button id="btn-close-panel">✕</button>
+  </div>
+  <div id="panel-tools">
+    <button id="btn-reset-visited" title="清除「已聽過」紀錄，讓所有景點可以重新自動播放">♻ 重設已播放紀錄</button>
+  </div>
+  <div id="poi-list"></div>
+</aside>
+
+<div id="now-playing" class="hidden">
+  <div id="np-text"></div>
+  <button id="btn-skip">⏭ 跳過</button>
+</div>
+
+<script src="vendor/leaflet/leaflet.js"></script>
+<script src="js/pois.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

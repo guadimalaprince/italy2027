@@ -1,0 +1,132 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  height: 100%;
+  font-family: -apple-system, "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+  overflow: hidden;
+}
+
+body { display: flex; flex-direction: column; }
+
+.hidden { display: none !important; }
+
+/* ---------- top bar ---------- */
+#topbar {
+  background: #1a3a5c;
+  color: #fff;
+  padding: 8px 10px;
+  z-index: 1100;
+  box-shadow: 0 2px 6px rgba(0,0,0,.3);
+  flex: 0 0 auto;
+}
+
+#title-row { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+#title-row h1 { font-size: 16px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+#controls {
+  display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
+  margin-top: 6px; font-size: 13px;
+}
+
+#controls button, #btn-panel {
+  background: #2d5f8f; color: #fff; border: none; border-radius: 6px;
+  padding: 6px 10px; font-size: 13px; cursor: pointer;
+}
+#controls button.primary { background: #2e9e5b; font-weight: 700; }
+#controls button:active { filter: brightness(1.2); }
+#btn-stop { background: #b34040 !important; }
+
+#sim-label, #radius-label { display: flex; align-items: center; gap: 4px; }
+#radius-label input[type=range] { width: 90px; }
+
+#area-filter {
+  border-radius: 6px; border: none; padding: 5px 6px; font-size: 13px;
+}
+
+#status {
+  display: flex; justify-content: space-between; gap: 10px;
+  margin-top: 6px; font-size: 12px; color: #cfe3f5;
+}
+#nearest { text-align: right; }
+
+/* ---------- map ---------- */
+#map { flex: 1 1 auto; width: 100%; z-index: 1; }
+
+.user-dot {
+  background: #1976d2; border: 3px solid #fff; border-radius: 50%;
+  box-shadow: 0 0 8px rgba(25,118,210,.9);
+}
+
+.poi-popup h3 { font-size: 15px; margin-bottom: 2px; }
+.poi-popup .en { color: #666; font-size: 12px; margin-bottom: 6px; }
+.poi-popup .day-tag {
+  display: inline-block; background: #1a3a5c; color: #fff;
+  font-size: 11px; border-radius: 4px; padding: 1px 6px; margin-bottom: 6px;
+}
+.poi-popup p { font-size: 13px; line-height: 1.6; max-height: 140px; overflow-y: auto; }
+.poi-popup button {
+  margin-top: 8px; background: #2e9e5b; color: #fff; border: none;
+  border-radius: 6px; padding: 6px 12px; font-size: 13px; cursor: pointer;
+}
+
+/* ---------- side panel ---------- */
+#panel {
+  position: absolute; top: 0; right: 0; bottom: 0;
+  width: min(360px, 92vw);
+  background: #fff; z-index: 1200;
+  box-shadow: -2px 0 12px rgba(0,0,0,.35);
+  display: flex; flex-direction: column;
+}
+#panel-header {
+  display: flex; justify-content: space-between; align-items: center;
+  background: #1a3a5c; color: #fff; padding: 10px 12px;
+}
+#panel-header h2 { font-size: 15px; }
+#btn-close-panel { background: none; border: none; color: #fff; font-size: 18px; cursor: pointer; }
+
+#panel-tools { padding: 8px 12px; border-bottom: 1px solid #e5e5e5; }
+#panel-tools button {
+  background: #eee; border: 1px solid #ccc; border-radius: 6px;
+  padding: 5px 10px; font-size: 12px; cursor: pointer;
+}
+
+#poi-list { flex: 1; overflow-y: auto; padding: 6px 0 30px; }
+
+#poi-list details { border-bottom: 1px solid #eee; }
+#poi-list summary {
+  padding: 10px 12px; font-weight: 700; font-size: 14px;
+  cursor: pointer; background: #f6f8fa; user-select: none;
+}
+#poi-list summary .count { color: #888; font-weight: 400; font-size: 12px; }
+
+.poi-item {
+  display: flex; align-items: center; gap: 8px;
+  padding: 8px 12px; border-top: 1px solid #f2f2f2; font-size: 13px;
+}
+.poi-item .info { flex: 1; min-width: 0; cursor: pointer; }
+.poi-item .name { font-weight: 600; }
+.poi-item .meta { color: #888; font-size: 11px; }
+.poi-item.visited .name { color: #999; }
+.poi-item.visited .name::after { content: " ✓已聽"; color: #2e9e5b; font-size: 11px; }
+.poi-item button {
+  background: #2d5f8f; color: #fff; border: none; border-radius: 6px;
+  padding: 5px 9px; font-size: 12px; cursor: pointer; flex: 0 0 auto;
+}
+
+/* ---------- now playing bar ---------- */
+#now-playing {
+  position: absolute; left: 10px; right: 10px; bottom: 14px;
+  background: rgba(26,58,92,.95); color: #fff;
+  border-radius: 10px; padding: 10px 12px;
+  display: flex; align-items: center; gap: 10px;
+  z-index: 1150; box-shadow: 0 4px 14px rgba(0,0,0,.4);
+}
+#np-text { flex: 1; font-size: 13px; line-height: 1.5; }
+#btn-skip {
+  background: #b34040; color: #fff; border: none; border-radius: 6px;
+  padding: 6px 10px; font-size: 13px; cursor: pointer; flex: 0 0 auto;
+}
+
+@media (min-width: 700px) {
+  #title-row h1 { font-size: 18px; }
+}
