@@ -20,8 +20,8 @@ var DAYS = [
     { icon: "🚆", route: "FCO → 特米尼車站（Leonardo Express）", time: "32 分，每 15 分一班", gm: ["Fiumicino Airport", "Roma Termini"], note: "€14，月台直上車" }
   ],
   plan: ["下午：萬神廟 → 納沃納廣場 → 特雷維噴泉（許願！）", "晚上：特拉斯提弗列區晚餐（推薦起司胡椒麵 Cacio e Pepe）"],
-  stay: { city: "羅馬", status: "confirmed", name: "✅ 已確認",
-    note: "把訂房名稱／地址填進 js/itinerary.js 的 Day 2 stay 欄位即可顯示在這裡" },
+  stay: { city: "羅馬（2 晚）", status: "confirmed", name: "Comfort Hotel Bolivar（Via della Cordonata 6, 00187 Roma）",
+    note: "位置絕佳：緊鄰威尼斯廣場與圖拉真市場，步行到特雷維噴泉約 8 分、萬神廟 12 分、競技場 15 分；從 Termini 搭 40/64/70 號公車到 Piazza Venezia 下車，或步行約 20 分" },
   warn: [] },
 
 { day: 3, phase: "🇮🇹 羅馬", title: "古羅馬一日：鬥獸場＋羅馬廣場＋帕拉提諾山", areas: ["羅馬"],
@@ -29,12 +29,13 @@ var DAYS = [
     { icon: "🚇", route: "地鐵 B 線 → Colosseo 站", time: "特米尼出發 2 站，約 5 分", gm: ["Roma Termini", "Colosseo, Rome"] }
   ],
   plan: ["鬥獸場（外牆 → 看台 → 競技場地板 → 地下層，本網站有 6 個定點解說）", "君士坦丁凱旋門 → 古羅馬廣場 → 帕拉提諾山（三點聯票）", "傍晚卡比托利歐廣場看夕陽下的羅馬廣場", "晚上再回特拉斯提弗列"],
-  stay: { city: "羅馬", status: "confirmed", name: "✅ 已確認（同前晚）", note: "" },
+  stay: { city: "羅馬", status: "confirmed", name: "Comfort Hotel Bolivar（同前晚）",
+    note: "今天古羅馬區行程從飯店走路就到：卡比托利歐廣場 3 分鐘、羅馬廣場入口 10 分鐘" },
   warn: ["鬥獸場務必提前網路預約（官網 colosseo.it），現場排隊可能 2 小時以上；地下層需加購導覽票"] },
 
 { day: 4, phase: "🇮🇹 羅馬 → 佛羅倫斯", title: "梵蒂岡早場 → 高鐵北上佛羅倫斯", areas: ["梵蒂岡", "羅馬", "佛羅倫斯"],
   transport: [
-    { icon: "🚇", route: "地鐵 A 線 → Ottaviano 站（梵蒂岡）", time: "約 15 分", gm: ["Roma Termini", "Vatican Museums"] },
+    { icon: "🚌", route: "飯店（威尼斯廣場）→ 梵蒂岡（40 或 64 號公車）", time: "約 20 分", gm: ["Piazza Venezia, Rome", "Vatican Museums"], note: "行李先寄放飯店，中午回程領取再去 Termini 搭高鐵" },
     { icon: "🚄", route: "羅馬 Termini → 佛羅倫斯 SMN（Frecciarossa／Italo 高鐵）", time: "1 小時 32 分", gm: ["Roma Termini", "Firenze Santa Maria Novella"], note: "建議訂 15:00 或 16:00 班次較穩" }
   ],
   plan: ["08:00 梵蒂岡博物館入場（地圖廊 → 拉斐爾房間 → 西斯汀禮拜堂，約 3–4 小時）", "有時間再快閃聖彼得大教堂看聖殤像", "下午高鐵到佛羅倫斯，check-in", "傍晚老橋（Ponte Vecchio）散步、天主聖三橋看夕陽"],
