@@ -1,13 +1,13 @@
 # 🇫🇷🇮🇹🇩🇪 Italy 2027 — GPS 語音導覽網站
 
-巴黎 + 義大利 + 多洛米蒂 + 慕尼黑 21 天行程（巴黎 → 羅馬 → 佛羅倫斯 →
+巴黎 + 義大利 + 多洛米蒂 + 慕尼黑 22 天行程（2027/6/2 台北出發－6/24 慕尼黑回程）（巴黎 → 羅馬 → 佛羅倫斯 →
 波爾扎諾 → Val Gardena → Val di Funes → Tre Cime → Alta Via 1 → Cortina → 慕尼黑）的
 **GPS 定位語音導覽網站**：地圖即時追蹤你的位置，走到景點附近（預設 10 公尺）
 自動用 **台灣口音中文（zh-TW）** 播放該景點的語音導覽。
 
 ## ✨ 功能
 
-- 🗺️ **Leaflet + OpenStreetMap 地圖**，173 個景點涵蓋全部 21 天行程（含羅馬競技場內部 6 個細部解說點、Alta Via 1 沿線一戰戰場遺跡）
+- 🗺️ **Leaflet + OpenStreetMap 地圖**，180 個景點涵蓋全部 22 天行程（含羅馬競技場內部 6 個細部解說點、Alta Via 1 沿線一戰戰場遺跡）
 - 📍 **GPS 即時追蹤**（`watchPosition`，高精度模式），藍點 + 精度圈
 - 🔊 **接近自動播放**：進入觸發半徑（10–100 公尺可調，預設 10）自動朗讀中文導覽
 - 🗣️ **台灣口音**：自動優先挑選裝置上的 zh-TW 語音（iPhone「美佳 Mei-Jia」、Android「Google 國語（臺灣）」、Windows「Microsoft HsiaoChen 曉臻」）
@@ -15,7 +15,7 @@
 - 🧪 **模擬模式**：在家點擊地圖假裝走到該處，測試觸發與語音
 - 📋 **景點側欄**：依區域/天數分組，顯示與你的即時距離，可手動播放任一景點
 - 📱 手機優先設計；追蹤時嘗試保持螢幕喚醒（Wake Lock）
-- 📅 **行程總覽分頁**（itinerary.html）：21 天卡片式行程，含每段交通方式／時間／Google Maps 路線連結、住宿資訊（羅馬已確認、其餘為建議）、每日景點照片牆（照片由瀏覽器向 Wikipedia API 抓取並快取，點卡片跳回地圖開啟該景點）
+- 📅 **行程總覽分頁**（itinerary.html）：22 天卡片式行程（含實際日期），含每段交通方式／時間／Google Maps 路線連結、住宿資訊（羅馬已確認、其餘為建議）、每日景點照片牆（照片由瀏覽器向 Wikipedia API 抓取並快取，點卡片跳回地圖開啟該景點）
 
 ## 🚀 部署（GitHub Pages）
 
@@ -66,8 +66,8 @@ italy2027/
 ├── css/style.css      # 地圖頁樣式
 ├── css/itinerary.css  # 行程頁樣式
 ├── js/app.js          # 地圖、GPS 追蹤、地理圍欄、zh-TW 語音合成
-├── js/pois.js         # 173 個景點資料庫（座標 + 中文導覽稿 + 維基條目）
-├── js/itinerary.js    # 21 天行程資料（交通、住宿、注意事項）
+├── js/pois.js         # 180 個景點資料庫（座標 + 中文導覽稿 + 維基條目）
+├── js/itinerary.js    # 22 天行程資料（交通、住宿、注意事項）
 ├── js/itinerary-app.js# 行程頁渲染
 ├── js/photos.js       # Wikipedia 照片批次載入與快取
 └── README.md
@@ -77,19 +77,19 @@ italy2027/
 
 | 區域 | 天數 | 景點數 |
 |---|---|---|
-| 巴黎 | Day 1 | 13 |
-| 羅馬（含競技場內部細解） | Day 2–4 | 34 |
-| 梵蒂岡 | Day 4 | 12 |
-| 佛羅倫斯 | Day 4–6 | 26 |
-| 比薩 | Day 5 | 10 |
-| 波爾扎諾 | Day 6 | 8 |
-| 卡雷扎湖 | Day 7 | 2 |
-| Val Gardena（Seceda / Alpe di Siusi / Sassolungo） | Day 7–10 | 10 |
-| Val di Funes 富內斯山谷 | Day 11 | 4 |
-| Dobbiaco / Tre Cime / Misurina | Day 11–13 | 13 |
-| Alta Via 1（Braies → Falzarego，含一戰遺跡） | Day 14–17 | 18 |
-| Cortina（Sorapis + Tofana di Mezzo） | Day 17–19 | 9 |
-| 慕尼黑 | Day 20–21 | 14 |
+| 巴黎 | Day 1–2（6/3–6/4） | 20 |
+| 羅馬（含競技場內部細解） | Day 3–5 | 34 |
+| 梵蒂岡 | Day 5 | 12 |
+| 佛羅倫斯 | Day 5–7 | 26 |
+| 比薩 | Day 6 | 10 |
+| 波爾扎諾 | Day 7 | 8 |
+| 卡雷扎湖 | Day 8 | 2 |
+| Val Gardena（Seceda / Alpe di Siusi / Sassolungo） | Day 8–11 | 10 |
+| Val di Funes 富內斯山谷 | Day 12 | 4 |
+| Dobbiaco / Tre Cime / Misurina | Day 12–14 | 13 |
+| Alta Via 1（Braies → Falzarego，含一戰遺跡） | Day 15–18 | 18 |
+| Cortina（Sorapis + Tofana di Mezzo） | Day 18–20 | 9 |
+| 慕尼黑 | Day 21–22（6/23–6/24） | 14 |
 
 > 山屋與步道點位（Alta Via 1、Tre Cime 等）座標為近似值，觸發半徑建議調大；
 > 想修改或新增景點，直接編輯 `js/pois.js` 即可，格式一看就懂。

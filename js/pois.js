@@ -5,7 +5,7 @@ var POIS = [
 
 
 // ============================================================
-// Day 1 巴黎 Paris
+// Day 1–2 巴黎 Paris
 // ============================================================
 
 { id: "par-eiffel", name: "艾菲爾鐵塔", en: "Tour Eiffel", lat: 48.8584, lng: 2.2945, day: 1, area: "巴黎", wiki: "Eiffel Tower",
@@ -23,19 +23,19 @@ var POIS = [
 { id: "par-concorde", name: "協和廣場", en: "Place de la Concorde", lat: 48.8656, lng: 2.3212, day: 1, area: "巴黎", wiki: "Place de la Concorde",
   text: "協和廣場是巴黎最大的廣場，也是法國大革命最血腥的舞台：路易十六和瑪麗·安東妮都在這裡上了斷頭台。廣場中央的埃及方尖碑來自路克索神廟，已有三千三百年歷史，是十九世紀埃及送給法國的禮物，碑座上還畫著當年豎立它的工程圖解。" },
 
-{ id: "par-tuileries", name: "杜樂麗花園", en: "Jardin des Tuileries", lat: 48.8635, lng: 2.3275, day: 1, area: "巴黎", wiki: "Tuileries Garden",
+{ id: "par-tuileries", name: "杜樂麗花園", en: "Jardin des Tuileries", lat: 48.8635, lng: 2.3275, day: 2, area: "巴黎", wiki: "Tuileries Garden",
   text: "杜樂麗花園是巴黎第一座對公眾開放的皇家花園，由凱薩琳·德·梅迪奇建造——沒錯，就是從佛羅倫斯梅迪奇家族嫁來的王后，兩天後你就會到佛羅倫斯拜訪她的娘家！筆直的林蔭道、圓形水池與散放的綠色鐵椅是巴黎人的午後日常，找張椅子朝著水池坐下來歇歇腿吧。" },
 
-{ id: "par-louvre", name: "羅浮宮（玻璃金字塔）", en: "Musée du Louvre", lat: 48.8611, lng: 2.3358, day: 1, area: "巴黎", wiki: "Louvre",
+{ id: "par-louvre", name: "羅浮宮（玻璃金字塔）", en: "Musée du Louvre", lat: 48.8611, lng: 2.3358, day: 2, area: "巴黎", wiki: "Louvre",
   text: "羅浮宮是全世界參觀人數最多的博物館，前身是八百年歷史的皇宮。中庭貝聿銘設計的玻璃金字塔在一九八九年落成時罵聲一片，如今卻成了巴黎的新地標。鎮館三寶：蒙娜麗莎、米洛的維納斯、勝利女神。就算不進館，傍晚在金字塔旁看夕陽映在玻璃上也非常值得。" },
 
-{ id: "par-pont-neuf", name: "新橋", en: "Pont Neuf", lat: 48.8567, lng: 2.3413, day: 1, area: "巴黎", wiki: "Pont Neuf",
+{ id: "par-pont-neuf", name: "新橋", en: "Pont Neuf", lat: 48.8567, lng: 2.3413, day: 2, area: "巴黎", wiki: "Pont Neuf",
   text: "新橋雖然名叫『新橋』，卻是巴黎現存最古老的橋，一六〇七年由亨利四世揭幕！它也是巴黎第一座橋上不蓋房子的石橋，當年市民第一次能站在橋上看塞納河，轟動全城。橋中央的亨利四世騎馬像與西堤島尖端的綠色小公園，是看河景的好地方。" },
 
-{ id: "par-notredame", name: "巴黎聖母院", en: "Cathédrale Notre-Dame", lat: 48.853, lng: 2.3499, day: 1, area: "巴黎", wiki: "Notre-Dame de Paris",
+{ id: "par-notredame", name: "巴黎聖母院", en: "Cathédrale Notre-Dame", lat: 48.853, lng: 2.3499, day: 2, area: "巴黎", wiki: "Notre-Dame de Paris",
   text: "巴黎聖母院——雨果筆下鐘樓怪人的家，八百五十年的哥德式傑作。二〇一九年那場大火讓全世界心碎，經過五年重建，二〇二四年底重新開放，橡木屋頂與尖塔完全依原樣重生。教堂前廣場地上有一顆銅星『法國零公里原點』，全法國的公路里程都從這裡起算，站上去踩一下，據說會再回巴黎！" },
 
-{ id: "par-bouquinistes", name: "塞納河畔書報攤", en: "Bouquinistes de la Seine", lat: 48.8542, lng: 2.344, day: 1, area: "巴黎", wiki: "Bouquinistes",
+{ id: "par-bouquinistes", name: "塞納河畔書報攤", en: "Bouquinistes de la Seine", lat: 48.8542, lng: 2.344, day: 2, area: "巴黎", wiki: "Bouquinistes",
   text: "塞納河兩岸這些墨綠色的鐵皮書箱是『河畔書商』，四百年來販賣舊書、版畫和海報，被稱為全世界最長的露天書店，連同塞納河岸一起列入世界遺產。沿著河岸慢慢走，從舊書堆裡翻出一張老巴黎的版畫，是最有味道的紀念品。" },
 
 { id: "par-sacrecoeur", name: "聖心堂", en: "Sacré-Cœur", lat: 48.8867, lng: 2.3431, day: 1, area: "巴黎", wiki: "Sacré-Cœur, Paris",
@@ -49,554 +49,575 @@ var POIS = [
 
 
 
+{ id: "par-sainte-chapelle", name: "聖禮拜堂", en: "Sainte-Chapelle", lat: 48.8554, lng: 2.3451, day: 2, area: "巴黎", wiki: "Sainte-Chapelle",
+  text: "聖禮拜堂是哥德建築的極致：路易九世在一二四八年為存放耶穌荊棘冠而建，樓上禮拜堂的四面牆幾乎全是彩繪玻璃——十五扇十五公尺高的花窗、一千一百多幅聖經場景，陽光穿透時整個空間像置身萬花筒中央。記得挑晴天來，並提前線上購票。順帶一提：荊棘冠的刺，你之後在比薩的荊棘聖母教堂也會再遇到一根！" },
+
+{ id: "par-shakespeare", name: "莎士比亞書店", en: "Shakespeare and Company", lat: 48.8526, lng: 2.3471, day: 2, area: "巴黎", wiki: "Shakespeare and Company (bookstore)",
+  text: "這間綠色門面的英文書店是全世界最有名的獨立書店，海明威、費茲傑羅都曾在此出沒；樓上至今保留給旅行作家借宿的床位，住宿的代價是每天讀一本書、幫店裡工作兩小時。門口正對聖母院，買一本書蓋上店章，是最有文青味的巴黎紀念品。" },
+
+{ id: "par-pantheon", name: "先賢祠", en: "Panthéon", lat: 48.8462, lng: 2.3464, day: 2, area: "巴黎", wiki: "Panthéon",
+  text: "先賢祠是法國的國家靈殿，伏爾泰、盧梭、雨果、居禮夫人、大仲馬都長眠於此，門楣上刻著『祖國感謝偉人』。這裡也是科學史的聖地：一八五一年，傅科就是在中央圓頂下吊起擺錘，第一次向公眾證明地球自轉——傅科擺至今仍在殿內靜靜擺動。" },
+
+{ id: "par-luxembourg", name: "盧森堡公園", en: "Jardin du Luxembourg", lat: 48.8462, lng: 2.3372, day: 2, area: "巴黎", wiki: "Jardin du Luxembourg",
+  text: "盧森堡公園是巴黎人最愛的公園：瑪麗·德·梅迪奇王后思念故鄉佛羅倫斯，照著碧提宮的樣子蓋了盧森堡宮——幾天後你會在佛羅倫斯看到本尊！中央水池邊，孩子們用棍子推著百年傳統的小帆船，找一張著名的綠色鐵椅坐下來，這就是左岸的下午。" },
+
+{ id: "par-saint-germain", name: "聖傑曼德佩（花神與雙叟咖啡館）", en: "Saint-Germain-des-Prés", lat: 48.8539, lng: 2.3338, day: 2, area: "巴黎", wiki: "Saint-Germain-des-Prés",
+  text: "聖傑曼德佩是左岸咖啡文化的心臟：花神咖啡館與雙叟咖啡館比鄰而立，沙特與西蒙波娃把花神當辦公室，海明威、畢卡索是雙叟的常客。旁邊的聖傑曼德佩教堂是全巴黎最古老的教堂，鐘樓已站了一千年。點杯咖啡坐在露天座，體驗『存在主義的誕生地』。" },
+
+{ id: "par-vosges", name: "孚日廣場（瑪黑區）", en: "Place des Vosges", lat: 48.8559, lng: 2.3655, day: 2, area: "巴黎", wiki: "Place des Vosges",
+  text: "孚日廣場是巴黎最古老的皇家廣場，一六一二年落成：三十六棟紅磚白石的連棟宅邸圍出完美的正方形，四百年來一磚未改。六號的雨果故居可免費參觀，『悲慘世界』有一部分就在那裡寫成。穿過拱廊就是瑪黑區的巷弄，順路逛逛選品店，晚餐就在這一區吧！" },
+
+{ id: "par-opera", name: "加尼葉歌劇院", en: "Palais Garnier", lat: 48.8720, lng: 2.3316, day: 2, area: "巴黎", wiki: "Palais Garnier",
+  text: "加尼葉歌劇院是拿破崙三世時代最奢華的建築：大理石大樓梯、金箔廊柱、八噸重的水晶吊燈，天花板上環繞著夏卡爾一九六四年繪製的繽紛壁畫。『歌劇魅影』的傳說就誕生在這裡——劇院地下真的有一座蓄水池！可以買票入內參觀，或在歌劇院旁的咖啡館喝一杯，感受美好年代的巴黎。" },
+
 // ============================================================
-// Day 2–4 羅馬 Roma
+// Day 3–5 羅馬 Roma
 // ============================================================
 
-{ id: "rome-termini", name: "羅馬特米尼車站", en: "Roma Termini", lat: 41.9010, lng: 12.5010, day: 2, area: "羅馬", wiki: "Roma Termini railway station",
+{ id: "rome-termini", name: "羅馬特米尼車站", en: "Roma Termini", lat: 41.9010, lng: 12.5010, day: 3, area: "羅馬", wiki: "Roma Termini railway station",
   text: "歡迎來到永恆之城羅馬！特米尼車站是全義大利最大的車站，名字來自附近的戴克里先浴場。車站內部要注意隨身物品。從這裡搭地鐵 A 線或 B 線可以快速抵達各大景點，不過羅馬老城其實用走的最精彩，每個轉角都是千年古蹟。" },
 
-{ id: "rome-trevi", name: "特雷維噴泉（許願池）", en: "Fontana di Trevi", lat: 41.9009, lng: 12.4833, day: 2, area: "羅馬", wiki: "Trevi Fountain",
+{ id: "rome-trevi", name: "特雷維噴泉（許願池）", en: "Fontana di Trevi", lat: 41.9009, lng: 12.4833, day: 3, area: "羅馬", wiki: "Trevi Fountain",
   text: "全世界最著名的噴泉就在你眼前！特雷維噴泉高二十六公尺，海神歐開諾斯駕著海馬戰車從波利宮的牆面奔騰而出，水源來自兩千年前的古羅馬水道『處女水道』。記得背對噴泉，用右手把硬幣越過左肩拋進水裡：一枚保證重返羅馬，兩枚遇見愛情，三枚步入禮堂。這裡每天能撈起約三千歐元硬幣，全數捐給慈善機構。" },
 
-{ id: "rome-pantheon", name: "萬神廟", en: "Pantheon", lat: 41.8986, lng: 12.4769, day: 2, area: "羅馬", wiki: "Pantheon, Rome",
+{ id: "rome-pantheon", name: "萬神廟", en: "Pantheon", lat: 41.8986, lng: 12.4769, day: 3, area: "羅馬", wiki: "Pantheon, Rome",
   text: "萬神廟是全世界保存最完整的古羅馬建築，將近一千九百年屋齡！走進去抬頭看：直徑四十三點三公尺的混凝土圓頂，中央開著一個九公尺的圓洞『天眼』，是唯一的光源，陽光像聚光燈一樣在殿內移動。這個無鋼筋混凝土圓頂的世界紀錄，保持了一千三百年。文藝復興大師拉斐爾就長眠在這裡。下雨時雨水會從天眼落下，地板上有隱藏的排水孔。" },
 
-{ id: "rome-navona", name: "納沃納廣場", en: "Piazza Navona", lat: 41.8992, lng: 12.4731, day: 2, area: "羅馬", wiki: "Piazza Navona",
+{ id: "rome-navona", name: "納沃納廣場", en: "Piazza Navona", lat: 41.8992, lng: 12.4731, day: 3, area: "羅馬", wiki: "Piazza Navona",
   text: "納沃納廣場的細長橢圓形，正是因為它蓋在古羅馬圖密善競技場的跑道上！廣場中央是貝尼尼的傑作『四河噴泉』，四座巨人雕像代表多瑙河、恆河、尼羅河與拉普拉塔河，撐起一座真正的埃及方尖碑。傳說尼羅河神遮著眼睛，是因為不想看到對面死對頭波羅米尼設計的教堂——雖然只是好事者編的故事，但很有羅馬人的幽默。" },
 
-{ id: "rome-campo-fiori", name: "花田廣場", en: "Campo de' Fiori", lat: 41.8956, lng: 12.4722, day: 2, area: "羅馬", wiki: "Campo de' Fiori",
+{ id: "rome-campo-fiori", name: "花田廣場", en: "Campo de' Fiori", lat: 41.8956, lng: 12.4722, day: 3, area: "羅馬", wiki: "Campo de' Fiori",
   text: "花田廣場白天是熱鬧的傳統市集，賣花、蔬果、香料和松露醬；晚上搖身一變成為羅馬夜生活的中心。廣場中央那尊黑色斗篷雕像是哲學家布魯諾，一六〇〇年他因為主張宇宙無限、支持日心說，在這裡被教會處以火刑。雕像面朝梵蒂岡，眼神沉沉，紀念思想自由的代價。" },
 
-{ id: "rome-spanish-steps", name: "西班牙階梯", en: "Piazza di Spagna", lat: 41.9060, lng: 12.4823, day: 2, area: "羅馬", wiki: "Spanish Steps",
+{ id: "rome-spanish-steps", name: "西班牙階梯", en: "Piazza di Spagna", lat: 41.9060, lng: 12.4823, day: 3, area: "羅馬", wiki: "Spanish Steps",
   text: "西班牙階梯因電影『羅馬假期』中奧黛麗赫本吃冰淇淋的畫面而永垂不朽——不過現在坐在階梯上吃東西會被罰款喔！一百三十五階巴洛克階梯連接山上聖三一教堂，階梯下是貝尼尼父親設計的破船噴泉。右手邊的粉紅色房子是詩人濟慈度過人生最後歲月的地方，週邊則是羅馬最高級的精品街區。" },
 
-{ id: "rome-popolo", name: "人民廣場", en: "Piazza del Popolo", lat: 41.9106, lng: 12.4763, day: 2, area: "羅馬", wiki: "Piazza del Popolo",
+{ id: "rome-popolo", name: "人民廣場", en: "Piazza del Popolo", lat: 41.9106, lng: 12.4763, day: 3, area: "羅馬", wiki: "Piazza del Popolo",
   text: "人民廣場是古代旅人從北方進入羅馬的第一站。廣場中央的方尖碑有三千三百年歷史，是奧古斯都從埃及搬回來的戰利品。廣場旁的人民聖母教堂千萬別錯過：裡面有兩幅卡拉瓦喬的傑作，光影強烈到讓人起雞皮疙瘩，而且免費參觀！東側的平丘花園是眺望廣場和聖彼得大教堂圓頂的絕佳露台。" },
 
-{ id: "rome-argentina", name: "銀塔廣場（凱撒遇刺處）", en: "Largo di Torre Argentina", lat: 41.8955, lng: 12.4768, day: 2, area: "羅馬", wiki: "Largo di Torre Argentina",
+{ id: "rome-argentina", name: "銀塔廣場（凱撒遇刺處）", en: "Largo di Torre Argentina", lat: 41.8955, lng: 12.4768, day: 3, area: "羅馬", wiki: "Largo di Torre Argentina",
   text: "這片低於路面的神廟遺址，就是凱撒遇刺的地方！公元前四十四年三月十五日，凱撒在龐培劇院的柱廊（就在眼前這片遺址中）被刺二十三刀身亡，包括他信任的布魯圖斯。『連你也有份嗎，布魯圖斯？』成為史上最著名的遺言。現在這裡是羅馬著名的流浪貓保護區，數十隻貓咪悠哉地睡在兩千年的神廟柱礎上。" },
 
-{ id: "rome-trastevere-smt", name: "特拉斯提弗列聖母大殿", en: "Santa Maria in Trastevere", lat: 41.8894, lng: 12.4695, day: 2, area: "羅馬", wiki: "Santa Maria in Trastevere",
+{ id: "rome-trastevere-smt", name: "特拉斯提弗列聖母大殿", en: "Santa Maria in Trastevere", lat: 41.8894, lng: 12.4695, day: 3, area: "羅馬", wiki: "Santa Maria in Trastevere",
   text: "歡迎來到特拉斯提弗列，羅馬最有生活味的老城區！這座聖母大殿可能是羅馬最古老的聖母教堂，立面十二世紀的金色馬賽克在夜間打燈後美得發光，內部的黃金馬賽克更是拜占庭工藝的傑作。教堂前的廣場是整個街區的客廳，晚上街頭藝人、居民、遊客全聚在噴泉旁。接下來就在附近的巷子裡找間小館，吃羅馬經典的起司胡椒麵吧！" },
 
-{ id: "rome-ponte-sisto", name: "西斯托橋", en: "Ponte Sisto", lat: 41.8925, lng: 12.4712, day: 2, area: "羅馬", wiki: "Ponte Sisto",
+{ id: "rome-ponte-sisto", name: "西斯托橋", en: "Ponte Sisto", lat: 41.8925, lng: 12.4712, day: 3, area: "羅馬", wiki: "Ponte Sisto",
   text: "這座行人專用的石橋建於一四七五年，連接老城與特拉斯提弗列區。站在橋中央往北看，聖彼得大教堂的圓頂正好落在台伯河的轉彎處，是羅馬最經典的日落構圖之一。傍晚時分橋上常有街頭音樂家演奏，配著河風和夕陽，非常浪漫。" },
 
-{ id: "rome-tiber-island", name: "台伯島", en: "Isola Tiberina", lat: 41.8905, lng: 12.4776, day: 2, area: "羅馬", wiki: "Tiber Island",
+{ id: "rome-tiber-island", name: "台伯島", en: "Isola Tiberina", lat: 41.8905, lng: 12.4776, day: 3, area: "羅馬", wiki: "Tiber Island",
   text: "台伯島是台伯河中唯一的小島，形狀像一艘船。傳說公元前二九三年羅馬瘟疫肆虐，醫神的聖蛇在此上岸，於是島上建了醫神神廟——神奇的是，兩千三百年後的今天，島上依然是一間醫院，醫療傳統從未中斷！連接小島的法布里奇奧橋建於公元前六十二年，是羅馬最古老、仍在使用的橋。" },
 
-{ id: "rome-colosseum", name: "羅馬競技場", en: "Colosseo", lat: 41.8902, lng: 12.4922, day: 3, area: "羅馬", wiki: "Colosseum",
+{ id: "rome-colosseum", name: "羅馬競技場", en: "Colosseo", lat: 41.8902, lng: 12.4922, day: 4, area: "羅馬", wiki: "Colosseum",
   text: "歡迎來到羅馬競技場，古代世界最大的圓形劇場！公元八十年落成時，五萬名觀眾透過八十個編號拱門入場，動線設計比現代體育場還先進。開幕慶典持續一百天，數千頭猛獸與角鬥士在此搏命。地下層是複雜的機關迷宮，用人力升降梯把獅子直接『彈射』到競技場中央。這裡的每一塊石頭都見證過帝國的輝煌與殘酷，站在看台上，彷彿還能聽到兩千年前的歡呼聲。" },
 
-{ id: "rome-col-exterior", name: "競技場外牆與編號拱門", en: "Colosseum Facade & Arches", lat: 41.8908, lng: 12.4918, day: 3, area: "羅馬", wiki: "Colosseum",
+{ id: "rome-col-exterior", name: "競技場外牆與編號拱門", en: "Colosseum Facade & Arches", lat: 41.8908, lng: 12.4918, day: 4, area: "羅馬", wiki: "Colosseum",
   text: "繞著外牆走一圈，感受這座巨獸的尺度：周長五百二十七公尺、高四十八公尺，用了十萬立方公尺的石灰華巨石。牆上密密麻麻的孔洞，是中世紀的人挖走固定石塊的鐵扣件留下的『痘疤』。八十個拱門都刻有編號，觀眾憑陶片門票從指定拱門入場，五萬人十五分鐘就能全部就座，動線設計讓現代體育場自嘆不如。Colosseo 這個名字其實來自旁邊曾矗立的尼祿巨像 Colossus。" },
 
-{ id: "rome-col-stands", name: "觀眾席（社會階級的剖面）", en: "Cavea Seating Tiers", lat: 41.8906, lng: 12.4925, day: 3, area: "羅馬", wiki: "Colosseum",
+{ id: "rome-col-stands", name: "觀眾席（社會階級的剖面）", en: "Cavea Seating Tiers", lat: 41.8906, lng: 12.4925, day: 4, area: "羅馬", wiki: "Colosseum",
   text: "觀眾席是一部活生生的羅馬社會階級圖：最前排的大理石座位留給元老院議員，有些座位上還刻著名字；往上依序是騎士階級、一般公民；最頂層的木造看台才輪到婦女和奴隸——離競技場最遠、爬得最高。入場完全免費，皇帝買單！看台頂端曾架著巨大的遮陽帆 Velarium，由一千名來自米塞努姆艦隊的水手像操作船帆一樣拉動，為全場觀眾遮陽。" },
 
-{ id: "rome-col-arena", name: "競技場地板", en: "Arena Floor", lat: 41.8903, lng: 12.4927, day: 3, area: "羅馬", wiki: "Gladiator",
+{ id: "rome-col-arena", name: "競技場地板", en: "Arena Floor", lat: 41.8903, lng: 12.4927, day: 4, area: "羅馬", wiki: "Gladiator",
   text: "中央這片平台是重建的木地板，原本鋪滿沙子——拉丁文的沙 harena，正是 arena 這個字的由來，沙子的功能是吸血。地板上佈滿活板門，野獸和布景會突然從地下彈出製造驚嚇。角鬥士其實是身價高昂的職業運動員，訓練多年，主辦者通常不希望他們戰死；『拇指向下就處死』的畫面多半是後世電影的想像，真實的角鬥士生還率其實很高。" },
 
-{ id: "rome-col-hypogeum", name: "地下層 Hypogeum", en: "Hypogeum", lat: 41.89, lng: 12.4916, day: 3, area: "羅馬", wiki: "Colosseum",
+{ id: "rome-col-hypogeum", name: "地下層 Hypogeum", en: "Hypogeum", lat: 41.89, lng: 12.4916, day: 4, area: "羅馬", wiki: "Colosseum",
   text: "往下看，這片迷宮般的地下層是競技場的後台：兩層隧道裡設有二十八座人力升降梯，由奴隸推動絞盤，把獅子、豹和熊從黑暗中直接升到競技場中央。動物們從北非搭船而來，帝國為了表演幾乎捕空了北非的大型野獸。圖密善皇帝還修了一條專屬地道，讓他能避開人群直接進出包廂。地下層需要加購導覽票，能走進當年角鬥士等待上場的通道。" },
 
-{ id: "rome-col-emperor", name: "皇帝包廂與生死之門", en: "Emperor's Box & Gates", lat: 41.8897, lng: 12.4922, day: 3, area: "羅馬", wiki: "Colosseum",
+{ id: "rome-col-emperor", name: "皇帝包廂與生死之門", en: "Emperor's Box & Gates", lat: 41.8897, lng: 12.4922, day: 4, area: "羅馬", wiki: "Colosseum",
   text: "競技場南側正中央是皇帝包廂的位置，正對面的貴賓席保留給維斯塔貞女祭司。表演開始前，角鬥士會列隊向包廂致意。場邊有兩道著名的門：西側的『生門』讓獲勝者凱旋離場，東側的『死門』則運走陣亡者。場內的十字架紀念傳說中在此殉道的基督徒——史學家對此仍有爭論，但每年耶穌受難日，教皇仍會在競技場主持拜苦路儀式。" },
 
-{ id: "rome-ludus-magnus", name: "大角鬥士學校", en: "Ludus Magnus", lat: 41.8899, lng: 12.4944, day: 3, area: "羅馬", wiki: "Ludus Magnus",
+{ id: "rome-ludus-magnus", name: "大角鬥士學校", en: "Ludus Magnus", lat: 41.8899, lng: 12.4944, day: 4, area: "羅馬", wiki: "Ludus Magnus",
   text: "競技場東邊馬路對面這片遺跡是『大角鬥士學校』——古羅馬最大的角鬥士訓練營。你可以清楚看出一座迷你競技場的看台輪廓，角鬥士就在這裡日復一日操練，四周是他們的宿舍。最酷的是：一條地下通道直接連通競技場的地下層，角鬥士從宿舍走進戰場，全程不見天日。從路邊圍欄就能免費參觀。" },
 
-{ id: "rome-constantine-arch", name: "君士坦丁凱旋門", en: "Arco di Costantino", lat: 41.8898, lng: 12.4907, day: 3, area: "羅馬", wiki: "Arch of Constantine",
+{ id: "rome-constantine-arch", name: "君士坦丁凱旋門", en: "Arco di Costantino", lat: 41.8898, lng: 12.4907, day: 4, area: "羅馬", wiki: "Arch of Constantine",
   text: "競技場旁這座三拱凱旋門，是為了紀念君士坦丁大帝在公元三一二年米爾維安橋戰役的勝利。這場戰役改變了世界史：君士坦丁宣稱看到十字架異象而獲勝，隔年就頒布米蘭敕令，讓基督教合法化。有趣的是，門上許多浮雕是從更早的紀念建築上『回收』來的，堪稱古代的資源再利用。巴黎凱旋門就是以它為藍本。" },
 
-{ id: "rome-forum", name: "古羅馬廣場", en: "Foro Romano", lat: 41.8925, lng: 12.4853, day: 3, area: "羅馬", wiki: "Roman Forum",
+{ id: "rome-forum", name: "古羅馬廣場", en: "Foro Romano", lat: 41.8925, lng: 12.4853, day: 4, area: "羅馬", wiki: "Roman Forum",
   text: "你腳下就是西方文明的核心——古羅馬廣場！一千年間，這裡是帝國的政治、宗教與商業中心。走在聖道上，凱撒的葬禮就在你左邊的凱撒神廟舉行，至今仍有人獻花；元老院建築保存完好，西塞羅曾在此雄辯；提圖斯凱旋門的浮雕記錄著攻陷耶路撒冷的戰利品。閉上眼睛想像：穿托加袍的元老、喧鬧的市集、凱旋的軍隊，全都走過你站的這條路。" },
 
-{ id: "rome-palatine", name: "帕拉提諾山", en: "Colle Palatino", lat: 41.8892, lng: 12.4875, day: 3, area: "羅馬", wiki: "Palatine Hill",
+{ id: "rome-palatine", name: "帕拉提諾山", en: "Colle Palatino", lat: 41.8892, lng: 12.4875, day: 4, area: "羅馬", wiki: "Palatine Hill",
   text: "帕拉提諾山是羅馬七丘中最尊貴的一座，傳說母狼哺育羅慕路斯兄弟的洞穴就在山腳，羅馬城就從這裡誕生。後來歷代皇帝都把皇宮蓋在山上，英文『宮殿』palace 這個字就是從 Palatino 來的！山丘上奧古斯都故居的濕壁畫顏色依然鮮豔，從觀景台可以俯瞰整個古羅馬廣場和馬克西穆斯競技場，是拍照的好地方。" },
 
-{ id: "rome-fori-imperiali", name: "帝國廣場大道", en: "Via dei Fori Imperiali", lat: 41.8930, lng: 12.4867, day: 3, area: "羅馬", wiki: "Imperial fora",
+{ id: "rome-fori-imperiali", name: "帝國廣場大道", en: "Via dei Fori Imperiali", lat: 41.8930, lng: 12.4867, day: 4, area: "羅馬", wiki: "Imperial fora",
   text: "這條筆直的大道兩側就是歷代皇帝們競相建造的帝國廣場群：凱撒廣場、奧古斯都廣場、圖拉真廣場一字排開。大道是墨索里尼在一九三二年為了閱兵硬生生鋪在遺跡上的，至今爭議不斷。傍晚遺跡打燈後散步最美，週日這條路禁止汽車通行，整條大道還給行人。" },
 
-{ id: "rome-campidoglio", name: "卡比托利歐廣場", en: "Piazza del Campidoglio", lat: 41.8934, lng: 12.4828, day: 3, area: "羅馬", wiki: "Piazza del Campidoglio",
+{ id: "rome-campidoglio", name: "卡比托利歐廣場", en: "Piazza del Campidoglio", lat: 41.8934, lng: 12.4828, day: 4, area: "羅馬", wiki: "Piazza del Campidoglio",
   text: "這座梯形廣場是米開朗基羅親自設計的，連地面放射狀的星形圖案都出自他手筆！卡比托利歐山是古羅馬最神聖的山丘，朱庇特神廟曾矗立於此。廣場中央是馬可·奧理略的騎馬銅像複製品——真品在旁邊的卡比托利歐博物館，它能倖存至今，是因為中世紀的人誤以為那是君士坦丁大帝。廣場後方的露台能俯瞰古羅馬廣場全景，黃昏時特別美。" },
 
-{ id: "rome-piazza-venezia", name: "威尼斯廣場", en: "Piazza Venezia", lat: 41.8956, lng: 12.4823, day: 3, area: "羅馬", wiki: "Piazza Venezia",
+{ id: "rome-piazza-venezia", name: "威尼斯廣場", en: "Piazza Venezia", lat: 41.8956, lng: 12.4823, day: 4, area: "羅馬", wiki: "Piazza Venezia",
   text: "威尼斯廣場是羅馬的交通樞紐，五條大道在此交會。西側的威尼斯宮是羅馬最早的文藝復興建築之一，墨索里尼曾把辦公室設在這裡，從那個著名的陽台向廣場上的群眾演說。站在廣場中央的分隔島上，可以一次看到祖國祭壇、圖拉真柱和帝國廣場大道的透視線。" },
 
-{ id: "rome-vittoriano", name: "祖國祭壇", en: "Altare della Patria / Vittoriano", lat: 41.8947, lng: 12.4832, day: 3, area: "羅馬", wiki: "Victor Emmanuel II Monument",
+{ id: "rome-vittoriano", name: "祖國祭壇", en: "Altare della Patria / Vittoriano", lat: 41.8947, lng: 12.4832, day: 4, area: "羅馬", wiki: "Victor Emmanuel II Monument",
   text: "這座巨大的白色大理石建築是為義大利統一後第一位國王艾曼紐二世建的紀念堂，羅馬人幫它取了很多綽號：結婚蛋糕、打字機！中央是無名戰士墓與永恆之火，由衛兵日夜守護。搭全景電梯上屋頂，三百六十度的羅馬全景號稱全城最佳——因為只有站在這裡，你才看不到它本身。" },
 
-{ id: "rome-trajan", name: "圖拉真柱與圖拉真市場", en: "Colonna Traiana", lat: 41.8958, lng: 12.4842, day: 3, area: "羅馬", wiki: "Trajan's Column",
+{ id: "rome-trajan", name: "圖拉真柱與圖拉真市場", en: "Colonna Traiana", lat: 41.8958, lng: 12.4842, day: 4, area: "羅馬", wiki: "Trajan's Column",
   text: "圖拉真柱高三十公尺，柱身上兩百公尺長的螺旋浮雕，像一部石頭刻成的紀錄片，用兩千五百個人物完整記錄圖拉真皇帝征服達契亞的戰爭。旁邊半圓形的圖拉真市場被稱為世界上第一座購物中心，六層樓、一百五十間商鋪，兩千年前的羅馬人就在這裡逛街購物！" },
 
-{ id: "rome-marcello", name: "馬切羅劇場", en: "Teatro di Marcello", lat: 41.8919, lng: 12.4797, day: 3, area: "羅馬", wiki: "Theatre of Marcellus",
+{ id: "rome-marcello", name: "馬切羅劇場", en: "Teatro di Marcello", lat: 41.8919, lng: 12.4797, day: 4, area: "羅馬", wiki: "Theatre of Marcellus",
   text: "它長得像迷你競技場，但其實比競技場還老！馬切羅劇場由凱撒規劃、奧古斯都完成，可容納一萬五千名觀眾。最有趣的是它的『二次利用』：中世紀貴族直接把宮殿蓋在劇場上方，至今上層還是私人豪宅——住在兩千年古蹟上，大概是全世界最狂的門牌地址。" },
 
-{ id: "rome-ghetto", name: "猶太區與屋大維婭柱廊", en: "Portico d'Ottavia / Ghetto", lat: 41.8922, lng: 12.4785, day: 3, area: "羅馬", wiki: "Roman Ghetto",
+{ id: "rome-ghetto", name: "猶太區與屋大維婭柱廊", en: "Portico d'Ottavia / Ghetto", lat: 41.8922, lng: 12.4785, day: 4, area: "羅馬", wiki: "Roman Ghetto",
   text: "羅馬猶太區是歐洲最古老的猶太社區之一，已有兩千多年歷史。眼前的屋大維婭柱廊是奧古斯都為姊姊建的，中世紀時魚市場就開在遺跡裡。這一區必吃『猶太式炸朝鮮薊』：整朵朝鮮薊炸成金黃色的向日葵，外酥內嫩。路面上的黃銅『絆腳石』刻著二戰中被驅逐的猶太居民姓名，走過時請放慢腳步。" },
 
-{ id: "rome-bocca", name: "真理之口", en: "Bocca della Verità", lat: 41.8880, lng: 12.4818, day: 3, area: "羅馬", wiki: "Bocca della Verità",
+{ id: "rome-bocca", name: "真理之口", en: "Bocca della Verità", lat: 41.8880, lng: 12.4818, day: 4, area: "羅馬", wiki: "Bocca della Verità",
   text: "來測謊囉！這塊巨大的大理石面具是真理之口，傳說說謊的人把手伸進它嘴裡會被咬斷。『羅馬假期』裡葛雷哥萊·畢克在這裡嚇壞奧黛麗赫本的橋段，其實是他即興演出的！這塊石雕其實可能是古羅馬的下水道蓋，上面刻的是海神的臉。它安置在希臘聖母堂的門廊，這座教堂本身是羅馬保存最好的中世紀教堂之一。" },
 
-{ id: "rome-circus-maximus", name: "馬克西穆斯競技場", en: "Circo Massimo", lat: 41.8859, lng: 12.4853, day: 3, area: "羅馬", wiki: "Circus Maximus",
+{ id: "rome-circus-maximus", name: "馬克西穆斯競技場", en: "Circo Massimo", lat: 41.8859, lng: 12.4853, day: 4, area: "羅馬", wiki: "Circus Maximus",
   text: "這片長條形的綠地曾是古羅馬最大的娛樂場所——賽戰車競技場！全長六百公尺，可容納二十五萬名觀眾，是羅馬競技場的五倍。電影『賓漢』的戰車競賽場景就是以這裡為背景。今天羅馬人在這裡跑步、遛狗、辦演唱會，你可以沿著當年戰車奔馳的路線走一圈，想像十二輛四馬戰車擦身而過的轟隆聲。" },
 
-{ id: "rome-san-clemente", name: "聖克萊孟大殿", en: "Basilica di San Clemente", lat: 41.8894, lng: 12.4977, day: 3, area: "羅馬", wiki: "Basilica of San Clemente",
+{ id: "rome-san-clemente", name: "聖克萊孟大殿", en: "Basilica di San Clemente", lat: 41.8894, lng: 12.4977, day: 4, area: "羅馬", wiki: "Basilica of San Clemente",
   text: "想搭時光機嗎？聖克萊孟大殿是一座三層的『千層蛋糕』：地面是十二世紀的教堂，有精美的金色馬賽克；往下一層是四世紀的古教堂；再往下竟然是一世紀的羅馬宅邸和密特拉神廟，還能聽到地下暗河的流水聲！一座建築直接穿越兩千年，是羅馬考古最震撼的體驗之一。" },
 
-{ id: "rome-monti", name: "蒙蒂區", en: "Rione Monti", lat: 41.8946, lng: 12.4906, day: 3, area: "羅馬", wiki: "Monti (rione of Rome)",
+{ id: "rome-monti", name: "蒙蒂區", en: "Rione Monti", lat: 41.8946, lng: 12.4906, day: 4, area: "羅馬", wiki: "Monti (rione of Rome)",
   text: "蒙蒂是羅馬最文青的街區，就藏在競技場後方。古代這裡是龍蛇雜處的貧民窟，凱撒年輕時也住過；現在爬滿常春藤的巷弄裡開滿獨立設計店、古著店和小酒館。蒙蒂聖母廣場的噴泉階梯是年輕人的聚集地，逛完古蹟來這裡喝杯開胃酒，看羅馬人的日常。" },
 
-{ id: "rome-castel", name: "聖天使城堡", en: "Castel Sant'Angelo", lat: 41.9031, lng: 12.4663, day: 4, area: "羅馬", wiki: "Castel Sant'Angelo",
+{ id: "rome-castel", name: "聖天使城堡", en: "Castel Sant'Angelo", lat: 41.9031, lng: 12.4663, day: 5, area: "羅馬", wiki: "Castel Sant'Angelo",
   text: "這座圓柱形的堡壘原本是哈德良皇帝的陵墓，後來變身為要塞、監獄、教皇的避難所。一條秘密空中通道直通梵蒂岡，一五二七年羅馬之劫時，教皇克萊孟七世就是從那條通道逃進城堡保命的。城堡名稱來自傳說：大天使米迦勒在塔頂顯現收劍，宣告瘟疫結束。頂樓露台是普契尼歌劇『托斯卡』女主角縱身一躍的地方，也是眺望聖彼得大教堂的絕佳位置。" },
 
-{ id: "rome-ponte-angelo", name: "聖天使橋", en: "Ponte Sant'Angelo", lat: 41.9017, lng: 12.4666, day: 4, area: "羅馬", wiki: "Ponte Sant'Angelo",
+{ id: "rome-ponte-angelo", name: "聖天使橋", en: "Ponte Sant'Angelo", lat: 41.9017, lng: 12.4666, day: 5, area: "羅馬", wiki: "Ponte Sant'Angelo",
   text: "聖天使橋被稱為全羅馬最美的橋，橋身是哈德良皇帝時代的原件，已有一千九百年歷史。橋上十尊手持耶穌受難刑具的天使雕像，由貝尼尼和他的學生們雕刻，姿態衣袂飄動如在風中。這裡也是拍攝聖天使城堡倒影的最佳位置，清晨人少的時候最美。" },
 
 
 
 // ============================================================
-// Day 4 梵蒂岡 Vatican
+// Day 5 梵蒂岡 Vatican
 // ============================================================
 
-{ id: "vat-square", name: "聖彼得廣場", en: "Piazza San Pietro", lat: 41.9022, lng: 12.4568, day: 4, area: "梵蒂岡", wiki: "St. Peter's Square",
+{ id: "vat-square", name: "聖彼得廣場", en: "Piazza San Pietro", lat: 41.9022, lng: 12.4568, day: 5, area: "梵蒂岡", wiki: "St. Peter's Square",
   text: "歡迎來到全世界最小的國家——梵蒂岡！貝尼尼設計的聖彼得廣場像兩隻巨大的手臂，環抱著來自世界各地的信徒。兩百八十四根圓柱組成的柱廊上站著一百四十尊聖人雕像。找找地上兩塊圓形石板：站在上面看柱廊，四排柱子會神奇地合而為一！廣場中央的方尖碑來自埃及，曾目睹聖彼得殉道。" },
 
-{ id: "vat-basilica", name: "聖彼得大教堂", en: "Basilica di San Pietro", lat: 41.9022, lng: 12.4539, day: 4, area: "梵蒂岡", wiki: "St. Peter's Basilica",
+{ id: "vat-basilica", name: "聖彼得大教堂", en: "Basilica di San Pietro", lat: 41.9022, lng: 12.4539, day: 5, area: "梵蒂岡", wiki: "St. Peter's Basilica",
   text: "聖彼得大教堂是全世界最大的教堂，可容納六萬人，建造工程橫跨一百二十年，布拉曼特、拉斐爾、米開朗基羅都曾是總建築師。教堂正下方就是聖彼得的墓。中央的青銅華蓋出自貝尼尼，高達二十九公尺。抬頭看米開朗基羅設計的大圓頂，他七十一歲接手這項工程，分文未取，說這是為了上帝與靈魂的救贖。有體力的話，一定要登頂看羅馬全景！" },
 
-{ id: "vat-pieta", name: "聖殤像", en: "La Pietà", lat: 41.9023, lng: 12.4544, day: 4, area: "梵蒂岡", wiki: "Pietà (Michelangelo)",
+{ id: "vat-pieta", name: "聖殤像", en: "La Pietà", lat: 41.9023, lng: 12.4544, day: 5, area: "梵蒂岡", wiki: "Pietà (Michelangelo)",
   text: "進入大教堂右手邊第一個禮拜堂，就是米開朗基羅的『聖殤』——聖母懷抱死去耶穌的雕像。這是他二十四歲的作品，也是他唯一署名的作品：據說他聽到有人把作品歸給別人，一氣之下連夜把名字刻在聖母胸前的衣帶上，事後又深感後悔，從此不再署名。聖母的面容年輕得不可思議，米開朗基羅說：純潔的靈魂不會老去。" },
 
-{ id: "vat-museums", name: "梵蒂岡博物館", en: "Musei Vaticani", lat: 41.9065, lng: 12.4536, day: 4, area: "梵蒂岡", wiki: "Vatican Museums",
+{ id: "vat-museums", name: "梵蒂岡博物館", en: "Musei Vaticani", lat: 41.9065, lng: 12.4536, day: 5, area: "梵蒂岡", wiki: "Vatican Museums",
   text: "梵蒂岡博物館是五百年來歷任教皇收藏的總和，展線全長七公里，藏品超過七萬件！從埃及木乃伊、希臘羅馬雕塑、文藝復興繪畫到現代宗教藝術，一路走到西斯汀禮拜堂。建議直奔重點：八角庭院的勞孔群像、地圖廊、拉斐爾房間，最後壓軸西斯汀禮拜堂。記得早點入場，避開人潮。" },
 
-{ id: "vat-spiral", name: "布拉曼特螺旋階梯", en: "Scala Elicoidale (Momo)", lat: 41.9064, lng: 12.4534, day: 4, area: "梵蒂岡", wiki: "Vatican Museums",
+{ id: "vat-spiral", name: "布拉曼特螺旋階梯", en: "Scala Elicoidale (Momo)", lat: 41.9064, lng: 12.4534, day: 5, area: "梵蒂岡", wiki: "Vatican Museums",
   text: "博物館出口這座雙螺旋階梯是一九三二年莫莫設計的，靈感來自五百年前布拉曼特的原版螺旋坡道。上行與下行的人流永遠不會相遇，從上往下看像一枚鸚鵡螺，是全世界被拍最多的樓梯之一。離開前記得從欄杆邊往下拍一張！" },
 
-{ id: "vat-pigna", name: "松果庭院", en: "Cortile della Pigna", lat: 41.9046, lng: 12.4547, day: 4, area: "梵蒂岡", wiki: "Fontana della Pigna",
+{ id: "vat-pigna", name: "松果庭院", en: "Cortile della Pigna", lat: 41.9046, lng: 12.4547, day: 5, area: "梵蒂岡", wiki: "Fontana della Pigna",
   text: "庭院裡那顆四公尺高的青銅松果已經快兩千歲了，原本是古羅馬的噴泉，中世紀時放在舊聖彼得大教堂前，但丁在神曲裡都提到過它。庭院中央金色的球中球雕塑是現代藝術家波莫多羅的作品，破裂的地球中還有一個地球，與古老的松果對望，古今對話非常有意思。" },
 
-{ id: "vat-maps", name: "地圖廊", en: "Galleria delle Carte Geografiche", lat: 41.9040, lng: 12.4547, day: 4, area: "梵蒂岡", wiki: "Gallery of Maps",
+{ id: "vat-maps", name: "地圖廊", en: "Galleria delle Carte Geografiche", lat: 41.9040, lng: 12.4547, day: 5, area: "梵蒂岡", wiki: "Gallery of Maps",
   text: "這條一百二十公尺長的金色走廊，兩側是四十幅十六世紀的義大利地圖濕壁畫，準確度驚人，連小漁村都畫出來了。抬頭看金碧輝煌的天花板，別只顧著往前走。這裡是前往西斯汀禮拜堂的必經之路，也是博物館裡最華麗的一段路。" },
 
-{ id: "vat-raphael", name: "拉斐爾房間", en: "Stanze di Raffaello", lat: 41.9033, lng: 12.4547, day: 4, area: "梵蒂岡", wiki: "Raphael Rooms",
+{ id: "vat-raphael", name: "拉斐爾房間", en: "Stanze di Raffaello", lat: 41.9033, lng: 12.4547, day: 5, area: "梵蒂岡", wiki: "Raphael Rooms",
   text: "這四個房間是教皇儒略二世的私人寓所，他大膽起用二十五歲的拉斐爾全權負責裝飾。『雅典學院』就在簽字廳：柏拉圖指天、亞里斯多德指地，五十多位古代哲學家齊聚一堂——拉斐爾把達文西畫成柏拉圖，把心情不好趴在前排的米開朗基羅也畫了進去，還在右下角偷偷畫了自己看著觀眾。" },
 
-{ id: "vat-sistine", name: "西斯汀禮拜堂", en: "Cappella Sistina", lat: 41.9029, lng: 12.4545, day: 4, area: "梵蒂岡", wiki: "Sistine Chapel",
+{ id: "vat-sistine", name: "西斯汀禮拜堂", en: "Cappella Sistina", lat: 41.9029, lng: 12.4545, day: 5, area: "梵蒂岡", wiki: "Sistine Chapel",
   text: "你即將走進西方藝術的聖殿——西斯汀禮拜堂。米開朗基羅花四年半，幾乎是仰著頭獨自完成天花板上五百平方公尺的創世紀，中央就是那幅『創造亞當』：上帝與亞當的指尖即將相觸的瞬間。正面牆上的『最後的審判』是他六十多歲的作品，畫中被剝皮的聖巴多羅買手上那張人皮，是米開朗基羅的自畫像。這裡也是教皇選舉的密室，冒白煙的煙囪就架在屋頂。請保持安靜，禁止拍照。" },
 
-{ id: "vat-laocoon", name: "勞孔群像（八角庭院）", en: "Laocoonte", lat: 41.9049, lng: 12.4550, day: 4, area: "梵蒂岡", wiki: "Laocoön and His Sons",
+{ id: "vat-laocoon", name: "勞孔群像（八角庭院）", en: "Laocoonte", lat: 41.9049, lng: 12.4550, day: 5, area: "梵蒂岡", wiki: "Laocoön and His Sons",
   text: "一五〇六年，一位農夫在羅馬的葡萄園裡挖到這座雕像，教皇立刻派米開朗基羅去鑑定——他看完驚為天人。勞孔是特洛伊的祭司，因為警告木馬有詐，被海蛇纏繞而死。父子三人肌肉扭曲、表情痛苦的瞬間被凝結在大理石中，兩千年後依然讓人屏息，它直接影響了米開朗基羅之後所有的創作。" },
 
-{ id: "vat-swiss-guard", name: "瑞士近衛隊（聖安娜門）", en: "Guardia Svizzera", lat: 41.9040, lng: 12.4573, day: 4, area: "梵蒂岡", wiki: "Swiss Guard",
+{ id: "vat-swiss-guard", name: "瑞士近衛隊（聖安娜門）", en: "Guardia Svizzera", lat: 41.9040, lng: 12.4573, day: 5, area: "梵蒂岡", wiki: "Swiss Guard",
   text: "看到穿著藍黃紅條紋制服的衛兵了嗎？瑞士近衛隊從一五〇六年起守護教皇至今，是全世界現存最古老的軍隊。想加入可不容易：必須是瑞士籍、天主教徒、未婚男性、身高一百七十四公分以上。一五二七年羅馬之劫，一百八十九名近衛隊員戰死一百四十七人，用生命護送教皇脫險，這份忠誠延續五百年。" },
 
-{ id: "vat-conciliazione", name: "協和大道", en: "Via della Conciliazione", lat: 41.9020, lng: 12.4610, day: 4, area: "梵蒂岡", wiki: "Via della Conciliazione",
+{ id: "vat-conciliazione", name: "協和大道", en: "Via della Conciliazione", lat: 41.9020, lng: 12.4610, day: 5, area: "梵蒂岡", wiki: "Via della Conciliazione",
   text: "這條連接聖天使城堡與聖彼得廣場的大道，名字紀念一九二九年義大利與教廷簽署拉特朗條約、梵蒂岡建國。走在這條路上，聖彼得大教堂的圓頂會隨著腳步越來越大，是最有儀式感的朝聖路線。有趣的是，貝尼尼當年故意讓廣場前的街道狹窄，讓人一走出巷口被廣場震撼——這條大道其實破壞了他的設計哲學。" },
 
 
 
 // ============================================================
-// Day 4–6 佛羅倫斯 Firenze
+// Day 5–7 佛羅倫斯 Firenze
 // ============================================================
 
-{ id: "flo-smn-station", name: "新聖母瑪利亞車站", en: "Firenze Santa Maria Novella", lat: 43.7764, lng: 11.2481, day: 4, area: "佛羅倫斯", wiki: "Firenze Santa Maria Novella railway station",
+{ id: "flo-smn-station", name: "新聖母瑪利亞車站", en: "Firenze Santa Maria Novella", lat: 43.7764, lng: 11.2481, day: 5, area: "佛羅倫斯", wiki: "Firenze Santa Maria Novella railway station",
   text: "歡迎來到佛羅倫斯！這裡是新聖母瑪利亞車站，文藝復興之都的大門。這座車站建於一九三〇年代，是義大利理性主義建築的代表作。從這裡步行十分鐘就能抵達老城區，準備好開始你的文藝復興之旅吧！" },
 
-{ id: "flo-ponte-vecchio", name: "老橋", en: "Ponte Vecchio", lat: 43.7680, lng: 11.2531, day: 4, area: "佛羅倫斯", wiki: "Ponte Vecchio",
+{ id: "flo-ponte-vecchio", name: "老橋", en: "Ponte Vecchio", lat: 43.7680, lng: 11.2531, day: 5, area: "佛羅倫斯", wiki: "Ponte Vecchio",
   text: "老橋是佛羅倫斯最經典的畫面！這座橋建於一三四五年，是全城唯一躲過二戰轟炸的橋樑，據說連希特勒都不忍心炸毀它。橋上兩側原本是肉舖，因為太臭，斐迪南一世下令全部改成金飾店，這個傳統延續到今天。橋上方那條封閉的走廊是瓦薩里走廊，梅迪奇家族的私人空中通道。" },
 
-{ id: "flo-ponte-santa-trinita", name: "天主聖三橋", en: "Ponte Santa Trinita", lat: 43.7679, lng: 11.2503, day: 4, area: "佛羅倫斯", wiki: "Ponte Santa Trinita",
+{ id: "flo-ponte-santa-trinita", name: "天主聖三橋", en: "Ponte Santa Trinita", lat: 43.7679, lng: 11.2503, day: 5, area: "佛羅倫斯", wiki: "Ponte Santa Trinita",
   text: "這座優雅的橢圓拱橋是拍攝老橋最好的位置！天主聖三橋由米開朗基羅提供構想、阿曼納提建造，橋拱的曲線據說取自米開朗基羅雕塑上的線條。二戰時被炸毀後，佛羅倫斯人打撈起河底的每一塊原石，一塊塊重新拼回去，連橋頭的四季女神雕像都找回來了。" },
 
-{ id: "flo-smn-church", name: "新聖母大殿", en: "Basilica di Santa Maria Novella", lat: 43.7745, lng: 11.2494, day: 5, area: "佛羅倫斯", wiki: "Santa Maria Novella",
+{ id: "flo-smn-church", name: "新聖母大殿", en: "Basilica di Santa Maria Novella", lat: 43.7745, lng: 11.2494, day: 6, area: "佛羅倫斯", wiki: "Santa Maria Novella",
   text: "眼前這座黑白大理石立面的教堂，就是新聖母大殿。它是佛羅倫斯第一座宗座聖殿，立面由建築大師阿伯提設計，完美展現文藝復興的幾何美學。教堂內收藏著馬薩喬的『三位一體』，是史上第一幅運用精確透視法的濕壁畫，改變了整個西洋繪畫史。" },
 
-{ id: "flo-duomo", name: "聖母百花大教堂", en: "Cattedrale di Santa Maria del Fiore", lat: 43.7731, lng: 11.2560, day: 5, area: "佛羅倫斯", wiki: "Florence Cathedral",
+{ id: "flo-duomo", name: "聖母百花大教堂", en: "Cattedrale di Santa Maria del Fiore", lat: 43.7731, lng: 11.2560, day: 6, area: "佛羅倫斯", wiki: "Florence Cathedral",
   text: "你現在站在佛羅倫斯的心臟——聖母百花大教堂前！這座教堂花了一百四十年才建成，白色、綠色、粉紅色的大理石立面美得像一件珠寶。抬頭看那座紅色大圓頂，是布魯內雷斯基在一四三六年完成的曠世傑作，直徑四十五公尺，至今仍是世界上最大的磚造圓頂。當年沒有人相信蓋得起來，他甚至沒留下完整圖紙，秘密至今仍未完全解開。" },
 
-{ id: "flo-baptistery", name: "聖若望洗禮堂", en: "Battistero di San Giovanni", lat: 43.7732, lng: 11.2549, day: 5, area: "佛羅倫斯", wiki: "Florence Baptistery",
+{ id: "flo-baptistery", name: "聖若望洗禮堂", en: "Battistero di San Giovanni", lat: 43.7732, lng: 11.2549, day: 6, area: "佛羅倫斯", wiki: "Florence Baptistery",
   text: "這座八角形的洗禮堂比大教堂還古老，已有將近一千年歷史，但丁就是在這裡受洗的。最有名的是東側那對金光閃閃的銅門——吉貝爾蒂花了二十七年打造的『天堂之門』，米開朗基羅看了讚嘆說：這扇門美得可以當天堂的大門！現場看到的是複製品，真品保存在旁邊的大教堂博物館。" },
 
-{ id: "flo-campanile", name: "喬托鐘樓", en: "Campanile di Giotto", lat: 43.7728, lng: 11.2557, day: 5, area: "佛羅倫斯", wiki: "Giotto's Campanile",
+{ id: "flo-campanile", name: "喬托鐘樓", en: "Campanile di Giotto", lat: 43.7728, lng: 11.2557, day: 6, area: "佛羅倫斯", wiki: "Giotto's Campanile",
   text: "這座八十四公尺高的鐘樓由大畫家喬托在一三三四年設計，可惜他只蓋了第一層就過世了。鐘樓外牆鑲滿粉紅、白、綠三色大理石，跟大教堂互相輝映。如果體力夠，爬上四百一十四階樓梯，可以近距離平視布魯內雷斯基的大圓頂，是拍圓頂最好的角度！" },
 
-{ id: "flo-signoria", name: "領主廣場", en: "Piazza della Signoria", lat: 43.7696, lng: 11.2558, day: 5, area: "佛羅倫斯", wiki: "Piazza della Signoria",
+{ id: "flo-signoria", name: "領主廣場", en: "Piazza della Signoria", lat: 43.7696, lng: 11.2558, day: 6, area: "佛羅倫斯", wiki: "Piazza della Signoria",
   text: "領主廣場是佛羅倫斯七百年來的政治中心，也是一座免費的露天雕塑博物館！廣場上有大衛像的複製品、海神噴泉，還有科西莫一世的騎馬像。一四九八年，宗教改革者薩佛納羅拉就是在這個廣場被處以火刑，地上還有一塊圓形紀念碑標示位置。找找看！" },
 
-{ id: "flo-palazzo-vecchio", name: "舊宮", en: "Palazzo Vecchio", lat: 43.7693, lng: 11.2560, day: 5, area: "佛羅倫斯", wiki: "Palazzo Vecchio",
+{ id: "flo-palazzo-vecchio", name: "舊宮", en: "Palazzo Vecchio", lat: 43.7693, lng: 11.2560, day: 6, area: "佛羅倫斯", wiki: "Palazzo Vecchio",
   text: "這座有著高塔的堡壘式建築是舊宮，從一二九九年至今一直是佛羅倫斯的市政廳。裡面的五百人大廳氣勢驚人，牆上是瓦薩里的巨幅壁畫。傳說達文西那幅失落的『安吉里之戰』就藏在其中一面牆的夾層裡，牆上還留有一行小字：『尋找的人就會找到』。" },
 
-{ id: "flo-loggia", name: "傭兵涼廊", en: "Loggia dei Lanzi", lat: 43.7694, lng: 11.2554, day: 5, area: "佛羅倫斯", wiki: "Loggia dei Lanzi",
+{ id: "flo-loggia", name: "傭兵涼廊", en: "Loggia dei Lanzi", lat: 43.7694, lng: 11.2554, day: 6, area: "佛羅倫斯", wiki: "Loggia dei Lanzi",
   text: "這座開放式的涼廊是全世界最奢侈的免費雕塑館。切利尼的青銅傑作『帕修斯高舉美杜莎頭顱』就站在這裡，還有詹波隆那的『強擄薩賓婦女』，用一整塊大理石雕出三個扭轉交纏的人體，繞著走一圈，每個角度都是完美構圖。" },
 
-{ id: "flo-uffizi", name: "烏菲茲美術館", en: "Galleria degli Uffizi", lat: 43.7678, lng: 11.2553, day: 6, area: "佛羅倫斯", wiki: "Uffizi",
+{ id: "flo-uffizi", name: "烏菲茲美術館", en: "Galleria degli Uffizi", lat: 43.7678, lng: 11.2553, day: 7, area: "佛羅倫斯", wiki: "Uffizi",
   text: "歡迎來到烏菲茲美術館，全世界文藝復興繪畫收藏最豐富的地方！烏菲茲原意是『辦公室』，本來是梅迪奇家族的政務廳。必看清單：波提切利的『維納斯的誕生』與『春』、達文西的『天使報喜』、米開朗基羅的『聖家族』，還有提香的『烏爾比諾的維納斯』。建議至少留三個小時，慢慢欣賞。" },
 
-{ id: "flo-accademia", name: "學院美術館（大衛像）", en: "Galleria dell'Accademia", lat: 43.7767, lng: 11.2593, day: 6, area: "佛羅倫斯", wiki: "David (Michelangelo)",
+{ id: "flo-accademia", name: "學院美術館（大衛像）", en: "Galleria dell'Accademia", lat: 43.7767, lng: 11.2593, day: 7, area: "佛羅倫斯", wiki: "David (Michelangelo)",
   text: "學院美術館的鎮館之寶，就是米開朗基羅的大衛像本尊！五點一七公尺高的大衛，是米開朗基羅二十六歲時用一塊被別人放棄的大理石雕成的。注意看大衛的眼神：他不是勝利者，而是正要迎戰巨人歌利亞前的緊繃瞬間，右手青筋浮起，全身肌肉蓄勢待發。走廊兩側未完成的『囚犯』系列也別錯過，可以看到人像正從石頭中掙脫出來。" },
 
-{ id: "flo-piazzale-michelangelo", name: "米開朗基羅廣場", en: "Piazzale Michelangelo", lat: 43.7629, lng: 11.2650, day: 5, area: "佛羅倫斯", wiki: "Piazzale Michelangelo",
+{ id: "flo-piazzale-michelangelo", name: "米開朗基羅廣場", en: "Piazzale Michelangelo", lat: 43.7629, lng: 11.2650, day: 6, area: "佛羅倫斯", wiki: "Piazzale Michelangelo",
   text: "恭喜你爬上米開朗基羅廣場！這裡是眺望佛羅倫斯全景的最佳位置：紅色屋海中浮出百花大教堂的圓頂、舊宮的高塔、亞諾河上的老橋，全部一覽無遺。廣場中央是大衛像的青銅複製品。傍晚時分，夕陽把整座城染成金色，是全義大利最動人的日落之一。" },
 
-{ id: "flo-san-miniato", name: "聖米尼亞托大殿", en: "San Miniato al Monte", lat: 43.7591, lng: 11.2650, day: 5, area: "佛羅倫斯", wiki: "San Miniato al Monte",
+{ id: "flo-san-miniato", name: "聖米尼亞托大殿", en: "San Miniato al Monte", lat: 43.7591, lng: 11.2650, day: 6, area: "佛羅倫斯", wiki: "San Miniato al Monte",
   text: "再往上走幾分鐘，就是佛羅倫斯最古老、也最被低估的教堂——聖米尼亞托大殿。這座一千年歷史的羅馬式教堂有著綠白大理石的幾何立面，內部昏暗神秘，地板上有十二星座的鑲嵌圖案。運氣好的話，傍晚能聽到修士們的葛利果聖歌，配上腳下的佛羅倫斯全景，非常療癒。" },
 
-{ id: "flo-mercato-centrale", name: "中央市場", en: "Mercato Centrale", lat: 43.7764, lng: 11.2536, day: 5, area: "佛羅倫斯", wiki: "Mercato Centrale (Florence)",
+{ id: "flo-mercato-centrale", name: "中央市場", en: "Mercato Centrale", lat: 43.7764, lng: 11.2536, day: 6, area: "佛羅倫斯", wiki: "Mercato Centrale (Florence)",
   text: "中央市場是佛羅倫斯人的廚房！一樓是傳統市場，賣起司、火腿、松露、皮革；二樓是美食街，從牛肚包到現做義大利麵應有盡有。一定要試試佛羅倫斯名物『牛肚包』Lampredotto，加點綠醬，配一杯基安蒂紅酒，這才是道地的在地人吃法！" },
 
-{ id: "flo-san-lorenzo", name: "聖羅倫佐大殿", en: "Basilica di San Lorenzo", lat: 43.7748, lng: 11.2536, day: 5, area: "佛羅倫斯", wiki: "San Lorenzo, Florence",
+{ id: "flo-san-lorenzo", name: "聖羅倫佐大殿", en: "Basilica di San Lorenzo", lat: 43.7748, lng: 11.2536, day: 6, area: "佛羅倫斯", wiki: "San Lorenzo, Florence",
   text: "聖羅倫佐大殿是梅迪奇家族的家族教堂，由布魯內雷斯基設計。有趣的是它的立面至今仍是粗糙的磚牆——米開朗基羅曾設計過華麗的大理石立面，但工程始終沒有動工，成了五百年的『未完成』。教堂內部的和諧比例，是文藝復興建築的教科書。" },
 
-{ id: "flo-medici-chapels", name: "梅迪奇禮拜堂", en: "Cappelle Medicee", lat: 43.7752, lng: 11.2531, day: 5, area: "佛羅倫斯", wiki: "Medici Chapels",
+{ id: "flo-medici-chapels", name: "梅迪奇禮拜堂", en: "Cappelle Medicee", lat: 43.7752, lng: 11.2531, day: 6, area: "佛羅倫斯", wiki: "Medici Chapels",
   text: "梅迪奇禮拜堂是這個統治佛羅倫斯三百年的家族的長眠之地。新聖器室由米開朗基羅親自設計，裡面的『晝、夜、晨、昏』四座雕像，被認為是他雕塑生涯的巔峰之作。斜倚的人體帶著沉重的憂鬱，象徵時間流逝、人終有一死。" },
 
-{ id: "flo-santa-croce", name: "聖十字大殿", en: "Basilica di Santa Croce", lat: 43.7686, lng: 11.2622, day: 5, area: "佛羅倫斯", wiki: "Santa Croce, Florence",
+{ id: "flo-santa-croce", name: "聖十字大殿", en: "Basilica di Santa Croce", lat: 43.7686, lng: 11.2622, day: 6, area: "佛羅倫斯", wiki: "Santa Croce, Florence",
   text: "聖十字大殿被稱為『義大利的先賢祠』，米開朗基羅、伽利略、馬基維利、羅西尼都葬在這裡，總共有將近三百座名人墓。米開朗基羅的墓由瓦薩里設計，繪畫、雕塑、建築三位女神為他哀悼。教堂裡喬托的濕壁畫也是義大利繪畫史的重要起點。" },
 
-{ id: "flo-bargello", name: "巴傑羅美術館", en: "Museo Nazionale del Bargello", lat: 43.7705, lng: 11.2586, day: 5, area: "佛羅倫斯", wiki: "Bargello",
+{ id: "flo-bargello", name: "巴傑羅美術館", en: "Museo Nazionale del Bargello", lat: 43.7705, lng: 11.2586, day: 6, area: "佛羅倫斯", wiki: "Bargello",
   text: "巴傑羅美術館是佛羅倫斯的雕塑寶庫，重要性不輸烏菲茲！這裡有唐納太羅的青銅大衛像——文藝復興第一座獨立裸體雕像，比米開朗基羅的大衛早了六十多年。建築本身曾是監獄和刑場，中庭的迴廊非常漂亮，遊客也比烏菲茲少很多。" },
 
-{ id: "flo-orsanmichele", name: "奧爾聖米凱萊教堂", en: "Chiesa di Orsanmichele", lat: 43.7707, lng: 11.2551, day: 5, area: "佛羅倫斯", wiki: "Orsanmichele",
+{ id: "flo-orsanmichele", name: "奧爾聖米凱萊教堂", en: "Chiesa di Orsanmichele", lat: 43.7707, lng: 11.2551, day: 6, area: "佛羅倫斯", wiki: "Orsanmichele",
   text: "這座方形建築的身世很特別：它原本是穀倉市場，後來改建成教堂。外牆十四個壁龕由佛羅倫斯各同業公會出資，請當時最頂尖的雕刻家打造守護聖人，唐納太羅的『聖喬治』就是在這裡誕生的，等於是一場文藝復興雕塑的公開競賽。" },
 
-{ id: "flo-repubblica", name: "共和廣場", en: "Piazza della Repubblica", lat: 43.7715, lng: 11.2547, day: 5, area: "佛羅倫斯", wiki: "Piazza della Repubblica, Florence",
+{ id: "flo-repubblica", name: "共和廣場", en: "Piazza della Repubblica", lat: 43.7715, lng: 11.2547, day: 6, area: "佛羅倫斯", wiki: "Piazza della Repubblica, Florence",
   text: "共和廣場是古羅馬時代佛羅倫斯的中心，羅馬廣場就在你腳下。現在的凱旋門式拱門是十九世紀義大利統一後改建的。廣場上有百年旋轉木馬和歷史咖啡館，作家咖啡館 Giubbe Rosse 曾是未來主義藝術家聚會的地方。找間咖啡館坐下來，感受佛羅倫斯的優雅步調吧。" },
 
-{ id: "flo-porcellino", name: "小豬噴泉", en: "Fontana del Porcellino", lat: 43.7704, lng: 11.2543, day: 5, area: "佛羅倫斯", wiki: "Porcellino",
+{ id: "flo-porcellino", name: "小豬噴泉", en: "Fontana del Porcellino", lat: 43.7704, lng: 11.2543, day: 6, area: "佛羅倫斯", wiki: "Porcellino",
   text: "這隻被摸得金光發亮的青銅野豬是佛羅倫斯的幸運物！傳統儀式是：把一枚硬幣放進小豬嘴裡，讓它掉進下方的格柵，再摸摸豬鼻子，就能保佑你重返佛羅倫斯。旁邊的新市場涼廊是買皮件的好地方，記得殺價！" },
 
-{ id: "flo-strozzi", name: "斯特羅齊宮", en: "Palazzo Strozzi", lat: 43.7712, lng: 11.2519, day: 5, area: "佛羅倫斯", wiki: "Palazzo Strozzi",
+{ id: "flo-strozzi", name: "斯特羅齊宮", en: "Palazzo Strozzi", lat: 43.7712, lng: 11.2519, day: 6, area: "佛羅倫斯", wiki: "Palazzo Strozzi",
   text: "斯特羅齊宮是文藝復興豪宅的完美範本。斯特羅齊家族是梅迪奇的死對頭，蓋這座宮殿就是要比梅迪奇宮更大更氣派！巨大的粗石立面像一座堡壘，現在裡面經常舉辦世界級的當代藝術特展，中庭可以免費進入。" },
 
-{ id: "flo-pitti", name: "碧提宮", en: "Palazzo Pitti", lat: 43.7651, lng: 11.2500, day: 5, area: "佛羅倫斯", wiki: "Palazzo Pitti",
+{ id: "flo-pitti", name: "碧提宮", en: "Palazzo Pitti", lat: 43.7651, lng: 11.2500, day: 6, area: "佛羅倫斯", wiki: "Palazzo Pitti",
   text: "亞諾河南岸這座巨大的宮殿是碧提宮，後來成為梅迪奇大公的正式住所。裡面的帕拉提納美術館掛滿拉斐爾和提香的傑作，採用的還是十八世紀『整面牆掛好掛滿』的華麗方式。宮殿後方就是波波里花園，義式庭園的始祖。" },
 
-{ id: "flo-boboli", name: "波波里花園", en: "Giardino di Boboli", lat: 43.7623, lng: 11.2485, day: 5, area: "佛羅倫斯", wiki: "Boboli Gardens",
+{ id: "flo-boboli", name: "波波里花園", en: "Giardino di Boboli", lat: 43.7623, lng: 11.2485, day: 6, area: "佛羅倫斯", wiki: "Boboli Gardens",
   text: "波波里花園是全歐洲宮廷花園的原型，凡爾賽宮的花園也是受它啟發。四萬五千坪的山坡上有絲柏大道、噴泉、洞窟和露天劇場。往上爬到騎士花園，可以眺望托斯卡尼的山丘與橄欖園，是鬧中取靜的好地方。" },
 
-{ id: "flo-santo-spirito", name: "聖靈大殿", en: "Basilica di Santo Spirito", lat: 43.7669, lng: 11.2477, day: 5, area: "佛羅倫斯", wiki: "Santo Spirito, Florence",
+{ id: "flo-santo-spirito", name: "聖靈大殿", en: "Basilica di Santo Spirito", lat: 43.7669, lng: 11.2477, day: 6, area: "佛羅倫斯", wiki: "Santo Spirito, Florence",
   text: "歡迎來到奧特拉諾區的心臟——聖靈廣場！這座樸素立面的教堂是布魯內雷斯基最後的作品，內部比例純淨到令人屏息。教堂裡還藏著一件米開朗基羅十七歲雕的木製十字架。廣場周圍是佛羅倫斯最有生活感的角落，晚上餐廳和小酒館坐滿當地人，就在這附近吃晚餐吧！" },
 
 
 
 // ============================================================
-// Day 5 比薩 Pisa
+// Day 6 比薩 Pisa
 // ============================================================
 
-{ id: "pisa-station", name: "比薩中央車站", en: "Pisa Centrale", lat: 43.7085, lng: 10.3983, day: 5, area: "比薩", wiki: "Pisa Centrale railway station",
+{ id: "pisa-station", name: "比薩中央車站", en: "Pisa Centrale", lat: 43.7085, lng: 10.3983, day: 6, area: "比薩", wiki: "Pisa Centrale railway station",
   text: "歡迎來到比薩！從車站到斜塔步行約二十五分鐘，會穿過整個老城區；也可以搭 LAM Rossa 紅線公車直達奇蹟廣場。建議去程散步、回程搭車，順路看看亞諾河畔的風景。" },
 
-{ id: "pisa-tower", name: "比薩斜塔", en: "Torre di Pisa", lat: 43.7230, lng: 10.3966, day: 5, area: "比薩", wiki: "Leaning Tower of Pisa",
+{ id: "pisa-tower", name: "比薩斜塔", en: "Torre di Pisa", lat: 43.7230, lng: 10.3966, day: 6, area: "比薩", wiki: "Leaning Tower of Pisa",
   text: "它真的是斜的！比薩斜塔其實是大教堂的鐘樓，一一七三年開工，蓋到第三層就因為地基下沉開始傾斜，工程斷斷續續蓋了兩百年。目前傾斜約三點九七度，經過搶救工程已經穩定下來。伽利略據說曾在塔頂做自由落體實驗。想登塔要提前預約，爬上二百九十四階螺旋梯，能明顯感覺到身體被斜塔『拉』著走，非常奇妙！" },
 
-{ id: "pisa-duomo", name: "比薩主教座堂", en: "Duomo di Pisa", lat: 43.7231, lng: 10.3955, day: 5, area: "比薩", wiki: "Pisa Cathedral",
+{ id: "pisa-duomo", name: "比薩主教座堂", en: "Duomo di Pisa", lat: 43.7231, lng: 10.3955, day: 6, area: "比薩", wiki: "Pisa Cathedral",
   text: "大家都盯著斜塔，但這座大教堂才是廣場真正的主角！它建於一〇六三年，是比薩海洋共和國全盛時期的紀念碑，開創了獨特的『比薩羅馬式』風格：層層疊疊的白色拱廊像蕾絲一樣。內部喬凡尼·皮薩諾雕刻的講道壇，是哥德式雕刻的巔峰之作。" },
 
-{ id: "pisa-baptistery", name: "比薩洗禮堂", en: "Battistero di Pisa", lat: 43.7233, lng: 10.3941, day: 5, area: "比薩", wiki: "Pisa Baptistery",
+{ id: "pisa-baptistery", name: "比薩洗禮堂", en: "Battistero di Pisa", lat: 43.7233, lng: 10.3941, day: 6, area: "比薩", wiki: "Pisa Baptistery",
   text: "這座圓形洗禮堂是全義大利最大的洗禮堂，本身也微微傾斜喔！最神奇的是它的音響效果：圓頂會產生長達十秒的回音，每半小時工作人員會現場示範，一個人就能唱出和聲，像整個唱詩班在合唱，一定要等一場來聽！" },
 
-{ id: "pisa-camposanto", name: "聖地墓園", en: "Camposanto Monumentale", lat: 43.7239, lng: 10.3949, day: 5, area: "比薩", wiki: "Camposanto Monumentale",
+{ id: "pisa-camposanto", name: "聖地墓園", en: "Camposanto Monumentale", lat: 43.7239, lng: 10.3949, day: 6, area: "比薩", wiki: "Camposanto Monumentale",
   text: "傳說這座長方形迴廊墓園的泥土是十字軍從耶路撒冷各各他山運回來的聖土。牆上巨幅的『死亡的勝利』濕壁畫在二戰中差點全毀，經過七十年修復才重見天日，據說啟發了但丁的地獄篇。這裡遊客不多，是奇蹟廣場上最安靜的角落。" },
 
-{ id: "pisa-miracoli", name: "奇蹟廣場", en: "Piazza dei Miracoli", lat: 43.7228, lng: 10.3958, day: 5, area: "比薩", wiki: "Piazza dei Miracoli",
+{ id: "pisa-miracoli", name: "奇蹟廣場", en: "Piazza dei Miracoli", lat: 43.7228, lng: 10.3958, day: 6, area: "比薩", wiki: "Piazza dei Miracoli",
   text: "詩人鄧南遮把這片綠色草坪命名為『奇蹟廣場』：大教堂、洗禮堂、斜塔、墓園，四座純白大理石建築漂浮在草地上，一千年來幾乎沒有改變。這裡也是聯合國教科文組織最早的世界遺產之一。拍完經典的『推斜塔』照片，記得找個角度把四座建築一次收進鏡頭！" },
 
-{ id: "pisa-cavalieri", name: "騎士廣場", en: "Piazza dei Cavalieri", lat: 43.7197, lng: 10.4003, day: 5, area: "比薩", wiki: "Piazza dei Cavalieri",
+{ id: "pisa-cavalieri", name: "騎士廣場", en: "Piazza dei Cavalieri", lat: 43.7197, lng: 10.4003, day: 6, area: "比薩", wiki: "Piazza dei Cavalieri",
   text: "騎士廣場是中世紀比薩的權力中心，現在則是菁英學府比薩高等師範學校的所在地，物理學家費米就是這裡的畢業生。廣場上瓦薩里設計的騎士宮立面佈滿人像塗鴉裝飾。左邊的鐘樓宮藏著但丁寫過的黑暗故事：烏戈里諾伯爵被關在塔裡活活餓死。" },
 
-{ id: "pisa-borgo", name: "窄堤街", en: "Borgo Stretto", lat: 43.7180, lng: 10.4020, day: 5, area: "比薩", wiki: "Pisa",
+{ id: "pisa-borgo", name: "窄堤街", en: "Borgo Stretto", lat: 43.7180, lng: 10.4020, day: 6, area: "比薩", wiki: "Pisa",
   text: "窄堤街是比薩最有味道的購物老街，兩側是中世紀的拱廊騎樓。伽利略出生的房子就在這一帶。走累了，找間拱廊下的百年咖啡館，來一杯濃縮咖啡加一塊比薩傳統的松子蛋糕 Torta co' bischeri，休息一下再出發。" },
 
-{ id: "pisa-spina", name: "荊棘聖母教堂", en: "Santa Maria della Spina", lat: 43.7157, lng: 10.3970, day: 5, area: "比薩", wiki: "Santa Maria della Spina",
+{ id: "pisa-spina", name: "荊棘聖母教堂", en: "Santa Maria della Spina", lat: 43.7157, lng: 10.3970, day: 6, area: "比薩", wiki: "Santa Maria della Spina",
   text: "亞諾河畔這座迷你教堂像一個精雕細琢的珠寶盒！它建於一二三〇年，曾收藏耶穌荊棘冠上的一根刺，因此得名。整座教堂佈滿哥德式尖塔和聖人雕像，體積雖小，精緻程度卻是全比薩之最，是回車站路上最美的驚喜。" },
 
-{ id: "pisa-arno", name: "亞諾河畔與藍宮", en: "Lungarno & Palazzo Blu", lat: 43.7156, lng: 10.4009, day: 5, area: "比薩", wiki: "Palazzo Blu",
+{ id: "pisa-arno", name: "亞諾河畔與藍宮", en: "Lungarno & Palazzo Blu", lat: 43.7156, lng: 10.4009, day: 6, area: "比薩", wiki: "Palazzo Blu",
   text: "比薩的亞諾河岸比佛羅倫斯的更開闊寧靜。這排彩色房子中最顯眼的就是藍宮，十四世紀的貴族宅邸，現在是重量級的特展美術館。傍晚時分河面映著兩岸黃色、藍色的房子，是比薩人最愛的散步路線。" },
 
 
 
 // ============================================================
-// Day 6 波爾扎諾 Bolzano
+// Day 7 波爾扎諾 Bolzano
 // ============================================================
 
-{ id: "bz-station", name: "波爾扎諾車站", en: "Bolzano/Bozen Stazione", lat: 46.4961, lng: 11.3589, day: 6, area: "波爾扎諾", wiki: "Bolzano",
+{ id: "bz-station", name: "波爾扎諾車站", en: "Bolzano/Bozen Stazione", lat: 46.4961, lng: 11.3589, day: 7, area: "波爾扎諾", wiki: "Bolzano",
   text: "歡迎來到波爾扎諾，南提洛的首府！你已經進入義大利最特別的雙語地區：這裡四分之三的人母語是德語，路牌、菜單全是義德雙語，連城市都有兩個名字：義大利語叫波爾扎諾，德語叫波森。空氣中已經聞得到阿爾卑斯山的味道，多洛米蒂之旅正式開始！" },
 
-{ id: "bz-walther", name: "瓦爾特廣場", en: "Piazza Walther", lat: 46.4983, lng: 11.3548, day: 6, area: "波爾扎諾", wiki: "Waltherplatz",
+{ id: "bz-walther", name: "瓦爾特廣場", en: "Piazza Walther", lat: 46.4983, lng: 11.3548, day: 7, area: "波爾扎諾", wiki: "Waltherplatz",
   text: "瓦爾特廣場是波爾扎諾的客廳，以中世紀德語吟遊詩人瓦爾特命名，他的白色大理石雕像就站在廣場中央。四周是奧匈帝國風格的彩色建築和咖啡座，背景是粉紅色的多洛米蒂山峰。點一杯南提洛白酒配當地的煙燻火腿，感受這種義大利陽光加奧地利優雅的獨特混搭。" },
 
-{ id: "bz-duomo", name: "波爾扎諾主教座堂", en: "Duomo di Bolzano", lat: 46.4979, lng: 11.3541, day: 6, area: "波爾扎諾", wiki: "Bolzano Cathedral",
+{ id: "bz-duomo", name: "波爾扎諾主教座堂", en: "Duomo di Bolzano", lat: 46.4979, lng: 11.3541, day: 7, area: "波爾扎諾", wiki: "Bolzano Cathedral",
   text: "這座哥德式教堂最搶眼的是屋頂：綠色與黃色的菱形琉璃瓦，在陽光下閃閃發光，非常有奧地利風情。細緻鏤空的沙岩尖塔高六十二公尺，被當地人暱稱為波爾扎諾最美的針。教堂旁有個小小的酒窖門，訴說著這座城市與葡萄酒千年的緣分。" },
 
-{ id: "bz-portici", name: "柱廊街", en: "Via dei Portici / Laubengasse", lat: 46.4993, lng: 11.3536, day: 6, area: "波爾扎諾", wiki: "Bolzano",
+{ id: "bz-portici", name: "柱廊街", en: "Via dei Portici / Laubengasse", lat: 46.4993, lng: 11.3536, day: 7, area: "波爾扎諾", wiki: "Bolzano",
   text: "柱廊街是波爾扎諾最古老的街道，八百年來一直是商業中心。三百公尺長的中世紀騎樓兩側，彩色的房子一間挨著一間，每棟都有獨特的凸窗，當年商人就從凸窗觀察街上的生意。現在是逛街買南提洛特產的好地方：蘋果乾、斑點麵包、火腿和山區起司。" },
 
-{ id: "bz-erbe", name: "草藥廣場市集", en: "Piazza delle Erbe", lat: 46.4995, lng: 11.3524, day: 6, area: "波爾扎諾", wiki: "Bolzano",
+{ id: "bz-erbe", name: "草藥廣場市集", en: "Piazza delle Erbe", lat: 46.4995, lng: 11.3524, day: 7, area: "波爾扎諾", wiki: "Bolzano",
   text: "草藥廣場的果菜市集已經連續營業七百年了！攤位上堆滿南提洛蘋果、山區蜂蜜、各種德式香腸和麵包。街角的海神噴泉是當地人約碰面的地標。這裡的蘋果汁和蘋果酥捲 Strudel 特別有名，買一份邊走邊吃吧！" },
 
-{ id: "bz-otzi", name: "冰人奧茨（考古博物館）", en: "Museo Archeologico - Ötzi", lat: 46.4995, lng: 11.3510, day: 6, area: "波爾扎諾", wiki: "Ötzi",
+{ id: "bz-otzi", name: "冰人奧茨（考古博物館）", en: "Museo Archeologico - Ötzi", lat: 46.4995, lng: 11.3510, day: 7, area: "波爾扎諾", wiki: "Ötzi",
   text: "準備好見一位五千三百歲的老朋友了嗎？冰人奧茨是全世界保存最完整的天然木乃伊，一九九一年在附近的冰川被登山客發現。他生活在銅器時代，比埃及金字塔還古老！研究發現他是被箭射中背部謀殺的——一樁五千年的懸案。博物館展出他的銅斧、草鞋、熊皮帽，你可以透過小窗看到本尊，安睡在攝氏零下六度的恆溫室裡。" },
 
-{ id: "bz-talvera", name: "塔爾維拉河濱步道", en: "Passeggiata Lungotalvera", lat: 46.4995, lng: 11.3480, day: 6, area: "波爾扎諾", wiki: "Talvera",
+{ id: "bz-talvera", name: "塔爾維拉河濱步道", en: "Passeggiata Lungotalvera", lat: 46.4995, lng: 11.3480, day: 7, area: "波爾扎諾", wiki: "Talvera",
   text: "塔爾維拉河畔是波爾扎諾人散步、野餐、慢跑的地方。河對岸的葡萄園一路爬上山坡，山頂是十三世紀的隆克斯坦城堡。往北望去就是多洛米蒂的粉紅色山壁，黃昏時被夕陽染成玫瑰色——當地人叫這種現象 Enrosadira，玫瑰色黃昏，接下來幾天在山裡你會天天看到！" },
 
-{ id: "bz-dominican", name: "多明尼加教堂", en: "Chiesa dei Domenicani", lat: 46.4975, lng: 11.3523, day: 6, area: "波爾扎諾", wiki: "Bolzano",
+{ id: "bz-dominican", name: "多明尼加教堂", en: "Chiesa dei Domenicani", lat: 46.4975, lng: 11.3523, day: 7, area: "波爾扎諾", wiki: "Bolzano",
   text: "這座外表低調的教堂裡藏著南提洛最重要的哥德藝術：聖約翰禮拜堂的十四世紀濕壁畫，出自喬托畫派之手，將近七百年了顏色依然鮮豔，被稱為『波爾扎諾的喬托聖殿』。免費參觀，是老城裡最安靜的避暑角落。" },
 
 
 
 // ============================================================
-// Day 7 卡雷扎湖 Lago di Carezza
+// Day 8 卡雷扎湖 Lago di Carezza
 // ============================================================
 
-{ id: "car-lake", name: "卡雷扎湖（彩虹湖）", en: "Lago di Carezza / Karersee", lat: 46.4106, lng: 11.5744, day: 7, area: "卡雷扎湖", wiki: "Lake Carezza",
+{ id: "car-lake", name: "卡雷扎湖（彩虹湖）", en: "Lago di Carezza / Karersee", lat: 46.4106, lng: 11.5744, day: 8, area: "卡雷扎湖", wiki: "Lake Carezza",
   text: "歡迎來到卡雷扎湖，拉登語叫『彩虹湖』！傳說巫師為了追求住在湖裡的人魚公主翁蒂娜，在湖上造了一道彩虹，求愛失敗後憤而把彩虹砸碎沉入湖底——從此湖水便有了從翡翠綠到寶藍的漸層。湖水來自地下湧泉，水位隨季節變化，初夏雪融時最滿最美。沿環湖木棧道走一圈約三十分鐘，湖區禁止下水，請用眼睛好好收藏。" },
 
-{ id: "car-latemar-view", name: "拉特馬爾倒影觀景台", en: "Latemar Viewpoint", lat: 46.4113, lng: 11.5757, day: 7, area: "卡雷扎湖", wiki: "Latemar",
+{ id: "car-latemar-view", name: "拉特馬爾倒影觀景台", en: "Latemar Viewpoint", lat: 46.4113, lng: 11.5757, day: 8, area: "卡雷扎湖", wiki: "Latemar",
   text: "湖畔這個觀景平台正對拉特馬爾峰群——一整排白色岩塔映在湖面上的倒影，是多洛米蒂被印上最多明信片的畫面之一，清晨無風時倒影最完整。十九世紀末這裡曾有豪華的卡雷扎大飯店，邱吉爾和推理女王阿嘉莎·克莉絲蒂都是座上賓。看完湖，搭巴士回波爾扎諾，轉往加爾迪納山谷！" },
 
 
 
 // ============================================================
-// Day 7–10 Val Gardena
+// Day 8–11 Val Gardena
 // ============================================================
 
-{ id: "vg-ortisei", name: "奧蒂賽伊鎮中心", en: "Ortisei / St. Ulrich", lat: 46.5762, lng: 11.6713, day: 7, area: "Val Gardena", wiki: "Urtijëi",
+{ id: "vg-ortisei", name: "奧蒂賽伊鎮中心", en: "Ortisei / St. Ulrich", lat: 46.5762, lng: 11.6713, day: 8, area: "Val Gardena", wiki: "Urtijëi",
   text: "歡迎來到奧蒂賽伊，加爾迪納山谷最大的小鎮！這裡的居民說的是拉登語——一種只有三萬人使用的古老山地語言，所以這個鎮有三個名字。小鎮以木雕工藝聞名五百年，行人徒步區兩側是彩繪的提洛爾式房屋和木雕店。抬頭就能看到明天要去的 Seceda 山，以及對面的 Alpe di Siusi 高原。" },
 
-{ id: "vg-church", name: "聖烏爾里希教堂", en: "Chiesa di Sant'Ulrico", lat: 46.5755, lng: 11.6707, day: 7, area: "Val Gardena", wiki: "Urtijëi",
+{ id: "vg-church", name: "聖烏爾里希教堂", en: "Chiesa di Sant'Ulrico", lat: 46.5755, lng: 11.6707, day: 8, area: "Val Gardena", wiki: "Urtijëi",
   text: "這座洋蔥頭鐘塔的巴洛克教堂是奧蒂賽伊的地標，典型的提洛爾山村風格。教堂內的雕刻裝飾大多出自本地木雕師之手，展現加爾迪納山谷五百年的木雕功力。教堂前廣場是眺望周圍群山的好位置，鐘聲響起時整個山谷都聽得到。" },
 
-{ id: "vg-seceda-base", name: "Seceda 纜車站", en: "Funivia Seceda", lat: 46.5779, lng: 11.6749, day: 8, area: "Val Gardena", wiki: "Seceda",
+{ id: "vg-seceda-base", name: "Seceda 纜車站", en: "Funivia Seceda", lat: 46.5779, lng: 11.6749, day: 9, area: "Val Gardena", wiki: "Seceda",
   text: "從這裡搭兩段纜車，十五分鐘就能從一千兩百公尺直上兩千五百公尺的 Seceda 山頂！記得帶外套，山頂溫度比山下低十度左右。纜車窗外的景色會從森林、草原一路變成裸露的白雲岩山壁，這正是多洛米蒂的招牌地質。" },
 
-{ id: "vg-seceda-top", name: "Seceda 山頂稜線", en: "Seceda 2519m", lat: 46.5983, lng: 11.7163, day: 8, area: "Val Gardena", wiki: "Seceda",
+{ id: "vg-seceda-top", name: "Seceda 山頂稜線", en: "Seceda 2519m", lat: 46.5983, lng: 11.7163, day: 9, area: "Val Gardena", wiki: "Seceda",
   text: "眼前就是多洛米蒂最著名的畫面之一——Seceda 稜線！Odle 山群像一排巨大的斜切刀鋒，以四十五度角刺向天空，德語名字 Geisler 意思是『雲杉般聳立的岩針』。這片山壁是兩億五千萬年前的珊瑚礁化石，你腳下的草原曾經是熱帶淺海！沿著稜線步道走，每一步都是明信片。這裡也是聯合國世界自然遺產的核心區。" },
 
-{ id: "vg-seceda-cross", name: "Seceda 山頂十字架", en: "Croce di Seceda", lat: 46.5990, lng: 11.7195, day: 8, area: "Val Gardena", wiki: "Seceda",
+{ id: "vg-seceda-cross", name: "Seceda 山頂十字架", en: "Croce di Seceda", lat: 46.5990, lng: 11.7195, day: 9, area: "Val Gardena", wiki: "Seceda",
   text: "山頂十字架是阿爾卑斯山的傳統，感謝山神庇佑、紀念山難者。站在這裡三百六十度環視：北邊是奧地利的冰川山峰，南邊是 Sassolungo 和 Sella 山塊，東邊 Odle 岩針近在咫尺。運氣好還能看到金雕在山谷上空盤旋。拍完照可以到附近的山屋喝杯熱可可。" },
 
-{ id: "vg-alpe-mont", name: "Mont Sëuc 纜車山頂站", en: "Mont Sëuc / Alpe di Siusi", lat: 46.5585, lng: 11.6500, day: 9, area: "Val Gardena", wiki: "Seiser Alm",
+{ id: "vg-alpe-mont", name: "Mont Sëuc 纜車山頂站", en: "Mont Sëuc / Alpe di Siusi", lat: 46.5585, lng: 11.6500, day: 10, area: "Val Gardena", wiki: "Seiser Alm",
   text: "歡迎來到歐洲最大的高山草原——Alpe di Siusi，德語叫 Seiser Alm！五十六平方公里的起伏草原，夏天開滿野花，點綴著木造小屋。這片草原自古是山谷牧民的夏季牧場，傳說也是女巫聚會的地方，附近還有『女巫長椅』岩石。沿著緩坡步道隨意走走，怎麼拍都美。" },
 
-{ id: "vg-alpe-compatsch", name: "Compatsch 草原村", en: "Compatsch / Compaccio", lat: 46.5399, lng: 11.6169, day: 9, area: "Val Gardena", wiki: "Seiser Alm",
+{ id: "vg-alpe-compatsch", name: "Compatsch 草原村", en: "Compatsch / Compaccio", lat: 46.5399, lng: 11.6169, day: 10, area: "Val Gardena", wiki: "Seiser Alm",
   text: "Compatsch 是 Alpe di Siusi 草原的入口小村，也是草原上唯一有商店和餐廳聚落的地方。這裡海拔一千八百五十公尺，夏季私家車管制，只有纜車、巴士和單車能上來，所以草原才能保持這麼純淨。租一台電動登山車漫遊草原，是這裡最受歡迎的玩法。" },
 
-{ id: "vg-sassolungo-view", name: "Sassolungo 觀景點", en: "Sassolungo / Langkofel view", lat: 46.5400, lng: 11.6600, day: 9, area: "Val Gardena", wiki: "Langkofel",
+{ id: "vg-sassolungo-view", name: "Sassolungo 觀景點", en: "Sassolungo / Langkofel view", lat: 46.5400, lng: 11.6600, day: 10, area: "Val Gardena", wiki: "Langkofel",
   text: "草原正前方那座三千一百八十一公尺的巨大山塊就是 Sassolungo，意思是『長石』，德語叫 Langkofel。它和旁邊圓胖的 Sassopiatto『平石』組成多洛米蒂最有辨識度的雙峰剪影。傍晚的玫瑰色黃昏時分，整面山壁會從灰白轉成粉紅再變紫紅，是攝影師蹲點的經典畫面。" },
 
-{ id: "vg-passo-sella", name: "塞拉隘口", en: "Passo Sella", lat: 46.5089, lng: 11.7563, day: 10, area: "Val Gardena", wiki: "Sella Pass",
+{ id: "vg-passo-sella", name: "塞拉隘口", en: "Passo Sella", lat: 46.5089, lng: 11.7563, day: 11, area: "Val Gardena", wiki: "Sella Pass",
   text: "塞拉隘口海拔兩千兩百四十公尺，是連接加爾迪納山谷和法薩山谷的高山公路埡口，也是環塞拉山塊公路傳奇的一段，每年環義自行車賽的經典爬坡。北邊是巨大的塞拉山塊平頂岩牆，南邊是 Sassolungo 的尖峰，兩大山塊在此對峙，氣勢驚人。" },
 
-{ id: "vg-forcella-sasso", name: "Sassolungo 山坳（Toni Demetz 小屋）", en: "Forcella del Sassolungo", lat: 46.5140, lng: 11.7450, day: 10, area: "Val Gardena", wiki: "Langkofel",
+{ id: "vg-forcella-sasso", name: "Sassolungo 山坳（Toni Demetz 小屋）", en: "Forcella del Sassolungo", lat: 46.5140, lng: 11.7450, day: 11, area: "Val Gardena", wiki: "Langkofel",
   text: "恭喜你抵達海拔兩千六百八十公尺的 Sassolungo 山坳！從塞拉隘口上來的這座立式吊籃纜車非常復古刺激，像一顆顆膠囊把人吊上山。山坳夾在 Sassolungo 的兩面巨牆之間，Toni Demetz 小屋就卡在缺口上。往下望是巨石嶙峋的冰斗谷，健行者沿著碎石路蜿蜒而下，像一條人的河流。這裡的景色荒涼壯闊，跟草原完全是兩個世界。" },
 
 
 
 // ============================================================
-// Day 11 Val di Funes 富內斯山谷
+// Day 12 Val di Funes 富內斯山谷
 // ============================================================
 
-{ id: "vdf-magdalena-view", name: "聖瑪達肋納觀景點", en: "St. Magdalena Viewpoint", lat: 46.6428, lng: 11.716, day: 11, area: "Val di Funes", wiki: "Villnöß",
+{ id: "vdf-magdalena-view", name: "聖瑪達肋納觀景點", en: "St. Magdalena Viewpoint", lat: 46.6428, lng: 11.716, day: 12, area: "Val di Funes", wiki: "Villnöß",
   text: "眼前就是多洛米蒂最著名的攝影構圖：聖瑪達肋納小教堂的尖塔立在綠色山坡上，背後是 Odle 峰群鋸齒狀的岩壁拔地而起，這個畫面代言過無數旅遊雜誌封面。最佳拍攝點就在村子上方的觀景小徑，下午順光。富內斯是多洛米蒂最安靜的山谷之一：沒有纜車、沒有滑雪場，只有牧場、教堂和岩壁。" },
 
-{ id: "vdf-magdalena-church", name: "聖瑪達肋納教堂", en: "Chiesa di Santa Maddalena", lat: 46.6412, lng: 11.7141, day: 11, area: "Val di Funes", wiki: "Villnöß",
+{ id: "vdf-magdalena-church", name: "聖瑪達肋納教堂", en: "Chiesa di Santa Maddalena", lat: 46.6412, lng: 11.7141, day: 12, area: "Val di Funes", wiki: "Villnöß",
   text: "聖瑪達肋納教堂建於十四世紀，傳說洪水沖來一尊聖瑪達肋納像，村民便在原地建堂供奉，教堂內有精美的哥德式壁畫。登山傳奇萊茵霍爾德·梅斯納——史上第一位完攀全部十四座八千公尺巨峰的人——就是在這個山谷出生長大的，他說過：Odle 是全世界最美的山。" },
 
-{ id: "vdf-ranui", name: "聖若望小教堂（Ranui）", en: "Chiesetta di San Giovanni in Ranui", lat: 46.6381, lng: 11.7005, day: 11, area: "Val di Funes", wiki: "Villnöß",
+{ id: "vdf-ranui", name: "聖若望小教堂（Ranui）", en: "Chiesetta di San Giovanni in Ranui", lat: 46.6381, lng: 11.7005, day: 12, area: "Val di Funes", wiki: "Villnöß",
   text: "草地中央這座洋蔥頂小教堂是聖若望教堂，一七四四年建的巴洛克私人禮拜堂，身後就是 Odle 峰群近乎垂直的石灰岩大牆。一座溫柔的小教堂配一面兩千公尺高的岩壁，這種反差讓它成為全多洛米蒂被拍最多的教堂。教堂位在私人牧場裡，請在圍欄外拍照，並投幣支持牧場主人維護這片草地。" },
 
-{ id: "vdf-munkel", name: "Adolf Munkel 步道", en: "Sentiero Adolf Munkel", lat: 46.633, lng: 11.738, day: 11, area: "Val di Funes", wiki: "Geisler group",
+{ id: "vdf-munkel", name: "Adolf Munkel 步道", en: "Sentiero Adolf Munkel", lat: 46.633, lng: 11.738, day: 12, area: "Val di Funes", wiki: "Geisler group",
   text: "Adolf Munkel 步道沿著 Odle 峰群的北麓山腳蜿蜒，從 Zans 高山牧場出發，是全多洛米蒂性價比最高的健行路線之一：坡度平緩、穿越森林與牧場，頭頂就是千米岩壁。中途的 Geisleralm 牧屋餐廳有一排正對岩壁的木躺椅——點一份烤起司麵疙瘩，躺著看山，就是富內斯式的奢侈。" },
 
 
 
 // ============================================================
-// Day 11–13 Dobbiaco / Tre Cime / Misurina
+// Day 12–14 Dobbiaco / Tre Cime / Misurina
 // ============================================================
 
-{ id: "dob-station", name: "多比亞科車站", en: "Stazione di Dobbiaco / Toblach", lat: 46.7264, lng: 12.2192, day: 11, area: "Dobbiaco / Tre Cime", wiki: "Toblach",
+{ id: "dob-station", name: "多比亞科車站", en: "Stazione di Dobbiaco / Toblach", lat: 46.7264, lng: 12.2192, day: 12, area: "Dobbiaco / Tre Cime", wiki: "Toblach",
   text: "歡迎來到多比亞科，德語叫托布拉赫，普斯特谷地的門戶小鎮，接下來幾天的大本營！這座美麗的舊車站建於一八七一年奧匈帝國時代，作曲家馬勒每年夏天都搭火車來這裡避暑作曲。從這裡搭巴士，二十分鐘到布萊耶斯湖，三十分鐘到米蘇里納湖，位置絕佳。" },
 
-{ id: "dob-town", name: "多比亞科鎮中心", en: "Dobbiaco / Toblach", lat: 46.7345, lng: 12.2210, day: 11, area: "Dobbiaco / Tre Cime", wiki: "Toblach",
+{ id: "dob-town", name: "多比亞科鎮中心", en: "Dobbiaco / Toblach", lat: 46.7345, lng: 12.2210, day: 12, area: "Dobbiaco / Tre Cime", wiki: "Toblach",
   text: "多比亞科小而美，聖約翰教堂的洋蔥頭塔是全鎮的中心。馬勒在附近的農舍裡完成了第九號交響曲和大地之歌，鎮上的文化中心以他命名，每年夏天舉辦馬勒音樂節。這裡的麵包店賣普斯特谷特產黑麥麵包，買一些當明天的登山糧吧！" },
 
-{ id: "dob-lake", name: "多比亞科湖", en: "Lago di Dobbiaco", lat: 46.7080, lng: 12.2210, day: 12, area: "Dobbiaco / Tre Cime", wiki: "Lake Dobbiaco",
+{ id: "dob-lake", name: "多比亞科湖", en: "Lago di Dobbiaco", lat: 46.7080, lng: 12.2210, day: 13, area: "Dobbiaco / Tre Cime", wiki: "Lake Dobbiaco",
   text: "多比亞科湖是一座翡翠綠的山間湖泊，位在通往 Landro 谷地的入口。湖畔有環湖步道和划船碼頭，水鳥很多，是自然保護區。往南望，谷地深處已經能瞄到 Cristallo 山群的鋸齒稜線。這裡是往米蘇里納巴士的中途站，回程可以在此下車散步一圈。" },
 
-{ id: "tc-auronzo", name: "Auronzo 山屋（環線起點）", en: "Rifugio Auronzo 2333m", lat: 46.6123, lng: 12.2951, day: 12, area: "Dobbiaco / Tre Cime", wiki: "Rifugio Auronzo",
+{ id: "tc-auronzo", name: "Auronzo 山屋（環線起點）", en: "Rifugio Auronzo 2333m", lat: 46.6123, lng: 12.2951, day: 13, area: "Dobbiaco / Tre Cime", wiki: "Rifugio Auronzo",
   text: "歡迎來到海拔兩千三百三十三公尺的 Auronzo 山屋，Tre Cime 環形步道的起點！眼前巨大的黃灰色岩壁就是三尖峰的南壁。環線全程約十公里，順時針走，大部分平緩，約三到四小時。出發前檢查一下：水、防風外套、太陽眼鏡。山上天氣說變就變，下午常有雷陣雨，早出發早安心。準備好了嗎？出發！" },
 
-{ id: "tc-chapel", name: "阿爾卑斯禮拜堂", en: "Cappella degli Alpini", lat: 46.6135, lng: 12.3020, day: 12, area: "Dobbiaco / Tre Cime", wiki: "Tre Cime di Lavaredo",
+{ id: "tc-chapel", name: "阿爾卑斯禮拜堂", en: "Cappella degli Alpini", lat: 46.6135, lng: 12.3020, day: 13, area: "Dobbiaco / Tre Cime", wiki: "Tre Cime di Lavaredo",
   text: "這座小小的白色禮拜堂紀念義大利山地部隊的陣亡將士。一次大戰時，Tre Cime 正好位於義大利與奧匈帝國的前線，士兵們在海拔近三千公尺的岩壁上鑿隧道、拉炮台，在冰雪中對峙了三年。禮拜堂前是眺望 Cadini 岩塔群的絕佳位置。" },
 
-{ id: "tc-lavaredo", name: "Lavaredo 山屋", en: "Rifugio Lavaredo", lat: 46.6155, lng: 12.3170, day: 12, area: "Dobbiaco / Tre Cime", wiki: "Tre Cime di Lavaredo",
+{ id: "tc-lavaredo", name: "Lavaredo 山屋", en: "Rifugio Lavaredo", lat: 46.6155, lng: 12.3170, day: 13, area: "Dobbiaco / Tre Cime", wiki: "Tre Cime di Lavaredo",
   text: "Lavaredo 山屋是環線上的第一個補給點，就在三尖峰的正下方。從這裡開始，步道緩緩爬向 Lavaredo 埡口，三尖峰的側影會慢慢『轉』出來。累了可以在山屋露台喝杯熱茶，看攀岩者在頭頂的大牆上像小螞蟻一樣移動。" },
 
-{ id: "tc-forcella", name: "Lavaredo 埡口（三尖峰經典視角）", en: "Forcella Lavaredo", lat: 46.6190, lng: 12.3220, day: 12, area: "Dobbiaco / Tre Cime", wiki: "Tre Cime di Lavaredo",
+{ id: "tc-forcella", name: "Lavaredo 埡口（三尖峰經典視角）", en: "Forcella Lavaredo", lat: 46.6190, lng: 12.3220, day: 13, area: "Dobbiaco / Tre Cime", wiki: "Tre Cime di Lavaredo",
   text: "登上 Lavaredo 埡口的瞬間，三尖峰的北壁全景轟然展開——這就是多洛米蒂最著名的一幕！三根巨大的白雲岩石柱並肩而立，最高的大尖峰兩千九百九十九公尺，五百公尺垂直的北壁是世界攀岩史的聖地，一九三三年首攀轟動全歐洲。三尖峰也是南提洛與威尼托的界碑、聯合國世界遺產的象徵。慢慢走，這段路每一步都捨不得眨眼。" },
 
-{ id: "tc-locatelli", name: "Locatelli 山屋（三尖峰小屋）", en: "Rifugio Locatelli / Dreizinnenhütte", lat: 46.6265, lng: 12.3105, day: 12, area: "Dobbiaco / Tre Cime", wiki: "Dreizinnenhütte",
+{ id: "tc-locatelli", name: "Locatelli 山屋（三尖峰小屋）", en: "Rifugio Locatelli / Dreizinnenhütte", lat: 46.6265, lng: 12.3105, day: 13, area: "Dobbiaco / Tre Cime", wiki: "Dreizinnenhütte",
   text: "Locatelli 山屋是欣賞三尖峰北壁的第一排搖滾區！山屋後方的小山丘和兩座冰湖是經典構圖前景。附近岩壁上有一戰時鑿出的岩洞哨所，走進洞裡，從射擊孔正好框住三尖峰，是最特別的天然相框。山屋的蘋果酥捲遠近馳名，記得來一份，坐在露台上好好享受這個此生難忘的午餐位置！" },
 
-{ id: "tc-north-face", name: "三尖峰北壁草原", en: "Tre Cime north meadows", lat: 46.6220, lng: 12.3030, day: 12, area: "Dobbiaco / Tre Cime", wiki: "Tre Cime di Lavaredo",
+{ id: "tc-north-face", name: "三尖峰北壁草原", en: "Tre Cime north meadows", lat: 46.6220, lng: 12.3030, day: 13, area: "Dobbiaco / Tre Cime", wiki: "Tre Cime di Lavaredo",
   text: "環線的最後一段穿過北壁下方的草原和碎石坡，這裡是回望三根石柱的最後機會。夏天草地上開滿高山火絨草和龍膽花，土撥鼠的口哨聲此起彼落——聽到尖銳的哨音就停下來找找，牠們常常就蹲在步道旁的石頭上。接下來翻過 Col Forcellina 山坳就回到 Auronzo 山屋，完成環線！" },
 
-{ id: "mis-lake", name: "米蘇里納湖", en: "Lago di Misurina", lat: 46.5828, lng: 12.2540, day: 13, area: "Dobbiaco / Tre Cime", wiki: "Lake Misurina",
+{ id: "mis-lake", name: "米蘇里納湖", en: "Lago di Misurina", lat: 46.5828, lng: 12.2540, day: 14, area: "Dobbiaco / Tre Cime", wiki: "Lake Misurina",
   text: "米蘇里納湖被稱為多洛米蒂的珍珠！海拔一千七百五十四公尺，湖面平靜時，Sorapiss 山群和 Cadini 岩塔群的倒影清晰得像一面鏡子。湖畔那棟黃色的大建築，曾是專治氣喘的兒童療養院——這裡的空氣純淨度是全歐洲數一數二的，深呼吸一口吧！環湖步道一圈約四十分鐘，清晨光線最美。" },
 
-{ id: "mis-cadini-view", name: "Cadini 山群觀景點", en: "Cadini di Misurina viewpoint", lat: 46.5966, lng: 12.2708, day: 13, area: "Dobbiaco / Tre Cime", wiki: "Cadini di Misurina",
+{ id: "mis-cadini-view", name: "Cadini 山群觀景點", en: "Cadini di Misurina viewpoint", lat: 46.5966, lng: 12.2708, day: 14, area: "Dobbiaco / Tre Cime", wiki: "Cadini di Misurina",
   text: "眼前這片像哥德教堂尖塔森林的山群就是 Cadini di Misurina！數十根岩針密集地刺向天空，Cadin 在方言裡是『盆子』的意思，指岩塔之間的碎石凹谷。近年爆紅的『天空之刃』觀景步道就在 Fonda Savio 山屋附近，站在窄窄的稜線上，眼前岩塔如刀鋒並列，是多洛米蒂最震撼的畫面之一。小心腳步，拍照時務必注意安全！" },
 
-{ id: "mis-fonda-savio", name: "Fonda Savio 山屋", en: "Rifugio Fonda Savio", lat: 46.5920, lng: 12.2660, day: 13, area: "Dobbiaco / Tre Cime", wiki: "Cadini di Misurina",
+{ id: "mis-fonda-savio", name: "Fonda Savio 山屋", en: "Rifugio Fonda Savio", lat: 46.5920, lng: 12.2660, day: 14, area: "Dobbiaco / Tre Cime", wiki: "Cadini di Misurina",
   text: "Fonda Savio 山屋海拔兩千三百六十七公尺，蹲踞在 Cadini 岩塔之間的山坳上。山屋以三位在二戰中喪生的登山家兄弟命名。走到這裡的路程約兩小時，坡度不小，但山屋平台上的視野值回票價：北望 Tre Cime，南看 Sorapiss，來一份熱騰騰的烤起司配蜂蜜，這就是多洛米蒂山屋文化！" },
 
-{ id: "mis-col-de-varda", name: "Col de Varda 纜車", en: "Seggiovia Col de Varda", lat: 46.5760, lng: 12.2580, day: 13, area: "Dobbiaco / Tre Cime", wiki: "Lake Misurina",
+{ id: "mis-col-de-varda", name: "Col de Varda 纜車", en: "Seggiovia Col de Varda", lat: 46.5760, lng: 12.2580, day: 14, area: "Dobbiaco / Tre Cime", wiki: "Lake Misurina",
   text: "如果想省點力氣，米蘇里納湖畔的這座雙人吊椅纜車可以直接送你上到兩千兩百公尺的 Col de Varda 山屋，從那裡走往 Fonda Savio 的路程可以縮短一半。吊椅緩緩爬升時，整座米蘇里納湖和背後的 Cristallo 山在腳下展開，本身就是一段觀景行程。" },
 
 
 
 // ============================================================
-// Day 14–17 Alta Via 1（含一戰戰場遺跡）
+// Day 15–18 Alta Via 1（含一戰戰場遺跡）
 // ============================================================
 
-{ id: "av1-braies", name: "布萊耶斯湖", en: "Lago di Braies / Pragser Wildsee", lat: 46.6942, lng: 12.0850, day: 14, area: "Alta Via 1", wiki: "Pragser Wildsee",
+{ id: "av1-braies", name: "布萊耶斯湖", en: "Lago di Braies / Pragser Wildsee", lat: 46.6942, lng: 12.0850, day: 15, area: "Alta Via 1", wiki: "Pragser Wildsee",
   text: "歡迎來到布萊耶斯湖，多洛米蒂最夢幻的湖泊，也是傳奇長程步道 Alta Via 1 的起點！湖水呈現不可思議的祖母綠色，木造船屋和一排手划小船是最經典的畫面。傳說湖底藏著多洛米蒂原住民的寶藏之門。趁早晨遊客還沒湧入，沿湖走到南岸，回望船屋與 Croda del Becco 山的倒影。接下來，一百二十公里的高山之路正式開始！" },
 
-{ id: "av1-braies-south", name: "布萊耶斯湖南岸（AV1 起登點）", en: "AV1 Trailhead, south shore", lat: 46.6890, lng: 12.0855, day: 14, area: "Alta Via 1", wiki: "Pragser Wildsee",
+{ id: "av1-braies-south", name: "布萊耶斯湖南岸（AV1 起登點）", en: "AV1 Trailhead, south shore", lat: 46.6890, lng: 12.0855, day: 15, area: "Alta Via 1", wiki: "Pragser Wildsee",
   text: "湖的南岸就是 Alta Via 1 的第一號路標！從這裡開始沿一號步道爬升，之字形的碎石坡會一路陡上九百公尺，翻上 Croda del Becco 的石灰岩高原。回頭看，布萊耶斯湖會在腳下越縮越小，變成森林裡的一滴綠寶石。調整好呼吸，用自己的節奏慢慢爬，高原上的世界值得每一滴汗水。" },
 
-{ id: "av1-biella", name: "Biella 山屋", en: "Rifugio Biella 2327m", lat: 46.6560, lng: 12.0620, day: 14, area: "Alta Via 1", wiki: "Croda del Becco",
+{ id: "av1-biella", name: "Biella 山屋", en: "Rifugio Biella 2327m", lat: 46.6560, lng: 12.0620, day: 15, area: "Alta Via 1", wiki: "Croda del Becco",
   text: "恭喜完成 AV1 第一天！Biella 山屋海拔兩千三百二十七公尺，孤零零地立在 Croda del Becco 山腳的岩石荒原上，一八八六年就開業了。這裡沒有熱水澡、手機訊號微弱——這正是山屋的魅力：一張床、一頓熱騰騰的大鍋菜、一群來自世界各地的山友。晚餐後出去看星星，這裡的銀河亮得嚇人。想加碼的話，山屋後方四十五分鐘可登上 Croda del Becco 頂峰。" },
 
-{ id: "av1-sennes", name: "Sennes 山屋", en: "Rifugio Sennes 2126m", lat: 46.6420, lng: 12.0330, day: 15, area: "Alta Via 1", wiki: "Fanes-Sennes-Prags Nature Park",
+{ id: "av1-sennes", name: "Sennes 山屋", en: "Rifugio Sennes 2126m", lat: 46.6420, lng: 12.0330, day: 16, area: "Alta Via 1", wiki: "Fanes-Sennes-Prags Nature Park",
   text: "Sennes 山屋坐落在開闊的高原牧場中央，夏天牛鈴聲從四面八方傳來，非常提洛爾。這一帶的草原上散布著二戰前的舊軍營遺跡和牧人小屋。山屋的鮮奶和起司都來自眼前這群牛，休息時來一杯現擠鮮奶或一份藍莓蛋糕，補充體力繼續前進！" },
 
-{ id: "av1-fodara", name: "Fodara Vedla 山屋", en: "Rifugio Fodara Vedla 1966m", lat: 46.6280, lng: 12.0130, day: 15, area: "Alta Via 1", wiki: "Fanes-Sennes-Prags Nature Park",
+{ id: "av1-fodara", name: "Fodara Vedla 山屋", en: "Rifugio Fodara Vedla 1966m", lat: 46.6280, lng: 12.0130, day: 16, area: "Alta Via 1", wiki: "Fanes-Sennes-Prags Nature Park",
   text: "Fodara Vedla 是一個美得像童話的高山牧村：一圈木造牧屋圍著小教堂，背景是 Croda Rossa 的紅色山壁。這裡自中世紀以來就是拉登人的夏季牧場。步道從這裡緩緩下降到 Pederü 谷底，然後再重新爬升——AV1 的節奏就是這樣，下多少就要還多少，加油！" },
 
-{ id: "av1-pederu", name: "Pederü 山屋（谷底）", en: "Rifugio Pederü 1548m", lat: 46.6140, lng: 11.9970, day: 15, area: "Alta Via 1", wiki: "Fanes-Sennes-Prags Nature Park",
+{ id: "av1-pederu", name: "Pederü 山屋（谷底）", en: "Rifugio Pederü 1548m", lat: 46.6140, lng: 11.9970, day: 16, area: "Alta Via 1", wiki: "Fanes-Sennes-Prags Nature Park",
   text: "Pederü 位於谷底，是 AV1 前段唯一有公路到達的點，補給、退場都在這裡，山屋餐廳的菜色也特別豐盛。接下來的路沿著白色碎石谷緩緩爬升七百公尺前往 Fanes 高原，是一條古老的馬車道，坡度友善。谷地兩側的岩壁在正午陽光下白得發亮，記得戴太陽眼鏡、補防曬！" },
 
-{ id: "av1-fanes", name: "Fanes 山屋", en: "Rifugio Fanes 2060m", lat: 46.5910, lng: 12.0000, day: 15, area: "Alta Via 1", wiki: "Fanes-Sennes-Prags Nature Park",
+{ id: "av1-fanes", name: "Fanes 山屋", en: "Rifugio Fanes 2060m", lat: 46.5910, lng: 12.0000, day: 16, area: "Alta Via 1", wiki: "Fanes-Sennes-Prags Nature Park",
   text: "歡迎來到 Fanes 高原，多洛米蒂傳說的心臟！拉登神話中，這裡是法內斯王國的故土，公主與土撥鼠結盟的古老傳說就發生在這片高原。Fanes 山屋和鄰居 Lavarella 山屋都以美食聞名，Lavarella 還號稱是全歐洲最高的釀酒廠！傍晚在山屋前的小湖邊散步，看夕陽把 Sasso delle Dieci 染成粉紅色。" },
 
-{ id: "av1-limo", name: "Limo 湖與 Limo 埡口", en: "Lago e Passo di Limo 2172m", lat: 46.5850, lng: 12.0010, day: 16, area: "Alta Via 1", wiki: "Fanes-Sennes-Prags Nature Park",
+{ id: "av1-limo", name: "Limo 湖與 Limo 埡口", en: "Lago e Passo di Limo 2172m", lat: 46.5850, lng: 12.0010, day: 17, area: "Alta Via 1", wiki: "Fanes-Sennes-Prags Nature Park",
   text: "清晨的 Limo 湖是 Fanes 高原最安靜的時刻，湖面倒映著周圍的岩峰。翻過 Limo 埡口，步道開始一路陡降進入 Fanes 谷，再從谷底展開今天的重頭戲：攀上 Lagazuoi 的漫長爬升，總爬升超過一千公尺，是整條 AV1 最硬、也最壯觀的一天。深呼吸，慢慢走，今晚的獎勵在雲端等你！" },
 
-{ id: "av1-kaiserjaeger", name: "皇家獵兵之路", en: "Kaiserjägersteig", lat: 46.5262, lng: 12.0018, day: 16, area: "Alta Via 1", wiki: "Valparola Pass",
+{ id: "av1-kaiserjaeger", name: "皇家獵兵之路", en: "Kaiserjägersteig", lat: 46.5262, lng: 12.0018, day: 17, area: "Alta Via 1", wiki: "Valparola Pass",
   text: "你腳下這條之字形石徑是『皇家獵兵之路』，一次大戰時奧匈帝國的山地精銳部隊 Kaiserjäger 修建的軍用補給道，靠它把彈藥、糧食與傷兵在峭壁間運上運下，途中還要跨過一座架在深溝上的木吊橋。走在上面請想像：當年士兵是揹著五十公斤的物資、在夜裡摸黑走這條路的——因為白天會被義軍炮火盯上。" },
 
-{ id: "av1-lagazuoi", name: "Lagazuoi 山屋（2752m）", en: "Rifugio Lagazuoi", lat: 46.5277, lng: 12.0075, day: 16, area: "Alta Via 1", wiki: "Lagazuoi",
+{ id: "av1-lagazuoi", name: "Lagazuoi 山屋（2752m）", en: "Rifugio Lagazuoi", lat: 46.5277, lng: 12.0075, day: 17, area: "Alta Via 1", wiki: "Lagazuoi",
   text: "你做到了！海拔兩千七百五十二公尺的 Lagazuoi 山屋，AV1 全線的最高點，露台上一眼望盡 Tofane、Civetta、Marmolada 冰川與 Sella 山塊。一九一五到一九一七年，這裡是義大利與奧匈帝國對峙的最前線：奧軍守著你腳下的稜線，義軍就掛在南壁的岩棚上，雙方在山體裡鑿隧道、埋地雷互相爆破。高山戰爭最大的敵人其實是冬天——零下三十度的嚴寒與雪崩奪走的人命比子彈還多，一九一六年十二月十三日『白色星期五』，一天之內數千名士兵葬身雪崩。今晚睡在雲端，傍晚看玫瑰色夕陽，夜裡記得出來看星空下的群山，想想百年前在這裡過冬的二十歲士兵們。" },
 
-{ id: "av1-mine-crater", name: "地雷戰爆破口", en: "Lagazuoi Mine Crater", lat: 46.5266, lng: 12.0062, day: 16, area: "Alta Via 1", wiki: "Lagazuoi",
+{ id: "av1-mine-crater", name: "地雷戰爆破口", en: "Lagazuoi Mine Crater", lat: 46.5266, lng: 12.0062, day: 17, area: "Alta Via 1", wiki: "Lagazuoi",
   text: "山屋旁這片巨大的爆破口是『地雷戰』最猙獰的傷疤。一九一七年六月二十日凌晨，義大利工兵引爆了埋在小拉加祖伊峰下的三萬三千公斤炸藥，整個山頭被削掉，轟聲遠在一百公里外都聽得到。奧軍其實早已監聽到鑿岩聲提前撤離，這場豪賭幾乎沒有改變戰線。你眼前的碎石坡，就是當年被炸碎的山。整條多洛米蒂前線總共引爆過三十多次這樣的大型地雷。" },
 
-{ id: "av1-tunnels", name: "Lagazuoi 一戰隧道", en: "Gallerie del Lagazuoi", lat: 46.5250, lng: 12.0090, day: 17, area: "Alta Via 1", wiki: "Lagazuoi",
+{ id: "av1-tunnels", name: "Lagazuoi 一戰隧道", en: "Gallerie del Lagazuoi", lat: 46.5250, lng: 12.0090, day: 18, area: "Alta Via 1", wiki: "Lagazuoi",
   text: "你即將走進一段活生生的歷史：拉加祖伊隧道群是一戰時義大利工兵在山體裡鑿出的攻擊坑道，全長超過一公里、一千一百多級台階、坡度最陡達四十五度，當年的目的就是把三十三噸炸藥送到奧軍陣地正下方。今天它被修復成全阿爾卑斯最壯觀的隧道博物館：沿途有機槍陣地、觀測窗、士兵寢室與電話站，透過射擊孔能看到對面的奧軍工事。隧道內漆黑濕滑、垂直下降六百公尺，務必開頭燈、抓穩鋼索。走出隧道重見天日的那一刻，你會對『和平』兩個字有全新的體會。" },
 
-{ id: "av1-cengia-martini", name: "馬蒂尼岩棚", en: "Cengia Martini", lat: 46.5252, lng: 12.0053, day: 17, area: "Alta Via 1", wiki: "Lagazuoi",
+{ id: "av1-cengia-martini", name: "馬蒂尼岩棚", en: "Cengia Martini", lat: 46.5252, lng: 12.0053, day: 18, area: "Alta Via 1", wiki: "Lagazuoi",
   text: "山壁半腰那道天然岩棚是『馬蒂尼岩棚』，以義軍馬蒂尼少校命名。一九一五年十月，義大利阿爾卑斯山地兵沿著繩索攀上這條懸在半空的岩架，在奧軍眼皮底下硬是守了兩年半：他們在岩棚上蓋了營房、廚房和彈藥庫，奧軍從上方丟炸藥、從側面炸地雷都趕不走他們。岩棚上的工事至今保存完好，是全歐洲最驚人的高山戰爭遺跡之一。" },
 
-{ id: "av1-sasso-stria", name: "女巫石（奧軍觀測峰）", en: "Sasso di Stria / Hexenstein", lat: 46.5235, lng: 11.9946, day: 17, area: "Alta Via 1", wiki: "Sass de Stria",
+{ id: "av1-sasso-stria", name: "女巫石（奧軍觀測峰）", en: "Sasso di Stria / Hexenstein", lat: 46.5235, lng: 11.9946, day: 18, area: "Alta Via 1", wiki: "Sass de Stria",
   text: "這根海拔兩千四百七十七公尺的獨立岩峰是『女巫石』，德語叫 Hexenstein。它像一座天然瞭望塔正對法爾扎雷戈隘口，奧軍在峰頂鑿了完整的戰壕與觀測所，把義軍在山谷裡的一舉一動看得一清二楚，再用野戰電話引導炮兵射擊。峰頂戰壕經修復後可經由鐵索路線參觀。站在山腳下你就會明白：在高山戰爭裡，誰站得高，誰就活得久。" },
 
-{ id: "av1-falzarego", name: "法爾扎雷戈隘口", en: "Passo Falzarego 2105m", lat: 46.5183, lng: 12.0083, day: 17, area: "Alta Via 1", wiki: "Falzarego Pass",
+{ id: "av1-falzarego", name: "法爾扎雷戈隘口", en: "Passo Falzarego 2105m", lat: 46.5183, lng: 12.0083, day: 18, area: "Alta Via 1", wiki: "Falzarego Pass",
   text: "法爾扎雷戈隘口海拔兩千一百零五公尺，名字來自拉登傳說中因背叛人民而被石化的『假國王』——抬頭找找女巫石旁像人臉的岩壁。一戰時這裡是義軍的大後方，運補車隊與野戰醫院都設在隘口；今天隘口周邊整片山區被闢為『露天戰爭博物館』，戰壕、坑道與紀念碑星羅棋布。從這裡搭巴士約三十分鐘下到柯蒂納——不過別急，先往五塔峰方向走完 AV1 的最後一段吧！" },
 
-{ id: "av1-tre-sassi", name: "特雷薩西要塞（一戰博物館）", en: "Forte Tre Sassi", lat: 46.532, lng: 11.9885, day: 17, area: "Alta Via 1", wiki: "Valparola Pass",
+{ id: "av1-tre-sassi", name: "特雷薩西要塞（一戰博物館）", en: "Forte Tre Sassi", lat: 46.532, lng: 11.9885, day: 18, area: "Alta Via 1", wiki: "Valparola Pass",
   text: "這座石造堡壘是特雷薩西要塞，奧匈帝國一八九七年建來封鎖瓦爾帕羅拉隘口。諷刺的是，開戰才幾週它就被義軍重炮轟塌了屋頂，奧軍索性棄守，改鑽進周圍的岩壁裡挖工事——這條前線從此在岩石裡打了兩年半。要塞如今是一戰博物館，展出從冰川與戰壕裡找回的步槍、軍服、鐵絲網和士兵家書，是理解整段拉加祖伊戰史最好的一站。" },
 
-{ id: "av1-cinque-torri", name: "五塔峰", en: "Cinque Torri", lat: 46.5169, lng: 12.0442, day: 17, area: "Alta Via 1", wiki: "Cinque Torri",
+{ id: "av1-cinque-torri", name: "五塔峰", en: "Cinque Torri", lat: 46.5169, lng: 12.0442, day: 18, area: "Alta Via 1", wiki: "Cinque Torri",
   text: "五塔峰是五根平地拔起的岩塔，最高的大塔一百多公尺，像巨人隨手擺放的積木。這裡是攀岩者的遊樂場，也是一戰的露天博物館：義軍的戰壕、炮位、掩體被完整修復，可以自由穿梭其間，想像一九一五年炮口對準 Lagazuoi 的情景。繞岩塔一圈約四十分鐘，Scoiattoli 山屋的露台正對五塔，是慶祝 AV1 即將完走的好地方！" },
 
-{ id: "av1-averau", name: "Averau 山屋", en: "Rifugio Averau 2413m", lat: 46.5127, lng: 12.0316, day: 17, area: "Alta Via 1", wiki: "Averau",
+{ id: "av1-averau", name: "Averau 山屋", en: "Rifugio Averau 2413m", lat: 46.5127, lng: 12.0316, day: 18, area: "Alta Via 1", wiki: "Averau",
   text: "Averau 山屋被多次評為多洛米蒂最佳美食山屋，招牌是手工麵佐波切諾紅酒燉牛肉！山屋位於 Nuvolau 山脊的鞍部，背後那根歪斜的巨大石柱就是 Averau 峰。從這裡眺望，Marmolada 的冰川閃閃發光。如果體力還有餘裕，再往上三十分鐘的 Nuvolau 山屋是全多洛米蒂最古老的山屋，蓋在懸崖頂端，像天空之城。" },
 
 
 
 // ============================================================
-// Day 17–19 Cortina（含 Sorapis + Tofana）
+// Day 18–20 Cortina（含 Sorapis + Tofana）
 // ============================================================
 
-{ id: "cor-center", name: "柯蒂納丹佩佐鎮中心", en: "Cortina d'Ampezzo, Corso Italia", lat: 46.5380, lng: 12.1370, day: 17, area: "Cortina", wiki: "Cortina d'Ampezzo",
+{ id: "cor-center", name: "柯蒂納丹佩佐鎮中心", en: "Cortina d'Ampezzo, Corso Italia", lat: 46.5380, lng: 12.1370, day: 18, area: "Cortina", wiki: "Cortina d'Ampezzo",
   text: "歡迎來到柯蒂納丹佩佐，多洛米蒂的女王！這裡辦過一九五六年冬奧，二〇二六年冬奧也剛在此落幕。Corso Italia 行人徒步大街兩側是精品店與百年咖啡館，四周被 Tofane、Cristallo、Sorapiss 群峰環抱。你剛完成 Alta Via 1，值得最好的慶祝：找間餐廳點上一份提洛爾煙燻火腿餃子和阿瑪羅尼紅酒，敬自己一杯！" },
 
-{ id: "cor-basilica", name: "菲利波與賈科莫聖殿", en: "Basilica dei Santi Filippo e Giacomo", lat: 46.5378, lng: 12.1357, day: 18, area: "Cortina", wiki: "Cortina d'Ampezzo",
+{ id: "cor-basilica", name: "菲利波與賈科莫聖殿", en: "Basilica dei Santi Filippo e Giacomo", lat: 46.5378, lng: 12.1357, day: 19, area: "Cortina", wiki: "Cortina d'Ampezzo",
   text: "這座十八世紀教堂的鐘樓高七十公尺，用當地白雲岩砌成，是柯蒂納天際線的中心，無論從哪個山頭看小鎮，第一眼找到的都是它。教堂內有洛可可風格的華麗祭壇。廣場周邊的老房子外牆保留著阿爾卑斯風格的彩繪，慢慢逛，這是山城最悠閒的角落。" },
 
-{ id: "cor-tre-croci", name: "三十字隘口（Sorapis 步道起點）", en: "Passo Tre Croci 1805m", lat: 46.5570, lng: 12.1990, day: 18, area: "Cortina", wiki: "Tre Croci Pass",
+{ id: "cor-tre-croci", name: "三十字隘口（Sorapis 步道起點）", en: "Passo Tre Croci 1805m", lat: 46.5570, lng: 12.1990, day: 19, area: "Cortina", wiki: "Tre Croci Pass",
   text: "三十字隘口海拔一千八百零五公尺，是前往 Sorapis 湖的 215 號步道起點，路標就在公路旁。隘口名字來自三座紀念十字架，背後聳立著 Cristallo 山群。今天的路線單程約五公里、兩個半小時，前段輕鬆，後段有幾處架著鋼索的窄崖路段，請穿好登山鞋、專心腳步。出發！" },
 
-{ id: "cor-sorapis-trail", name: "215 號步道觀景段", en: "Sentiero 215 viewpoint", lat: 46.5450, lng: 12.2110, day: 18, area: "Cortina", wiki: "Sorapiss",
+{ id: "cor-sorapis-trail", name: "215 號步道觀景段", en: "Sentiero 215 viewpoint", lat: 46.5450, lng: 12.2110, day: 19, area: "Cortina", wiki: "Sorapiss",
   text: "步道從這裡開始貼著山壁走，幾段窄路架有鋼索扶手，腳下是深谷，對面是 Cristallo 的巨大岩壁——風景越來越戲劇化，代表湖不遠了！沿途留意岩壁間的『多洛米蒂之指』：一根孤零零立在山谷上的細長石針，是這條步道的著名地標。" },
 
-{ id: "cor-sorapis", name: "索拉皮斯湖", en: "Lago di Sorapis 1925m", lat: 46.5147, lng: 12.2158, day: 18, area: "Cortina", wiki: "Lago di Sorapis",
+{ id: "cor-sorapis", name: "索拉皮斯湖", en: "Lago di Sorapis 1925m", lat: 46.5147, lng: 12.2158, day: 19, area: "Cortina", wiki: "Lago di Sorapis",
   text: "眼前這抹不真實的牛奶藍，就是索拉皮斯湖！湖水的顏色來自冰川磨出的石灰岩細粉，懸浮在水中折射陽光，形成獨一無二的乳藍色。三面環繞的峭壁是 Sorapiss 山群，拉登傳說中，這是善良的索拉皮斯國王變成的山，他的眼淚化成這座湖。湖區是嚴格保護區：禁止下水、禁止紮營，請把每一片垃圾帶下山。找塊石頭坐下來，靜靜享受這個此行最夢幻的午餐點吧！" },
 
-{ id: "cor-vandelli", name: "Vandelli 山屋", en: "Rifugio Vandelli", lat: 46.5160, lng: 12.2160, day: 18, area: "Cortina", wiki: "Sorapiss",
+{ id: "cor-vandelli", name: "Vandelli 山屋", en: "Rifugio Vandelli", lat: 46.5160, lng: 12.2160, day: 19, area: "Cortina", wiki: "Sorapiss",
   text: "湖畔上方的 Vandelli 山屋是這條路線唯一的補給點，露台正對 Sorapiss 冰斗。回程原路折返約兩小時，記得預留時間，別錯過回柯蒂納的末班巴士。明天還有『天空之箭』纜車和三千二的 Tofana di Mezzo 等著你，今晚在柯蒂納好好吃一頓！" },
 
-{ id: "cor-freccia", name: "天空之箭纜車站", en: "Freccia nel Cielo", lat: 46.5425, lng: 12.1287, day: 19, area: "Cortina", wiki: "Tofane",
+{ id: "cor-freccia", name: "天空之箭纜車站", en: "Freccia nel Cielo", lat: 46.5425, lng: 12.1287, day: 20, area: "Cortina", wiki: "Tofane",
   text: "『天空之箭』纜車從柯蒂納市區直上三千兩百公尺的 Tofana di Mezzo，三段纜車總爬升近兩千公尺，是義大利落差最大的纜車之一。它為一九五六年冬奧而建，二〇二六年冬奧的高山滑雪賽道也在 Tofana 的山坡上。上山前先看一眼天氣——這張票值得留給能見度最好的日子！" },
 
-{ id: "cor-ravalles", name: "Ra Valles 中站", en: "Ra Valles 2470m", lat: 46.537, lng: 12.08, day: 19, area: "Cortina", wiki: "Tofane",
+{ id: "cor-ravalles", name: "Ra Valles 中站", en: "Ra Valles 2470m", lat: 46.537, lng: 12.08, day: 20, area: "Cortina", wiki: "Tofane",
   text: "Ra Valles 中站海拔兩千四百七十公尺，露台正對 Cristallo 與 Sorapiss 山群，腳下就是柯蒂納整個山谷盆地。這裡的小吃吧號稱擁有『全多洛米蒂視野最好的咖啡』。稍作停留適應一下高度，再搭最後一段纜車攻頂——接下來要一口氣上到三千二！" },
 
-{ id: "cor-tofana-summit", name: "Tofana di Mezzo 山頂", en: "Tofana di Mezzo 3244m", lat: 46.5439, lng: 12.0575, day: 19, area: "Cortina", wiki: "Tofana di Mezzo",
+{ id: "cor-tofana-summit", name: "Tofana di Mezzo 山頂", en: "Tofana di Mezzo 3244m", lat: 46.5439, lng: 12.0575, day: 20, area: "Cortina", wiki: "Tofana di Mezzo",
   text: "恭喜登上 Tofana di Mezzo，海拔三千兩百四十四公尺，多洛米蒂第三高峰，也是你此行的最高點！三百六十度全景：北望奧地利的冰川，南眺威尼斯平原，天氣極好時甚至能瞄到亞得里亞海的反光。整片多洛米蒂——三尖峰、Marmolada、Civetta、你走過的 Lagazuoi——全部在腳下一字排開。山頂步道有鋼索保護，風大氣溫低，多穿一件再出觀景台。跟這片山好好道別吧，明天就要北上慕尼黑了！" },
 
 
 
 // ============================================================
-// Day 20–21 慕尼黑 München
+// Day 21–22 慕尼黑 München
 // ============================================================
 
-{ id: "muc-hbf", name: "慕尼黑中央車站", en: "München Hauptbahnhof", lat: 48.1402, lng: 11.5600, day: 20, area: "慕尼黑", wiki: "München Hauptbahnhof",
+{ id: "muc-hbf", name: "慕尼黑中央車站", en: "München Hauptbahnhof", lat: 48.1402, lng: 11.5600, day: 21, area: "慕尼黑", wiki: "München Hauptbahnhof",
   text: "歡迎來到慕尼黑，巴伐利亞的首府，這趟旅程的最後一站！慕尼黑中央車站每天吞吐四十五萬人次，是歐洲最繁忙的車站之一。從這裡步行十五分鐘或搭 S-Bahn 一站就到瑪麗恩廣場。放好行李，把最後兩天交給啤酒花園、宮殿和博物館吧！" },
 
-{ id: "muc-marienplatz", name: "瑪麗恩廣場", en: "Marienplatz", lat: 48.1374, lng: 11.5755, day: 20, area: "慕尼黑", wiki: "Marienplatz",
+{ id: "muc-marienplatz", name: "瑪麗恩廣場", en: "Marienplatz", lat: 48.1374, lng: 11.5755, day: 21, area: "慕尼黑", wiki: "Marienplatz",
   text: "瑪麗恩廣場是慕尼黑八百年來的心臟！眼前哥德式尖塔森林般的建築是新市政廳，每天十一點和十二點（夏季加場五點），塔樓上的音樂鐘會準時開演：三十二個真人大小的人偶轉圈演出騎士比武和桶匠之舞，全廣場的人都會抬頭。廣場中央的金色聖母柱是巴伐利亞的守護象徵，也是全城距離的原點。" },
 
-{ id: "muc-frauenkirche", name: "聖母教堂", en: "Frauenkirche", lat: 48.1386, lng: 11.5736, day: 20, area: "慕尼黑", wiki: "Frauenkirche, Munich",
+{ id: "muc-frauenkirche", name: "聖母教堂", en: "Frauenkirche", lat: 48.1386, lng: 11.5736, day: 21, area: "慕尼黑", wiki: "Frauenkirche, Munich",
   text: "兩座綠色洋蔥頂雙塔是慕尼黑的天際線標誌，市府規定市中心建築不得高過它！教堂門口地上有個神秘的黑色腳印，稱為『魔鬼的腳印』：傳說魔鬼站在這一點看不到任何窗戶，以為建築師蓋了座沒窗的教堂而大笑跺腳，留下腳印——站上去試試，柱列真的會把所有側窗擋住！" },
 
-{ id: "muc-peterskirche", name: "老彼得教堂", en: "St. Peter (Alter Peter)", lat: 48.1364, lng: 11.5757, day: 20, area: "慕尼黑", wiki: "St. Peter's Church, Munich",
+{ id: "muc-peterskirche", name: "老彼得教堂", en: "St. Peter (Alter Peter)", lat: 48.1364, lng: 11.5757, day: 21, area: "慕尼黑", wiki: "St. Peter's Church, Munich",
   text: "老彼得是慕尼黑最古老的教堂，比城市本身還老！爬上三百零六階木樓梯登上塔頂，是俯瞰瑪麗恩廣場和新市政廳的最佳角度，天氣好時能一路看到阿爾卑斯山。教堂內金碧輝煌的巴洛克祭壇也值得進去看看。" },
 
-{ id: "muc-viktualienmarkt", name: "穀物市場", en: "Viktualienmarkt", lat: 48.1352, lng: 11.5763, day: 20, area: "慕尼黑", wiki: "Viktualienmarkt",
+{ id: "muc-viktualienmarkt", name: "穀物市場", en: "Viktualienmarkt", lat: 48.1352, lng: 11.5763, day: 21, area: "慕尼黑", wiki: "Viktualienmarkt",
   text: "穀物市場是慕尼黑兩百年歷史的美食市集，一百四十個攤位賣起司、香腸、蜂蜜、水果和鮮花。市場中央就有一個啤酒花園，六家慕尼黑啤酒廠輪流供應！午餐就在這解決：白香腸配甜芥末和椒鹽捲餅，記得白香腸要在中午前吃，這是巴伐利亞的規矩！" },
 
-{ id: "muc-hofbraeuhaus", name: "皇家啤酒屋", en: "Hofbräuhaus", lat: 48.1376, lng: 11.5799, day: 20, area: "慕尼黑", wiki: "Hofbräuhaus am Platzl",
+{ id: "muc-hofbraeuhaus", name: "皇家啤酒屋", en: "Hofbräuhaus", lat: 48.1376, lng: 11.5799, day: 21, area: "慕尼黑", wiki: "Hofbräuhaus am Platzl",
   text: "皇家啤酒屋是全世界最有名的啤酒館，一五八九年由巴伐利亞公爵創立，本來是皇室專屬酒廠！穿皮褲的樂隊演奏銅管音樂，穿傳統服裝的服務生一手能端十杯一公升的啤酒。莫札特、茜茜公主都是座上賓。找條長凳擠進去，跟陌生人碰杯喊一聲 Prost！這就是巴伐利亞的待客之道。" },
 
-{ id: "muc-asamkirche", name: "阿桑教堂", en: "Asamkirche", lat: 48.1352, lng: 11.5695, day: 20, area: "慕尼黑", wiki: "Asamkirche",
+{ id: "muc-asamkirche", name: "阿桑教堂", en: "Asamkirche", lat: 48.1352, lng: 11.5695, day: 21, area: "慕尼黑", wiki: "Asamkirche",
   text: "別被它窄小的門面騙了！阿桑教堂是阿桑兄弟蓋給自己用的私人教堂，把畢生功力塞進這個只有八公尺寬的空間：金色漩渦、大理石雲朵、天頂壁畫層層堆疊，華麗到令人暈眩，是全德國洛可可藝術的極致。免費參觀，就在市中心徒步區，路過千萬別錯過。" },
 
-{ id: "muc-residenz", name: "慕尼黑王宮", en: "Residenz München", lat: 48.1414, lng: 11.5779, day: 20, area: "慕尼黑", wiki: "Munich Residenz",
+{ id: "muc-residenz", name: "慕尼黑王宮", en: "Residenz München", lat: 48.1414, lng: 11.5779, day: 21, area: "慕尼黑", wiki: "Munich Residenz",
   text: "慕尼黑王宮是德國最大的市內宮殿，維特爾斯巴赫王朝在此統治巴伐利亞五百年。一百三十個開放房間中，最震撼的是文藝復興的古物廳——六十六公尺長的彩繪拱頂大廳，以及洛可可的祖先畫廊。入口拱門有四座青銅獅子，摸摸獅盾會帶來好運，獅鼻早被摸得金亮！" },
 
-{ id: "muc-odeonsplatz", name: "統帥堂廣場", en: "Odeonsplatz / Feldherrnhalle", lat: 48.1420, lng: 11.5776, day: 20, area: "慕尼黑", wiki: "Odeonsplatz",
+{ id: "muc-odeonsplatz", name: "統帥堂廣場", en: "Odeonsplatz / Feldherrnhalle", lat: 48.1420, lng: 11.5776, day: 21, area: "慕尼黑", wiki: "Odeonsplatz",
   text: "統帥堂廣場充滿義大利風情：統帥堂仿造佛羅倫斯的傭兵涼廊建造——是不是很眼熟？旁邊鮮黃色的鐵阿提納教堂是巴伐利亞最美的巴洛克教堂。這裡也是歷史的十字路口：一九二三年希特勒的啤酒館政變就是在這裡被警察擋下的。從這裡沿著路德維希大街往北走，就是英式花園的入口。" },
 
-{ id: "muc-eisbach", name: "英式花園衝浪橋", en: "Eisbachwelle", lat: 48.1435, lng: 11.5877, day: 20, area: "慕尼黑", wiki: "Eisbach (Isar)",
+{ id: "muc-eisbach", name: "英式花園衝浪橋", en: "Eisbachwelle", lat: 48.1435, lng: 11.5877, day: 21, area: "慕尼黑", wiki: "Eisbach (Isar)",
   text: "沒看錯，有人在市中心衝浪！英式花園的人工河道在橋下形成一道永不停歇的駐波，衝浪客全年無休在此排隊下水，冬天也照衝不誤，是慕尼黑最酷的街頭景觀。站在橋上看高手們輪流炫技，記得幫他們鼓掌！" },
 
-{ id: "muc-monopteros", name: "英式花園圓亭", en: "Monopteros", lat: 48.1483, lng: 11.5870, day: 20, area: "慕尼黑", wiki: "English Garden (Munich)",
+{ id: "muc-monopteros", name: "英式花園圓亭", en: "Monopteros", lat: 48.1483, lng: 11.5870, day: 21, area: "慕尼黑", wiki: "English Garden (Munich)",
   text: "英式花園比紐約中央公園還大，是全世界最大的市區公園之一！小山丘上的希臘式圓亭是眺望慕尼黑天際線的好地方，草地上滿是野餐、日光浴的市民——慕尼黑人把公園當客廳用。往北走十分鐘就是中國塔啤酒花園，七千個座位的露天啤酒天堂。" },
 
-{ id: "muc-chinesischer-turm", name: "中國塔啤酒花園", en: "Chinesischer Turm Biergarten", lat: 48.1524, lng: 11.5917, day: 20, area: "慕尼黑", wiki: "Chinesischer Turm",
+{ id: "muc-chinesischer-turm", name: "中國塔啤酒花園", en: "Chinesischer Turm Biergarten", lat: 48.1524, lng: 11.5917, day: 21, area: "慕尼黑", wiki: "Chinesischer Turm",
   text: "這座五層木造中國塔建於一七九〇年，塔下是慕尼黑第二大的啤酒花園，七千個座位！週末塔上有銅管樂隊現場演奏。啤酒花園的規矩：食物可以自己帶，飲料必須跟店家買。點一杯 Mass 一公升啤酒、一隻烤雞，跟慕尼黑人共享長桌——這一杯，敬整趟完美的旅程！" },
 
-{ id: "muc-karlsplatz", name: "卡爾廣場", en: "Karlsplatz (Stachus)", lat: 48.1394, lng: 11.5656, day: 21, area: "慕尼黑", wiki: "Stachus",
+{ id: "muc-karlsplatz", name: "卡爾廣場", en: "Karlsplatz (Stachus)", lat: 48.1394, lng: 11.5656, day: 22, area: "慕尼黑", wiki: "Stachus",
   text: "卡爾廣場是老城的西大門，慕尼黑人都叫它 Stachus。穿過中世紀的卡爾門就是全德國人流最大的徒步購物街。夏天廣場上的大噴泉是消暑勝地。從這裡搭 S8 線約四十分鐘直達慕尼黑機場——旅程到了尾聲，跟巴伐利亞說再見吧！Auf Wiedersehen！" },
 
-{ id: "muc-airport", name: "慕尼黑機場（S8 終點）", en: "Flughafen München", lat: 48.3538, lng: 11.7861, day: 21, area: "慕尼黑", wiki: "Munich Airport",
-  text: "抵達慕尼黑機場，二十一天的巴黎、義大利、多洛米蒂與巴伐利亞之旅正式畫下句點！從艾菲爾鐵塔、羅馬競技場、佛羅倫斯的圓頂，到三尖峰的岩壁、Lagazuoi 的雲海星空、Tofana 的三千公尺全景，最後以慕尼黑的啤酒收尾——你用雙腳走完了一整條從塞納河到阿爾卑斯的路。一路平安，期待下一次旅程再會！" }
+{ id: "muc-airport", name: "慕尼黑機場（S8 終點）", en: "Flughafen München", lat: 48.3538, lng: 11.7861, day: 22, area: "慕尼黑", wiki: "Munich Airport",
+  text: "抵達慕尼黑機場，二十二天的巴黎、義大利、多洛米蒂與巴伐利亞之旅正式畫下句點！從艾菲爾鐵塔、羅馬競技場、佛羅倫斯的圓頂，到三尖峰的岩壁、Lagazuoi 的雲海星空、Tofana 的三千公尺全景，最後以慕尼黑的啤酒收尾——你用雙腳走完了一整條從塞納河到阿爾卑斯的路。一路平安，期待下一次旅程再會！" }
 
 ];

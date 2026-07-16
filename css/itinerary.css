@@ -45,6 +45,7 @@ body {
   background: #1a3a5c; color: #fff; font-weight: 800;
   border-radius: 8px; padding: 3px 10px; font-size: 14px; white-space: nowrap;
 }
+.day-date { color: #1a6ec0; font-weight: 700; font-size: 13px; white-space: nowrap; }
 .day-title { font-size: 16px; font-weight: 700; }
 
 .day-section { padding: 4px 14px 10px; }

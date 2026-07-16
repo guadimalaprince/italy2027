@@ -33,6 +33,7 @@
       var card = el("article", "day-card");
       var head = el("div", "day-head");
       head.appendChild(el("span", "day-num", "Day " + d.day));
+      if (d.date) head.appendChild(el("span", "day-date", esc(d.date)));
       head.appendChild(el("span", "day-title", esc(d.title)));
       card.appendChild(head);
 

@@ -1,20 +1,28 @@
-/* 21 天行程資料
+/* 22 天行程資料（2027/6/3 抵達巴黎 – 6/24 慕尼黑出發）
  * stay.status: "confirmed"（已訂）/ "suggested"（建議，未訂）/ "hut"（山屋，需預約）/ "none"
  * transport: from/to 給 Google Maps 路線連結用（gm: 交通模式，省略則不給連結）
  * pois: 對應 pois.js 的景點 id 前綴或 id 清單，用來抓當天照片
  */
 var DAYS = [
-{ day: 1, phase: "🇫🇷 巴黎", title: "抵達巴黎", areas: ["巴黎"],
+{ day: 1, date: "6/3 週四", phase: "🇫🇷 巴黎", title: "抵達巴黎：鐵塔與蒙馬特", areas: ["巴黎"],
   transport: [
-    { icon: "✈️", route: "台北 → 巴黎 CDG", time: "08:05 抵達", note: "入境後跟著 RER 指標走" },
-    { icon: "🚆", route: "CDG → 市區（RER B 線）", time: "約 35–50 分", gm: ["Charles de Gaulle Airport", "Châtelet–Les Halles, Paris"], note: "買 Navigo Easy 卡或單程票" }
+    { icon: "✈️", route: "台北 TPE（6/2 晚間起飛）→ 巴黎 CDG", time: "08:05 抵達", note: "入境後跟著 RER 指標走" },
+    { icon: "🚆", route: "CDG → 市區（RER B 線）", time: "約 35–50 分", gm: ["Charles de Gaulle Airport", "Châtelet–Les Halles, Paris"], note: "買 Navigo Easy 卡或機場單程票" }
   ],
-  plan: ["輕鬆逛塞納河畔、艾菲爾鐵塔", "傍晚上蒙馬特看夕陽（聖心堂前階梯）", "早點休息調時差"],
-  stay: { city: "巴黎", status: "suggested", name: "ibis Paris Montparnasse Catalogne 或 Novotel Paris Centre Gare Montparnasse",
-    note: "建議住蒙帕納斯／Denfert-Rochereau 一帶：明早去 Orly 機場最方便（OrlyBus 與 B 線都在 Denfert 發車）" },
-  warn: ["明早從 Orly 出發！CDG 與 Orly 是不同機場，市區到 Orly 約 40–60 分，需提早規劃"] },
+  plan: ["下午：特羅卡德羅平台看鐵塔全景 → 艾菲爾鐵塔 → 戰神廣場草坪休息", "沿塞納河散步：亞歷山大三世橋 → 協和廣場", "傍晚上蒙馬特：聖心堂前看夕陽、帖特廣場畫家、紅磨坊", "早點休息調時差"],
+  stay: { city: "巴黎（2 晚）", status: "suggested", name: "ibis Paris Montparnasse Catalogne 或 Novotel Paris Centre Gare Montparnasse",
+    note: "建議住蒙帕納斯／Denfert-Rochereau 一帶：後天一早去 Orly 機場最方便（OrlyBus 與 B 線都在 Denfert 發車）" },
+  warn: ["時差關係第一天別排太滿，走不完的明天還在"] },
 
-{ day: 2, phase: "🇮🇹 羅馬", title: "巴黎 → 羅馬，老城初探", areas: ["羅馬"],
+{ day: 2, date: "6/4 週五", phase: "🇫🇷 巴黎", title: "羅浮宮・西堤島・左岸・瑪黑", areas: ["巴黎"],
+  transport: [
+    { icon: "🚶", route: "羅浮宮 → 西堤島 → 左岸 → 瑪黑（全程步行串聯）", time: "各點間 10–20 分", note: "今天是步行日，穿好走的鞋" }
+  ],
+  plan: ["上午：羅浮宮（鎮館三寶動線約 3 小時，提前預約）", "杜樂麗花園 → 新橋 → 西堤島：聖禮拜堂萬花筒彩繪玻璃、巴黎聖母院", "午後左岸：莎士比亞書店、先賢祠、盧森堡公園、聖傑曼德佩喝杯咖啡", "傍晚瑪黑區：孚日廣場、雨果故居，晚餐就在瑪黑", "體力有餘：加尼葉歌劇院或塞納河遊船收尾"],
+  stay: { city: "巴黎", status: "suggested", name: "同前晚", note: "" },
+  warn: ["羅浮宮與聖禮拜堂都建議提前線上購票（6/4 週五皆開館）", "明早從 Orly 出發！CDG 與 Orly 是不同機場，市區到 Orly 約 40–60 分，需提早規劃"] },
+
+{ day: 3, date: "6/5 週六", phase: "🇮🇹 羅馬", title: "巴黎 → 羅馬，老城初探", areas: ["羅馬"],
   transport: [
     { icon: "✈️", route: "巴黎 Orly → 羅馬 FCO", time: "約 2 小時", note: "起飛前 2 小時到機場" },
     { icon: "🚆", route: "FCO → 特米尼車站（Leonardo Express）", time: "32 分，每 15 分一班", gm: ["Fiumicino Airport", "Roma Termini"], note: "€14，月台直上車" }
@@ -24,7 +32,7 @@ var DAYS = [
     note: "位置絕佳：緊鄰威尼斯廣場與圖拉真市場，步行到特雷維噴泉約 8 分、萬神廟 12 分、競技場 15 分；從 Termini 搭 40/64/70 號公車到 Piazza Venezia 下車，或步行約 20 分" },
   warn: [] },
 
-{ day: 3, phase: "🇮🇹 羅馬", title: "古羅馬一日：鬥獸場＋羅馬廣場＋帕拉提諾山", areas: ["羅馬"],
+{ day: 4, date: "6/6 週日", phase: "🇮🇹 羅馬", title: "古羅馬一日：鬥獸場＋羅馬廣場＋帕拉提諾山", areas: ["羅馬"],
   transport: [
     { icon: "🚇", route: "地鐵 B 線 → Colosseo 站", time: "特米尼出發 2 站，約 5 分", gm: ["Roma Termini", "Colosseo, Rome"] }
   ],
@@ -33,7 +41,7 @@ var DAYS = [
     note: "今天古羅馬區行程從飯店走路就到：卡比托利歐廣場 3 分鐘、羅馬廣場入口 10 分鐘" },
   warn: ["鬥獸場務必提前網路預約（官網 colosseo.it），現場排隊可能 2 小時以上；地下層需加購導覽票"] },
 
-{ day: 4, phase: "🇮🇹 羅馬 → 佛羅倫斯", title: "梵蒂岡早場 → 高鐵北上佛羅倫斯", areas: ["梵蒂岡", "羅馬", "佛羅倫斯"],
+{ day: 5, date: "6/7 週一", phase: "🇮🇹 羅馬 → 佛羅倫斯", title: "梵蒂岡早場 → 高鐵北上佛羅倫斯", areas: ["梵蒂岡", "羅馬", "佛羅倫斯"],
   transport: [
     { icon: "🚌", route: "飯店（威尼斯廣場）→ 梵蒂岡（40 或 64 號公車）", time: "約 20 分", gm: ["Piazza Venezia, Rome", "Vatican Museums"], note: "行李先寄放飯店，中午回程領取再去 Termini 搭高鐵" },
     { icon: "🚄", route: "羅馬 Termini → 佛羅倫斯 SMN（Frecciarossa／Italo 高鐵）", time: "1 小時 32 分", gm: ["Roma Termini", "Firenze Santa Maria Novella"], note: "建議訂 15:00 或 16:00 班次較穩" }
@@ -43,7 +51,7 @@ var DAYS = [
     note: "建議住 SMN 車站與主教座堂之間，拖行李 10 分鐘內，去比薩、去美術館都方便" },
   warn: ["梵蒂岡務必提前預約 08:00 入場票（museivaticani.va）", "行李可寄放 Termini 車站寄物處，或直接拖去梵蒂岡對面的寄物點"] },
 
-{ day: 5, phase: "🇮🇹 佛羅倫斯", title: "比薩半日遊 → 佛羅倫斯老城", areas: ["比薩", "佛羅倫斯"],
+{ day: 6, date: "6/8 週二", phase: "🇮🇹 佛羅倫斯", title: "比薩半日遊 → 佛羅倫斯老城", areas: ["比薩", "佛羅倫斯"],
   transport: [
     { icon: "🚆", route: "佛羅倫斯 SMN → 比薩中央（區間車）", time: "約 1 小時，每 30 分一班", gm: ["Firenze Santa Maria Novella", "Pisa Centrale"], note: "免預約，上車前記得打票" },
     { icon: "🚶", route: "比薩車站 → 奇蹟廣場", time: "步行 25 分或 LAM Rossa 公車 10 分", gm: ["Pisa Centrale", "Piazza dei Miracoli, Pisa"] }
@@ -52,7 +60,7 @@ var DAYS = [
   stay: { city: "佛羅倫斯", status: "suggested", name: "同前晚", note: "" },
   warn: ["想爬斜塔要事先在 opapisa.it 訂時段票"] },
 
-{ day: 6, phase: "🇮🇹 佛羅倫斯 → 波爾扎諾", title: "兩大美術館 → 北上多洛米蒂門戶", areas: ["佛羅倫斯", "波爾扎諾"],
+{ day: 7, date: "6/9 週三", phase: "🇮🇹 佛羅倫斯 → 波爾扎諾", title: "兩大美術館 → 北上多洛米蒂門戶", areas: ["佛羅倫斯", "波爾扎諾"],
   transport: [
     { icon: "🚄", route: "佛羅倫斯 SMN → 波爾扎諾（經 Bologna 轉車）", time: "約 3.5 小時，13:30 前後出發", gm: ["Firenze Santa Maria Novella", "Bolzano"], note: "Frecciarossa 到 Bologna 轉 EC/RV 直上 Bolzano" }
   ],
@@ -61,7 +69,7 @@ var DAYS = [
     note: "住老城中心，車站步行 5 分鐘，明早搭巴士方便" },
   warn: ["兩館都要提前預約指定時段（b-ticket 官方系統），排 09:00＋11:00 剛好接得上"] },
 
-{ day: 7, phase: "🏔 東多洛米蒂", title: "卡雷扎湖 → 進駐 Ortisei", areas: ["卡雷扎湖", "Val Gardena"],
+{ day: 8, date: "6/10 週四", phase: "🏔 東多洛米蒂", title: "卡雷扎湖 → 進駐 Ortisei", areas: ["卡雷扎湖", "Val Gardena"],
   transport: [
     { icon: "🚌", route: "波爾扎諾 → 卡雷扎湖（SAD Bus 180）", time: "約 45 分", gm: ["Bolzano", "Lago di Carezza"], note: "回程同路線返回波爾扎諾" },
     { icon: "🚌", route: "波爾扎諾 → Ortisei（SAD Bus 350）", time: "約 1 小時，班次頻繁", gm: ["Bolzano", "Ortisei"] }
@@ -71,7 +79,7 @@ var DAYS = [
     note: "連住 4 晚建議選含早餐、有 spa 的旅館，健行完泡湯超幸福；多數旅館含 Val Gardena Mobil Card 可免費搭區內巴士" },
   warn: ["卡雷扎湖與 Ortisei 方向不同，必須回波爾扎諾中轉，全程約 3.5 小時，早上早點出發"] },
 
-{ day: 8, phase: "🏔 Val Gardena", title: "Seceda 刀鋒稜線", areas: ["Val Gardena"],
+{ day: 9, date: "6/11 週五", phase: "🏔 Val Gardena", title: "Seceda 刀鋒稜線", areas: ["Val Gardena"],
   transport: [
     { icon: "🚡", route: "Ortisei → Furnes → Seceda 纜車（兩段）", time: "約 15 分直上 2,500m", note: "Gardena Card Day 1" }
   ],
@@ -79,7 +87,7 @@ var DAYS = [
   stay: { city: "Ortisei", status: "suggested", name: "同前晚", note: "" },
   warn: ["2026 起新規：Seceda 纜車需在 seceda.it 提前預約時段！", "山頂比山下低 10 度，帶風衣"] },
 
-{ day: 9, phase: "🏔 Val Gardena", title: "Alpe di Siusi 修斯高原", areas: ["Val Gardena"],
+{ day: 10, date: "6/12 週六", phase: "🏔 Val Gardena", title: "Alpe di Siusi 修斯高原", areas: ["Val Gardena"],
   transport: [
     { icon: "🚡", route: "Ortisei → Mont Sëuc 纜車（直上高原）", time: "約 10 分", note: "Gardena Card Day 2" }
   ],
@@ -87,7 +95,7 @@ var DAYS = [
   stay: { city: "Ortisei", status: "suggested", name: "同前晚", note: "" },
   warn: [] },
 
-{ day: 10, phase: "🏔 Val Gardena", title: "Sassolungo 山坳（棺材纜車）", areas: ["Val Gardena"],
+{ day: 11, date: "6/13 週日", phase: "🏔 Val Gardena", title: "Sassolungo 山坳（棺材纜車）", areas: ["Val Gardena"],
   transport: [
     { icon: "🚌", route: "Ortisei → Passo Sella（巴士）", time: "約 40 分", gm: ["Ortisei", "Passo Sella"], note: "Gardena Card Day 3（最後一天）" },
     { icon: "🚡", route: "Passo Sella → Forcella del Sassolungo（立式吊籃纜車）", time: "約 10 分", note: "兩人一籃的復古『棺材纜車』，邊上車邊跳！" }
@@ -96,7 +104,7 @@ var DAYS = [
   stay: { city: "Ortisei", status: "suggested", name: "同前晚", note: "" },
   warn: ["吊籃纜車無預約制、風大會停駛，早上出發最穩"] },
 
-{ day: 11, phase: "🏔 西多洛米蒂", title: "Val di Funes 富內斯山谷 → 移動到 Dobbiaco", areas: ["Val di Funes", "Dobbiaco / Tre Cime"],
+{ day: 12, date: "6/14 週一", phase: "🏔 西多洛米蒂", title: "Val di Funes 富內斯山谷 → 移動到 Dobbiaco", areas: ["Val di Funes", "Dobbiaco / Tre Cime"],
   transport: [
     { icon: "🚌", route: "Ortisei → Bressanone → Val di Funes（St. Magdalena）", time: "約 1.5–2 小時，需轉車", gm: ["Ortisei", "St. Magdalena, Funes"] },
     { icon: "🚆", route: "Bressanone → Dobbiaco（Pustertal 鐵路，經 Fortezza 轉）", time: "約 1.5 小時", gm: ["Bressanone", "Dobbiaco"] }
@@ -106,7 +114,7 @@ var DAYS = [
     note: "Dobbiaco 是 Tre Cime／Braies 的交通樞紐，車站與巴士站都在鎮上；入住通常送 Holiday Pass 可免費搭區域火車巴士" },
   warn: ["行李多可考慮 Ortisei 直接巴士＋火車到 Dobbiaco，隔天再輕裝回訪 Funes（自行取捨）"] },
 
-{ day: 12, phase: "🏔 Dobbiaco", title: "Tre Cime di Lavaredo 三尖峰環形步道", areas: ["Dobbiaco / Tre Cime"],
+{ day: 13, date: "6/15 週二", phase: "🏔 Dobbiaco", title: "Tre Cime di Lavaredo 三尖峰環形步道", areas: ["Dobbiaco / Tre Cime"],
   transport: [
     { icon: "🚌", route: "Dobbiaco → Misurina（444/445 號巴士）", time: "約 30 分", gm: ["Dobbiaco", "Misurina"] },
     { icon: "🚐", route: "Misurina → Rifugio Auronzo（夏季接駁車）", time: "約 20 分", note: "2026 新規：收費山路強制線上預約接駁時段，班次少，最早班出發！" }
@@ -115,7 +123,7 @@ var DAYS = [
   stay: { city: "Dobbiaco", status: "suggested", name: "同前晚", note: "" },
   warn: ["山區午後常有雷陣雨，07:00 前出門最安全", "帶水 1.5L、防風外套、帽子"] },
 
-{ day: 13, phase: "🏔 Dobbiaco", title: "米蘇里納湖＋Cadini 山群（魔戒之路）", areas: ["Dobbiaco / Tre Cime"],
+{ day: 14, date: "6/16 週三", phase: "🏔 Dobbiaco", title: "米蘇里納湖＋Cadini 山群（魔戒之路）", areas: ["Dobbiaco / Tre Cime"],
   transport: [
     { icon: "🚌", route: "Dobbiaco → Misurina 湖", time: "約 30 分，比昨天晚出發沒關係", gm: ["Dobbiaco", "Lago di Misurina"] }
   ],
@@ -123,7 +131,7 @@ var DAYS = [
   stay: { city: "Dobbiaco", status: "suggested", name: "同前晚", note: "跟旅館說好寄放行李到 Day 17（很多旅館可以，或寄 Cortina 的旅館）" },
   warn: [] },
 
-{ day: 14, phase: "🥾 Alta Via 1", title: "AV1 第一天：布萊耶斯湖 → 高原山屋", areas: ["Alta Via 1"],
+{ day: 15, date: "6/17 週四", phase: "🥾 Alta Via 1", title: "AV1 第一天：布萊耶斯湖 → 高原山屋", areas: ["Alta Via 1"],
   transport: [
     { icon: "🚌", route: "Dobbiaco → Lago di Braies（442 號巴士）", time: "僅 20 分！", gm: ["Dobbiaco", "Lago di Braies"], note: "旺季湖區管制，巴士也建議預約" }
   ],
@@ -132,21 +140,21 @@ var DAYS = [
     note: "AV1 山屋常在 1–2 月開放預約後迅速滿房：官網／email 預約、半食宿制（含晚早餐）、自備睡袋內襯與現金、多數無淋浴" },
   warn: ["今天爬升最陡的一段就在湖後，慢慢走", "健行四天帶：頭燈（Day 17 隧道要用）、睡袋內襯、現金、水袋、防雨"] },
 
-{ day: 15, phase: "🥾 Alta Via 1", title: "AV1 第二天：牧場草原 → Fanes 高原", areas: ["Alta Via 1"],
+{ day: 16, date: "6/18 週五", phase: "🥾 Alta Via 1", title: "AV1 第二天：牧場草原 → Fanes 高原", areas: ["Alta Via 1"],
   transport: [{ icon: "🥾", route: "Biella → Sennes → Fodara Vedla → Pederü → Fanes", time: "約 6 小時，先降 800m 再升 500m" }],
   plan: ["穿越 Sennes 牧場（現擠鮮奶！）", "Fodara Vedla 童話牧村", "降到 Pederü 谷底午餐，再沿古馬車道緩升", "夜宿 Fanes 高原——拉登傳說的心臟"],
   stay: { city: "山屋", status: "hut", name: "Rifugio Fanes（2,060m）",
     note: "官網 rifugiofanes.com 預約；隔壁 Lavarella 山屋號稱歐洲最高釀酒廠，可去喝一杯" },
   warn: [] },
 
-{ day: 16, phase: "🥾 Alta Via 1", title: "AV1 第三天：史詩攀登 → Lagazuoi（2,752m）", areas: ["Alta Via 1"],
+{ day: 17, date: "6/19 週六", phase: "🥾 Alta Via 1", title: "AV1 第三天：史詩攀登 → Lagazuoi（2,752m）", areas: ["Alta Via 1"],
   transport: [{ icon: "🥾", route: "Fanes → Lago di Limo → Val di Fanes 陡降 → Lagazuoi 大爬升", time: "約 7 小時，總爬升 1,000m+，全程最硬一天" }],
   plan: ["清晨 Limo 湖倒影", "陡降 Val di Fanes 谷底", "沿一戰皇家獵兵之路遺線爬升", "傍晚抵達 Lagazuoi 山屋：露天一戰博物館、地雷戰爆破口、雲海夕陽與星空"],
   stay: { city: "山屋", status: "hut", name: "Rifugio Lagazuoi（2,752m）",
     note: "AV1 最搶手山屋，rifugiolagazuoi.com 一開放就要訂！睡雲端、看日出，此行最高的一夜" },
   warn: ["體力不夠的備案：在 Passo Falzarego 搭纜車上山屋，行程不減損風景"] },
 
-{ day: 17, phase: "🥾 Alta Via 1 → Cortina", title: "AV1 第四天：一戰隧道 → 五塔峰 → 下山進 Cortina", areas: ["Alta Via 1", "Cortina"],
+{ day: 18, date: "6/20 週日", phase: "🥾 Alta Via 1 → Cortina", title: "AV1 第四天：一戰隧道 → 五塔峰 → 下山進 Cortina", areas: ["Alta Via 1", "Cortina"],
   transport: [
     { icon: "🥾", route: "Lagazuoi 一戰隧道下降 → Falzarego → Cinque Torri", time: "隧道下降約 1.5 小時（需頭燈），到五塔峰再 2 小時" },
     { icon: "🚌", route: "Passo Falzarego → Cortina（巴士）", time: "約 35 分", gm: ["Passo Falzarego", "Cortina d'Ampezzo"] }
@@ -156,7 +164,7 @@ var DAYS = [
     note: "住 Corso Italia 徒步區周邊，餐廳、巴士站都在步行範圍" },
   warn: ["隧道內濕滑，頭燈＋手套必備，單向下行"] },
 
-{ day: 18, phase: "🏔 Cortina", title: "Lago di Sorapis 翡翠湖步道", areas: ["Cortina"],
+{ day: 19, date: "6/21 週一", phase: "🏔 Cortina", title: "Lago di Sorapis 翡翠湖步道", areas: ["Cortina"],
   transport: [
     { icon: "🚌", route: "Cortina → Passo Tre Croci（30/31 號巴士）", time: "約 20 分，登山口就在公路旁", gm: ["Cortina d'Ampezzo", "Passo Tre Croci"] }
   ],
@@ -164,7 +172,7 @@ var DAYS = [
   stay: { city: "Cortina", status: "suggested", name: "同前晚", note: "" },
   warn: ["湖區禁止下水；鋼索段小心會用", "旺季步道人多，07:30 前的巴士出發體驗最好"] },
 
-{ day: 19, phase: "🏔 Cortina", title: "Tofana di Mezzo 3,244m（天空之箭）", areas: ["Cortina"],
+{ day: 20, date: "6/22 週二", phase: "🏔 Cortina", title: "Tofana di Mezzo 3,244m（天空之箭）", areas: ["Cortina"],
   transport: [
     { icon: "🚡", route: "Cortina 市區 → Ra Valles → Tofana di Mezzo（Freccia nel Cielo 三段纜車）", time: "全程約 30 分", note: "Cortina Vertical Pass 一日券約 €48" }
   ],
@@ -172,7 +180,7 @@ var DAYS = [
   stay: { city: "Cortina", status: "suggested", name: "同前晚", note: "" },
   warn: ["這天是彈性預備日：若前面行程延誤或天氣差，可自動變成緩衝日", "山頂 3,200m 氣溫低，帶保暖層；纜車看天氣營運"] },
 
-{ day: 20, phase: "🇩🇪 慕尼黑", title: "Cortina → 慕尼黑", areas: ["慕尼黑"],
+{ day: 21, date: "6/23 週三", phase: "🇩🇪 慕尼黑", title: "Cortina → 慕尼黑", areas: ["慕尼黑"],
   transport: [
     { icon: "🚌", route: "Cortina → Dobbiaco（巴士）", time: "約 45 分，08:00 前出發", gm: ["Cortina d'Ampezzo", "Dobbiaco"] },
     { icon: "🚆", route: "Dobbiaco → Innsbruck（Pustertal 鐵路，Fortezza 轉車）", time: "約 2.5 小時", gm: ["Dobbiaco", "Innsbruck Hbf"] },
@@ -183,7 +191,7 @@ var DAYS = [
     note: "住中央車站旁：明早 S8 直達機場，拖行李 3 分鐘" },
   warn: ["建議 08:00 前從 Cortina 出發，下午即可抵達慕尼黑"] },
 
-{ day: 21, phase: "🇩🇪 回程", title: "慕尼黑機場出發", areas: ["慕尼黑"],
+{ day: 22, date: "6/24 週四", phase: "🇩🇪 回程", title: "慕尼黑機場出發", areas: ["慕尼黑"],
   transport: [
     { icon: "🚆", route: "München Hbf → 慕尼黑機場（S-Bahn S8）", time: "約 40 分，10 分鐘一班", gm: ["München Hbf", "Munich Airport"], note: "最晚 08:45 上車" }
   ],
