@@ -1,13 +1,13 @@
 # 🇫🇷🇮🇹🇩🇪 Italy 2027 — GPS 語音導覽網站
 
-巴黎 + 義大利 + 多洛米蒂 + 慕尼黑 22 天行程（2027/6/2 台北出發－6/24 慕尼黑回程）（巴黎 → 羅馬 → 佛羅倫斯 →
-波爾扎諾 → Val Gardena → Val di Funes → Tre Cime → Alta Via 1 → Cortina → 慕尼黑）的
+巴黎 + 義大利 + 多洛米蒂 + 慕尼黑 22 天行程（2027/6/2 台北出發－6/24 慕尼黑回程）（巴黎 → 拿坡里 → 龐貝 → 羅馬 → 佛羅倫斯 →
+波爾扎諾 → Rosengarten → Val Gardena → Val di Funes → Tre Cime → Alta Via 1 → Cortina → 慕尼黑）的
 **GPS 定位語音導覽網站**：地圖即時追蹤你的位置，走到景點附近（預設 10 公尺）
 自動用 **台灣口音中文（zh-TW）** 播放該景點的語音導覽。
 
 ## ✨ 功能
 
-- 🗺️ **Leaflet + OpenStreetMap 地圖**，180 個景點涵蓋全部 22 天行程（含羅馬競技場內部 6 個細部解說點、Alta Via 1 沿線一戰戰場遺跡）
+- 🗺️ **Leaflet + OpenStreetMap 地圖**，204 個景點涵蓋全部 22 天行程（含龐貝古城 21 個定點解說、羅馬競技場內部 6 個細部解說點、Alta Via 1 沿線一戰戰場遺跡）
 - 📍 **GPS 即時追蹤**（`watchPosition`，高精度模式），藍點 + 精度圈
 - 🔊 **接近自動播放**：進入觸發半徑（10–100 公尺可調，預設 10）自動朗讀中文導覽
 - 🗣️ **台灣口音**：自動優先挑選裝置上的 zh-TW 語音（iPhone「美佳 Mei-Jia」、Android「Google 國語（臺灣）」、Windows「Microsoft HsiaoChen 曉臻」）
@@ -66,7 +66,7 @@ italy2027/
 ├── css/style.css      # 地圖頁樣式
 ├── css/itinerary.css  # 行程頁樣式
 ├── js/app.js          # 地圖、GPS 追蹤、地理圍欄、zh-TW 語音合成
-├── js/pois.js         # 180 個景點資料庫（座標 + 中文導覽稿 + 維基條目）
+├── js/pois.js         # 204 個景點資料庫（座標 + 中文導覽稿 + 維基條目）
 ├── js/itinerary.js    # 22 天行程資料（交通、住宿、注意事項）
 ├── js/itinerary-app.js# 行程頁渲染
 ├── js/photos.js       # Wikipedia 照片批次載入與快取
@@ -77,13 +77,15 @@ italy2027/
 
 | 區域 | 天數 | 景點數 |
 |---|---|---|
-| 巴黎 | Day 1–2（6/3–6/4） | 20 |
+| 巴黎 | Day 1–2（6/3–6/4） | 15 |
+| 拿坡里 | Day 2 | 5 |
+| 龐貝古城 | Day 3 | 21 |
 | 羅馬（含競技場內部細解） | Day 3–5 | 34 |
 | 梵蒂岡 | Day 5 | 12 |
 | 佛羅倫斯 | Day 5–7 | 26 |
 | 比薩 | Day 6 | 10 |
 | 波爾扎諾 | Day 7 | 8 |
-| 卡雷扎湖 | Day 8 | 2 |
+| 卡雷扎湖 / Rosengarten 薔薇園 | Day 8 | 5 |
 | Val Gardena（Seceda / Alpe di Siusi / Sassolungo） | Day 8–11 | 10 |
 | Val di Funes 富內斯山谷 | Day 12 | 4 |
 | Dobbiaco / Tre Cime / Misurina | Day 12–14 | 13 |

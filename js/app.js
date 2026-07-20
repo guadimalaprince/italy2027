@@ -25,12 +25,14 @@
 
   var AREA_COLORS = {
     "巴黎": "#d81b60",
+    "拿坡里": "#ef6c00",
+    "龐貝": "#795548",
     "羅馬": "#8e44ad",
     "梵蒂岡": "#f1c40f",
     "佛羅倫斯": "#c0392b",
     "比薩": "#d35400",
     "波爾扎諾": "#16a085",
-    "卡雷扎湖": "#1abc9c",
+    "卡雷扎湖 / Rosengarten": "#1abc9c",
     "Val Gardena": "#27ae60",
     "Val di Funes": "#8d6e63",
     "Dobbiaco / Tre Cime": "#2980b9",

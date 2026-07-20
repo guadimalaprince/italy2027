@@ -4,52 +4,54 @@
  * pois: 對應 pois.js 的景點 id 前綴或 id 清單，用來抓當天照片
  */
 var DAYS = [
-{ day: 1, date: "6/3 週四", phase: "🇫🇷 巴黎", title: "抵達巴黎：鐵塔與蒙馬特", areas: ["巴黎"],
+{ day: 1, date: "6/3 週四", phase: "🇫🇷 巴黎", title: "抵達巴黎：凱旋門・小皇宮・鐵塔", areas: ["巴黎"],
   transport: [
     { icon: "✈️", route: "台北 TPE（6/2 晚間起飛）→ 巴黎 CDG", time: "08:05 抵達", note: "入境後跟著 RER 指標走" },
     { icon: "🚆", route: "CDG → 市區（RER B 線）", time: "約 35–50 分", gm: ["Charles de Gaulle Airport", "Châtelet–Les Halles, Paris"], note: "買 Navigo Easy 卡或機場單程票" }
   ],
-  plan: ["下午：特羅卡德羅平台看鐵塔全景 → 艾菲爾鐵塔 → 戰神廣場草坪休息", "沿塞納河散步：亞歷山大三世橋 → 協和廣場", "傍晚上蒙馬特：聖心堂前看夕陽、帖特廣場畫家、紅磨坊", "早點休息調時差"],
-  stay: { city: "巴黎（2 晚）", status: "suggested", name: "ibis Paris Montparnasse Catalogne 或 Novotel Paris Centre Gare Montparnasse",
-    note: "建議住蒙帕納斯／Denfert-Rochereau 一帶：後天一早去 Orly 機場最方便（OrlyBus 與 B 線都在 Denfert 發車）" },
-  warn: ["時差關係第一天別排太滿，走不完的明天還在"] },
+  plan: ["凱旋門（可登頂看十二大道放射星形）", "沿香榭麗舍大道散步 → 小皇宮（免費館藏＋中庭咖啡座）", "亞歷山大三世橋就在小皇宮旁，順路拍", "傍晚：比爾哈凱姆橋鋼構框景拍鐵塔 → 特羅卡德羅 → 艾菲爾鐵塔（整點閃燈）"],
+  stay: { city: "巴黎（1 晚）", status: "suggested", name: "ibis Paris Montparnasse Catalogne 或 Novotel Paris Centre Gare Montparnasse",
+    note: "住蒙帕納斯／Denfert-Rochereau 一帶：明天傍晚去 Orly 機場最方便（OrlyBus 與 B 線都在 Denfert 發車）" },
+  warn: ["時差日別排太滿，登凱旋門和鐵塔擇一登頂就好"] },
 
-{ day: 2, date: "6/4 週五", phase: "🇫🇷 巴黎", title: "羅浮宮・西堤島・左岸・瑪黑", areas: ["巴黎"],
+{ day: 2, date: "6/4 週五", phase: "🇫🇷 巴黎 → 拿坡里", title: "羅浮宮・聖母院 → 傍晚飛拿坡里", areas: ["巴黎", "拿坡里"],
   transport: [
-    { icon: "🚶", route: "羅浮宮 → 西堤島 → 左岸 → 瑪黑（全程步行串聯）", time: "各點間 10–20 分", note: "今天是步行日，穿好走的鞋" }
+    { icon: "✈️", route: "巴黎 Orly → 拿坡里 NAP（傍晚班機）", time: "約 2 小時 5 分", note: "市區到 Orly 約 40–60 分，起飛前 2 小時到機場" },
+    { icon: "🚌", route: "拿坡里機場 → 市中心（Alibus 機場巴士）", time: "約 20 分，到中央車站與港口", gm: ["Naples Airport", "Napoli Centrale"] }
   ],
-  plan: ["上午：羅浮宮（鎮館三寶動線約 3 小時，提前預約）", "杜樂麗花園 → 新橋 → 西堤島：聖禮拜堂萬花筒彩繪玻璃、巴黎聖母院", "午後左岸：莎士比亞書店、先賢祠、盧森堡公園、聖傑曼德佩喝杯咖啡", "傍晚瑪黑區：孚日廣場、雨果故居，晚餐就在瑪黑", "體力有餘：加尼葉歌劇院或塞納河遊船收尾"],
-  stay: { city: "巴黎", status: "suggested", name: "同前晚", note: "" },
-  warn: ["羅浮宮與聖禮拜堂都建議提前線上購票（6/4 週五皆開館）", "明早從 Orly 出發！CDG 與 Orly 是不同機場，市區到 Orly 約 40–60 分，需提早規劃"] },
+  plan: ["上午：羅浮宮（鎮館三寶動線約 3 小時，提前預約）", "杜樂麗花園 → 新橋 → 西堤島：聖禮拜堂（時間夠再進）、巴黎聖母院", "河對岸莎士比亞書店、塞納河畔書報攤", "下午取行李前往 Orly", "晚上拿坡里：Via dei Tribunali 吃正宗窯烤披薩！"],
+  stay: { city: "拿坡里（1 晚）", status: "suggested", name: "Starhotels Terminus 或 UNAHOTELS Napoli（中央車站旁）",
+    note: "住 Napoli Centrale 旁：明早搭 Circumvesuviana 去龐貝最方便，行李也可寄車站" },
+  warn: ["羅浮宮建議一開門 09:00 進場，提前線上購票", "行李寄放住宿或車站寄物處，逛完再取", "Orly 與 CDG 是不同機場，別跑錯！"] },
 
-{ day: 3, date: "6/5 週六", phase: "🇮🇹 羅馬", title: "巴黎 → 羅馬，老城初探", areas: ["羅馬"],
+{ day: 3, date: "6/5 週六", phase: "🇮🇹 龐貝 → 羅馬", title: "龐貝古城 → 傍晚進羅馬", areas: ["龐貝", "羅馬"],
   transport: [
-    { icon: "✈️", route: "巴黎 Orly → 羅馬 FCO", time: "約 2 小時", note: "起飛前 2 小時到機場" },
-    { icon: "🚆", route: "FCO → 特米尼車站（Leonardo Express）", time: "32 分，每 15 分一班", gm: ["Fiumicino Airport", "Roma Termini"], note: "€14，月台直上車" }
+    { icon: "🚆", route: "Napoli Garibaldi → Pompei Scavi（Circumvesuviana 私鐵）", time: "約 35 分", gm: ["Napoli Centrale", "Pompei Scavi"], note: "或加價搭有空調對號座的 Campania Express" },
+    { icon: "🚆", route: "Pompei → Napoli Centrale → Roma Termini（高鐵）", time: "回拿坡里 35 分＋高鐵 1 小時 10 分", gm: ["Pompei Scavi", "Roma Termini"], note: "高鐵 Frecciarossa/Italo 建議先訂 16–17 點班次" }
   ],
-  plan: ["下午：萬神廟 → 納沃納廣場 → 特雷維噴泉（許願！）", "晚上：特拉斯提弗列區晚餐（推薦起司胡椒麵 Cacio e Pepe）"],
+  plan: ["08:30 開門就從海門進場（本站有 21 個定點語音導覽！）", "廣場看維蘇威火山 → 農牧神之家 → 維提之家 → 悲劇詩人之家", "妓院 → 豐饒大道 → 熱食店 → 圓形競技場 → 逃亡者花園", "體力夠加碼城外的神秘別墅（龐貝紅壁畫）", "午後回拿坡里轉高鐵，傍晚抵羅馬 check-in", "晚上：夜訪特雷維噴泉（飯店步行 8 分，打燈後超美，記得丟硬幣！）"],
   stay: { city: "羅馬（2 晚）", status: "confirmed", name: "Comfort Hotel Bolivar（Via della Cordonata 6, 00187 Roma）",
-    note: "位置絕佳：緊鄰威尼斯廣場與圖拉真市場，步行到特雷維噴泉約 8 分、萬神廟 12 分、競技場 15 分；從 Termini 搭 40/64/70 號公車到 Piazza Venezia 下車，或步行約 20 分" },
-  warn: [] },
+    note: "位置絕佳：緊鄰威尼斯廣場與圖拉真市場，步行到特雷維噴泉約 8 分、萬神廟 12 分、競技場 15 分" },
+  warn: ["龐貝門票提前在 pompeiisites.org 買好，週六人多", "古城內遮蔭極少：帽子、水、防曬必備；大行李寄拿坡里車站寄物處（遺址入口也有免費寄物）"] },
 
-{ day: 4, date: "6/6 週日", phase: "🇮🇹 羅馬", title: "古羅馬一日：鬥獸場＋羅馬廣場＋帕拉提諾山", areas: ["羅馬"],
+{ day: 4, date: "6/6 週日", phase: "🇮🇹 羅馬", title: "羅馬一日：古羅馬＋老城精華", areas: ["羅馬"],
   transport: [
-    { icon: "🚇", route: "地鐵 B 線 → Colosseo 站", time: "特米尼出發 2 站，約 5 分", gm: ["Roma Termini", "Colosseo, Rome"] }
+    { icon: "🚶", route: "飯店 → 競技場", time: "步行 15 分", gm: ["Piazza Venezia, Rome", "Colosseo, Rome"] }
   ],
-  plan: ["鬥獸場（外牆 → 看台 → 競技場地板 → 地下層，本網站有 6 個定點解說）", "君士坦丁凱旋門 → 古羅馬廣場 → 帕拉提諾山（三點聯票）", "傍晚卡比托利歐廣場看夕陽下的羅馬廣場", "晚上再回特拉斯提弗列"],
+  plan: ["08:30 鬥獸場開門就進場（外牆 → 看台 → 地板 → 地下層，6 個定點解說）", "君士坦丁凱旋門 → 古羅馬廣場 → 帕拉提諾山（三點聯票）", "下午：卡比托利歐廣場 → 萬神廟 → 納沃納廣場", "傍晚：花田廣場 → 過西斯托橋 → 越台伯河區晚餐"],
   stay: { city: "羅馬", status: "confirmed", name: "Comfort Hotel Bolivar（同前晚）",
-    note: "今天古羅馬區行程從飯店走路就到：卡比托利歐廣場 3 分鐘、羅馬廣場入口 10 分鐘" },
-  warn: ["鬥獸場務必提前網路預約（官網 colosseo.it），現場排隊可能 2 小時以上；地下層需加購導覽票"] },
+    note: "古羅馬區從飯店走路就到：卡比托利歐廣場 3 分鐘、羅馬廣場入口 10 分鐘" },
+  warn: ["6/6 是每月第一個週日『免費博物館日』：競技場免費入場但人潮爆炸、無法預約——務必 08:15 前到場排隊，或考慮改買付費導覽團快速通關", "西班牙階梯與人民廣場今天塞不下就割愛，重點留給古羅馬"] },
 
 { day: 5, date: "6/7 週一", phase: "🇮🇹 羅馬 → 佛羅倫斯", title: "梵蒂岡早場 → 高鐵北上佛羅倫斯", areas: ["梵蒂岡", "羅馬", "佛羅倫斯"],
   transport: [
     { icon: "🚌", route: "飯店（威尼斯廣場）→ 梵蒂岡（40 或 64 號公車）", time: "約 20 分", gm: ["Piazza Venezia, Rome", "Vatican Museums"], note: "行李先寄放飯店，中午回程領取再去 Termini 搭高鐵" },
     { icon: "🚄", route: "羅馬 Termini → 佛羅倫斯 SMN（Frecciarossa／Italo 高鐵）", time: "1 小時 32 分", gm: ["Roma Termini", "Firenze Santa Maria Novella"], note: "建議訂 15:00 或 16:00 班次較穩" }
   ],
-  plan: ["08:00 梵蒂岡博物館入場（地圖廊 → 拉斐爾房間 → 西斯汀禮拜堂，約 3–4 小時）", "有時間再快閃聖彼得大教堂看聖殤像", "下午高鐵到佛羅倫斯，check-in", "傍晚老橋（Ponte Vecchio）散步、天主聖三橋看夕陽"],
+  plan: ["08:00 梵蒂岡博物館入場（地圖廊 → 拉斐爾房間 → 西斯汀禮拜堂，約 3–4 小時）", "有時間再快閃聖彼得大教堂看聖殤像，回程順路聖天使堡外觀", "下午高鐵到佛羅倫斯，check-in", "傍晚老橋（Ponte Vecchio）散步、天主聖三橋看夕陽"],
   stay: { city: "佛羅倫斯", status: "suggested", name: "Hotel Croce di Malta 或 B&B Hotel Firenze City Center",
     note: "建議住 SMN 車站與主教座堂之間，拖行李 10 分鐘內，去比薩、去美術館都方便" },
-  warn: ["梵蒂岡務必提前預約 08:00 入場票（museivaticani.va）", "行李可寄放 Termini 車站寄物處，或直接拖去梵蒂岡對面的寄物點"] },
+  warn: ["梵蒂岡務必提前預約 08:00 入場票（museivaticani.va），週一開館"] },
 
 { day: 6, date: "6/8 週二", phase: "🇮🇹 佛羅倫斯", title: "比薩半日遊 → 佛羅倫斯老城", areas: ["比薩", "佛羅倫斯"],
   transport: [
@@ -69,15 +71,16 @@ var DAYS = [
     note: "住老城中心，車站步行 5 分鐘，明早搭巴士方便" },
   warn: ["兩館都要提前預約指定時段（b-ticket 官方系統），排 09:00＋11:00 剛好接得上"] },
 
-{ day: 8, date: "6/10 週四", phase: "🏔 東多洛米蒂", title: "卡雷扎湖 → 進駐 Ortisei", areas: ["卡雷扎湖", "Val Gardena"],
+{ day: 8, date: "6/10 週四", phase: "🏔 東多洛米蒂", title: "Rosengarten 薔薇園鐵索攀岩（視天氣）→ 進駐 Ortisei", areas: ["卡雷扎湖 / Rosengarten", "Val Gardena"],
   transport: [
-    { icon: "🚌", route: "波爾扎諾 → 卡雷扎湖（SAD Bus 180）", time: "約 45 分", gm: ["Bolzano", "Lago di Carezza"], note: "回程同路線返回波爾扎諾" },
-    { icon: "🚌", route: "波爾扎諾 → Ortisei（SAD Bus 350）", time: "約 1 小時，班次頻繁", gm: ["Bolzano", "Ortisei"] }
+    { icon: "🚌", route: "波爾扎諾 → Frommer Alm／卡雷扎湖（SAD Bus 180 往 Carezza 方向）", time: "約 40–45 分", gm: ["Bolzano", "Lago di Carezza"] },
+    { icon: "🚡", route: "Frommer Alm → Rifugio Fronza（König Laurin 纜椅）", time: "約 15 分直上 2,337m" },
+    { icon: "🚌", route: "回波爾扎諾 → Ortisei（SAD Bus 350）", time: "約 1 小時，班次頻繁", gm: ["Bolzano", "Ortisei"] }
   ],
-  plan: ["上午：卡雷扎湖（彩虹湖）環湖 30 分，看 Latemar 峰群倒影", "回波爾扎諾轉車（可順便吃午餐、超市補給）", "下午進駐 Ortisei，逛木雕小鎮", "遊客中心購買 Gardena Card（3 天 €124）"],
+  plan: ["☀️ 天氣好方案：Santner Pass 鐵索攀岩路線——Fronza 山屋出發，攀上 2,734m 的 Santnerpass Hütte（上行 1.5–2 小時，B/C 難度），眺望瓦約雷特三塔，原路下撤", "🌥 備案：卡雷扎湖（彩虹湖）環湖 30 分＋Latemar 倒影，一樣在同條巴士線上", "下午回波爾扎諾轉車進駐 Ortisei", "遊客中心購買 Gardena Card（3 天 €124）"],
   stay: { city: "Ortisei（4 晚）", status: "suggested", name: "Hotel Angelo Engel（鎮中心）或 Adler Dolomiti Spa & Sport Resort",
-    note: "連住 4 晚建議選含早餐、有 spa 的旅館，健行完泡湯超幸福；多數旅館含 Val Gardena Mobil Card 可免費搭區內巴士" },
-  warn: ["卡雷扎湖與 Ortisei 方向不同，必須回波爾扎諾中轉，全程約 3.5 小時，早上早點出發"] },
+    note: "連住 4 晚建議選含早餐、有 spa 的旅館；多數旅館含 Val Gardena Mobil Card 可免費搭區內巴士" },
+  warn: ["鐵索路線需要裝備：吊帶＋確保組＋頭盔（波爾扎諾戶外用品店可租），需基本攀爬經驗與無懼高", "六月中旬岩溝可能殘雪，出發前查 Santnerpasshütte 開放狀態與路況；天氣不穩就走卡雷扎湖備案，不要硬上", "帶行李移動：可先把大行李寄放波爾扎諾車站寄物處，傍晚取了再上 Ortisei"] },
 
 { day: 9, date: "6/11 週五", phase: "🏔 Val Gardena", title: "Seceda 刀鋒稜線", areas: ["Val Gardena"],
   transport: [
