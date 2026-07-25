@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <meta name="theme-color" content="#1a3a5c">
 <title>義大利 2027 GPS 語音導覽 | Italy 2027 Audio Tour</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Italy 2027">
 <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -36,6 +40,7 @@
 <div id="map"></div>
 
 <div id="statusbar">
+  <span id="offline-badge" class="hidden" title="目前離線，使用已下載的地圖">📴</span>
   <span id="gps-status">GPS：尚未啟動</span>
   <button id="nearest" aria-label="移動到最近的景點">—</button>
 </div>
@@ -84,6 +89,47 @@
     </select>
   </div>
   <div class="setting-row">
+    <label for="tile-layer">地圖圖層</label>
+    <select id="tile-layer">
+      <option value="osm">標準地圖（街道，市區用）</option>
+      <option value="topo">地形圖 OpenTopoMap（等高線＋登山步道，山區用）</option>
+    </select>
+    <p class="setting-note">山區請切到地形圖：它會畫出實際的登山步道與路線編號（例如 AV1）。</p>
+  </div>
+
+  <div class="setting-row">
+    <label>🥾 步道路線</label>
+    <button id="btn-import-gpx">📥 匯入 GPX 軌跡</button>
+    <input type="file" id="gpx-file" accept=".gpx,application/gpx+xml" multiple class="hidden">
+    <div id="gpx-list"></div>
+    <label class="switch-row" for="chk-dayline" style="margin-top:10px">
+      <span>顯示當日示意連線<span class="setting-note">把當天景點依步行順序連起來，僅供辨認方向</span></span>
+      <input type="checkbox" id="chk-dayline">
+    </label>
+    <p class="setting-note">⚠️ 示意連線是點對點直線，<strong>不是實際步道</strong>。山區導航請用匯入的 GPX 或地形圖上的步道。</p>
+  </div>
+
+  <div class="setting-row">
+    <label>📴 離線地圖</label>
+    <div id="offline-scope">
+      <button class="off-btn is-active" data-scope="today">今天</button>
+      <button class="off-btn" data-scope="near">今明後三天</button>
+      <button class="off-btn" data-scope="all">全行程</button>
+    </div>
+    <label class="switch-row" for="chk-dl-topo">
+      <span>同時下載地形圖<span class="setting-note">山區必備，容量加倍</span></span>
+      <input type="checkbox" id="chk-dl-topo" checked>
+    </label>
+    <p class="setting-note" id="offline-estimate">計算中…</p>
+    <button id="btn-download-tiles">⬇ 下載離線地圖</button>
+    <button id="btn-cancel-dl" class="hidden danger">✕ 取消下載</button>
+    <div id="dl-progress" class="hidden"><div id="dl-bar"></div></div>
+    <p class="setting-note" id="offline-status"></p>
+    <p class="setting-note">請在旅館 Wi-Fi 下載。圖磚來自 OpenStreetMap 志工社群的免費伺服器，請只下載你真的會走的範圍。</p>
+    <button id="btn-clear-tiles" class="danger" style="margin-top:8px">🗑 清除已下載的地圖</button>
+  </div>
+
+  <div class="setting-row">
     <button id="btn-reset-visited" class="danger">♻ 重設已播放紀錄</button>
     <p class="setting-note">清除後所有景點可重新自動播放。</p>
   </div>
@@ -102,6 +148,8 @@
 <script src="js/pois.js"></script>
 <script src="js/itinerary.js"></script>
 <script src="js/photos.js"></script>
+<script src="js/routes.js"></script>
+<script src="js/offline.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

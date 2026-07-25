@@ -48,6 +48,8 @@
   var wakeLock = null;
   var lastAccuracy = null;
   var MAX_PENDING = 3;   // 佇列上限，避免走過頭還在播前面的點
+  var routeGroup = null, showDayLine = false, dlRunning = false;
+  try { showDayLine = localStorage.getItem("italy2027_dayline") === "1"; } catch (e) {}
 
   try { visited = JSON.parse(localStorage.getItem("italy2027_visited") || "{}"); } catch (e) { visited = {}; }
   try { triggerRadius = parseInt(localStorage.getItem("italy2027_radius"), 10) || 10; } catch (e) {}
@@ -225,12 +227,25 @@
   }
 
   // ---------- map ----------
+  var tileLayers = {}, currentLayer = "osm";
+
   function initMap() {
     map = L.map("map", { zoomControl: true }).setView([44.5, 11.5], 6);
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      maxZoom: 19,
+
+    tileLayers.osm = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19, crossOrigin: true,
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
+    });
+    // 地形圖：有等高線與實際登山步道，山區必備
+    tileLayers.topo = L.tileLayer("https://tile.opentopomap.org/{z}/{x}/{y}.png", {
+      maxZoom: 17, crossOrigin: true,
+      attribution: 'Map data &copy; OpenStreetMap contributors, SRTM | Style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (CC-BY-SA)'
+    });
+    try { currentLayer = localStorage.getItem("italy2027_layer") || "osm"; } catch (e) {}
+    if (!tileLayers[currentLayer]) currentLayer = "osm";
+    tileLayers[currentLayer].addTo(map);
+
+    routeGroup = L.layerGroup().addTo(map);
 
     POIS.forEach(function (poi) {
       poiById[poi.id] = poi;
@@ -515,6 +530,8 @@
     try { localStorage.setItem("italy2027_today_only", todayOnly ? "1" : "0"); } catch (e) {}
     refreshMapLayers();
     buildList();
+    redrawRoutes();
+    if ($("offline-estimate")) updateEstimate();
   }
 
   function renderDayBadge() {
@@ -531,6 +548,114 @@
       date.textContent = "預覽 D" + TRIP_DAYS;
     }
   }
+
+  // ---------- 步道路線 ----------
+  function redrawRoutes() {
+    if (!routeGroup) return;
+    routeGroup.clearLayers();
+
+    // 匯入的 GPX：實線，這才是可以照著走的
+    Routes.all().forEach(function (t) {
+      L.polyline(t.coords, { color: "#e91e63", weight: 4, opacity: 0.85 })
+        .bindPopup("🥾 " + t.name + "（GPX 軌跡）")
+        .addTo(routeGroup);
+    });
+
+    // 當日示意連線：虛線，明確標示不是實際步道
+    if (showDayLine) {
+      var pois = POIS.filter(function (p) { return p.day === focusDay; });
+      Routes.dayLines(pois).forEach(function (line) {
+        L.polyline(line, { color: "#1a3a5c", weight: 3, opacity: 0.5, dashArray: "6 8" })
+          .bindPopup("Day " + focusDay + " 示意連線<br>⚠️ 點對點直線，不是實際步道")
+          .addTo(routeGroup);
+      });
+    }
+  }
+
+  function renderGpxList() {
+    var box = $("gpx-list");
+    var list = Routes.all();
+    box.innerHTML = "";
+    if (!list.length) {
+      box.innerHTML = '<p class="setting-note">尚未匯入軌跡。可到 Komoot／AllTrails／Outdooractive 下載 GPX，或用 AV1 官方路線檔。</p>';
+      return;
+    }
+    list.forEach(function (t) {
+      var row = document.createElement("div");
+      row.className = "gpx-row";
+      row.innerHTML = '<span>🥾 ' + t.name + '<span class="setting-note">' + t.coords.length + " 點</span></span>";
+      var del = document.createElement("button");
+      del.textContent = "🗑";
+      del.setAttribute("aria-label", "刪除 " + t.name);
+      del.addEventListener("click", function () {
+        Routes.remove(t.id); renderGpxList(); redrawRoutes();
+      });
+      row.appendChild(del);
+      box.appendChild(row);
+    });
+  }
+
+  // ---------- 離線地圖 ----------
+  var offlineScope = "today";
+
+  function scopePois() {
+    if (offlineScope === "all") return POIS;
+    if (offlineScope === "near") {
+      return POIS.filter(function (p) { return p.day >= focusDay && p.day <= focusDay + 2; });
+    }
+    return POIS.filter(function (p) { return p.day === focusDay; });
+  }
+
+  function dlLayers() { return { osm: true, topo: $("chk-dl-topo").checked }; }
+
+  function updateEstimate() {
+    var est = Offline.estimate(scopePois(), [12, 13, 14, 15, 16], 0.012, dlLayers());
+    var label = offlineScope === "all" ? "全行程" : (offlineScope === "near" ? "今明後三天" : "Day " + focusDay);
+    $("offline-estimate").textContent = label + "：約 " + est.tiles + " 張圖磚、" + est.mb + " MB";
+  }
+
+  function refreshOfflineStatus() {
+    Offline.tileCount().then(function (n) {
+      Offline.storageInfo().then(function (info) {
+        var extra = info && info.usage ? "，已用 " + (info.usage / 1048576).toFixed(0) + " MB" : "";
+        $("offline-status").textContent = n ? "已離線保存 " + n + " 張圖磚" + extra : "尚未下載任何離線地圖";
+      });
+    }).catch(function () {});
+  }
+
+  function startDownload() {
+    if (dlRunning) return;
+    dlRunning = true;
+    $("btn-download-tiles").classList.add("hidden");
+    $("btn-cancel-dl").classList.remove("hidden");
+    $("dl-progress").classList.remove("hidden");
+    Offline.download(scopePois(), {
+      zooms: [12, 13, 14, 15, 16],
+      pad: 0.012,
+      layers: dlLayers(),
+      onProgress: function (done, total) {
+        $("dl-bar").style.width = Math.round(done / total * 100) + "%";
+        $("offline-status").textContent = "下載中… " + done + " / " + total;
+      },
+      onDone: function (st) {
+        dlRunning = false;
+        $("btn-download-tiles").classList.remove("hidden");
+        $("btn-cancel-dl").classList.add("hidden");
+        $("dl-progress").classList.add("hidden");
+        $("dl-bar").style.width = "0%";
+        $("offline-status").textContent = st.cancelled
+          ? "已取消（已下載的部分保留）"
+          : "✅ 完成！" + (st.failed ? "（" + st.failed + " 張失敗，可再按一次補齊）" : "");
+        setTimeout(refreshOfflineStatus, 1200);
+      }
+    });
+  }
+
+  function updateOfflineBadge() {
+    $("offline-badge").classList.toggle("hidden", navigator.onLine);
+  }
+  window.addEventListener("online", updateOfflineBadge);
+  window.addEventListener("offline", updateOfflineBadge);
 
   // ---------- 面板 / 設定 ----------
   function openPanel() {
@@ -614,6 +739,48 @@
 
     $("radius").addEventListener("input", function () { setRadius(parseInt(this.value, 10)); });
 
+    $("tile-layer").addEventListener("change", function () {
+      map.removeLayer(tileLayers[currentLayer]);
+      currentLayer = this.value;
+      tileLayers[currentLayer].addTo(map);
+      try { localStorage.setItem("italy2027_layer", currentLayer); } catch (e) {}
+    });
+
+    $("btn-import-gpx").addEventListener("click", function () { $("gpx-file").click(); });
+    $("gpx-file").addEventListener("change", function () {
+      var files = Array.prototype.slice.call(this.files || []);
+      var errs = [];
+      Promise.all(files.map(function (f) {
+        return Routes.addFromFile(f).catch(function (e) { errs.push(f.name + "：" + e.message); });
+      })).then(function () {
+        renderGpxList(); redrawRoutes();
+        if (errs.length) alert("部分檔案匯入失敗\n" + errs.join("\n"));
+      });
+      this.value = "";
+    });
+
+    $("chk-dayline").checked = showDayLine;
+    $("chk-dayline").addEventListener("change", function () {
+      showDayLine = this.checked;
+      try { localStorage.setItem("italy2027_dayline", showDayLine ? "1" : "0"); } catch (e) {}
+      redrawRoutes();
+    });
+
+    document.querySelectorAll(".off-btn").forEach(function (b) {
+      b.addEventListener("click", function () {
+        offlineScope = b.dataset.scope;
+        document.querySelectorAll(".off-btn").forEach(function (x) { x.classList.toggle("is-active", x === b); });
+        updateEstimate();
+      });
+    });
+    $("chk-dl-topo").addEventListener("change", updateEstimate);
+    $("btn-download-tiles").addEventListener("click", startDownload);
+    $("btn-cancel-dl").addEventListener("click", function () { Offline.cancel(); });
+    $("btn-clear-tiles").addEventListener("click", function () {
+      if (!confirm("確定清除所有已下載的離線地圖嗎？")) return;
+      Offline.clear().then(function () { refreshOfflineStatus(); });
+    });
+
     $("btn-reset-visited").addEventListener("click", function () {
       if (!confirm("確定要清除所有「已播放」紀錄嗎？所有景點將可重新自動播放。")) return;
       visited = {};
@@ -635,6 +802,20 @@
   bindUI();
 
   if (window.Photos) Photos.loadAll(POIS.map(function (p) { return p.wiki; }), null, null);
+
+  $("tile-layer").value = currentLayer;
+  renderGpxList();
+  redrawRoutes();
+  updateEstimate();
+  refreshOfflineStatus();
+  updateOfflineBadge();
+
+  // 註冊 Service Worker（離線的核心）
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function () {
+      navigator.serviceWorker.register("sw.js").catch(function () {});
+    });
+  }
 
   // 從行程頁跳轉：index.html?poi=<id>
   var qp = /[?&]poi=([^&]+)/.exec(location.search);

@@ -1,0 +1,13 @@
+{
+  "name": "義大利 2027 GPS 語音導覽",
+  "short_name": "Italy 2027",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1a3a5c",
+  "theme_color": "#1a3a5c",
+  "lang": "zh-Hant-TW",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

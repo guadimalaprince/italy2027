@@ -238,6 +238,37 @@ body.is-playing #statusbar { display: none; }
 }
 .switch-row input[type=checkbox] { width: 26px; height: 26px; flex: 0 0 auto; }
 
+/* 離線 / 路線 / 下載 UI */
+#offline-badge { flex: 0 0 auto; font-size: 15px; }
+
+#offline-scope { display: flex; gap: 6px; margin-bottom: 10px; }
+.off-btn {
+  flex: 1; min-height: 40px; border: 1px solid #ccd3da; background: var(--surface);
+  color: var(--text); border-radius: 8px; font-size: 13.5px;
+}
+.off-btn.is-active { background: var(--navy); border-color: var(--navy); color: #fff; font-weight: 700; }
+
+#dl-progress {
+  height: 8px; background: var(--hair); border-radius: 4px;
+  overflow: hidden; margin-top: 10px;
+}
+#dl-bar { height: 100%; width: 0; background: var(--green); transition: width .25s; }
+
+#btn-cancel-dl { margin-top: 8px; }
+
+.gpx-row {
+  display: flex; align-items: center; gap: 8px;
+  margin-top: 8px; padding: 8px 10px;
+  background: var(--group-bg); border-radius: 9px; font-size: 13.5px;
+}
+.gpx-row > span { flex: 1; min-width: 0; }
+.gpx-row .setting-note { margin-top: 1px; }
+.gpx-row button {
+  min-width: 40px; min-height: 40px; flex: 0 0 auto;
+  background: transparent; border: 1px solid var(--red); color: var(--red);
+  border-radius: 8px; font-size: 15px;
+}
+
 /* ---------- now playing bar ---------- */
 #now-playing {
   position: absolute; left: 10px; right: 10px;
@@ -270,7 +301,7 @@ body.is-playing #statusbar { display: none; }
     --hair: #2c343d;
     --group-bg: #242c35;
   }
-  #poi-search, .setting-row select, .scope-btn { border-color: #3a444f; }
+  #poi-search, .setting-row select, .scope-btn, .off-btn { border-color: #3a444f; }
   .setting-row > button.danger { background: transparent; }
   .poi-popup .en { color: #9aa4ae; }
   .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1c2229; color: #e8eaec; }

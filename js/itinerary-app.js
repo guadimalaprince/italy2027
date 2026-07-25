@@ -183,4 +183,11 @@
   var titles = POIS.map(function (p) { return p.wiki; });
   Photos.loadAll(titles, fillPhotos, fillPhotos);
   fillPhotos(); // 已有快取時立即補上
+
+  // 註冊 Service Worker（先開行程頁也能離線）
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function () {
+      navigator.serviceWorker.register("sw.js").catch(function () {});
+    });
+  }
 })();
