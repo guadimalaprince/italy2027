@@ -2,7 +2,7 @@
 <html lang="zh-Hant-TW">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <meta name="theme-color" content="#1a3a5c">
 <title>義大利 2027 GPS 語音導覽 | Italy 2027 Audio Tour</title>
 <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
@@ -12,53 +12,95 @@
 
 <header id="topbar">
   <div id="title-row">
-    <h1>🇫🇷🇮🇹🇩🇪 義大利 2027 語音導覽</h1>
+    <div id="day-badge">
+      <strong id="day-badge-num">Day —</strong>
+      <span id="day-badge-date"></span>
+    </div>
     <div id="title-actions">
-      <a id="nav-itinerary" href="itinerary.html">📅 行程</a>
-      <button id="btn-panel" title="行程景點列表">☰ 景點</button>
+      <a id="nav-itinerary" href="itinerary.html" aria-label="開啟行程總覽">📅 行程</a>
+      <button id="btn-panel" aria-label="開啟景點列表">☰ 景點</button>
+      <button id="btn-settings" aria-label="開啟設定">⚙</button>
     </div>
   </div>
   <div id="controls">
     <button id="btn-start" class="primary">▶ 開始 GPS 導覽</button>
     <button id="btn-stop" class="hidden">⏹ 停止追蹤</button>
-    <button id="btn-test-voice" title="測試中文語音">🔊 測試語音</button>
-    <label id="sim-label" title="模擬模式：點擊地圖假裝走到該處，用來在家測試">
-      <input type="checkbox" id="chk-sim"> 模擬模式
-    </label>
-    <label id="radius-label">
-      觸發距離 <span id="radius-value">10</span> 公尺
-      <input type="range" id="radius" min="10" max="100" step="5" value="10">
-    </label>
-    <select id="area-filter" title="篩選區域">
-      <option value="">全部區域</option>
-    </select>
+    <button id="btn-today" class="toggle" aria-pressed="false" title="只顯示今天的景點">📆 只看今天</button>
   </div>
-  <div id="status">
-    <span id="gps-status">GPS：尚未啟動</span>
-    <span id="nearest">—</span>
+  <div id="accuracy-hint" class="hidden">
+    <span id="accuracy-hint-text"></span>
+    <button id="btn-apply-radius">套用</button>
   </div>
 </header>
 
 <div id="map"></div>
 
-<aside id="panel" class="hidden">
+<div id="statusbar">
+  <span id="gps-status">GPS：尚未啟動</span>
+  <button id="nearest" aria-label="移動到最近的景點">—</button>
+</div>
+
+<div id="panel-backdrop" class="hidden"></div>
+
+<aside id="panel" class="hidden" aria-label="景點列表">
   <div id="panel-header">
-    <h2>行程景點（依天數）</h2>
-    <button id="btn-close-panel">✕</button>
+    <h2>行程景點</h2>
+    <button id="btn-close-panel" aria-label="關閉列表">✕</button>
   </div>
   <div id="panel-tools">
-    <button id="btn-reset-visited" title="清除「已聽過」紀錄，讓所有景點可以重新自動播放">♻ 重設已播放紀錄</button>
+    <input type="search" id="poi-search" placeholder="🔍 搜尋景點名稱…" aria-label="搜尋景點">
+    <div id="panel-scope">
+      <button class="scope-btn" data-scope="today">📆 今天</button>
+      <button class="scope-btn is-active" data-scope="all">全部</button>
+    </div>
   </div>
   <div id="poi-list"></div>
 </aside>
 
+<div id="settings-sheet" class="hidden" role="dialog" aria-label="設定">
+  <div id="settings-header">
+    <h2>⚙ 設定</h2>
+    <button id="btn-close-settings" aria-label="關閉設定">✕</button>
+  </div>
+  <div class="setting-row">
+    <label for="radius">觸發距離：<strong><span id="radius-value">10</span> 公尺</strong></label>
+    <input type="range" id="radius" min="10" max="100" step="5" value="10">
+    <p class="setting-note">市區高樓間 GPS 誤差常有 15–30 公尺，走到門口沒觸發就調大。</p>
+  </div>
+  <div class="setting-row">
+    <button id="btn-test-voice">🔊 測試中文語音</button>
+    <p class="setting-note" id="voice-name">正在偵測裝置語音…</p>
+  </div>
+  <div class="setting-row">
+    <label class="switch-row" for="chk-sim">
+      <span>🧪 模擬模式<span class="setting-note">點地圖假裝走到該處，在家測試用</span></span>
+      <input type="checkbox" id="chk-sim">
+    </label>
+  </div>
+  <div class="setting-row">
+    <label for="area-filter">區域篩選</label>
+    <select id="area-filter">
+      <option value="">全部區域</option>
+    </select>
+  </div>
+  <div class="setting-row">
+    <button id="btn-reset-visited" class="danger">♻ 重設已播放紀錄</button>
+    <p class="setting-note">清除後所有景點可重新自動播放。</p>
+  </div>
+</div>
+
 <div id="now-playing" class="hidden">
-  <div id="np-text"></div>
-  <button id="btn-skip">⏭ 跳過</button>
+  <div id="np-body">
+    <div id="np-text"></div>
+    <div id="np-queue" class="hidden"></div>
+  </div>
+  <button id="btn-pause" aria-label="暫停播放">⏸</button>
+  <button id="btn-skip" aria-label="跳過這一段">⏭</button>
 </div>
 
 <script src="vendor/leaflet/leaflet.js"></script>
 <script src="js/pois.js"></script>
+<script src="js/itinerary.js"></script>
 <script src="js/photos.js"></script>
 <script src="js/app.js"></script>
 </body>

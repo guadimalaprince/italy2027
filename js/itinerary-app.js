@@ -4,6 +4,13 @@
 
   var container = document.getElementById("days");
 
+  // ---------- 今天是第幾天 ----------
+  var TRIP_START = new Date(2027, 5, 3);   // Day 1 = 2027/6/3
+  var rawDay = Math.round(
+    (new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate()) - TRIP_START) / 86400000
+  ) + 1;
+  var tripDay = (rawDay >= 1 && rawDay <= DAYS.length) ? rawDay : null;
+
   function el(tag, cls, html) {
     var e = document.createElement(tag);
     if (cls) e.className = cls;
@@ -30,10 +37,12 @@
         lastPhase = d.phase;
       }
 
-      var card = el("article", "day-card");
+      var card = el("article", "day-card" + (d.day === tripDay ? " is-today" : ""));
+      card.id = "day-" + d.day;
       var head = el("div", "day-head");
       head.appendChild(el("span", "day-num", "Day " + d.day));
       if (d.date) head.appendChild(el("span", "day-date", esc(d.date)));
+      if (d.day === tripDay) head.appendChild(el("span", "today-chip", "今天"));
       head.appendChild(el("span", "day-title", esc(d.title)));
       card.appendChild(head);
 
@@ -93,9 +102,10 @@
         var hs = el("div", "day-section");
         hs.appendChild(el("h4", null, "📸 當日景點（" + pois.length + "）— 點卡片開地圖與語音導覽"));
         card.appendChild(hs);
+        var CAP = 6;
         var strip = el("div", "photos");
-        pois.forEach(function (p) {
-          var a = el("a", "photo-card");
+        pois.forEach(function (p, i) {
+          var a = el("a", "photo-card" + (i >= CAP ? " extra is-hidden" : ""));
           a.href = "index.html?poi=" + encodeURIComponent(p.id);
           var ph = el("div", "ph", "🏞");
           ph.setAttribute("data-wiki", p.wiki || "");
@@ -104,6 +114,26 @@
           strip.appendChild(a);
         });
         card.appendChild(strip);
+
+        // 景點多的日子預設只顯示 6 張，避免卡片變成無止盡的長條
+        if (pois.length > CAP) {
+          var more = el("button", "show-more", "▾ 顯示其餘 " + (pois.length - CAP) + " 個景點");
+          more.addEventListener("click", function () {
+            var hidden = strip.querySelectorAll(".extra.is-hidden");
+            if (hidden.length) {
+              // 展開時改成網格，避免橫向滑好幾千像素
+              strip.classList.add("grid");
+              strip.querySelectorAll(".extra").forEach(function (e) { e.classList.remove("is-hidden"); });
+              more.textContent = "▴ 收合";
+              fillPhotos();
+            } else {
+              strip.classList.remove("grid");
+              strip.querySelectorAll(".extra").forEach(function (e) { e.classList.add("is-hidden"); });
+              more.textContent = "▾ 顯示其餘 " + (pois.length - CAP) + " 個景點";
+            }
+          });
+          card.appendChild(more);
+        }
       }
 
       container.appendChild(card);
@@ -129,7 +159,27 @@
     }
   }
 
+  // ---------- 天數快速跳轉列 ----------
+  function buildDayNav() {
+    var nav = document.getElementById("day-nav");
+    DAYS.forEach(function (d) {
+      var a = el("a", "day-chip" + (d.day === tripDay ? " is-today" : ""));
+      a.href = "#day-" + d.day;
+      a.textContent = d.day === tripDay ? "今天" : String(d.day);
+      a.title = "Day " + d.day + "　" + d.date + "　" + d.title;
+      nav.appendChild(a);
+    });
+    // 開啟時自動捲到今天
+    if (tripDay) {
+      var chip = nav.querySelector(".day-chip.is-today");
+      if (chip) nav.scrollLeft = Math.max(0, chip.offsetLeft - nav.clientWidth / 2);
+      var card = document.getElementById("day-" + tripDay);
+      if (card) window.scrollTo({ top: card.offsetTop - 96, behavior: "auto" });
+    }
+  }
+
   render();
+  buildDayNav();
   var titles = POIS.map(function (p) { return p.wiki; });
   Photos.loadAll(titles, fillPhotos, fillPhotos);
   fillPhotos(); // 已有快取時立即補上

@@ -1,58 +1,104 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
+:root {
+  --navy: #1a3a5c;
+  --navy-lite: #2d5f8f;
+  --green: #2e9e5b;
+  --red: #b34040;
+  --tap: 44px;              /* 最小觸控目標 */
+  --surface: #fff;
+  --text: #222;
+  --muted: #777;
+  --hair: #e8ebee;
+  --group-bg: #f6f8fa;
+}
+
 html, body {
   height: 100%;
   font-family: -apple-system, "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
   overflow: hidden;
+  color: var(--text);
 }
 
 body { display: flex; flex-direction: column; }
 
 .hidden { display: none !important; }
 
+button, input, select { font-family: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 3px solid #7fb2e5; outline-offset: 2px; }
+
 /* ---------- top bar ---------- */
 #topbar {
-  background: #1a3a5c;
+  background: var(--navy);
   color: #fff;
-  padding: 8px 10px;
+  padding: max(8px, env(safe-area-inset-top)) 10px 8px;
   z-index: 1100;
   box-shadow: 0 2px 6px rgba(0,0,0,.3);
   flex: 0 0 auto;
 }
 
 #title-row { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
-#title-row h1 { font-size: 16px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-#title-actions { display: flex; gap: 6px; align-items: center; }
-#nav-itinerary {
-  background: #2d5f8f; color: #fff; text-decoration: none;
-  border-radius: 6px; padding: 6px 10px; font-size: 13px; white-space: nowrap;
+
+#day-badge { display: flex; align-items: baseline; gap: 7px; min-width: 0; }
+#day-badge-num { font-size: 17px; font-weight: 800; white-space: nowrap; }
+#day-badge-date { font-size: 13px; color: #a9c8e4; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+#title-actions { display: flex; gap: 6px; align-items: center; flex: 0 0 auto; }
+#nav-itinerary, #btn-panel, #btn-settings {
+  background: var(--navy-lite); color: #fff; text-decoration: none; border: none;
+  border-radius: 8px; font-size: 14px; white-space: nowrap;
+  min-height: var(--tap); display: inline-flex; align-items: center; justify-content: center;
+  padding: 0 12px;
 }
+#btn-settings { min-width: var(--tap); padding: 0; font-size: 19px; }
 
 #controls {
-  display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
-  margin-top: 6px; font-size: 13px;
+  display: flex; gap: 8px; align-items: center;
+  margin-top: 8px; font-size: 14px;
 }
-
-#controls button, #btn-panel {
-  background: #2d5f8f; color: #fff; border: none; border-radius: 6px;
-  padding: 6px 10px; font-size: 13px; cursor: pointer;
+#controls button {
+  background: var(--navy-lite); color: #fff; border: none; border-radius: 8px;
+  min-height: var(--tap); padding: 0 14px; font-size: 14px;
+  display: inline-flex; align-items: center; justify-content: center;
 }
-#controls button.primary { background: #2e9e5b; font-weight: 700; }
-#controls button:active { filter: brightness(1.2); }
-#btn-stop { background: #b34040 !important; }
+#btn-start { background: var(--green); font-weight: 700; flex: 1; }
+#btn-stop { background: var(--red); flex: 1; }
+#btn-today.is-active { background: var(--green); font-weight: 700; }
+#controls button:active { filter: brightness(1.15); }
 
-#sim-label, #radius-label { display: flex; align-items: center; gap: 4px; }
-#radius-label input[type=range] { width: 90px; }
-
-#area-filter {
-  border-radius: 6px; border: none; padding: 5px 6px; font-size: 13px;
+/* 浮動狀態列：貼在地圖底部，不佔標題列高度，最近景點可直接點 */
+#statusbar {
+  position: absolute; left: 10px; right: 10px;
+  bottom: max(14px, env(safe-area-inset-bottom));
+  display: flex; align-items: center; gap: 8px;
+  background: rgba(26,58,92,.94); color: #dce9f5;
+  border-radius: 12px; padding: 5px 6px 5px 12px;
+  z-index: 1130; box-shadow: 0 3px 12px rgba(0,0,0,.35);
+  font-size: 12.5px;
 }
-
-#status {
-  display: flex; justify-content: space-between; gap: 10px;
-  margin-top: 6px; font-size: 12px; color: #cfe3f5;
+#gps-status { flex: 0 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#nearest {
+  flex: 1 1 auto; min-height: var(--tap);
+  background: rgba(255,255,255,.14); color: #eaf3fb; border: none;
+  border-radius: 9px; padding: 0 12px; font-size: 13px; font-weight: 600;
+  text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
-#nearest { text-align: right; }
+/* 播放中時讓出位置給 now-playing */
+body.is-playing #statusbar { display: none; }
+
+/* GPS 精度提示 */
+#accuracy-hint {
+  display: flex; align-items: center; gap: 8px;
+  margin-top: 7px; padding: 8px 10px;
+  background: #7a4b12; border: 1px solid #b57a25; border-radius: 8px;
+  font-size: 12.5px; line-height: 1.45; color: #ffe9c7;
+}
+#accuracy-hint-text { flex: 1; }
+#btn-apply-radius {
+  background: #f0a831; color: #3b2708; border: none; border-radius: 7px;
+  font-weight: 700; font-size: 13px; padding: 9px 12px; min-height: 38px; flex: 0 0 auto;
+}
 
 /* ---------- map ---------- */
 #map { flex: 1 1 auto; width: 100%; z-index: 1; }
@@ -62,80 +108,173 @@ body { display: flex; flex-direction: column; }
   box-shadow: 0 0 8px rgba(25,118,210,.9);
 }
 
+/* 正在播放的景點：脈動光環 */
+.poi-playing {
+  animation: poi-pulse 1.2s ease-in-out infinite;
+  transform-origin: center;
+}
+@keyframes poi-pulse {
+  0%, 100% { stroke-width: 2; opacity: 1; }
+  50% { stroke-width: 9; opacity: .75; }
+}
+
 .poi-popup .popup-photo img {
   width: 100%; max-height: 130px; object-fit: cover;
   border-radius: 8px; margin-bottom: 6px; display: block;
 }
-.poi-popup h3 { font-size: 15px; margin-bottom: 2px; }
-.poi-popup .en { color: #666; font-size: 12px; margin-bottom: 6px; }
+.poi-popup h3 { font-size: 16px; margin-bottom: 2px; }
+.poi-popup .en { color: #666; font-size: 12.5px; margin-bottom: 6px; }
 .poi-popup .day-tag {
-  display: inline-block; background: #1a3a5c; color: #fff;
-  font-size: 11px; border-radius: 4px; padding: 1px 6px; margin-bottom: 6px;
+  display: inline-block; background: var(--navy); color: #fff;
+  font-size: 11.5px; border-radius: 4px; padding: 2px 7px; margin-bottom: 6px;
 }
-.poi-popup p { font-size: 13px; line-height: 1.6; max-height: 140px; overflow-y: auto; }
+.poi-popup p { font-size: 14px; line-height: 1.65; max-height: 150px; overflow-y: auto; }
 .poi-popup button {
-  margin-top: 8px; background: #2e9e5b; color: #fff; border: none;
-  border-radius: 6px; padding: 6px 12px; font-size: 13px; cursor: pointer;
+  margin-top: 8px; background: var(--green); color: #fff; border: none;
+  border-radius: 8px; padding: 0 14px; min-height: var(--tap); font-size: 14px; width: 100%;
 }
 
 /* ---------- side panel ---------- */
+#panel-backdrop {
+  position: absolute; inset: 0; background: rgba(0,0,0,.4); z-index: 1150;
+}
 #panel {
   position: absolute; top: 0; right: 0; bottom: 0;
-  width: min(360px, 92vw);
-  background: #fff; z-index: 1200;
-  box-shadow: -2px 0 12px rgba(0,0,0,.35);
+  width: min(380px, 94vw);
+  background: var(--surface); z-index: 1200;
+  box-shadow: -2px 0 14px rgba(0,0,0,.35);
   display: flex; flex-direction: column;
 }
 #panel-header {
   display: flex; justify-content: space-between; align-items: center;
-  background: #1a3a5c; color: #fff; padding: 10px 12px;
+  background: var(--navy); color: #fff;
+  padding: max(6px, env(safe-area-inset-top)) 8px 6px 14px;
 }
-#panel-header h2 { font-size: 15px; }
-#btn-close-panel { background: none; border: none; color: #fff; font-size: 18px; cursor: pointer; }
-
-#panel-tools { padding: 8px 12px; border-bottom: 1px solid #e5e5e5; }
-#panel-tools button {
-  background: #eee; border: 1px solid #ccc; border-radius: 6px;
-  padding: 5px 10px; font-size: 12px; cursor: pointer;
+#panel-header h2 { font-size: 16px; }
+#btn-close-panel, #btn-close-settings {
+  background: none; border: none; color: #fff; font-size: 20px;
+  min-width: var(--tap); min-height: var(--tap);
 }
 
-#poi-list { flex: 1; overflow-y: auto; padding: 6px 0 30px; }
+#panel-tools { padding: 10px 12px; border-bottom: 1px solid var(--hair); }
+#poi-search {
+  width: 100%; min-height: var(--tap); padding: 0 12px; font-size: 15px;
+  border: 1px solid #ccd3da; border-radius: 9px; background: var(--surface); color: var(--text);
+}
+#panel-scope { display: flex; gap: 6px; margin-top: 8px; }
+.scope-btn {
+  flex: 1; min-height: 38px; border: 1px solid #ccd3da; background: var(--surface);
+  color: var(--text); border-radius: 8px; font-size: 13.5px;
+}
+.scope-btn.is-active { background: var(--navy); border-color: var(--navy); color: #fff; font-weight: 700; }
 
-#poi-list details { border-bottom: 1px solid #eee; }
+#poi-list { flex: 1; overflow-y: auto; padding-bottom: 40px; -webkit-overflow-scrolling: touch; }
+
+#poi-list details { border-bottom: 1px solid var(--hair); }
 #poi-list summary {
-  padding: 10px 12px; font-weight: 700; font-size: 14px;
-  cursor: pointer; background: #f6f8fa; user-select: none;
+  padding: 13px 12px; font-weight: 700; font-size: 14.5px;
+  cursor: pointer; background: var(--group-bg); user-select: none;
+  display: flex; align-items: center; gap: 7px; min-height: var(--tap);
 }
-#poi-list summary .count { color: #888; font-weight: 400; font-size: 12px; }
+#poi-list summary .swatch {
+  width: 11px; height: 11px; border-radius: 50%; flex: 0 0 auto;
+  border: 1.5px solid rgba(0,0,0,.18);
+}
+#poi-list summary .count { color: var(--muted); font-weight: 400; font-size: 12.5px; }
+
+#poi-empty { padding: 30px 20px; text-align: center; color: var(--muted); font-size: 14px; line-height: 1.7; }
 
 .poi-item {
   display: flex; align-items: center; gap: 8px;
-  padding: 8px 12px; border-top: 1px solid #f2f2f2; font-size: 13px;
+  padding: 6px 10px 6px 12px; border-top: 1px solid var(--hair); font-size: 14px;
 }
-.poi-item .info { flex: 1; min-width: 0; cursor: pointer; }
+.poi-item .info {
+  flex: 1; min-width: 0; cursor: pointer;
+  min-height: var(--tap); display: flex; flex-direction: column; justify-content: center;
+}
 .poi-item .name { font-weight: 600; }
-.poi-item .meta { color: #888; font-size: 11px; }
+.poi-item .meta { color: var(--muted); font-size: 11.5px; margin-top: 2px; }
+.poi-item.playing { background: rgba(46,158,91,.14); }
+.poi-item.playing .name::before { content: "🔊 "; }
 .poi-item.visited .name { color: #999; }
-.poi-item.visited .name::after { content: " ✓已聽"; color: #2e9e5b; font-size: 11px; }
+.poi-item.visited .name::after { content: " ✓已聽"; color: var(--green); font-size: 11.5px; }
 .poi-item button {
-  background: #2d5f8f; color: #fff; border: none; border-radius: 6px;
-  padding: 5px 9px; font-size: 12px; cursor: pointer; flex: 0 0 auto;
+  background: var(--navy-lite); color: #fff; border: none; border-radius: 8px;
+  min-width: var(--tap); min-height: var(--tap); font-size: 17px; flex: 0 0 auto;
 }
+
+/* ---------- settings sheet ---------- */
+#settings-sheet {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  max-height: 88%; overflow-y: auto;
+  background: var(--surface); z-index: 1250;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 -4px 20px rgba(0,0,0,.35);
+  padding-bottom: max(20px, env(safe-area-inset-bottom));
+}
+#settings-header {
+  display: flex; justify-content: space-between; align-items: center;
+  background: var(--navy); color: #fff; padding: 8px 8px 8px 14px;
+  border-radius: 16px 16px 0 0; position: sticky; top: 0;
+}
+#settings-header h2 { font-size: 16px; }
+
+.setting-row { padding: 14px; border-bottom: 1px solid var(--hair); }
+.setting-row > label { display: block; font-size: 14.5px; margin-bottom: 8px; }
+.setting-row input[type=range] { width: 100%; height: 34px; }
+.setting-row select {
+  width: 100%; min-height: var(--tap); font-size: 15px; padding: 0 10px;
+  border: 1px solid #ccd3da; border-radius: 9px; background: var(--surface); color: var(--text);
+}
+.setting-row > button {
+  width: 100%; min-height: var(--tap); font-size: 15px;
+  background: var(--navy-lite); color: #fff; border: none; border-radius: 9px;
+}
+.setting-row > button.danger { background: var(--surface); color: var(--red); border: 1px solid var(--red); }
+.setting-note { color: var(--muted); font-size: 12.5px; line-height: 1.55; margin-top: 7px; display: block; }
+.setting-row > label.switch-row {
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  min-height: var(--tap); margin-bottom: 0;
+}
+.switch-row input[type=checkbox] { width: 26px; height: 26px; flex: 0 0 auto; }
 
 /* ---------- now playing bar ---------- */
 #now-playing {
-  position: absolute; left: 10px; right: 10px; bottom: 14px;
-  background: rgba(26,58,92,.95); color: #fff;
-  border-radius: 10px; padding: 10px 12px;
-  display: flex; align-items: center; gap: 10px;
-  z-index: 1150; box-shadow: 0 4px 14px rgba(0,0,0,.4);
+  position: absolute; left: 10px; right: 10px;
+  bottom: max(14px, env(safe-area-inset-bottom));
+  background: rgba(26,58,92,.96); color: #fff;
+  border-radius: 12px; padding: 10px;
+  display: flex; align-items: center; gap: 8px;
+  z-index: 1140; box-shadow: 0 4px 14px rgba(0,0,0,.4);
 }
-#np-text { flex: 1; font-size: 13px; line-height: 1.5; }
-#btn-skip {
-  background: #b34040; color: #fff; border: none; border-radius: 6px;
-  padding: 6px 10px; font-size: 13px; cursor: pointer; flex: 0 0 auto;
+#np-body { flex: 1; min-width: 0; }
+#np-text { font-size: 13.5px; line-height: 1.5; }
+#np-queue { font-size: 11.5px; color: #a9c8e4; margin-top: 3px; }
+#btn-pause, #btn-skip {
+  color: #fff; border: none; border-radius: 9px;
+  min-width: var(--tap); min-height: var(--tap); font-size: 17px; flex: 0 0 auto;
 }
+#btn-pause { background: var(--navy-lite); }
+#btn-skip { background: var(--red); }
 
 @media (min-width: 700px) {
-  #title-row h1 { font-size: 18px; }
+  #day-badge-num { font-size: 19px; }
+}
+
+/* ---------- dark mode ---------- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: #1c2229;
+    --text: #e8eaec;
+    --muted: #97a1ab;
+    --hair: #2c343d;
+    --group-bg: #242c35;
+  }
+  #poi-search, .setting-row select, .scope-btn { border-color: #3a444f; }
+  .setting-row > button.danger { background: transparent; }
+  .poi-popup .en { color: #9aa4ae; }
+  .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1c2229; color: #e8eaec; }
+  .leaflet-container a.leaflet-popup-close-button { color: #9aa4ae; }
+  /* 夜間降低圖磚亮度，避免刺眼 */
+  .leaflet-tile-pane { filter: brightness(.72) contrast(1.05); }
 }
