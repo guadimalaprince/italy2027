@@ -97,7 +97,7 @@ var DAYS = [
   ],
   plan: ["穿越 Sennes 高原：喀斯特地形與放牧草原，視野開闊好走", "Fodara Vedla 百年木造山屋喝一杯", "陡下 Pederü 谷底（落差 500m，護膝／登山杖）再緩上 Fanes", "Fanes 高原是 Ladin 傳說的核心舞台——今晚就住在傳說中的銀色王國"],
   stay: { city: "Rifugio Fanes（2,060m）", status: "confirmed", name: "Rifugio Fanes",
-    booking: { room: "獨立房間附衛浴", total: 499, paid: 250, board: "含早餐＋晚餐（半食宿）" },
+    booking: { room: "獨立房間附衛浴", people: 3, nights: 1, total: 499, paid: 250, board: "含早餐＋晚餐（半食宿）" },
     note: "已訂房，抵達後直接報名字即可" },
   warn: [] },
 
@@ -107,7 +107,7 @@ var DAYS = [
   ],
   plan: ["清晨出發：今天路長，下午容易起雷雨", "Limo 湖與 Limo 埡口 → 翻過 Forcella del Lago（2,486m）", "接皇家獵兵之路 Kaiserjägersteig 陡上 Lagazuoi", "傍晚在山屋露台看夕陽染紅 Tofane 與 Marmolada——這是全程最好的一晚"],
   stay: { city: "Rifugio Lagazuoi（2,752m）", status: "confirmed", name: "Rifugio Lagazuoi",
-    booking: { room: "上下舖通鋪，共用衛浴", total: 360, paid: 180, board: "含早餐＋晚餐（半食宿）" },
+    booking: { room: "上下舖通鋪，共用衛浴", people: 3, nights: 1, total: 360, paid: 180, board: "含早餐＋晚餐（半食宿）" },
     note: "已訂房。全多洛米蒂景觀最好的山屋之一，露台正對日落" },
   warn: ["⚠️ Forcella del Lago 是北向高繞，六月中殘雪機率高——出發前向 Fanes 山屋確認雪況，必要時帶微型冰爪", "今天沒有中途補給點，水與行動糧要帶足"] },
 
