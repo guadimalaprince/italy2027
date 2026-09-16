@@ -412,7 +412,7 @@ var POIS = [
 
 
 // ============================================================
-// Day 7 波爾扎諾 Bolzano
+// Day 7–8 波爾扎諾 Bolzano
 // ============================================================
 
 { id: "bz-station", name: "波爾扎諾車站", en: "Bolzano/Bozen Stazione", lat: 46.4961, lng: 11.3589, day: 7, area: "波爾扎諾", wiki: "Bolzano",
@@ -430,7 +430,7 @@ var POIS = [
 { id: "bz-erbe", name: "草藥廣場市集", en: "Piazza delle Erbe", lat: 46.4995, lng: 11.3524, day: 7, area: "波爾扎諾", wiki: "Bolzano",
   text: "草藥廣場的果菜市集已經連續營業七百年了！攤位上堆滿南提洛蘋果、山區蜂蜜、各種德式香腸和麵包。街角的海神噴泉是當地人約碰面的地標。這裡的蘋果汁和蘋果酥捲 Strudel 特別有名，買一份邊走邊吃吧！" },
 
-{ id: "bz-otzi", name: "冰人奧茨（考古博物館）", en: "Museo Archeologico - Ötzi", lat: 46.4995, lng: 11.3510, day: 7, area: "波爾扎諾", wiki: "Ötzi",
+{ id: "bz-otzi", name: "冰人奧茨（考古博物館）", en: "Museo Archeologico - Ötzi", lat: 46.4995, lng: 11.3510, day: 8, area: "波爾扎諾", wiki: "Ötzi",
   text: "準備好見一位五千三百歲的老朋友了嗎？冰人奧茨是全世界保存最完整的天然木乃伊，一九九一年在附近的冰川被登山客發現。他生活在銅器時代，比埃及金字塔還古老！研究發現他是被箭射中背部謀殺的——一樁五千年的懸案。博物館展出他的銅斧、草鞋、熊皮帽，你可以透過小窗看到本尊，安睡在攝氏零下六度的恆溫室裡。" },
 
 { id: "bz-talvera", name: "塔爾維拉河濱步道", en: "Passeggiata Lungotalvera", lat: 46.4995, lng: 11.3480, day: 7, area: "波爾扎諾", wiki: "Talvera",
@@ -442,214 +442,214 @@ var POIS = [
 
 
 // ============================================================
-// Day 8 卡雷扎湖 / Rosengarten 薔薇園
+// Day 20 卡雷扎湖 / Rosengarten（Val Gardena 替代方案）
 // ============================================================
 
-{ id: "car-lake", name: "卡雷扎湖（彩虹湖）", en: "Lago di Carezza / Karersee", lat: 46.4106, lng: 11.5744, day: 8, area: "卡雷扎湖 / Rosengarten", wiki: "Lake Carezza",
+{ id: "car-lake", name: "卡雷扎湖（彩虹湖）", en: "Lago di Carezza / Karersee", lat: 46.4106, lng: 11.5744, day: 20, area: "卡雷扎湖 / Rosengarten", wiki: "Lake Carezza",
   text: "歡迎來到卡雷扎湖，拉登語叫『彩虹湖』！傳說巫師為了追求住在湖裡的人魚公主翁蒂娜，在湖上造了一道彩虹，求愛失敗後憤而把彩虹砸碎沉入湖底——從此湖水便有了從翡翠綠到寶藍的漸層。湖水來自地下湧泉，水位隨季節變化，初夏雪融時最滿最美。沿環湖木棧道走一圈約三十分鐘，湖區禁止下水，請用眼睛好好收藏。" },
 
-{ id: "car-latemar-view", name: "拉特馬爾倒影觀景台", en: "Latemar Viewpoint", lat: 46.4113, lng: 11.5757, day: 8, area: "卡雷扎湖 / Rosengarten", wiki: "Latemar",
+{ id: "car-latemar-view", name: "拉特馬爾倒影觀景台", en: "Latemar Viewpoint", lat: 46.4113, lng: 11.5757, day: 20, area: "卡雷扎湖 / Rosengarten", wiki: "Latemar",
   text: "湖畔這個觀景平台正對拉特馬爾峰群——一整排白色岩塔映在湖面上的倒影，是多洛米蒂被印上最多明信片的畫面之一，清晨無風時倒影最完整。十九世紀末這裡曾有豪華的卡雷扎大飯店，邱吉爾和推理女王阿嘉莎·克莉絲蒂都是座上賓。看完湖，搭巴士回波爾扎諾，轉往加爾迪納山谷！" },
 
 
 
-{ id: "ros-fronza", name: "Fronza 山屋（纜車終點）", en: "Rifugio Fronza / Kölner Hütte 2337m", lat: 46.4266, lng: 11.6055, day: 8, area: "卡雷扎湖 / Rosengarten", wiki: "Rosengarten group",
+{ id: "ros-fronza", name: "Fronza 山屋（纜車終點）", en: "Rifugio Fronza / Kölner Hütte 2337m", lat: 46.4266, lng: 11.6055, day: 20, area: "卡雷扎湖 / Rosengarten", wiki: "Rosengarten group",
   text: "歡迎來到薔薇園山群的腳下！Rosengarten 意思是玫瑰園，名字來自矮人國王勞林的傳說：他的秘密玫瑰園被人類發現後，他詛咒玫瑰白天黑夜都不許開花——卻忘了黃昏。所以每到日落，整面石灰岩山壁會燒成玫瑰紅色，這就是多洛米蒂著名的 Enrosadira。Fronza 山屋是 Santner Pass 鐵索路線的起點，出發前在這裡確認裝備：吊帶、確保組、頭盔。" },
 
-{ id: "ros-santnerpass", name: "Santner Pass 鐵索路線與山屋", en: "Santnerpass Hütte 2734m (Via Ferrata)", lat: 46.4325, lng: 11.6095, day: 8, area: "卡雷扎湖 / Rosengarten", wiki: "Rosengarten group",
+{ id: "ros-santnerpass", name: "Santner Pass 鐵索路線與山屋", en: "Santnerpass Hütte 2734m (Via Ferrata)", lat: 46.4325, lng: 11.6095, day: 20, area: "卡雷扎湖 / Rosengarten", wiki: "Rosengarten group",
   text: "Santner 隘口以一八七八年首攀薔薇園主峰的登山家約翰·桑特納命名。這條鐵索路線難度中等（B/C），沿途鐵梯與鋼索穿過岩溝與峭壁，上行約一個半到兩小時，暴露感十足但風景驚人。卡在隘口岩縫間的 Santnerpass 山屋像鷹巢一樣，露台正對西多洛米蒂全景。六月中旬岩溝裡可能還有殘雪，出發前務必確認路況與山屋開放狀態，天氣不穩就果斷撤退——山永遠都在。" },
 
-{ id: "ros-vajolet-view", name: "瓦約雷特塔觀景點", en: "Vajolet Towers viewpoint", lat: 46.4360, lng: 11.6170, day: 8, area: "卡雷扎湖 / Rosengarten", wiki: "Vajolet Towers",
+{ id: "ros-vajolet-view", name: "瓦約雷特塔觀景點", en: "Vajolet Towers viewpoint", lat: 46.4360, lng: 11.6170, day: 20, area: "卡雷扎湖 / Rosengarten", wiki: "Vajolet Towers",
   text: "從 Santner 隘口望向另一側山谷：三根細長的岩塔並肩直立，就是攀岩史上的聖地瓦約雷特塔。中間的溫克勒塔在一八八七年被十七歲的少年溫克勒獨攀征服，開創了多洛米蒂攀岩的黃金年代。三塔在夕陽下像三根燃燒的手指，是薔薇園傳說中矮人國王的宮殿石柱。看完這一眼，就心滿意足地原路下山吧！" },
 
 // ============================================================
-// Day 8–11 Val Gardena
+// Day 17–20 Val Gardena
 // ============================================================
 
-{ id: "vg-ortisei", name: "奧蒂賽伊鎮中心", en: "Ortisei / St. Ulrich", lat: 46.5762, lng: 11.6713, day: 8, area: "Val Gardena", wiki: "Urtijëi",
+{ id: "vg-ortisei", name: "奧蒂賽伊鎮中心", en: "Ortisei / St. Ulrich", lat: 46.5762, lng: 11.6713, day: 17, area: "Val Gardena", wiki: "Urtijëi",
   text: "歡迎來到奧蒂賽伊，加爾迪納山谷最大的小鎮！這裡的居民說的是拉登語——一種只有三萬人使用的古老山地語言，所以這個鎮有三個名字。小鎮以木雕工藝聞名五百年，行人徒步區兩側是彩繪的提洛爾式房屋和木雕店。抬頭就能看到明天要去的 Seceda 山，以及對面的 Alpe di Siusi 高原。" },
 
-{ id: "vg-church", name: "聖烏爾里希教堂", en: "Chiesa di Sant'Ulrico", lat: 46.5755, lng: 11.6707, day: 8, area: "Val Gardena", wiki: "Urtijëi",
+{ id: "vg-church", name: "聖烏爾里希教堂", en: "Chiesa di Sant'Ulrico", lat: 46.5755, lng: 11.6707, day: 17, area: "Val Gardena", wiki: "Urtijëi",
   text: "這座洋蔥頭鐘塔的巴洛克教堂是奧蒂賽伊的地標，典型的提洛爾山村風格。教堂內的雕刻裝飾大多出自本地木雕師之手，展現加爾迪納山谷五百年的木雕功力。教堂前廣場是眺望周圍群山的好位置，鐘聲響起時整個山谷都聽得到。" },
 
-{ id: "vg-seceda-base", name: "Seceda 纜車站", en: "Funivia Seceda", lat: 46.5779, lng: 11.6749, day: 9, area: "Val Gardena", wiki: "Seceda",
+{ id: "vg-seceda-base", name: "Seceda 纜車站", en: "Funivia Seceda", lat: 46.5779, lng: 11.6749, day: 18, area: "Val Gardena", wiki: "Seceda",
   text: "從這裡搭兩段纜車，十五分鐘就能從一千兩百公尺直上兩千五百公尺的 Seceda 山頂！記得帶外套，山頂溫度比山下低十度左右。纜車窗外的景色會從森林、草原一路變成裸露的白雲岩山壁，這正是多洛米蒂的招牌地質。" },
 
-{ id: "vg-seceda-top", name: "Seceda 山頂稜線", en: "Seceda 2519m", lat: 46.5983, lng: 11.7163, day: 9, area: "Val Gardena", wiki: "Seceda",
+{ id: "vg-seceda-top", name: "Seceda 山頂稜線", en: "Seceda 2519m", lat: 46.5983, lng: 11.7163, day: 18, area: "Val Gardena", wiki: "Seceda",
   text: "眼前就是多洛米蒂最著名的畫面之一——Seceda 稜線！Odle 山群像一排巨大的斜切刀鋒，以四十五度角刺向天空，德語名字 Geisler 意思是『雲杉般聳立的岩針』。這片山壁是兩億五千萬年前的珊瑚礁化石，你腳下的草原曾經是熱帶淺海！沿著稜線步道走，每一步都是明信片。這裡也是聯合國世界自然遺產的核心區。" },
 
-{ id: "vg-seceda-cross", name: "Seceda 山頂十字架", en: "Croce di Seceda", lat: 46.5990, lng: 11.7195, day: 9, area: "Val Gardena", wiki: "Seceda",
+{ id: "vg-seceda-cross", name: "Seceda 山頂十字架", en: "Croce di Seceda", lat: 46.5990, lng: 11.7195, day: 18, area: "Val Gardena", wiki: "Seceda",
   text: "山頂十字架是阿爾卑斯山的傳統，感謝山神庇佑、紀念山難者。站在這裡三百六十度環視：北邊是奧地利的冰川山峰，南邊是 Sassolungo 和 Sella 山塊，東邊 Odle 岩針近在咫尺。運氣好還能看到金雕在山谷上空盤旋。拍完照可以到附近的山屋喝杯熱可可。" },
 
-{ id: "vg-alpe-mont", name: "Mont Sëuc 纜車山頂站", en: "Mont Sëuc / Alpe di Siusi", lat: 46.5585, lng: 11.6500, day: 10, area: "Val Gardena", wiki: "Seiser Alm",
+{ id: "vg-alpe-mont", name: "Mont Sëuc 纜車山頂站", en: "Mont Sëuc / Alpe di Siusi", lat: 46.5585, lng: 11.6500, day: 19, area: "Val Gardena", wiki: "Seiser Alm",
   text: "歡迎來到歐洲最大的高山草原——Alpe di Siusi，德語叫 Seiser Alm！五十六平方公里的起伏草原，夏天開滿野花，點綴著木造小屋。這片草原自古是山谷牧民的夏季牧場，傳說也是女巫聚會的地方，附近還有『女巫長椅』岩石。沿著緩坡步道隨意走走，怎麼拍都美。" },
 
-{ id: "vg-alpe-compatsch", name: "Compatsch 草原村", en: "Compatsch / Compaccio", lat: 46.5399, lng: 11.6169, day: 10, area: "Val Gardena", wiki: "Seiser Alm",
+{ id: "vg-alpe-compatsch", name: "Compatsch 草原村", en: "Compatsch / Compaccio", lat: 46.5399, lng: 11.6169, day: 19, area: "Val Gardena", wiki: "Seiser Alm",
   text: "Compatsch 是 Alpe di Siusi 草原的入口小村，也是草原上唯一有商店和餐廳聚落的地方。這裡海拔一千八百五十公尺，夏季私家車管制，只有纜車、巴士和單車能上來，所以草原才能保持這麼純淨。租一台電動登山車漫遊草原，是這裡最受歡迎的玩法。" },
 
-{ id: "vg-sassolungo-view", name: "Sassolungo 觀景點", en: "Sassolungo / Langkofel view", lat: 46.5400, lng: 11.6600, day: 10, area: "Val Gardena", wiki: "Langkofel",
+{ id: "vg-sassolungo-view", name: "Sassolungo 觀景點", en: "Sassolungo / Langkofel view", lat: 46.5400, lng: 11.6600, day: 19, area: "Val Gardena", wiki: "Langkofel",
   text: "草原正前方那座三千一百八十一公尺的巨大山塊就是 Sassolungo，意思是『長石』，德語叫 Langkofel。它和旁邊圓胖的 Sassopiatto『平石』組成多洛米蒂最有辨識度的雙峰剪影。傍晚的玫瑰色黃昏時分，整面山壁會從灰白轉成粉紅再變紫紅，是攝影師蹲點的經典畫面。" },
 
-{ id: "vg-passo-sella", name: "塞拉隘口", en: "Passo Sella", lat: 46.5089, lng: 11.7563, day: 11, area: "Val Gardena", wiki: "Sella Pass",
+{ id: "vg-passo-sella", name: "塞拉隘口", en: "Passo Sella", lat: 46.5089, lng: 11.7563, day: 20, area: "Val Gardena", wiki: "Sella Pass",
   text: "塞拉隘口海拔兩千兩百四十公尺，是連接加爾迪納山谷和法薩山谷的高山公路埡口，也是環塞拉山塊公路傳奇的一段，每年環義自行車賽的經典爬坡。北邊是巨大的塞拉山塊平頂岩牆，南邊是 Sassolungo 的尖峰，兩大山塊在此對峙，氣勢驚人。" },
 
-{ id: "vg-forcella-sasso", name: "Sassolungo 山坳（Toni Demetz 小屋）", en: "Forcella del Sassolungo", lat: 46.5140, lng: 11.7450, day: 11, area: "Val Gardena", wiki: "Langkofel",
+{ id: "vg-forcella-sasso", name: "Sassolungo 山坳（Toni Demetz 小屋）", en: "Forcella del Sassolungo", lat: 46.5140, lng: 11.7450, day: 20, area: "Val Gardena", wiki: "Langkofel",
   text: "恭喜你抵達海拔兩千六百八十公尺的 Sassolungo 山坳！從塞拉隘口上來的這座立式吊籃纜車非常復古刺激，像一顆顆膠囊把人吊上山。山坳夾在 Sassolungo 的兩面巨牆之間，Toni Demetz 小屋就卡在缺口上。往下望是巨石嶙峋的冰斗谷，健行者沿著碎石路蜿蜒而下，像一條人的河流。這裡的景色荒涼壯闊，跟草原完全是兩個世界。" },
 
 
 
 // ============================================================
-// Day 12 Val di Funes 富內斯山谷
+// Day 17 Val di Funes 富內斯山谷
 // ============================================================
 
-{ id: "vdf-magdalena-view", name: "聖瑪達肋納觀景點", en: "St. Magdalena Viewpoint", lat: 46.6428, lng: 11.716, day: 12, area: "Val di Funes", wiki: "Villnöß",
+{ id: "vdf-magdalena-view", name: "聖瑪達肋納觀景點", en: "St. Magdalena Viewpoint", lat: 46.6428, lng: 11.716, day: 17, area: "Val di Funes", wiki: "Villnöß",
   text: "眼前就是多洛米蒂最著名的攝影構圖：聖瑪達肋納小教堂的尖塔立在綠色山坡上，背後是 Odle 峰群鋸齒狀的岩壁拔地而起，這個畫面代言過無數旅遊雜誌封面。最佳拍攝點就在村子上方的觀景小徑，下午順光。富內斯是多洛米蒂最安靜的山谷之一：沒有纜車、沒有滑雪場，只有牧場、教堂和岩壁。" },
 
-{ id: "vdf-magdalena-church", name: "聖瑪達肋納教堂", en: "Chiesa di Santa Maddalena", lat: 46.6412, lng: 11.7141, day: 12, area: "Val di Funes", wiki: "Villnöß",
+{ id: "vdf-magdalena-church", name: "聖瑪達肋納教堂", en: "Chiesa di Santa Maddalena", lat: 46.6412, lng: 11.7141, day: 17, area: "Val di Funes", wiki: "Villnöß",
   text: "聖瑪達肋納教堂建於十四世紀，傳說洪水沖來一尊聖瑪達肋納像，村民便在原地建堂供奉，教堂內有精美的哥德式壁畫。登山傳奇萊茵霍爾德·梅斯納——史上第一位完攀全部十四座八千公尺巨峰的人——就是在這個山谷出生長大的，他說過：Odle 是全世界最美的山。" },
 
-{ id: "vdf-ranui", name: "聖若望小教堂（Ranui）", en: "Chiesetta di San Giovanni in Ranui", lat: 46.6381, lng: 11.7005, day: 12, area: "Val di Funes", wiki: "Villnöß",
+{ id: "vdf-ranui", name: "聖若望小教堂（Ranui）", en: "Chiesetta di San Giovanni in Ranui", lat: 46.6381, lng: 11.7005, day: 17, area: "Val di Funes", wiki: "Villnöß",
   text: "草地中央這座洋蔥頂小教堂是聖若望教堂，一七四四年建的巴洛克私人禮拜堂，身後就是 Odle 峰群近乎垂直的石灰岩大牆。一座溫柔的小教堂配一面兩千公尺高的岩壁，這種反差讓它成為全多洛米蒂被拍最多的教堂。教堂位在私人牧場裡，請在圍欄外拍照，並投幣支持牧場主人維護這片草地。" },
 
-{ id: "vdf-munkel", name: "Adolf Munkel 步道", en: "Sentiero Adolf Munkel", lat: 46.633, lng: 11.738, day: 12, area: "Val di Funes", wiki: "Geisler group",
+{ id: "vdf-munkel", name: "Adolf Munkel 步道", en: "Sentiero Adolf Munkel", lat: 46.633, lng: 11.738, day: 17, area: "Val di Funes", wiki: "Geisler group",
   text: "Adolf Munkel 步道沿著 Odle 峰群的北麓山腳蜿蜒，從 Zans 高山牧場出發，是全多洛米蒂性價比最高的健行路線之一：坡度平緩、穿越森林與牧場，頭頂就是千米岩壁。中途的 Geisleralm 牧屋餐廳有一排正對岩壁的木躺椅——點一份烤起司麵疙瘩，躺著看山，就是富內斯式的奢侈。" },
 
 
 
 // ============================================================
-// Day 12–14 Dobbiaco / Tre Cime / Misurina
+// Day 15–16 Dobbiaco / Tre Cime / Misurina
 // ============================================================
 
-{ id: "dob-station", name: "多比亞科車站", en: "Stazione di Dobbiaco / Toblach", lat: 46.7264, lng: 12.2192, day: 12, area: "Dobbiaco / Tre Cime", wiki: "Toblach",
+{ id: "dob-station", name: "多比亞科車站", en: "Stazione di Dobbiaco / Toblach", lat: 46.7264, lng: 12.2192, day: 15, area: "Dobbiaco / Tre Cime", wiki: "Toblach",
   text: "歡迎來到多比亞科，德語叫托布拉赫，普斯特谷地的門戶小鎮，接下來幾天的大本營！這座美麗的舊車站建於一八七一年奧匈帝國時代，作曲家馬勒每年夏天都搭火車來這裡避暑作曲。從這裡搭巴士，二十分鐘到布萊耶斯湖，三十分鐘到米蘇里納湖，位置絕佳。" },
 
-{ id: "dob-town", name: "多比亞科鎮中心", en: "Dobbiaco / Toblach", lat: 46.7345, lng: 12.2210, day: 12, area: "Dobbiaco / Tre Cime", wiki: "Toblach",
+{ id: "dob-town", name: "多比亞科鎮中心", en: "Dobbiaco / Toblach", lat: 46.7345, lng: 12.2210, day: 15, area: "Dobbiaco / Tre Cime", wiki: "Toblach",
   text: "多比亞科小而美，聖約翰教堂的洋蔥頭塔是全鎮的中心。馬勒在附近的農舍裡完成了第九號交響曲和大地之歌，鎮上的文化中心以他命名，每年夏天舉辦馬勒音樂節。這裡的麵包店賣普斯特谷特產黑麥麵包，買一些當明天的登山糧吧！" },
 
-{ id: "dob-lake", name: "多比亞科湖", en: "Lago di Dobbiaco", lat: 46.7080, lng: 12.2210, day: 13, area: "Dobbiaco / Tre Cime", wiki: "Lake Dobbiaco",
+{ id: "dob-lake", name: "多比亞科湖", en: "Lago di Dobbiaco", lat: 46.7080, lng: 12.2210, day: 16, area: "Dobbiaco / Tre Cime", wiki: "Lake Dobbiaco",
   text: "多比亞科湖是一座翡翠綠的山間湖泊，位在通往 Landro 谷地的入口。湖畔有環湖步道和划船碼頭，水鳥很多，是自然保護區。往南望，谷地深處已經能瞄到 Cristallo 山群的鋸齒稜線。這裡是往米蘇里納巴士的中途站，回程可以在此下車散步一圈。" },
 
-{ id: "tc-auronzo", name: "Auronzo 山屋（環線起點）", en: "Rifugio Auronzo 2333m", lat: 46.6123, lng: 12.2951, day: 13, area: "Dobbiaco / Tre Cime", wiki: "Rifugio Auronzo",
+{ id: "tc-auronzo", name: "Auronzo 山屋（環線起點）", en: "Rifugio Auronzo 2333m", lat: 46.6123, lng: 12.2951, day: 15, area: "Dobbiaco / Tre Cime", wiki: "Rifugio Auronzo",
   text: "歡迎來到海拔兩千三百三十三公尺的 Auronzo 山屋，Tre Cime 環形步道的起點！眼前巨大的黃灰色岩壁就是三尖峰的南壁。環線全程約十公里，順時針走，大部分平緩，約三到四小時。出發前檢查一下：水、防風外套、太陽眼鏡。山上天氣說變就變，下午常有雷陣雨，早出發早安心。準備好了嗎？出發！" },
 
-{ id: "tc-chapel", name: "阿爾卑斯禮拜堂", en: "Cappella degli Alpini", lat: 46.6135, lng: 12.3020, day: 13, area: "Dobbiaco / Tre Cime", wiki: "Tre Cime di Lavaredo",
+{ id: "tc-chapel", name: "阿爾卑斯禮拜堂", en: "Cappella degli Alpini", lat: 46.6135, lng: 12.3020, day: 15, area: "Dobbiaco / Tre Cime", wiki: "Tre Cime di Lavaredo",
   text: "這座小小的白色禮拜堂紀念義大利山地部隊的陣亡將士。一次大戰時，Tre Cime 正好位於義大利與奧匈帝國的前線，士兵們在海拔近三千公尺的岩壁上鑿隧道、拉炮台，在冰雪中對峙了三年。禮拜堂前是眺望 Cadini 岩塔群的絕佳位置。" },
 
-{ id: "tc-lavaredo", name: "Lavaredo 山屋", en: "Rifugio Lavaredo", lat: 46.6155, lng: 12.3170, day: 13, area: "Dobbiaco / Tre Cime", wiki: "Tre Cime di Lavaredo",
+{ id: "tc-lavaredo", name: "Lavaredo 山屋", en: "Rifugio Lavaredo", lat: 46.6155, lng: 12.3170, day: 15, area: "Dobbiaco / Tre Cime", wiki: "Tre Cime di Lavaredo",
   text: "Lavaredo 山屋是環線上的第一個補給點，就在三尖峰的正下方。從這裡開始，步道緩緩爬向 Lavaredo 埡口，三尖峰的側影會慢慢『轉』出來。累了可以在山屋露台喝杯熱茶，看攀岩者在頭頂的大牆上像小螞蟻一樣移動。" },
 
-{ id: "tc-forcella", name: "Lavaredo 埡口（三尖峰經典視角）", en: "Forcella Lavaredo", lat: 46.6190, lng: 12.3220, day: 13, area: "Dobbiaco / Tre Cime", wiki: "Tre Cime di Lavaredo",
+{ id: "tc-forcella", name: "Lavaredo 埡口（三尖峰經典視角）", en: "Forcella Lavaredo", lat: 46.6190, lng: 12.3220, day: 15, area: "Dobbiaco / Tre Cime", wiki: "Tre Cime di Lavaredo",
   text: "登上 Lavaredo 埡口的瞬間，三尖峰的北壁全景轟然展開——這就是多洛米蒂最著名的一幕！三根巨大的白雲岩石柱並肩而立，最高的大尖峰兩千九百九十九公尺，五百公尺垂直的北壁是世界攀岩史的聖地，一九三三年首攀轟動全歐洲。三尖峰也是南提洛與威尼托的界碑、聯合國世界遺產的象徵。慢慢走，這段路每一步都捨不得眨眼。" },
 
-{ id: "tc-locatelli", name: "Locatelli 山屋（三尖峰小屋）", en: "Rifugio Locatelli / Dreizinnenhütte", lat: 46.6265, lng: 12.3105, day: 13, area: "Dobbiaco / Tre Cime", wiki: "Dreizinnenhütte",
+{ id: "tc-locatelli", name: "Locatelli 山屋（三尖峰小屋）", en: "Rifugio Locatelli / Dreizinnenhütte", lat: 46.6265, lng: 12.3105, day: 15, area: "Dobbiaco / Tre Cime", wiki: "Dreizinnenhütte",
   text: "Locatelli 山屋是欣賞三尖峰北壁的第一排搖滾區！山屋後方的小山丘和兩座冰湖是經典構圖前景。附近岩壁上有一戰時鑿出的岩洞哨所，走進洞裡，從射擊孔正好框住三尖峰，是最特別的天然相框。山屋的蘋果酥捲遠近馳名，記得來一份，坐在露台上好好享受這個此生難忘的午餐位置！" },
 
-{ id: "tc-north-face", name: "三尖峰北壁草原", en: "Tre Cime north meadows", lat: 46.6220, lng: 12.3030, day: 13, area: "Dobbiaco / Tre Cime", wiki: "Tre Cime di Lavaredo",
+{ id: "tc-north-face", name: "三尖峰北壁草原", en: "Tre Cime north meadows", lat: 46.6220, lng: 12.3030, day: 15, area: "Dobbiaco / Tre Cime", wiki: "Tre Cime di Lavaredo",
   text: "環線的最後一段穿過北壁下方的草原和碎石坡，這裡是回望三根石柱的最後機會。夏天草地上開滿高山火絨草和龍膽花，土撥鼠的口哨聲此起彼落——聽到尖銳的哨音就停下來找找，牠們常常就蹲在步道旁的石頭上。接下來翻過 Col Forcellina 山坳就回到 Auronzo 山屋，完成環線！" },
 
-{ id: "mis-lake", name: "米蘇里納湖", en: "Lago di Misurina", lat: 46.5828, lng: 12.2540, day: 14, area: "Dobbiaco / Tre Cime", wiki: "Lake Misurina",
+{ id: "mis-lake", name: "米蘇里納湖", en: "Lago di Misurina", lat: 46.5828, lng: 12.2540, day: 16, area: "Dobbiaco / Tre Cime", wiki: "Lake Misurina",
   text: "米蘇里納湖被稱為多洛米蒂的珍珠！海拔一千七百五十四公尺，湖面平靜時，Sorapiss 山群和 Cadini 岩塔群的倒影清晰得像一面鏡子。湖畔那棟黃色的大建築，曾是專治氣喘的兒童療養院——這裡的空氣純淨度是全歐洲數一數二的，深呼吸一口吧！環湖步道一圈約四十分鐘，清晨光線最美。" },
 
-{ id: "mis-cadini-view", name: "Cadini 山群觀景點", en: "Cadini di Misurina viewpoint", lat: 46.5966, lng: 12.2708, day: 14, area: "Dobbiaco / Tre Cime", wiki: "Cadini di Misurina",
+{ id: "mis-cadini-view", name: "Cadini 山群觀景點", en: "Cadini di Misurina viewpoint", lat: 46.5966, lng: 12.2708, day: 16, area: "Dobbiaco / Tre Cime", wiki: "Cadini di Misurina",
   text: "眼前這片像哥德教堂尖塔森林的山群就是 Cadini di Misurina！數十根岩針密集地刺向天空，Cadin 在方言裡是『盆子』的意思，指岩塔之間的碎石凹谷。近年爆紅的『天空之刃』觀景步道就在 Fonda Savio 山屋附近，站在窄窄的稜線上，眼前岩塔如刀鋒並列，是多洛米蒂最震撼的畫面之一。小心腳步，拍照時務必注意安全！" },
 
-{ id: "mis-fonda-savio", name: "Fonda Savio 山屋", en: "Rifugio Fonda Savio", lat: 46.5920, lng: 12.2660, day: 14, area: "Dobbiaco / Tre Cime", wiki: "Cadini di Misurina",
+{ id: "mis-fonda-savio", name: "Fonda Savio 山屋", en: "Rifugio Fonda Savio", lat: 46.5920, lng: 12.2660, day: 16, area: "Dobbiaco / Tre Cime", wiki: "Cadini di Misurina",
   text: "Fonda Savio 山屋海拔兩千三百六十七公尺，蹲踞在 Cadini 岩塔之間的山坳上。山屋以三位在二戰中喪生的登山家兄弟命名。走到這裡的路程約兩小時，坡度不小，但山屋平台上的視野值回票價：北望 Tre Cime，南看 Sorapiss，來一份熱騰騰的烤起司配蜂蜜，這就是多洛米蒂山屋文化！" },
 
-{ id: "mis-col-de-varda", name: "Col de Varda 纜車", en: "Seggiovia Col de Varda", lat: 46.5760, lng: 12.2580, day: 14, area: "Dobbiaco / Tre Cime", wiki: "Lake Misurina",
+{ id: "mis-col-de-varda", name: "Col de Varda 纜車", en: "Seggiovia Col de Varda", lat: 46.5760, lng: 12.2580, day: 16, area: "Dobbiaco / Tre Cime", wiki: "Lake Misurina",
   text: "如果想省點力氣，米蘇里納湖畔的這座雙人吊椅纜車可以直接送你上到兩千兩百公尺的 Col de Varda 山屋，從那裡走往 Fonda Savio 的路程可以縮短一半。吊椅緩緩爬升時，整座米蘇里納湖和背後的 Cristallo 山在腳下展開，本身就是一段觀景行程。" },
 
 
 
 // ============================================================
-// Day 15–18 Alta Via 1（含一戰戰場遺跡）
+// Day 8–12 Alta Via 1（含一戰戰場遺跡）
 // ============================================================
 
-{ id: "av1-braies", name: "布萊耶斯湖", en: "Lago di Braies / Pragser Wildsee", lat: 46.6942, lng: 12.0850, day: 15, area: "Alta Via 1", wiki: "Pragser Wildsee",
+{ id: "av1-braies", name: "布萊耶斯湖", en: "Lago di Braies / Pragser Wildsee", lat: 46.6942, lng: 12.0850, day: 8, area: "Alta Via 1", wiki: "Pragser Wildsee",
   text: "歡迎來到布萊耶斯湖，多洛米蒂最夢幻的湖泊，也是傳奇長程步道 Alta Via 1 的起點！湖水呈現不可思議的祖母綠色，木造船屋和一排手划小船是最經典的畫面。傳說湖底藏著多洛米蒂原住民的寶藏之門。趁早晨遊客還沒湧入，沿湖走到南岸，回望船屋與 Croda del Becco 山的倒影。接下來，一百二十公里的高山之路正式開始！" },
 
-{ id: "av1-braies-south", name: "布萊耶斯湖南岸（AV1 起登點）", en: "AV1 Trailhead, south shore", lat: 46.6890, lng: 12.0855, day: 15, area: "Alta Via 1", wiki: "Pragser Wildsee",
+{ id: "av1-braies-south", name: "布萊耶斯湖南岸（AV1 起登點）", en: "AV1 Trailhead, south shore", lat: 46.6890, lng: 12.0855, day: 9, area: "Alta Via 1", wiki: "Pragser Wildsee",
   text: "湖的南岸就是 Alta Via 1 的第一號路標！從這裡開始沿一號步道爬升，之字形的碎石坡會一路陡上九百公尺，翻上 Croda del Becco 的石灰岩高原。回頭看，布萊耶斯湖會在腳下越縮越小，變成森林裡的一滴綠寶石。調整好呼吸，用自己的節奏慢慢爬，高原上的世界值得每一滴汗水。" },
 
-{ id: "av1-biella", name: "Biella 山屋", en: "Rifugio Biella 2327m", lat: 46.6560, lng: 12.0620, day: 15, area: "Alta Via 1", wiki: "Croda del Becco",
+{ id: "av1-biella", name: "Biella 山屋", en: "Rifugio Biella 2327m", lat: 46.6560, lng: 12.0620, day: 9, area: "Alta Via 1", wiki: "Croda del Becco",
   text: "恭喜完成 AV1 第一天！Biella 山屋海拔兩千三百二十七公尺，孤零零地立在 Croda del Becco 山腳的岩石荒原上，一八八六年就開業了。這裡沒有熱水澡、手機訊號微弱——這正是山屋的魅力：一張床、一頓熱騰騰的大鍋菜、一群來自世界各地的山友。晚餐後出去看星星，這裡的銀河亮得嚇人。想加碼的話，山屋後方四十五分鐘可登上 Croda del Becco 頂峰。" },
 
-{ id: "av1-sennes", name: "Sennes 山屋", en: "Rifugio Sennes 2126m", lat: 46.6420, lng: 12.0330, day: 16, area: "Alta Via 1", wiki: "Fanes-Sennes-Prags Nature Park",
+{ id: "av1-sennes", name: "Sennes 山屋", en: "Rifugio Sennes 2126m", lat: 46.6420, lng: 12.0330, day: 10, area: "Alta Via 1", wiki: "Fanes-Sennes-Prags Nature Park",
   text: "Sennes 山屋坐落在開闊的高原牧場中央，夏天牛鈴聲從四面八方傳來，非常提洛爾。這一帶的草原上散布著二戰前的舊軍營遺跡和牧人小屋。山屋的鮮奶和起司都來自眼前這群牛，休息時來一杯現擠鮮奶或一份藍莓蛋糕，補充體力繼續前進！" },
 
-{ id: "av1-fodara", name: "Fodara Vedla 山屋", en: "Rifugio Fodara Vedla 1966m", lat: 46.6280, lng: 12.0130, day: 16, area: "Alta Via 1", wiki: "Fanes-Sennes-Prags Nature Park",
+{ id: "av1-fodara", name: "Fodara Vedla 山屋", en: "Rifugio Fodara Vedla 1966m", lat: 46.6280, lng: 12.0130, day: 10, area: "Alta Via 1", wiki: "Fanes-Sennes-Prags Nature Park",
   text: "Fodara Vedla 是一個美得像童話的高山牧村：一圈木造牧屋圍著小教堂，背景是 Croda Rossa 的紅色山壁。這裡自中世紀以來就是拉登人的夏季牧場。步道從這裡緩緩下降到 Pederü 谷底，然後再重新爬升——AV1 的節奏就是這樣，下多少就要還多少，加油！" },
 
-{ id: "av1-pederu", name: "Pederü 山屋（谷底）", en: "Rifugio Pederü 1548m", lat: 46.6140, lng: 11.9970, day: 16, area: "Alta Via 1", wiki: "Fanes-Sennes-Prags Nature Park",
+{ id: "av1-pederu", name: "Pederü 山屋（谷底）", en: "Rifugio Pederü 1548m", lat: 46.6140, lng: 11.9970, day: 10, area: "Alta Via 1", wiki: "Fanes-Sennes-Prags Nature Park",
   text: "Pederü 位於谷底，是 AV1 前段唯一有公路到達的點，補給、退場都在這裡，山屋餐廳的菜色也特別豐盛。接下來的路沿著白色碎石谷緩緩爬升七百公尺前往 Fanes 高原，是一條古老的馬車道，坡度友善。谷地兩側的岩壁在正午陽光下白得發亮，記得戴太陽眼鏡、補防曬！" },
 
-{ id: "av1-fanes", name: "Fanes 山屋", en: "Rifugio Fanes 2060m", lat: 46.5910, lng: 12.0000, day: 16, area: "Alta Via 1", wiki: "Fanes-Sennes-Prags Nature Park",
+{ id: "av1-fanes", name: "Fanes 山屋", en: "Rifugio Fanes 2060m", lat: 46.5910, lng: 12.0000, day: 10, area: "Alta Via 1", wiki: "Fanes-Sennes-Prags Nature Park",
   text: "歡迎來到 Fanes 高原，多洛米蒂傳說的心臟！拉登神話中，這裡是法內斯王國的故土，公主與土撥鼠結盟的古老傳說就發生在這片高原。Fanes 山屋和鄰居 Lavarella 山屋都以美食聞名，Lavarella 還號稱是全歐洲最高的釀酒廠！傍晚在山屋前的小湖邊散步，看夕陽把 Sasso delle Dieci 染成粉紅色。" },
 
-{ id: "av1-limo", name: "Limo 湖與 Limo 埡口", en: "Lago e Passo di Limo 2172m", lat: 46.5850, lng: 12.0010, day: 17, area: "Alta Via 1", wiki: "Fanes-Sennes-Prags Nature Park",
+{ id: "av1-limo", name: "Limo 湖與 Limo 埡口", en: "Lago e Passo di Limo 2172m", lat: 46.5850, lng: 12.0010, day: 11, area: "Alta Via 1", wiki: "Fanes-Sennes-Prags Nature Park",
   text: "清晨的 Limo 湖是 Fanes 高原最安靜的時刻，湖面倒映著周圍的岩峰。翻過 Limo 埡口，步道開始一路陡降進入 Fanes 谷，再從谷底展開今天的重頭戲：攀上 Lagazuoi 的漫長爬升，總爬升超過一千公尺，是整條 AV1 最硬、也最壯觀的一天。深呼吸，慢慢走，今晚的獎勵在雲端等你！" },
 
-{ id: "av1-kaiserjaeger", name: "皇家獵兵之路", en: "Kaiserjägersteig", lat: 46.5262, lng: 12.0018, day: 17, area: "Alta Via 1", wiki: "Valparola Pass",
+{ id: "av1-kaiserjaeger", name: "皇家獵兵之路", en: "Kaiserjägersteig", lat: 46.5262, lng: 12.0018, day: 11, area: "Alta Via 1", wiki: "Valparola Pass",
   text: "你腳下這條之字形石徑是『皇家獵兵之路』，一次大戰時奧匈帝國的山地精銳部隊 Kaiserjäger 修建的軍用補給道，靠它把彈藥、糧食與傷兵在峭壁間運上運下，途中還要跨過一座架在深溝上的木吊橋。走在上面請想像：當年士兵是揹著五十公斤的物資、在夜裡摸黑走這條路的——因為白天會被義軍炮火盯上。" },
 
-{ id: "av1-lagazuoi", name: "Lagazuoi 山屋（2752m）", en: "Rifugio Lagazuoi", lat: 46.5277, lng: 12.0075, day: 17, area: "Alta Via 1", wiki: "Lagazuoi",
+{ id: "av1-lagazuoi", name: "Lagazuoi 山屋（2752m）", en: "Rifugio Lagazuoi", lat: 46.5277, lng: 12.0075, day: 11, area: "Alta Via 1", wiki: "Lagazuoi",
   text: "你做到了！海拔兩千七百五十二公尺的 Lagazuoi 山屋，AV1 全線的最高點，露台上一眼望盡 Tofane、Civetta、Marmolada 冰川與 Sella 山塊。一九一五到一九一七年，這裡是義大利與奧匈帝國對峙的最前線：奧軍守著你腳下的稜線，義軍就掛在南壁的岩棚上，雙方在山體裡鑿隧道、埋地雷互相爆破。高山戰爭最大的敵人其實是冬天——零下三十度的嚴寒與雪崩奪走的人命比子彈還多，一九一六年十二月十三日『白色星期五』，一天之內數千名士兵葬身雪崩。今晚睡在雲端，傍晚看玫瑰色夕陽，夜裡記得出來看星空下的群山，想想百年前在這裡過冬的二十歲士兵們。" },
 
-{ id: "av1-mine-crater", name: "地雷戰爆破口", en: "Lagazuoi Mine Crater", lat: 46.5266, lng: 12.0062, day: 17, area: "Alta Via 1", wiki: "Lagazuoi",
+{ id: "av1-mine-crater", name: "地雷戰爆破口", en: "Lagazuoi Mine Crater", lat: 46.5266, lng: 12.0062, day: 11, area: "Alta Via 1", wiki: "Lagazuoi",
   text: "山屋旁這片巨大的爆破口是『地雷戰』最猙獰的傷疤。一九一七年六月二十日凌晨，義大利工兵引爆了埋在小拉加祖伊峰下的三萬三千公斤炸藥，整個山頭被削掉，轟聲遠在一百公里外都聽得到。奧軍其實早已監聽到鑿岩聲提前撤離，這場豪賭幾乎沒有改變戰線。你眼前的碎石坡，就是當年被炸碎的山。整條多洛米蒂前線總共引爆過三十多次這樣的大型地雷。" },
 
-{ id: "av1-tunnels", name: "Lagazuoi 一戰隧道", en: "Gallerie del Lagazuoi", lat: 46.5250, lng: 12.0090, day: 18, area: "Alta Via 1", wiki: "Lagazuoi",
+{ id: "av1-tunnels", name: "Lagazuoi 一戰隧道", en: "Gallerie del Lagazuoi", lat: 46.5250, lng: 12.0090, day: 12, area: "Alta Via 1", wiki: "Lagazuoi",
   text: "你即將走進一段活生生的歷史：拉加祖伊隧道群是一戰時義大利工兵在山體裡鑿出的攻擊坑道，全長超過一公里、一千一百多級台階、坡度最陡達四十五度，當年的目的就是把三十三噸炸藥送到奧軍陣地正下方。今天它被修復成全阿爾卑斯最壯觀的隧道博物館：沿途有機槍陣地、觀測窗、士兵寢室與電話站，透過射擊孔能看到對面的奧軍工事。隧道內漆黑濕滑、垂直下降六百公尺，務必開頭燈、抓穩鋼索。走出隧道重見天日的那一刻，你會對『和平』兩個字有全新的體會。" },
 
-{ id: "av1-cengia-martini", name: "馬蒂尼岩棚", en: "Cengia Martini", lat: 46.5252, lng: 12.0053, day: 18, area: "Alta Via 1", wiki: "Lagazuoi",
+{ id: "av1-cengia-martini", name: "馬蒂尼岩棚", en: "Cengia Martini", lat: 46.5252, lng: 12.0053, day: 12, area: "Alta Via 1", wiki: "Lagazuoi",
   text: "山壁半腰那道天然岩棚是『馬蒂尼岩棚』，以義軍馬蒂尼少校命名。一九一五年十月，義大利阿爾卑斯山地兵沿著繩索攀上這條懸在半空的岩架，在奧軍眼皮底下硬是守了兩年半：他們在岩棚上蓋了營房、廚房和彈藥庫，奧軍從上方丟炸藥、從側面炸地雷都趕不走他們。岩棚上的工事至今保存完好，是全歐洲最驚人的高山戰爭遺跡之一。" },
 
-{ id: "av1-sasso-stria", name: "女巫石（奧軍觀測峰）", en: "Sasso di Stria / Hexenstein", lat: 46.5235, lng: 11.9946, day: 18, area: "Alta Via 1", wiki: "Sass de Stria",
+{ id: "av1-sasso-stria", name: "女巫石（奧軍觀測峰）", en: "Sasso di Stria / Hexenstein", lat: 46.5235, lng: 11.9946, day: 12, area: "Alta Via 1", wiki: "Sass de Stria",
   text: "這根海拔兩千四百七十七公尺的獨立岩峰是『女巫石』，德語叫 Hexenstein。它像一座天然瞭望塔正對法爾扎雷戈隘口，奧軍在峰頂鑿了完整的戰壕與觀測所，把義軍在山谷裡的一舉一動看得一清二楚，再用野戰電話引導炮兵射擊。峰頂戰壕經修復後可經由鐵索路線參觀。站在山腳下你就會明白：在高山戰爭裡，誰站得高，誰就活得久。" },
 
-{ id: "av1-falzarego", name: "法爾扎雷戈隘口", en: "Passo Falzarego 2105m", lat: 46.5183, lng: 12.0083, day: 18, area: "Alta Via 1", wiki: "Falzarego Pass",
+{ id: "av1-falzarego", name: "法爾扎雷戈隘口", en: "Passo Falzarego 2105m", lat: 46.5183, lng: 12.0083, day: 12, area: "Alta Via 1", wiki: "Falzarego Pass",
   text: "法爾扎雷戈隘口海拔兩千一百零五公尺，名字來自拉登傳說中因背叛人民而被石化的『假國王』——抬頭找找女巫石旁像人臉的岩壁。一戰時這裡是義軍的大後方，運補車隊與野戰醫院都設在隘口；今天隘口周邊整片山區被闢為『露天戰爭博物館』，戰壕、坑道與紀念碑星羅棋布。從這裡搭巴士約三十分鐘下到柯蒂納——不過別急，先往五塔峰方向走完 AV1 的最後一段吧！" },
 
-{ id: "av1-tre-sassi", name: "特雷薩西要塞（一戰博物館）", en: "Forte Tre Sassi", lat: 46.532, lng: 11.9885, day: 18, area: "Alta Via 1", wiki: "Valparola Pass",
+{ id: "av1-tre-sassi", name: "特雷薩西要塞（一戰博物館）", en: "Forte Tre Sassi", lat: 46.532, lng: 11.9885, day: 12, area: "Alta Via 1", wiki: "Valparola Pass",
   text: "這座石造堡壘是特雷薩西要塞，奧匈帝國一八九七年建來封鎖瓦爾帕羅拉隘口。諷刺的是，開戰才幾週它就被義軍重炮轟塌了屋頂，奧軍索性棄守，改鑽進周圍的岩壁裡挖工事——這條前線從此在岩石裡打了兩年半。要塞如今是一戰博物館，展出從冰川與戰壕裡找回的步槍、軍服、鐵絲網和士兵家書，是理解整段拉加祖伊戰史最好的一站。" },
 
-{ id: "av1-cinque-torri", name: "五塔峰", en: "Cinque Torri", lat: 46.5169, lng: 12.0442, day: 18, area: "Alta Via 1", wiki: "Cinque Torri",
+{ id: "av1-cinque-torri", name: "五塔峰", en: "Cinque Torri", lat: 46.5169, lng: 12.0442, day: 12, area: "Alta Via 1", wiki: "Cinque Torri",
   text: "五塔峰是五根平地拔起的岩塔，最高的大塔一百多公尺，像巨人隨手擺放的積木。這裡是攀岩者的遊樂場，也是一戰的露天博物館：義軍的戰壕、炮位、掩體被完整修復，可以自由穿梭其間，想像一九一五年炮口對準 Lagazuoi 的情景。繞岩塔一圈約四十分鐘，Scoiattoli 山屋的露台正對五塔，是慶祝 AV1 即將完走的好地方！" },
 
-{ id: "av1-averau", name: "Averau 山屋", en: "Rifugio Averau 2413m", lat: 46.5127, lng: 12.0316, day: 18, area: "Alta Via 1", wiki: "Averau",
+{ id: "av1-averau", name: "Averau 山屋", en: "Rifugio Averau 2413m", lat: 46.5127, lng: 12.0316, day: 12, area: "Alta Via 1", wiki: "Averau",
   text: "Averau 山屋被多次評為多洛米蒂最佳美食山屋，招牌是手工麵佐波切諾紅酒燉牛肉！山屋位於 Nuvolau 山脊的鞍部，背後那根歪斜的巨大石柱就是 Averau 峰。從這裡眺望，Marmolada 的冰川閃閃發光。如果體力還有餘裕，再往上三十分鐘的 Nuvolau 山屋是全多洛米蒂最古老的山屋，蓋在懸崖頂端，像天空之城。" },
 
 
 
 // ============================================================
-// Day 18–20 Cortina（含 Sorapis + Tofana）
+// Day 12–14 Cortina（含 Sorapis + Tofana）
 // ============================================================
 
-{ id: "cor-center", name: "柯蒂納丹佩佐鎮中心", en: "Cortina d'Ampezzo, Corso Italia", lat: 46.5380, lng: 12.1370, day: 18, area: "Cortina", wiki: "Cortina d'Ampezzo",
+{ id: "cor-center", name: "柯蒂納丹佩佐鎮中心", en: "Cortina d'Ampezzo, Corso Italia", lat: 46.5380, lng: 12.1370, day: 12, area: "Cortina", wiki: "Cortina d'Ampezzo",
   text: "歡迎來到柯蒂納丹佩佐，多洛米蒂的女王！這裡辦過一九五六年冬奧，二〇二六年冬奧也剛在此落幕。Corso Italia 行人徒步大街兩側是精品店與百年咖啡館，四周被 Tofane、Cristallo、Sorapiss 群峰環抱。你剛完成 Alta Via 1，值得最好的慶祝：找間餐廳點上一份提洛爾煙燻火腿餃子和阿瑪羅尼紅酒，敬自己一杯！" },
 
-{ id: "cor-basilica", name: "菲利波與賈科莫聖殿", en: "Basilica dei Santi Filippo e Giacomo", lat: 46.5378, lng: 12.1357, day: 19, area: "Cortina", wiki: "Cortina d'Ampezzo",
+{ id: "cor-basilica", name: "菲利波與賈科莫聖殿", en: "Basilica dei Santi Filippo e Giacomo", lat: 46.5378, lng: 12.1357, day: 13, area: "Cortina", wiki: "Cortina d'Ampezzo",
   text: "這座十八世紀教堂的鐘樓高七十公尺，用當地白雲岩砌成，是柯蒂納天際線的中心，無論從哪個山頭看小鎮，第一眼找到的都是它。教堂內有洛可可風格的華麗祭壇。廣場周邊的老房子外牆保留著阿爾卑斯風格的彩繪，慢慢逛，這是山城最悠閒的角落。" },
 
-{ id: "cor-tre-croci", name: "三十字隘口（Sorapis 步道起點）", en: "Passo Tre Croci 1805m", lat: 46.5570, lng: 12.1990, day: 19, area: "Cortina", wiki: "Tre Croci Pass",
+{ id: "cor-tre-croci", name: "三十字隘口（Sorapis 步道起點）", en: "Passo Tre Croci 1805m", lat: 46.5570, lng: 12.1990, day: 13, area: "Cortina", wiki: "Tre Croci Pass",
   text: "三十字隘口海拔一千八百零五公尺，是前往 Sorapis 湖的 215 號步道起點，路標就在公路旁。隘口名字來自三座紀念十字架，背後聳立著 Cristallo 山群。今天的路線單程約五公里、兩個半小時，前段輕鬆，後段有幾處架著鋼索的窄崖路段，請穿好登山鞋、專心腳步。出發！" },
 
-{ id: "cor-sorapis-trail", name: "215 號步道觀景段", en: "Sentiero 215 viewpoint", lat: 46.5450, lng: 12.2110, day: 19, area: "Cortina", wiki: "Sorapiss",
+{ id: "cor-sorapis-trail", name: "215 號步道觀景段", en: "Sentiero 215 viewpoint", lat: 46.5450, lng: 12.2110, day: 13, area: "Cortina", wiki: "Sorapiss",
   text: "步道從這裡開始貼著山壁走，幾段窄路架有鋼索扶手，腳下是深谷，對面是 Cristallo 的巨大岩壁——風景越來越戲劇化，代表湖不遠了！沿途留意岩壁間的『多洛米蒂之指』：一根孤零零立在山谷上的細長石針，是這條步道的著名地標。" },
 
-{ id: "cor-sorapis", name: "索拉皮斯湖", en: "Lago di Sorapis 1925m", lat: 46.5147, lng: 12.2158, day: 19, area: "Cortina", wiki: "Lago di Sorapis",
+{ id: "cor-sorapis", name: "索拉皮斯湖", en: "Lago di Sorapis 1925m", lat: 46.5147, lng: 12.2158, day: 13, area: "Cortina", wiki: "Lago di Sorapis",
   text: "眼前這抹不真實的牛奶藍，就是索拉皮斯湖！湖水的顏色來自冰川磨出的石灰岩細粉，懸浮在水中折射陽光，形成獨一無二的乳藍色。三面環繞的峭壁是 Sorapiss 山群，拉登傳說中，這是善良的索拉皮斯國王變成的山，他的眼淚化成這座湖。湖區是嚴格保護區：禁止下水、禁止紮營，請把每一片垃圾帶下山。找塊石頭坐下來，靜靜享受這個此行最夢幻的午餐點吧！" },
 
-{ id: "cor-vandelli", name: "Vandelli 山屋", en: "Rifugio Vandelli", lat: 46.5160, lng: 12.2160, day: 19, area: "Cortina", wiki: "Sorapiss",
+{ id: "cor-vandelli", name: "Vandelli 山屋", en: "Rifugio Vandelli", lat: 46.5160, lng: 12.2160, day: 13, area: "Cortina", wiki: "Sorapiss",
   text: "湖畔上方的 Vandelli 山屋是這條路線唯一的補給點，露台正對 Sorapiss 冰斗。回程原路折返約兩小時，記得預留時間，別錯過回柯蒂納的末班巴士。明天還有『天空之箭』纜車和三千二的 Tofana di Mezzo 等著你，今晚在柯蒂納好好吃一頓！" },
 
-{ id: "cor-freccia", name: "天空之箭纜車站", en: "Freccia nel Cielo", lat: 46.5425, lng: 12.1287, day: 20, area: "Cortina", wiki: "Tofane",
+{ id: "cor-freccia", name: "天空之箭纜車站", en: "Freccia nel Cielo", lat: 46.5425, lng: 12.1287, day: 14, area: "Cortina", wiki: "Tofane",
   text: "『天空之箭』纜車從柯蒂納市區直上三千兩百公尺的 Tofana di Mezzo，三段纜車總爬升近兩千公尺，是義大利落差最大的纜車之一。它為一九五六年冬奧而建，二〇二六年冬奧的高山滑雪賽道也在 Tofana 的山坡上。上山前先看一眼天氣——這張票值得留給能見度最好的日子！" },
 
-{ id: "cor-ravalles", name: "Ra Valles 中站", en: "Ra Valles 2470m", lat: 46.537, lng: 12.08, day: 20, area: "Cortina", wiki: "Tofane",
+{ id: "cor-ravalles", name: "Ra Valles 中站", en: "Ra Valles 2470m", lat: 46.537, lng: 12.08, day: 14, area: "Cortina", wiki: "Tofane",
   text: "Ra Valles 中站海拔兩千四百七十公尺，露台正對 Cristallo 與 Sorapiss 山群，腳下就是柯蒂納整個山谷盆地。這裡的小吃吧號稱擁有『全多洛米蒂視野最好的咖啡』。稍作停留適應一下高度，再搭最後一段纜車攻頂——接下來要一口氣上到三千二！" },
 
-{ id: "cor-tofana-summit", name: "Tofana di Mezzo 山頂", en: "Tofana di Mezzo 3244m", lat: 46.5439, lng: 12.0575, day: 20, area: "Cortina", wiki: "Tofana di Mezzo",
+{ id: "cor-tofana-summit", name: "Tofana di Mezzo 山頂", en: "Tofana di Mezzo 3244m", lat: 46.5439, lng: 12.0575, day: 14, area: "Cortina", wiki: "Tofana di Mezzo",
   text: "恭喜登上 Tofana di Mezzo，海拔三千兩百四十四公尺，多洛米蒂第三高峰，也是你此行的最高點！三百六十度全景：北望奧地利的冰川，南眺威尼斯平原，天氣極好時甚至能瞄到亞得里亞海的反光。整片多洛米蒂——三尖峰、Marmolada、Civetta、你走過的 Lagazuoi——全部在腳下一字排開。山頂步道有鋼索保護，風大氣溫低，多穿一件再出觀景台。跟這片山好好道別吧，明天就要北上慕尼黑了！" },
 
 

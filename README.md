@@ -1,7 +1,7 @@
 # 🇫🇷🇮🇹🇩🇪 Italy 2027 — GPS 語音導覽網站
 
 巴黎 + 義大利 + 多洛米蒂 + 慕尼黑 22 天行程（2027/6/2 台北出發－6/24 慕尼黑回程）（巴黎 → 拿坡里 → 龐貝 → 羅馬 → 佛羅倫斯 →
-波爾扎諾 → Rosengarten → Val Gardena → Val di Funes → Tre Cime → Alta Via 1 → Cortina → 慕尼黑）的
+波爾扎諾 → Alta Via 1 → Cortina → Tre Cime → Val di Funes → Val Gardena → 慕尼黑）的
 **GPS 定位語音導覽網站**：地圖即時追蹤你的位置，走到景點附近（預設 10 公尺）
 自動用 **台灣口音中文（zh-TW）** 播放該景點的語音導覽。
 
@@ -23,7 +23,7 @@
 - 🗺️ **離線地圖下載**：可依「今天／今明後三天／全行程」預先把沿線圖磚抓下來（每景點半徑約 1.3 公里、z12–16），有進度條與容量預估
 - ⛰️ **地形圖圖層**（OpenTopoMap）：等高線＋**實際登山步道與路線編號**，山區請切到這層
 - 🥾 **GPX 軌跡匯入**：把 Komoot／AllTrails／官網下載的真實步道軌跡匯入並離線保存，紅線畫在地圖上
-- 📅 **行程總覽分頁**（itinerary.html）：22 天卡片式行程（含實際日期、頂部跳日導覽、今天高亮），含每段交通方式／時間／Google Maps 路線連結、住宿資訊（羅馬已確認、其餘為建議）、每日景點照片牆（照片由瀏覽器向 Wikipedia API 抓取並快取，點卡片跳回地圖開啟該景點）
+- 📅 **行程總覽分頁**（itinerary.html）：22 天卡片式行程（含實際日期、頂部跳日導覽、今天高亮），含每段交通方式／時間／Google Maps 路線連結、住宿資訊（羅馬與兩間山屋已確認、含房型／總額／已付／現場待付，其餘為建議）、每日景點照片牆（照片由瀏覽器向 Wikipedia API 抓取並快取，點卡片跳回地圖開啟該景點）
 
 ## 🚀 部署（GitHub Pages）
 
@@ -101,13 +101,13 @@ italy2027/
 | 梵蒂岡 | Day 5 | 12 |
 | 佛羅倫斯 | Day 5–7 | 26 |
 | 比薩 | Day 6 | 10 |
-| 波爾扎諾 | Day 7 | 8 |
-| 卡雷扎湖 / Rosengarten 薔薇園 | Day 8 | 5 |
-| Val Gardena（Seceda / Alpe di Siusi / Sassolungo） | Day 8–11 | 10 |
-| Val di Funes 富內斯山谷 | Day 12 | 4 |
-| Dobbiaco / Tre Cime / Misurina | Day 12–14 | 13 |
-| Alta Via 1（Braies → Falzarego，含一戰遺跡） | Day 15–18 | 18 |
-| Cortina（Sorapis + Tofana di Mezzo） | Day 18–20 | 9 |
+| 波爾扎諾 | Day 7–8 | 8 |
+| Alta Via 1（Braies → Falzarego，含一戰遺跡） | Day 8–12（6/10–6/14） | 18 |
+| Cortina（Sorapis + Tofana di Mezzo） | Day 12–14 | 9 |
+| Dobbiaco / Tre Cime / Misurina | Day 15–16 | 13 |
+| Val di Funes 富內斯山谷 | Day 17 | 4 |
+| Val Gardena（Seceda / Alpe di Siusi / Sassolungo） | Day 17–20 | 10 |
+| 卡雷扎湖 / Rosengarten 薔薇園（Day 20 替代方案） | Day 20 | 5 |
 | 慕尼黑 | Day 21–22（6/23–6/24） | 14 |
 
 > 山屋與步道點位（Alta Via 1、Tre Cime 等）座標為近似值，觸發半徑建議調大；

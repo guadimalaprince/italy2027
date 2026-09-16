@@ -81,6 +81,18 @@
         var box = el("div", "stay " + d.stay.status);
         box.innerHTML = '<span class="tag">' + STAY_TAG[d.stay.status] + "</span>" + esc(d.stay.name) +
                         (d.stay.note ? '<span class="note">' + esc(d.stay.note) + "</span>" : "");
+        // 已訂房的訂單明細
+        if (d.stay.booking) {
+          var b = d.stay.booking;
+          var due = b.total - b.paid;
+          var bk = el("div", "booking");
+          bk.innerHTML =
+            '<div class="bk-row"><span class="bk-k">房型</span><span class="bk-v">' + esc(b.room) + "</span></div>" +
+            '<div class="bk-row"><span class="bk-k">方案</span><span class="bk-v">' + esc(b.board) + "</span></div>" +
+            '<div class="bk-row"><span class="bk-k">費用</span><span class="bk-v">總額 €' + b.total +
+              '　已付 €' + b.paid + '　<strong class="bk-due">現場待付 €' + due + "</strong></span></div>";
+          box.appendChild(bk);
+        }
         ss.appendChild(box);
         card.appendChild(ss);
       }
