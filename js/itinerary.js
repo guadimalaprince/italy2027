@@ -82,20 +82,20 @@ var DAYS = [
     note: "住湖畔最省事，隔天出門就是登山口；訂不到就住 Villabassa／Dobbiaco，搭首班巴士上來" },
   warn: ["⚠️ 明天起連走四天：今晚把大行李寄放山下旅館，只帶上山必需品（山屋有寢具，需自備睡袋內襯）", "⚠️ Rifugio Biella（明晚）尚未訂房——六月中旬山屋才陸續開門，請盡快確認 2027 開放日並訂位"] },
 
-{ day: 9, date: "6/11 週五", phase: "🥾 Alta Via 1", title: "AV1 第一天：布萊耶斯湖 → Biella 山屋", areas: ["Alta Via 1"],
+{ day: 9, date: "6/11 週五", phase: "🥾 Alta Via 1", title: "AV1 第一天：布萊耶斯湖 → Sennes 山屋", areas: ["Alta Via 1"],
   transport: [
-    { icon: "🥾", route: "Lago di Braies → Rifugio Biella", time: "約 3.5 小時，爬升 1,000m" }
+    { icon: "🥾", route: "Lago di Braies → Forcella Sora Forno → Biella → Sennes", time: "約 5 小時，爬升 1,000m" }
   ],
-  plan: ["沿湖東岸走到南岸的 AV1 起登點", "之字坡陡上 Forcella Sora Forno 埡口", "午後抵達 Biella 山屋（2,327m）", "體力有餘可輕鬆爬 Croda del Becco 看全景", "第一天刻意排短：讓身體適應揹包與高度"],
-  stay: { city: "Rifugio Biella（2,327m）", status: "hut", name: "Rifugio Biella / Seekofelhütte",
-    note: "⚠️ 尚未訂房——請先確認 2027 開放日期" },
-  warn: ["山屋需自備睡袋內襯；部分山屋不收信用卡，帶現金", "路上沒有水源，出發前在山下把水裝滿"] },
+  plan: ["沿湖東岸走到南岸的 AV1 起登點", "之字坡陡上 Forcella Sora Forno 埡口（全天最硬的一段）", "Biella 山屋休息、補水（2,327m）", "續行穿越 Sennes 高原：喀斯特地形與放牧草原，平緩好走", "午後抵 Sennes 山屋（2,126m）"],
+  stay: { city: "Rifugio Sennes（2,126m）", status: "hut", name: "Rifugio Sennes / Senneshütte",
+    note: "⚠️ 尚未訂房——店家表示 2026/11/4 開放訂房，當天就去訂" },
+  warn: ["山屋需自備睡袋內襯；部分山屋不收信用卡，帶現金", "Biella 之前沒有水源，出發前在湖畔把水裝滿"] },
 
 { day: 10, date: "6/12 週六", phase: "🥾 Alta Via 1", title: "AV1 第二天：高原牧場 → Fanes", areas: ["Alta Via 1"],
   transport: [
-    { icon: "🥾", route: "Biella → Sennes → Fodara Vedla → Pederü → Fanes", time: "約 5 小時" }
+    { icon: "🥾", route: "Sennes → Fodara Vedla → Pederü → Fanes", time: "約 3.5 小時（比第一天輕鬆）" }
   ],
-  plan: ["穿越 Sennes 高原：喀斯特地形與放牧草原，視野開闊好走", "Fodara Vedla 百年木造山屋喝一杯", "陡下 Pederü 谷底（落差 500m，護膝／登山杖）再緩上 Fanes", "Fanes 高原是 Ladin 傳說的核心舞台——今晚就住在傳說中的銀色王國"],
+  plan: ["今天路程短，可以睡飽再走", "Fodara Vedla 百年木造山屋喝一杯", "陡下 Pederü 谷底（落差 500m，護膝／登山杖）再緩上 Fanes", "Fanes 高原是 Ladin 傳說的核心舞台——今晚就住在傳說中的銀色王國"],
   stay: { city: "Rifugio Fanes（2,060m）", status: "confirmed", name: "Rifugio Fanes",
     booking: { room: "獨立房間附衛浴", people: 3, nights: 1, total: 499, paid: 250, board: "含早餐＋晚餐（半食宿）" },
     note: "已訂房，抵達後直接報名字即可" },

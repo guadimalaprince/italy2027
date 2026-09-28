@@ -45,13 +45,14 @@ button { cursor: pointer; }
 #day-badge-date { font-size: 13px; color: #a9c8e4; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 #title-actions { display: flex; gap: 6px; align-items: center; flex: 0 0 auto; }
-#nav-itinerary, #btn-panel, #btn-settings {
+#nav-itinerary, #nav-todo, #btn-panel, #btn-settings {
   background: var(--navy-lite); color: #fff; text-decoration: none; border: none;
   border-radius: 8px; font-size: 14px; white-space: nowrap;
   min-height: var(--tap); display: inline-flex; align-items: center; justify-content: center;
   padding: 0 12px;
 }
 #btn-settings { min-width: var(--tap); padding: 0; font-size: 19px; }
+#nav-todo { min-width: var(--tap); padding: 0; font-size: 16px; }
 
 #controls {
   display: flex; gap: 8px; align-items: center;

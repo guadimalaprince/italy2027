@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1a3a5c">
+<title>待辦事項 | Italy 2027</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="stylesheet" href="css/itinerary.css">
+<link rel="stylesheet" href="css/todo.css">
+</head>
+<body>
+
+<header id="topbar">
+  <h1>🇫🇷🇮🇹🇩🇪 義大利 2027</h1>
+  <nav>
+    <a href="index.html">🗺 導覽地圖</a>
+    <a href="itinerary.html">📅 行程總覽</a>
+    <a href="todo.html" class="active">✅ 待辦</a>
+  </nav>
+</header>
+
+<nav id="todo-nav" aria-label="跳到區段">
+  <a href="#sec-book" class="tsec-chip">⏰ 必訂項目</a>
+  <a href="#sec-stay" class="tsec-chip">🏨 住宿安排</a>
+  <a href="#sec-move" class="tsec-chip">🚉 交通規劃</a>
+  <a href="#sec-strike" class="tsec-chip">🚨 罷工應變</a>
+</nav>
+
+<main id="todo-main">
+  <div id="countdown"></div>
+
+  <section id="sec-book">
+    <h2 class="tsec-head">⏰ 必訂項目<span id="book-progress" class="tsec-count"></span></h2>
+    <p class="tsec-intro">依「開放訂位／開賣日」排序，最急的在最上面。勾起來的項目會記在這支手機裡。</p>
+    <div id="book-list"></div>
+  </section>
+
+  <section id="sec-stay">
+    <h2 class="tsec-head">🏨 住宿安排<span id="stay-progress" class="tsec-count"></span></h2>
+    <p class="tsec-intro">全程 21 晚，直接從行程資料生成——行程改了這裡就會跟著改。</p>
+    <div id="stay-list"></div>
+  </section>
+
+  <section id="sec-move">
+    <h2 class="tsec-head">🚉 交通規劃</h2>
+    <p class="tsec-intro">每一段的主方案與<strong>罷工備案</strong>。義大利罷工頻繁但都會提前公告，先想好就不會慌。</p>
+    <div id="move-list"></div>
+  </section>
+
+  <section id="sec-strike">
+    <h2 class="tsec-head">🚨 罷工應變總則</h2>
+    <div id="strike-list"></div>
+  </section>
+
+  <div id="todo-tools">
+    <button id="btn-reset-todo">♻ 清除所有勾選</button>
+  </div>
+</main>
+
+<footer id="pagefoot">勾選紀錄存在這支手機的 localStorage，不會上傳</footer>
+
+<script src="js/pois.js"></script>
+<script src="js/itinerary.js"></script>
+<script src="js/todo.js"></script>
+<script src="js/todo-app.js"></script>
+</body>
+</html>

@@ -574,7 +574,7 @@ var POIS = [
 { id: "av1-biella", name: "Biella 山屋", en: "Rifugio Biella 2327m", lat: 46.6560, lng: 12.0620, day: 9, area: "Alta Via 1", wiki: "Croda del Becco",
   text: "恭喜完成 AV1 第一天！Biella 山屋海拔兩千三百二十七公尺，孤零零地立在 Croda del Becco 山腳的岩石荒原上，一八八六年就開業了。這裡沒有熱水澡、手機訊號微弱——這正是山屋的魅力：一張床、一頓熱騰騰的大鍋菜、一群來自世界各地的山友。晚餐後出去看星星，這裡的銀河亮得嚇人。想加碼的話，山屋後方四十五分鐘可登上 Croda del Becco 頂峰。" },
 
-{ id: "av1-sennes", name: "Sennes 山屋", en: "Rifugio Sennes 2126m", lat: 46.6420, lng: 12.0330, day: 10, area: "Alta Via 1", wiki: "Fanes-Sennes-Prags Nature Park",
+{ id: "av1-sennes", name: "Sennes 山屋", en: "Rifugio Sennes 2126m", lat: 46.6420, lng: 12.0330, day: 9, area: "Alta Via 1", wiki: "Fanes-Sennes-Prags Nature Park",
   text: "Sennes 山屋坐落在開闊的高原牧場中央，夏天牛鈴聲從四面八方傳來，非常提洛爾。這一帶的草原上散布著二戰前的舊軍營遺跡和牧人小屋。山屋的鮮奶和起司都來自眼前這群牛，休息時來一杯現擠鮮奶或一份藍莓蛋糕，補充體力繼續前進！" },
 
 { id: "av1-fodara", name: "Fodara Vedla 山屋", en: "Rifugio Fodara Vedla 1966m", lat: 46.6280, lng: 12.0130, day: 10, area: "Alta Via 1", wiki: "Fanes-Sennes-Prags Nature Park",

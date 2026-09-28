@@ -3,7 +3,7 @@
  * - 地圖圖磚：cache-first，看過或預先下載過的就能離線用
  * - 維基照片：cache-first
  */
-var SHELL = "italy2027-shell-v3";
+var SHELL = "italy2027-shell-v4";
 var TILES = "italy2027-tiles-v1";
 var PHOTOS = "italy2027-photos-v1";
 
@@ -11,11 +11,15 @@ var SHELL_FILES = [
   "./",
   "./index.html",
   "./itinerary.html",
+  "./todo.html",
   "./css/style.css",
   "./css/itinerary.css",
+  "./css/todo.css",
   "./js/pois.js",
   "./js/itinerary.js",
   "./js/itinerary-app.js",
+  "./js/todo.js",
+  "./js/todo-app.js",
   "./js/photos.js",
   "./js/routes.js",
   "./js/offline.js",
