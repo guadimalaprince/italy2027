@@ -144,8 +144,10 @@
           (b.people ? "（" + b.people + " 人，每人 €" + Math.round(b.total / b.people) + "）" : "") +
           "　已付 €" + (b.paid || 0) + '　<strong class="bk-due">待付 €' + due + "</strong>"));
       } else if (b) {
-        // 確認單上沒有金額的訂房（例如 Agoda）
-        body.appendChild(el("div", "st-money", esc(b.room) + (b.ref ? "　" + esc(b.ref) : "")));
+        // 確認單上沒有房費的訂房（Agoda 未印金額、或點數兌換）
+        body.appendChild(el("div", "st-money", esc(b.room) +
+          (b.onsite ? '　<strong class="bk-due">現場付 ' + rich(b.onsite) + "</strong>" : "") +
+          (b.ref ? "　" + esc(b.ref) : "")));
       } else if (d.stay.note) {
         body.appendChild(el("div", "ti-note", rich(d.stay.note)));
       }

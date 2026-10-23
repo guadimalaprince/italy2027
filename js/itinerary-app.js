@@ -102,6 +102,11 @@
             rows += '<div class="bk-row"><span class="bk-k">費用</span><span class="bk-v">總額 €' + b.total + perHead +
               "　已付 €" + (b.paid || 0) + '　<strong class="bk-due">現場待付 €' + due + "</strong></span></div>";
           }
+          // 房費以外、一定要在現場付的錢（例如點數兌換仍須自付的城市稅）
+          if (b.onsite) {
+            rows += '<div class="bk-row"><span class="bk-k">現場付</span><span class="bk-v"><strong class="bk-due">' +
+              rich(b.onsite) + "</strong></span></div>";
+          }
           if (b.ref) {
             rows += '<div class="bk-row"><span class="bk-k">訂房編號</span><span class="bk-v">' + esc(b.ref) + "</span></div>";
           }
