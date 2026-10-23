@@ -88,17 +88,24 @@
         // 已訂房的訂單明細
         if (d.stay.booking) {
           var b = d.stay.booking;
-          var due = b.total - b.paid;
           var who = [b.people ? b.people + " 人" : "", b.nights ? b.nights + " 晚" : ""]
                       .filter(Boolean).join("・");
-          var perHead = b.people ? "（每人 €" + Math.round(b.total / b.people) + "）" : "";
           var bk = el("div", "booking");
-          bk.innerHTML =
+          var rows =
             '<div class="bk-row"><span class="bk-k">房型</span><span class="bk-v">' + esc(b.room) +
               (who ? '　<span class="bk-who">' + who + "</span>" : "") + "</div>" +
-            '<div class="bk-row"><span class="bk-k">方案</span><span class="bk-v">' + esc(b.board) + "</span></div>" +
-            '<div class="bk-row"><span class="bk-k">費用</span><span class="bk-v">總額 €' + b.total + perHead +
-              "　已付 €" + b.paid + '　<strong class="bk-due">現場待付 €' + due + "</strong></span></div>";
+            '<div class="bk-row"><span class="bk-k">方案</span><span class="bk-v">' + esc(b.board) + "</span></div>";
+          // 有些訂房確認單上沒有金額（例如 Agoda 的那一張），這時就不要印出 €undefined
+          if (typeof b.total === "number") {
+            var due = b.total - (b.paid || 0);
+            var perHead = b.people ? "（每人 €" + Math.round(b.total / b.people) + "）" : "";
+            rows += '<div class="bk-row"><span class="bk-k">費用</span><span class="bk-v">總額 €' + b.total + perHead +
+              "　已付 €" + (b.paid || 0) + '　<strong class="bk-due">現場待付 €' + due + "</strong></span></div>";
+          }
+          if (b.ref) {
+            rows += '<div class="bk-row"><span class="bk-k">訂房編號</span><span class="bk-v">' + esc(b.ref) + "</span></div>";
+          }
+          bk.innerHTML = rows;
           box.appendChild(bk);
         }
         ss.appendChild(box);

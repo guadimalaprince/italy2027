@@ -87,7 +87,7 @@
 
       var n = daysUntil(it.opens);
       var chip;
-      if (it.opens === null) {
+      if (!it.opens) {   // null 或未填都算「隨時可訂」，不要讓 fmtDate 吃到 undefined
         chip = el("span", "ti-when now", "隨時可訂");
       } else if (n > 0) {
         chip = el("span", "ti-when " + (n <= 45 ? "soon" : "later"),
@@ -137,12 +137,15 @@
       if (!isSame) body.appendChild(el("div", "ti-title", esc(d.stay.name)));
 
       var b = d.stay.booking;
-      if (b) {
-        var due = b.total - b.paid;
+      if (b && typeof b.total === "number") {
+        var due = b.total - (b.paid || 0);
         body.appendChild(el("div", "st-money",
           esc(b.room) + "　總額 €" + b.total +
           (b.people ? "（" + b.people + " 人，每人 €" + Math.round(b.total / b.people) + "）" : "") +
-          "　已付 €" + b.paid + '　<strong class="bk-due">待付 €' + due + "</strong>"));
+          "　已付 €" + (b.paid || 0) + '　<strong class="bk-due">待付 €' + due + "</strong>"));
+      } else if (b) {
+        // 確認單上沒有金額的訂房（例如 Agoda）
+        body.appendChild(el("div", "st-money", esc(b.room) + (b.ref ? "　" + esc(b.ref) : "")));
       } else if (d.stay.note) {
         body.appendChild(el("div", "ti-note", rich(d.stay.note)));
       }
@@ -152,7 +155,10 @@
     });
 
     // 山屋費用小計
-    var bks = DAYS.filter(function (d) { return d.stay && d.stay.booking; });
+    // 只把有金額的訂房算進小計，否則總和會變成 NaN
+    var bks = DAYS.filter(function (d) {
+      return d.stay && d.stay.booking && typeof d.stay.booking.total === "number";
+    });
     if (bks.length) {
       var total = 0, paid = 0;
       bks.forEach(function (d) { total += d.stay.booking.total; paid += d.stay.booking.paid; });
