@@ -41,7 +41,7 @@ var DAYS = [
   transport: [
     { icon: "🚇", route: "旅館 → Châtelet → Orly 機場（地鐵 14 號線直達）", time: "步行 3 分＋車程約 27 分", gm: ["Châtelet, Paris", "Aéroport d'Orly"], note: "<b>最晚 09:45 出門</b>，約 10:20 到 Orly。14 號線零轉乘、不受路況影響，這段趕飛機不要改叫計程車" },
     { icon: "✈️", route: "巴黎 Orly 12:35 → 拿坡里 NAP 14:40", time: "約 2 小時 5 分", note: "法義同時區，不用調錶。起飛前 2 小時到機場" },
-    { icon: "🚌", route: "拿坡里機場 → 市中心（Alibus 機場巴士）", time: "約 20 分，約 15:45 進市區", gm: ["Naples Airport", "Napoli Centrale"] }
+    { icon: "🚌", route: "拿坡里機場 → 市中心（Alibus 機場巴士）", time: "約 20 分，約 15:45 進市區", gm: ["Naples Airport", "Napoli Centrale"], note: "<b>拿坡里不買套票</b>——只住一晚，Alibus 與隔天去龐貝的車票各自單買就好，交通卡划不來" }
   ],
   plan: ["07:30 出旅館，塞納河畔晨走：新橋 → 西堤島（清晨無人，光線最好）",
     "<b>07:50 聖母院開門</b>（週五 07:50–19:00，入場免費）：第一批進場約 40 分鐘，08:30 出來、08:45 回旅館，離 09:45 還有一小時緩衝",
@@ -50,8 +50,8 @@ var DAYS = [
     "下午：斯帕卡拿坡里老街 → 公民投票廣場 → 翁貝托一世拱廊",
     "傍晚：蛋堡與海濱大道看維蘇威火山剪影",
     "晚上：Via dei Tribunali 吃正宗窯烤披薩！"],
-  stay: { city: "拿坡里（1 晚）", status: "suggested", name: "Starhotels Terminus 或 UNAHOTELS Napoli（中央車站旁）",
-    note: "住 Napoli Centrale 旁：明早搭 Circumvesuviana 去龐貝最方便，行李也可寄車站" },
+  stay: { city: "拿坡里（1 晚）", status: "suggested", name: "Dimora Neapolis Deluxe（走官網直訂，約 €108）",
+    note: "<b>已決定這家，用官網直訂</b>（不走 OTA）。價格約 €108。\n明早要搭 Circumvesuviana 去龐貝，出發前先查一下從住處走到 Napoli Centrale／Porta Nolana 要多久，行李可寄車站。" },
   warn: ["<b>09:45 是硬期限</b>：12:35 起飛、10:35 前要到 Orly。14 號線往 Orly 方向是逆尖峰，不會塞",
     "早餐可能趕不上旅館供應時段，前一晚先買好或到機場吃",
     "聖禮拜堂 09:00、莎士比亞書店 10:00 才開門，今早都來不及——已移到 6/3。聖母院 07:50 開門是唯一趕得上的",
