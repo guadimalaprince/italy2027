@@ -43,6 +43,11 @@ var MUST_BOOK = [
     note: "<b>目前結論：三人都買單程票最省，不要買週票。</b>\n・Navigo 日票<b>不含</b>機場路段\n・Navigo 週票含機場，但固定週一至週日，6/3 是週四會浪費前三天，再加 €5 Découverte 卡費與證件照\n・你們只有兩趟機場＋極少市區移動（住 1 區幾乎全程走路），單買約 €100／3 人，比週票 €111 還便宜\n<b>6/4 去 Orly 要買「Paris Region ↔ Airports」機場票，2026 年約 €14／人</b>——一般 t+ 單程票進不了 Orly 站，別在閘門前才發現。\n出發前一個月上 iledefrance-mobilites.fr 複查規則與 2027 票價。",
     url: "https://www.iledefrance-mobilites.fr/" },
 
+  { id: "ck-easyjet", cat: "報到", title: "easyJet 線上報到開放（EJU4953，6/4 Orly→拿坡里）", opens: "2027-05-05",
+    who: "3 人",
+    note: "<b>2027/5/5（三）18:35 開放線上報到</b>，訂位代號 <b>KDLJ94T</b>。\neasyJet 的登機證要<b>自己先印或存進手機</b>——沒有線上報到就到機場，現場補辦要收費。三個人都要各自取得登機證。\n已付 3 件 23 公斤托運，所以當天還是要走<b>行李託運櫃台（10:35 開、11:55 關）</b>，線上報到只是省掉人工報到那一關。",
+    url: "https://www.easyjet.com/en/" },
+
   { id: "bk-trains-it", cat: "火車", title: "義大利高鐵三段（6/5 拿坡里→羅馬、6/7 羅馬→佛羅倫斯、6/9 佛羅倫斯→波爾扎諾）", opens: "2027-02-05",
     note: "Trenitalia／Italo 約出發前 4 個月開賣，Super Economy 早鳥票便宜非常多。兩家是不同公司，罷工時互為備案，可以刻意分開訂。",
     url: "https://www.trenitalia.com/" },
