@@ -29,7 +29,7 @@ var MUST_BOOK = [
     url: "https://www.notredamedeparis.fr/" },
 
   { id: "bk-saintechapelle", cat: "門票", title: "聖禮拜堂時段票（6/3）", opens: "2027-03-03",
-    note: "跳過羅浮宮後，這是巴黎唯一排進去的室內景點，<b>要線上預約時段</b>。旅館步行 10 分，約 40 分鐘看完。安檢排隊可能 20–30 分。",
+    note: "跳過羅浮宮後，這是巴黎唯一排進去的室內景點，<b>要線上預約時段——訂 11:00 前後那場</b>。旅館步行 10 分，約 40 分鐘看完，安檢排隊可能 20–30 分。\n下午 3 點 check-in 前的行程都排在旅館步行 15 分內，這場剛好卡在中間。",
     url: "https://www.sainte-chapelle.fr/" },
 
   { id: "bk-paris-fares", cat: "票務", title: "巴黎交通票：確認 Navigo 日票是否含機場", opens: "2027-05-03",
