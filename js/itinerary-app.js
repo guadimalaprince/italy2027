@@ -21,6 +21,10 @@
   function esc(s) {
     return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   }
+  // 資料裡只允許 <b> / <strong>，其餘一律轉義（與待辦頁一致）
+  function rich(s) {
+    return esc(s).replace(/&lt;(\/?(?:b|strong))&gt;/g, "<$1>");
+  }
 
   function gmapLink(gm) {
     return "https://www.google.com/maps/dir/?api=1&origin=" + encodeURIComponent(gm[0]) +
@@ -57,7 +61,7 @@
           var line = '<span class="route">' + esc(t.route) + '</span>' +
                      (t.time ? '<span class="time">' + esc(t.time) + '</span>' : "");
           if (t.gm) line += '<a class="gmap" target="_blank" rel="noopener" href="' + gmapLink(t.gm) + '">📍 路線</a>';
-          body.innerHTML = line + (t.note ? '<div class="note">' + esc(t.note) + "</div>" : "");
+          body.innerHTML = line + (t.note ? '<div class="note">' + rich(t.note) + "</div>" : "");
           leg.appendChild(body);
           ts.appendChild(leg);
         });
@@ -69,7 +73,7 @@
         var ps = el("div", "day-section");
         ps.appendChild(el("h4", null, "🗓 行程"));
         var ul = el("ul", "plan");
-        d.plan.forEach(function (p) { ul.appendChild(el("li", null, esc(p))); });
+        d.plan.forEach(function (p) { ul.appendChild(el("li", null, rich(p))); });
         ps.appendChild(ul);
         card.appendChild(ps);
       }
@@ -80,7 +84,7 @@
         ss.appendChild(el("h4", null, "🏨 住宿：" + esc(d.stay.city)));
         var box = el("div", "stay " + d.stay.status);
         box.innerHTML = '<span class="tag">' + STAY_TAG[d.stay.status] + "</span>" + esc(d.stay.name) +
-                        (d.stay.note ? '<span class="note">' + esc(d.stay.note) + "</span>" : "");
+                        (d.stay.note ? '<span class="note">' + rich(d.stay.note) + "</span>" : "");
         // 已訂房的訂單明細
         if (d.stay.booking) {
           var b = d.stay.booking;
@@ -106,7 +110,7 @@
         var ws = el("div", "day-section");
         var wb = el("div", "warn-box");
         var wul = el("ul");
-        d.warn.forEach(function (w) { wul.appendChild(el("li", null, "⚠️ " + esc(w))); });
+        d.warn.forEach(function (w) { wul.appendChild(el("li", null, "⚠️ " + rich(w))); });
         wb.appendChild(wul);
         ws.appendChild(wb);
         card.appendChild(ws);

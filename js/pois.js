@@ -5,7 +5,7 @@ var POIS = [
 
 
 // ============================================================
-// Day 1–2 巴黎 Paris（6/3–6/4）
+// Day 1–2 巴黎 Paris（6/3 全日 ＋ 6/4 晨走）
 // ============================================================
 
 { id: "par-eiffel", name: "艾菲爾鐵塔", en: "Tour Eiffel", lat: 48.8584, lng: 2.2945, day: 1, area: "巴黎", wiki: "Eiffel Tower",
@@ -23,10 +23,10 @@ var POIS = [
 { id: "par-concorde", name: "協和廣場", en: "Place de la Concorde", lat: 48.8656, lng: 2.3212, day: 1, area: "巴黎", wiki: "Place de la Concorde",
   text: "協和廣場是巴黎最大的廣場，也是法國大革命最血腥的舞台：路易十六和瑪麗·安東妮都在這裡上了斷頭台。廣場中央的埃及方尖碑來自路克索神廟，已有三千三百年歷史，是十九世紀埃及送給法國的禮物，碑座上還畫著當年豎立它的工程圖解。" },
 
-{ id: "par-tuileries", name: "杜樂麗花園", en: "Jardin des Tuileries", lat: 48.8635, lng: 2.3275, day: 2, area: "巴黎", wiki: "Tuileries Garden",
+{ id: "par-tuileries", name: "杜樂麗花園", en: "Jardin des Tuileries", lat: 48.8635, lng: 2.3275, day: 1, area: "巴黎", wiki: "Tuileries Garden",
   text: "杜樂麗花園是巴黎第一座對公眾開放的皇家花園，由凱薩琳·德·梅迪奇建造——沒錯，就是從佛羅倫斯梅迪奇家族嫁來的王后，兩天後你就會到佛羅倫斯拜訪她的娘家！筆直的林蔭道、圓形水池與散放的綠色鐵椅是巴黎人的午後日常，找張椅子朝著水池坐下來歇歇腿吧。" },
 
-{ id: "par-louvre", name: "羅浮宮（玻璃金字塔）", en: "Musée du Louvre", lat: 48.8611, lng: 2.3358, day: 2, area: "巴黎", wiki: "Louvre",
+{ id: "par-louvre", name: "羅浮宮（玻璃金字塔）", en: "Musée du Louvre", lat: 48.8611, lng: 2.3358, day: 1, area: "巴黎", wiki: "Louvre",
   text: "羅浮宮是全世界參觀人數最多的博物館，前身是八百年歷史的皇宮。中庭貝聿銘設計的玻璃金字塔在一九八九年落成時罵聲一片，如今卻成了巴黎的新地標。鎮館三寶：蒙娜麗莎、米洛的維納斯、勝利女神。就算不進館，傍晚在金字塔旁看夕陽映在玻璃上也非常值得。" },
 
 { id: "par-pont-neuf", name: "新橋", en: "Pont Neuf", lat: 48.8567, lng: 2.3413, day: 2, area: "巴黎", wiki: "Pont Neuf",
@@ -35,15 +35,15 @@ var POIS = [
 { id: "par-notredame", name: "巴黎聖母院", en: "Cathédrale Notre-Dame", lat: 48.853, lng: 2.3499, day: 2, area: "巴黎", wiki: "Notre-Dame de Paris",
   text: "巴黎聖母院——雨果筆下鐘樓怪人的家，八百五十年的哥德式傑作。二〇一九年那場大火讓全世界心碎，經過五年重建，二〇二四年底重新開放，橡木屋頂與尖塔完全依原樣重生。教堂前廣場地上有一顆銅星『法國零公里原點』，全法國的公路里程都從這裡起算，站上去踩一下，據說會再回巴黎！" },
 
-{ id: "par-bouquinistes", name: "塞納河畔書報攤", en: "Bouquinistes de la Seine", lat: 48.8542, lng: 2.344, day: 2, area: "巴黎", wiki: "Bouquinistes",
+{ id: "par-bouquinistes", name: "塞納河畔書報攤", en: "Bouquinistes de la Seine", lat: 48.8542, lng: 2.344, day: 1, area: "巴黎", wiki: "Bouquinistes",
   text: "塞納河兩岸這些墨綠色的鐵皮書箱是『河畔書商』，四百年來販賣舊書、版畫和海報，被稱為全世界最長的露天書店，連同塞納河岸一起列入世界遺產。沿著河岸慢慢走，從舊書堆裡翻出一張老巴黎的版畫，是最有味道的紀念品。" },
 
 
 
-{ id: "par-sainte-chapelle", name: "聖禮拜堂", en: "Sainte-Chapelle", lat: 48.8554, lng: 2.3451, day: 2, area: "巴黎", wiki: "Sainte-Chapelle",
+{ id: "par-sainte-chapelle", name: "聖禮拜堂", en: "Sainte-Chapelle", lat: 48.8554, lng: 2.3451, day: 1, area: "巴黎", wiki: "Sainte-Chapelle",
   text: "聖禮拜堂是哥德建築的極致：路易九世在一二四八年為存放耶穌荊棘冠而建，樓上禮拜堂的四面牆幾乎全是彩繪玻璃——十五扇十五公尺高的花窗、一千一百多幅聖經場景，陽光穿透時整個空間像置身萬花筒中央。記得挑晴天來，並提前線上購票。順帶一提：荊棘冠的刺，你之後在比薩的荊棘聖母教堂也會再遇到一根！" },
 
-{ id: "par-shakespeare", name: "莎士比亞書店", en: "Shakespeare and Company", lat: 48.8526, lng: 2.3471, day: 2, area: "巴黎", wiki: "Shakespeare and Company (bookstore)",
+{ id: "par-shakespeare", name: "莎士比亞書店", en: "Shakespeare and Company", lat: 48.8526, lng: 2.3471, day: 1, area: "巴黎", wiki: "Shakespeare and Company (bookstore)",
   text: "這間綠色門面的英文書店是全世界最有名的獨立書店，海明威、費茲傑羅都曾在此出沒；樓上至今保留給旅行作家借宿的床位，住宿的代價是每天讀一本書、幫店裡工作兩小時。門口正對聖母院，買一本書蓋上店章，是最有文青味的巴黎紀念品。" },
 
 { id: "par-arc", name: "凱旋門", en: "Arc de Triomphe", lat: 48.8738, lng: 2.2950, day: 1, area: "巴黎", wiki: "Arc de Triomphe",
