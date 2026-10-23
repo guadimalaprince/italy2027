@@ -21,8 +21,12 @@ var MUST_BOOK = [
   { id: "bk-hotels-dolomiti", cat: "住宿", title: "多洛米蒂住宿：Braies／Cortina／Dobbiaco／Ortisei", opens: "2027-01-01",
     note: "⚠️ Hotel Lago di Braies（湖畔唯一旅館）通常前一年就滿，想住湖畔要最早動手。Ortisei 連住 4 晚、Cortina 3 晚也要早訂。" },
 
-  { id: "bk-hotels-city", cat: "住宿", title: "城市住宿：巴黎／拿坡里／佛羅倫斯／波爾扎諾／慕尼黑", opens: null,
-    note: "羅馬已訂（Comfort Hotel Bolivar）。其餘可用免費取消的訂單先卡位，之後再優化。" },
+  { id: "bk-hotels-city", cat: "住宿", title: "城市住宿：拿坡里／佛羅倫斯／波爾扎諾／慕尼黑", opens: null,
+    note: "已訂：巴黎（39 Rue des Bourdonnais, 1 區）、羅馬（Comfort Hotel Bolivar）。其餘可用免費取消的訂單先卡位，之後再優化。\n⚠️ <b>巴黎以外的城市也要注意三人房稀少</b>——多數歐洲旅館最多雙人房，triple 房型數量少、很早被訂走。" },
+
+  { id: "bk-paris-fares", cat: "票務", title: "巴黎交通票：確認 Navigo 日票是否含機場", opens: "2027-05-03",
+    note: "<b>目前結論：三人都買單程票最省，不要買週票。</b>\n・Navigo 日票<b>不含</b>機場路段\n・Navigo 週票含機場，但固定週一至週日，6/3 是週四會浪費前三天，再加 €5 Découverte 卡費與證件照\n・你們只有兩趟機場＋極少市區移動（住 1 區幾乎全程走路），單買約 €100／3 人，比週票 €111 還便宜\n出發前一個月上 iledefrance-mobilites.fr 複查規則與 2027 票價。",
+    url: "https://www.iledefrance-mobilites.fr/" },
 
   { id: "bk-flight-nap", cat: "機票", title: "巴黎 Orly → 拿坡里機票（6/4 傍晚）", opens: null,
     note: "越早越便宜。⚠️ 務必買可改期的票種——法國空管罷工是這趟最高風險的一段（見下方交通規劃）。" },
@@ -64,12 +68,16 @@ var MUST_BOOK = [
 
 /* ---------- 交通規劃與罷工備案 ---------- */
 var LEGS = [
-  { id: "lg-tpe", date: "6/2–6/3", leg: "台北 TPE → 巴黎 CDG", mode: "✈️", risk: "low",
-    plan: "已訂。08:05 抵達，RER B 進市區。",
+  { id: "lg-tpe", date: "6/2–6/3", leg: "台北 TPE → 巴黎 CDG → 1 區旅館", mode: "✈️", risk: "low",
+    plan: "已訂。08:05 抵達，出關後到官方 Taxi 排班處，<b>計程車政府定額右岸 €56／車</b>（含行李，三人分攤每人約 €19），約 45–60 分到 39 Rue des Bourdonnais。\n剛下長途飛機又撞上早上尖峰，不建議拖三人行李擠 RER B。三人＋大行李可請調度員安排大車（van）。",
     fallback: "班機延誤就把 Day 1 的凱旋門／小皇宮壓縮，直接傍晚去鐵塔——鐵塔整點閃燈到晚上，晚到也看得到。" },
 
+  { id: "lg-orly14", date: "6/4 下午", leg: "1 區旅館 → Orly 機場（地鐵 14 號線）", mode: "🚇", risk: "low",
+    plan: "旅館步行 3 分到 Châtelet，<b>14 號線直達 Orly，約 27 分、零轉乘</b>（2024 年 6 月通車）。全自動、班次密、月台閘門、無障礙動線，帶行李好走。",
+    fallback: "<b>這段刻意不搭計程車</b>：傍晚出發正逢尖峰，計程車到 Orly 可能塞 40–70 分且不可預測，而地鐵不受路況影響。\n14 號線若故障，改 RER B 到 Antony 轉 Orlyval，或在 Châtelet 叫車（右岸定額 €44／車）。\n抓 2 小時到機場，比正常多留 30 分緩衝。" },
+
   { id: "lg-orly", date: "6/4 傍晚", leg: "巴黎 Orly → 拿坡里 NAP", mode: "✈️", risk: "high",
-    plan: "當天下午取行李前往 Orly，起飛前 2 小時到機場。",
+    plan: "起飛前 2 小時到機場。",
     fallback: "⚠️ 全程風險最高的一段：法國空管（ATC）罷工頻繁，且屬 EC261「特殊情況」不理賠。\n① 買可改期票種，別買最低價不可改的。\n② 手機先存好隔天早班替代航班。\n③ 真的取消：改飛羅馬（班次多很多）當晚住羅馬，6/5 改從羅馬南下龐貝當天來回（高鐵 1h10 到拿坡里），行程照走只是順序倒過來。\n④ 出發前一週查法國罷工公告。" },
 
   { id: "lg-circum", date: "6/5 上午", leg: "拿坡里 → 龐貝（Circumvesuviana）", mode: "🚆", risk: "high",

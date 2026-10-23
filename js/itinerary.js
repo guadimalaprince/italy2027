@@ -7,23 +7,27 @@
 var DAYS = [
 { day: 1, date: "6/3 週四", phase: "🇫🇷 巴黎", title: "抵達巴黎：凱旋門・小皇宮・鐵塔", areas: ["巴黎"],
   transport: [
-    { icon: "✈️", route: "台北 TPE（6/2 晚間起飛）→ 巴黎 CDG", time: "08:05 抵達", note: "入境後跟著 RER 指標走" },
-    { icon: "🚆", route: "CDG → 市區（RER B 線）", time: "約 35–50 分", gm: ["Charles de Gaulle Airport", "Châtelet–Les Halles, Paris"], note: "買 Navigo Easy 卡或機場單程票" }
+    { icon: "✈️", route: "台北 TPE（6/2 晚間起飛）→ 巴黎 CDG", time: "08:05 抵達", note: "入境後往 Taxi 官方排班處（別理航廈內拉客的）" },
+    { icon: "🚕", route: "CDG → 旅館（計程車，政府定額）", time: "約 45–60 分", gm: ["Charles de Gaulle Airport", "39 Rue des Bourdonnais, 75001 Paris"], note: "右岸定額約 €56／車（含行李，三人分攤每人約 €19）。剛下長途飛機又遇早上尖峰，不建議拖行李擠 RER B。三人＋大行李可直接請調度員安排大車" }
   ],
   plan: ["凱旋門（可登頂看十二大道放射星形）", "沿香榭麗舍大道散步 → 小皇宮（免費館藏＋中庭咖啡座）", "亞歷山大三世橋就在小皇宮旁，順路拍", "傍晚：比爾哈凱姆橋鋼構框景拍鐵塔 → 特羅卡德羅 → 艾菲爾鐵塔（整點閃燈）"],
-  stay: { city: "巴黎（1 晚）", status: "suggested", name: "ibis Paris Montparnasse Catalogne 或 Novotel Paris Centre Gare Montparnasse",
-    note: "住蒙帕納斯／Denfert-Rochereau 一帶：明天傍晚去 Orly 機場最方便（OrlyBus 與 B 線都在 Denfert 發車）" },
-  warn: ["時差日別排太滿，登凱旋門和鐵塔擇一登頂就好"] },
+  stay: { city: "巴黎（1 晚）", status: "confirmed", name: "39 Rue des Bourdonnais, 75001 Paris（1 區，Châtelet／Les Halles 之間）",
+    note: "位置極佳：Châtelet 站步行 3 分（14 號線直達 Orly，零轉乘）、羅浮宮 8–10 分、新橋 5 分、西堤島 10 分，6/4 整天不用搭車" },
+  warn: ["時差日別排太滿，登凱旋門和鐵塔擇一登頂就好",
+    "Châtelet–Les Halles 是全歐最大轉運站，扒手密度高——人多時顧好背包與手機",
+    "晚上回旅館走 Rue de Rivoli 那側（寬、亮、人多），別抄 Les Halles 北側或 Rue Saint-Denis 方向的小巷"] },
 
 { day: 2, date: "6/4 週五", phase: "🇫🇷 巴黎 → 拿坡里", title: "羅浮宮・聖母院 → 傍晚飛拿坡里", areas: ["巴黎", "拿坡里"],
   transport: [
-    { icon: "✈️", route: "巴黎 Orly → 拿坡里 NAP（傍晚班機）", time: "約 2 小時 5 分", note: "市區到 Orly 約 40–60 分，起飛前 2 小時到機場" },
+    { icon: "🚇", route: "旅館 → Châtelet → Orly 機場（地鐵 14 號線直達）", time: "步行 3 分＋車程約 27 分", gm: ["Châtelet, Paris", "Aéroport d'Orly"], note: "14 號線 2024 年 6 月延伸到 Orly，零轉乘。傍晚是尖峰，計程車可能塞 40–70 分且不可預測——這段趕飛機不要賭路況，搭地鐵" },
+    { icon: "✈️", route: "巴黎 Orly → 拿坡里 NAP（傍晚班機）", time: "約 2 小時 5 分", note: "起飛前 2 小時到機場" },
     { icon: "🚌", route: "拿坡里機場 → 市中心（Alibus 機場巴士）", time: "約 20 分，到中央車站與港口", gm: ["Naples Airport", "Napoli Centrale"] }
   ],
-  plan: ["上午：羅浮宮（鎮館三寶動線約 3 小時，提前預約）", "杜樂麗花園 → 新橋 → 西堤島：聖禮拜堂（時間夠再進）、巴黎聖母院", "河對岸莎士比亞書店、塞納河畔書報攤", "下午取行李前往 Orly", "晚上拿坡里：Via dei Tribunali 吃正宗窯烤披薩！"],
+  plan: ["上午：羅浮宮（鎮館三寶動線約 3 小時，提前預約）", "杜樂麗花園 → 新橋 → 西堤島：聖禮拜堂（時間夠再進）、巴黎聖母院", "河對岸莎士比亞書店、塞納河畔書報攤", "走回旅館取行李（莎士比亞書店→旅館約 12 分）→ Châtelet 搭 14 號線", "晚上拿坡里：Via dei Tribunali 吃正宗窯烤披薩！"],
   stay: { city: "拿坡里（1 晚）", status: "suggested", name: "Starhotels Terminus 或 UNAHOTELS Napoli（中央車站旁）",
     note: "住 Napoli Centrale 旁：明早搭 Circumvesuviana 去龐貝最方便，行李也可寄車站" },
-  warn: ["羅浮宮建議一開門 09:00 進場，提前線上購票", "行李寄放住宿或車站寄物處，逛完再取", "Orly 與 CDG 是不同機場，別跑錯！"] },
+  warn: ["羅浮宮建議一開門 09:00 進場，提前線上購票", "行李寄放住宿或車站寄物處，逛完再取", "Orly 與 CDG 是不同機場，別跑錯！",
+    "票務：Navigo 日票<b>不含</b>機場、週票是固定週一到週日（6/3 是週四會浪費），兩趟機場單買機場票反而最省——詳見待辦頁"] },
 
 { day: 3, date: "6/5 週六", phase: "🇮🇹 龐貝 → 羅馬", title: "龐貝古城 → 傍晚進羅馬", areas: ["龐貝", "羅馬"],
   transport: [
@@ -80,7 +84,7 @@ var DAYS = [
   plan: ["09:00 南蒂羅爾考古博物館看冰人奧茨（約 1.5 小時）", "中午前東行，午餐在 Dobbiaco 解決", "下午進駐布萊耶斯湖，環湖一圈約 1 小時", "傍晚日歸遊客散去後湖面最平靜——拍倒影的黃金時段", "早睡：明天開始揹包上山"],
   stay: { city: "布萊耶斯湖／Villabassa", status: "suggested", name: "Hotel Lago di Braies（湖畔，AV1 起登點）或 Hotel Adler Villabassa",
     note: "住湖畔最省事，隔天出門就是登山口；訂不到就住 Villabassa／Dobbiaco，搭首班巴士上來" },
-  warn: ["⚠️ 明天起連走四天：今晚把大行李寄放山下旅館，只帶上山必需品（山屋有寢具，需自備睡袋內襯）", "⚠️ Rifugio Biella（明晚）尚未訂房——六月中旬山屋才陸續開門，請盡快確認 2027 開放日並訂位"] },
+  warn: ["明天起連走四天：今晚把大行李寄放山下旅館，只帶上山必需品（山屋有寢具，需自備睡袋內襯）", "Rifugio Biella（明晚）尚未訂房——六月中旬山屋才陸續開門，請盡快確認 2027 開放日並訂位"] },
 
 { day: 9, date: "6/11 週五", phase: "🥾 Alta Via 1", title: "AV1 第一天：布萊耶斯湖 → Sennes 山屋", areas: ["Alta Via 1"],
   transport: [
@@ -109,7 +113,7 @@ var DAYS = [
   stay: { city: "Rifugio Lagazuoi（2,752m）", status: "confirmed", name: "Rifugio Lagazuoi",
     booking: { room: "上下舖通鋪，共用衛浴", people: 3, nights: 1, total: 360, paid: 180, board: "含早餐＋晚餐（半食宿）" },
     note: "已訂房。全多洛米蒂景觀最好的山屋之一，露台正對日落" },
-  warn: ["⚠️ Forcella del Lago 是北向高繞，六月中殘雪機率高——出發前向 Fanes 山屋確認雪況，必要時帶微型冰爪", "今天沒有中途補給點，水與行動糧要帶足"] },
+  warn: ["Forcella del Lago 是北向高繞，六月中殘雪機率高——出發前向 Fanes 山屋確認雪況，必要時帶微型冰爪", "今天沒有中途補給點，水與行動糧要帶足"] },
 
 { day: 12, date: "6/14 週一", phase: "🥾 Alta Via 1 → Cortina", title: "AV1 第四天：一戰隧道下山 → 進 Cortina", areas: ["Alta Via 1", "Cortina"],
   transport: [
