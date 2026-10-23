@@ -24,6 +24,14 @@ var MUST_BOOK = [
   { id: "bk-hotels-city", cat: "住宿", title: "城市住宿：拿坡里／佛羅倫斯／波爾扎諾／慕尼黑", opens: null,
     note: "已訂：巴黎（39 Rue des Bourdonnais, 1 區）、羅馬（Comfort Hotel Bolivar）。其餘可用免費取消的訂單先卡位，之後再優化。\n⚠️ <b>巴黎以外的城市也要注意三人房稀少</b>——多數歐洲旅館最多雙人房，triple 房型數量少、很早被訂走。" },
 
+  { id: "bk-notredame", cat: "門票", title: "查巴黎聖母院開放時間與預約制（6/3 或 6/4 入內）", opens: "2027-05-03",
+    note: "<b>入內免費</b>（鐘樓才要另外付費）。但 2024 年 12 月重開後新增了免費的時段預約制，開放時間也調整過——到 notredamedeparis.fr 確認。\n<b>關鍵：如果 07:45–08:00 就開門，改到 6/4 早上去</b>，開門第一批進場幾乎沒人，08:45 出來還趕得上 09:45 的 Orly 期限。若較晚才開，就留在 6/3 下午。",
+    url: "https://www.notredamedeparis.fr/" },
+
+  { id: "bk-saintechapelle", cat: "門票", title: "聖禮拜堂時段票（6/3）", opens: "2027-03-03",
+    note: "跳過羅浮宮後，這是巴黎唯一排進去的室內景點，<b>要線上預約時段</b>。旅館步行 10 分，約 40 分鐘看完。安檢排隊可能 20–30 分。",
+    url: "https://www.sainte-chapelle.fr/" },
+
   { id: "bk-paris-fares", cat: "票務", title: "巴黎交通票：確認 Navigo 日票是否含機場", opens: "2027-05-03",
     note: "<b>目前結論：三人都買單程票最省，不要買週票。</b>\n・Navigo 日票<b>不含</b>機場路段\n・Navigo 週票含機場，但固定週一至週日，6/3 是週四會浪費前三天，再加 €5 Découverte 卡費與證件照\n・你們只有兩趟機場＋極少市區移動（住 1 區幾乎全程走路），單買約 €100／3 人，比週票 €111 還便宜\n出發前一個月上 iledefrance-mobilites.fr 複查規則與 2027 票價。",
     url: "https://www.iledefrance-mobilites.fr/" },
