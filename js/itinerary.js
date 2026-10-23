@@ -86,7 +86,8 @@ var DAYS = [
   plan: ["08:00 梵蒂岡博物館入場（地圖廊 → 拉斐爾房間 → 西斯汀禮拜堂，約 3–4 小時）", "有時間再快閃聖彼得大教堂看聖殤像，回程順路聖天使堡外觀", "下午高鐵到佛羅倫斯，check-in", "傍晚老橋（Ponte Vecchio）散步、天主聖三橋看夕陽"],
   stay: { city: "佛羅倫斯", status: "suggested", name: "Hotel Croce di Malta 或 B&B Hotel Firenze City Center",
     note: "建議住 SMN 車站與主教座堂之間，拖行李 10 分鐘內，去比薩、去美術館都方便" },
-  warn: ["梵蒂岡務必提前預約 08:00 入場票（museivaticani.va），週一開館"] },
+  warn: ["梵蒂岡務必提前預約 08:00 入場票（museivaticani.va），週一開館",
+    "<b>64 號公車是羅馬扒手最惡名昭彰的一條線</b>（Termini ↔ 梵蒂岡，整車觀光客）。多個治安指南都點名這班。背包背前面，或改搭 40 號快線——同樣擁擠但停站少。\n羅馬的風險是扒竊不是暴力犯罪，另一個熱點是尖峰時段的地鐵與 Termini 周邊"] },
 
 { day: 6, date: "6/8 週二", phase: "🇮🇹 佛羅倫斯", title: "比薩半日遊 → 佛羅倫斯老城", areas: ["比薩", "佛羅倫斯"],
   transport: [
