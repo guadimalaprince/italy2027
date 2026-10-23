@@ -58,7 +58,7 @@
           var leg = el("div", "leg");
           leg.appendChild(el("span", "icon", t.icon || "🚌"));
           var body = el("div", "body");
-          var line = '<span class="route">' + esc(t.route) + '</span>' +
+          var line = '<span class="route">' + rich(t.route) + '</span>' +
                      (t.time ? '<span class="time">' + esc(t.time) + '</span>' : "");
           if (t.gm) line += '<a class="gmap" target="_blank" rel="noopener" href="' + gmapLink(t.gm) + '">📍 路線</a>';
           body.innerHTML = line + (t.note ? '<div class="note">' + rich(t.note) + "</div>" : "");
