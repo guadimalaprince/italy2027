@@ -21,15 +21,15 @@ var MUST_BOOK = [
     note: "兩間已付訂金（Fanes €250／Lagazuoi €180）。出發前一個月再次來信確認訂房仍在、尾款金額與是否收卡。" },
 
   { id: "bk-hotels-dolomiti", cat: "住宿", title: "多洛米蒂住宿：Braies／Cortina／Dobbiaco／Ortisei", opens: "2027-01-01",
-    note: "⚠️ Hotel Lago di Braies（湖畔唯一旅館）通常前一年就滿，想住湖畔要最早動手。Ortisei 連住 4 晚、Cortina 3 晚也要早訂。" },
+    note: "⚠️ Hotel Lago di Braies（湖畔唯一旅館）通常前一年就滿，想住湖畔要最早動手。Ortisei 連住 4 晚、Cortina 3 晚也要早訂。\n⚠️ <b>訂 Braies／Dobbiaco／Ortisei 時主動問旅館有沒有附 Südtirol Guest Pass</b>——免費、含南提洛全境大眾運輸，但<b>只能由住宿發放、不能自己買</b>，不問就拿不到。（Cortina 在威尼托省，不適用）" },
 
   { id: "bk-munich-confirm", cat: "住宿", title: "慕尼黑 6/23 已訂——出發前要確認的事", opens: null,
     who: "3 人 1 晚",
     note: "<b>✅ Downtown Vi Vadi Hotel 已訂</b>（Agoda 1789322094，Marsstraße 6-10，距車站 250 公尺）。房型 Double or Twin ＋ 1 張加床，未含早餐。\n<b>可免費取消至 2027/6/22</b>，所以手上是完全有彈性的。\n出發前要做三件事：\n① <b>跟飯店確認那張加床怎麼擺</b>——三個大人，加床品質差很多，提早講比現場講有用。\n② 入住要出示<b>與訂房人同名、且載有地址的附照片證件</b>（Agoda 條款寫明）。\n③ 房內<b>沒有空調</b>，六月底可能 30°C 以上。真的在意就趁免費取消期限前換 Vi Vadi Bayer 89（€243、評分 8.6／8.8、有空調，但要走 12–15 分）。\n⚠️ 6/22–25 Messe München 三展同期，房價仍在高點；因為可免費取消，出發前一個月可以再比一次價。",
     url: "https://www.agoda.com/" },
 
-  { id: "bk-hotels-city", cat: "住宿", title: "城市住宿：拿坡里（官網直訂）／佛羅倫斯／波爾扎諾", opens: null,
-    note: "已訂：巴黎（39 Rue des Bourdonnais, 1 區）、羅馬（Comfort Hotel Bolivar）、慕尼黑（Downtown Vi Vadi）。\n<b>拿坡里已選定 Dimora Neapolis Deluxe，走官網直訂、約 €108</b>——不走 OTA，訂完把確認信丟進 Drive 我再補明細。\n佛羅倫斯與波爾扎諾仍待訂，可用免費取消的訂單先卡位。\n⚠️ <b>巴黎以外的城市也要注意三人房稀少</b>——多數歐洲旅館最多雙人房，triple 房型數量少、很早被訂走。" },
+  { id: "bk-hotels-city", cat: "住宿", title: "城市住宿：巴黎／拿坡里／佛羅倫斯／波爾扎諾", opens: null,
+    note: "<b>已訂：羅馬（Comfort Hotel Bolivar）、慕尼黑（Downtown Vi Vadi）。</b>\n⚠️ <b>巴黎（39 Rue des Bourdonnais, 1 區）位置已選定但尚未下訂</b>——只住 6/3 一晚，隔天一早趕 Orly，訂的時候順便確認退房時間與行李寄放。\n<b>拿坡里已選定 Dimora Neapolis Deluxe，走官網直訂、約 €108</b>——不走 OTA，訂完把確認信丟進 Drive 我再補明細。\n佛羅倫斯與波爾扎諾仍待訂，可用免費取消的訂單先卡位。\n⚠️ <b>巴黎以外的城市也要注意三人房稀少</b>——多數歐洲旅館最多雙人房，triple 房型數量少、很早被訂走。" },
 
   { id: "bk-notredame", cat: "門票", title: "聖母院免費時段預約（6/4 早上 07:50 場）", opens: "2027-06-01",
     note: "<b>入內免費</b>，已確認週五 07:50–19:00（週四延長到 22:00），末班入場閉館前 30 分。\n免費時段預約<b>非強制</b>，只是縮短排隊，<b>開放窗口只有出發前 48–72 小時</b>——人在巴黎或飛機上才訂得到，手機記得設提醒。07:50 開門第一批通常不用排。\n鐘樓是另外付費 €16，走 CMN 官網，<b>現場不售票</b>。",
@@ -47,6 +47,11 @@ var MUST_BOOK = [
     who: "3 人",
     note: "<b>2027/5/5（三）18:35 開放線上報到</b>，訂位代號 <b>KDLJ94T</b>。\neasyJet 的登機證要<b>自己先印或存進手機</b>——沒有線上報到就到機場，現場補辦要收費。三個人都要各自取得登機證。\n已付 3 件 23 公斤托運，所以當天還是要走<b>行李託運櫃台（10:35 開、11:55 關）</b>，線上報到只是省掉人工報到那一關。",
     url: "https://www.easyjet.com/en/" },
+
+  { id: "tk-city-transit", cat: "票務", title: "各城市交通票：怎麼買最划算（結論：都不必提早買）", opens: null,
+    who: "3 人",
+    note: "<b>總結：沒有任何一張市區交通票需要提早買。但有一張免費的要主動開口要。</b>\n\n<b>🇫🇷 巴黎（6/3–6/4）｜不買套票</b>\n住 1 區幾乎全程步行。只有兩趟機場：CDG 進城搭計程車（定額 €56／車），6/4 去 Orly 買<b>「Paris Region ↔ Airports」機場票 ≈ €14／人</b>。Navigo 日票不含機場、週票綁週一到週日會浪費，單買最省。\n\n<b>🇮🇹 拿坡里（6/4–6/5）｜不買套票</b>\n只住一晚。Alibus 機場巴士與隔天去龐貝的 Circumvesuviana 各自單買。\n\n<b>🇮🇹 羅馬（6/5–6/7）｜直接感應支付，什麼都不用買</b>\nATAC 有 <b>Tap &amp; Go 每日上限 €8.50</b>（＝24 小時票價）：刷卡搭到超過就當日免費。市中心多半用走的，實際每天大概 2–4 趟、花不到上限，所以<b>連日票都不用買</b>。\n單程 BIT 100 分鐘：原價 €1.50，但 2026 年 7 月起可能調為 €2.00（來源不一致，現場看）。24／48／72 小時票為 €8.50／€15／€22——以你們的用量都不划算。\n\n<b>🇮🇹 佛羅倫斯（6/7–6/9）｜不買套票</b>\n老城區全步行，烏菲茲、學院、主教座堂都在走路範圍。6/8 去比薩是 Trenitalia 區間車，單買來回。\n\n<b>🏔 波爾扎諾與南提洛（6/9–6/11、6/15–6/22）｜⭐ 免費的 Südtirol Guest Pass</b>\n<b>這是唯一「不問就拿不到」的東西。</b>免費、由住宿發放、<b>不能自己買</b>，含南提洛全境公車與區域火車（不含 Frecciarossa／Eurocity 等長程車）。涵蓋<b>波爾扎諾、Braies、Dobbiaco、Ortisei</b>。訂房時就要問。\n拿不到才退而求其次買 Mobilcard：官方 2026 年為 1 日 €22／3 日 €32／7 日 €52（另有來源寫 €20／€30／€50，出發前以 suedtirolmobil 官網為準）。\n\n<b>🏔 Cortina（6/14–6/15）｜上車買，不適用 Guest Pass</b>\nCortina 在<b>威尼托省</b>，不在南提洛，Guest Pass 不涵蓋。Dolomitibus 直接上車買，收現金與感應卡。Cortina→Dobbiaco 2025 年約 €6.50。\n\n<b>🏔 Val Gardena（6/20–6/22）｜已排 Gardena Card</b>\n行程裡已安排，纜車與當地公車包含在內。\n\n<b>🇩🇪 慕尼黑（6/24）｜⭐ 買團體日票，省約 €13</b>\n6/23 晚上從車站走路到飯店（250 公尺），不需要交通票。6/24 一早搭 S8 去機場：\n・單程 M–5 票約 <b>€15.10 × 3 人 = €45.30</b>\n・<b>Airport-City-Day-Ticket 團體票（M–5 區）€32.60</b>，最多 5 名成人，有效到隔天早上 6 點\n<b>→ 買團體票，省約 €12.70</b>，而且當天其他移動都含在內。現場售票機買就好。",
+    url: "https://www.suedtirol.info/en/en/information/mobility/mobilcard" },
 
   { id: "bk-trains-it", cat: "火車", title: "義大利高鐵三段（6/5 拿坡里→羅馬、6/7 羅馬→佛羅倫斯、6/9 佛羅倫斯→波爾扎諾）", opens: "2027-02-05",
     note: "Trenitalia／Italo 約出發前 4 個月開賣，Super Economy 早鳥票便宜非常多。兩家是不同公司，罷工時互為備案，可以刻意分開訂。",
