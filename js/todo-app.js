@@ -67,6 +67,10 @@
     var box = document.getElementById("book-list");
     box.innerHTML = "";
     var list = MUST_BOOK.slice().sort(function (a, b) {
+      // 先看 prio（最優先的項目就算「隨時可訂」也要排在最前面），再比開放日
+      var pa = a.prio === undefined ? 50 : a.prio;
+      var pb = b.prio === undefined ? 50 : b.prio;
+      if (pa !== pb) return pa - pb;
       var da = a.opens ? daysUntil(a.opens) : 9999;
       var db = b.opens ? daysUntil(b.opens) : 9999;
       return da - db;
@@ -79,6 +83,7 @@
 
       var head = el("div", "ti-head");
       head.appendChild(el("span", "ti-cat", esc(it.cat)));
+      if (it.prio !== undefined) head.appendChild(el("span", "ti-prio", "🔥 最優先"));
 
       var n = daysUntil(it.opens);
       var chip;
@@ -139,7 +144,7 @@
           (b.people ? "（" + b.people + " 人，每人 €" + Math.round(b.total / b.people) + "）" : "") +
           "　已付 €" + b.paid + '　<strong class="bk-due">待付 €' + due + "</strong>"));
       } else if (d.stay.note) {
-        body.appendChild(el("div", "ti-note", esc(d.stay.note)));
+        body.appendChild(el("div", "ti-note", rich(d.stay.note)));
       }
       r.row.appendChild(body);
       box.appendChild(r.row);

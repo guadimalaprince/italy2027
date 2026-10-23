@@ -1,12 +1,14 @@
 /* 待辦事項資料
  * opens: 開賣／開放訂位日（YYYY-MM-DD）；null = 隨時可訂
+ * prio: 排序優先度，小的排前面（省略 = 50）。用在「現在就該做」但 opens 是 null 的項目，
+ *       否則「隨時可訂」會被排到清單最後面，反而看不到。
  * 行程日期：2027/6/2 台北出發 – 6/24 慕尼黑回程
  */
 var TRIP_DEPART = "2027-06-02";
 
 /* ---------- 必訂項目 ---------- */
 var MUST_BOOK = [
-  { id: "bk-sennes", cat: "山屋", title: "Rifugio Sennes（6/11 住）", opens: "2026-11-04",
+  { id: "bk-sennes", cat: "山屋", title: "Rifugio Sennes（6/11 住）", opens: "2026-11-04", prio: 1,
     who: "3 人 1 晚",
     note: "店家明講 11/4 開放訂房。AV1 第一晚，六月中旬山屋床位極少，開放當天就訂。",
     url: "https://www.sennes.com/" },
@@ -21,7 +23,12 @@ var MUST_BOOK = [
   { id: "bk-hotels-dolomiti", cat: "住宿", title: "多洛米蒂住宿：Braies／Cortina／Dobbiaco／Ortisei", opens: "2027-01-01",
     note: "⚠️ Hotel Lago di Braies（湖畔唯一旅館）通常前一年就滿，想住湖畔要最早動手。Ortisei 連住 4 晚、Cortina 3 晚也要早訂。" },
 
-  { id: "bk-hotels-city", cat: "住宿", title: "城市住宿：拿坡里／佛羅倫斯／波爾扎諾／慕尼黑", opens: null,
+  { id: "bk-hotel-munich", cat: "住宿", title: "慕尼黑中央車站住宿（6/23 一晚）", opens: null, prio: 2,
+    who: "3 人 1 晚",
+    note: "⚠️ <b>6/22–25 Messe München 同時辦三個大展</b>（automatica、LASER World of PHOTONICS、World of QUANTUM），6/23 是第二天尖峰。展會指南寫 LASER 週慕尼黑房價<b>大約翻倍</b>，某聚合站那週連平價的 Sure Hotel by BW 都顯示 €269 起。\n<b>現在就訂、選可免費取消</b>——距離還有 8 個月，多數飯店還沒把展會價套到這麼遠的日期，掛的通常是基礎價。等逼近展期就來不及了。\n<b>北側</b>（Arnulfstr./Dachauer Str.，體感好）：Eden Hotel Wolff（4★，8.5／5502 則）、25hours The Royal Bavarian、Motel One Hbf（有人抱怨通風差，要問空調）。\n<b>南側</b>（Schillerstr./Landwehrstr.，便宜）：Europäischer Hof（TA 車站周邊最佳價值第 1）、Smart Stay Hotel Schweiz（翻新、ensuite 標配）、Sure Hotel by BW（<b>官網列有 Family Triple Room</b>，離車站約 15 公尺）。\n⚠️ 南側是紅燈區，Alter Botanischer Garten 附近有毒品活動、Schillerstr. 扒手多。風險是扒竊與酒醉鬧事而非暴力犯罪，但去中國塔喝到晚才回來的話，北側多付的錢買的是那段回程路。\n⚠️ <b>三人房是真正的稀缺品</b>，展會週最先賣完；「雙人＋單人」常比三人房便宜。六月底可能 30°C 以上，<b>空調當篩選器</b>。\n評分為聚合網站不同時間的快照、展期有一來源寫 6/20 開始——下訂前以 messe-muenchen.de 與飯店官網複查。",
+    url: "https://www.messe-muenchen.de/" },
+
+  { id: "bk-hotels-city", cat: "住宿", title: "城市住宿：拿坡里／佛羅倫斯／波爾扎諾", opens: null,
     note: "已訂：巴黎（39 Rue des Bourdonnais, 1 區）、羅馬（Comfort Hotel Bolivar）。其餘可用免費取消的訂單先卡位，之後再優化。\n⚠️ <b>巴黎以外的城市也要注意三人房稀少</b>——多數歐洲旅館最多雙人房，triple 房型數量少、很早被訂走。" },
 
   { id: "bk-notredame", cat: "門票", title: "聖母院免費時段預約（6/4 早上 07:50 場）", opens: "2027-06-01",

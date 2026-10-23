@@ -21,9 +21,9 @@
   function esc(s) {
     return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   }
-  // 資料裡只允許 <b> / <strong>，其餘一律轉義（與待辦頁一致）
+  // 資料裡只允許 <b> / <strong> 與換行，其餘一律轉義（與待辦頁一致）
   function rich(s) {
-    return esc(s).replace(/&lt;(\/?(?:b|strong))&gt;/g, "<$1>");
+    return esc(s).replace(/&lt;(\/?(?:b|strong))&gt;/g, "<$1>").replace(/\n/g, "<br>");
   }
 
   function gmapLink(gm) {
