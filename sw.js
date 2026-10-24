@@ -3,7 +3,7 @@
  * - 地圖圖磚：cache-first，看過或預先下載過的就能離線用
  * - 維基照片：cache-first
  */
-var SHELL = "italy2027-shell-v4";
+var SHELL = "italy2027-shell-v5";
 var TILES = "italy2027-tiles-v1";
 var PHOTOS = "italy2027-photos-v1";
 
@@ -77,6 +77,37 @@ function cacheFirst(req, cacheName) {
   });
 }
 
+// 本站自己的程式與資料：會改的東西
+function isAppCode(url) {
+  return /\/(js|css)\/|\.html$|\/$/.test(url.pathname);
+}
+
+// 優先連網，但山上訊號差時不能無限等——4 秒拿不到就回快取
+function networkFirst(req) {
+  return caches.open(SHELL).then(function (cache) {
+    return new Promise(function (resolve) {
+      var settled = false;
+      var done = function (res) { if (!settled) { settled = true; resolve(res); } };
+
+      var timer = setTimeout(function () {
+        cache.match(req).then(function (hit) { if (hit) done(hit); });
+      }, 4000);
+
+      // cache:"reload" 繞過瀏覽器自己的 HTTP 快取，否則這裡拿到的還是舊檔
+      fetch(new Request(req.url, { cache: "reload", credentials: "same-origin" })).then(function (res) {
+        clearTimeout(timer);
+        if (res && res.ok) cache.put(req, res.clone());
+        done(res);
+      }).catch(function () {
+        clearTimeout(timer);
+        cache.match(req).then(function (hit) {
+          done(hit || Response.error());
+        });
+      });
+    });
+  });
+}
+
 self.addEventListener("fetch", function (e) {
   var req = e.request;
   if (req.method !== "GET") return;
@@ -105,7 +136,12 @@ self.addEventListener("fetch", function (e) {
     return;
   }
 
-  // 靜態資源：快取優先，背景更新
+  // 自己的程式與資料（js/ css/ *.html）：優先連網，離線才回快取。
+  // 以前這裡用「快取優先、背景更新」，結果每次改資料都要等下一次造訪才看得到，
+  // 行程改了卻還顯示舊的。行程資料的正確性比省那幾百毫秒重要。
+  if (isAppCode(url)) { e.respondWith(networkFirst(req)); return; }
+
+  // 其餘（vendor/、圖示、manifest）內容固定，維持快取優先、背景更新
   e.respondWith(
     caches.open(SHELL).then(function (cache) {
       return cache.match(req).then(function (hit) {
