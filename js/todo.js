@@ -20,6 +20,11 @@ var MUST_BOOK = [
   { id: "bk-huts-other", cat: "山屋", title: "確認 Fanes／Lagazuoi 尾款與抵達方式", opens: "2027-01-15",
     note: "兩間已付訂金（Fanes €250／Lagazuoi €180）。出發前一個月再次來信確認訂房仍在、尾款金額與是否收卡。" },
 
+  { id: "bk-auronzo", cat: "山屋", title: "Rifugio Auronzo 6/17 一晚（Tre Cime／Cadini 之間）", opens: null, prio: 3,
+    who: "3 人 1 晚",
+    note: "<b>提議：6/17 不回 Dobbiaco，直接住在 Tre Cime 登山口的 Rifugio Auronzo。</b>\n<b>⭐ 關鍵理由：Cadini 觀景台（魔戒之路）就在 Auronzo 旁邊。</b>走 117 號步道往南，<b>單程 30–45 分鐘</b>、來回約 3.5–4 公里、爬升 110–175 公尺。住山上才有辦法在日出或日落時站在那裡——從 Misurina 或 Dobbiaco 搭首班接駁（約 07:40）都來不及。\n其他好處：接駁車只要搭一趟不是兩趟（省約 2 小時與 €20–30）；Tre Cime 環線不必趕末班車；<b>傍晚之後到隔天早上，整個 Tre Cime 區只剩住宿的人</b>。\n\n<b>⚠️ 要查證與注意的：</b>\n① <b>六月中旬開不開門？</b>查不到 Auronzo 的 2027 開season日期。它在停車場邊、車行可達，通常比深山山屋早開，但<b>一定要先問</b>。（對照：Rifugio Locatelli 有來源說「六月底才開」，所以 6/17 很可能根本沒開——這也是不選 Locatelli 的原因。）\n② <b>官網送出表格只是「預訂申請」不是確認</b>，而且來源說它<b>經常客滿</b>。要追到書面確認。\n③ 價格：官網列通鋪每人約 <b>€90–100</b>（三人約 €270–300）。會省下 Dobbiaco 一晚，但仍比旅館貴。\n④ <b>Auronzo 在三尖峰南側，不是經典的北壁角度。</b>北壁夕照要在 Locatelli（從 Auronzo 走 1.5–2 小時）。想要北壁日落，就 6/17 下午逆時針走環線、在 Locatelli 看完夕陽再戴頭燈走回來——AV1 的頭燈正好派上用場。\n⑤ 步道 117 有來源形容「狹窄、多碎石、局部有暴露感」，摸黑走要評估。\n\n<b>成立的話行程會變成：</b>\n6/17 Cortina →（巴士）Misurina → 接駁上 Auronzo → 環線 → 宿山屋\n6/18 日出走 Cadini → 下山 → 米蘇里納湖 → 巴士回 Dobbiaco 拿行李、<b>Dobbiaco 只住 1 晚</b>\n⚠️ 這樣 Dobbiaco 從 3 晚變 2 晚（6/10、6/18），訂房時要改。<b>先確認 Auronzo 訂得到再改 Dobbiaco。</b>",
+    url: "https://rifugioauronzo.it/en/booking/" },
+
   { id: "bk-hotels-dolomiti", cat: "住宿", title: "多洛米蒂住宿：Dobbiaco（3 晚，同一間）／Cortina／Ortisei", opens: "2027-01-01",
     note: "<b>⭐ Dobbiaco 要訂 3 晚、而且訂同一間：6/10（上山前）＋ 6/17–6/18（Tre Cime 兩天）。</b>\nAV1 從布萊耶斯湖往南走，<b>結束在 Falzarego／Cortina，不會回到湖邊</b>——所以大行李要寄在 Dobbiaco，不是布萊耶斯湖。6/17 本來就會回 Dobbiaco，請旅館代管這 7 晚的行李，訂房時先寫信確認（山區旅館對健行客做這件事是常態）。\n<b>✅ 布萊耶斯湖的住宿不用訂了</b>——原本最難訂的 Hotel Lago di Braies 可以放棄，6/11 一早搭 442 號巴士首班車上山即可。\nOrtisei 連住 4 晚、Cortina 3 晚仍要早訂。\n⚠️ <b>訂 Dobbiaco／Ortisei 時主動問旅館有沒有附 Südtirol Guest Pass</b>——免費、含南提洛全境大眾運輸，但<b>只能由住宿發放、不能自己買</b>，不問就拿不到。（Cortina 在威尼托省，不適用）" },
 

@@ -199,7 +199,7 @@ var DAYS = [
   ],
   plan: ["上午移動並 check-in、寄放行李", "下午 Tre Cime 環線（10 公里，約 4 小時，順時針走）", "Lavaredo 埡口看三尖峰經典角度 → Locatelli 山屋看北壁", "夕陽時三座岩塔會燒成橘紅色"],
   stay: { city: "Dobbiaco（2 晚）", status: "suggested", name: "Hotel Santer 或 Hotel Laurin（同 6/10 那間）",
-    note: "<b>今天回來拿 6/10 寄放的大行李。</b>Dobbiaco 是普斯特里亞線的車站小鎮，後天往 Ortisei 的火車從這裡發車。\n<b>考慮過改住 Misurina</b>（離 Tre Cime 與 Cadini 都近得多）<b>，但沒有車的話優勢有限</b>：接駁首班約 07:40，從 Dobbiaco 搭 444 也差不多同時間到登山口。而且 Misurina 在威尼托省、<b>Guest Pass 不適用</b>，小村落沒有壞天氣的備案，行李也得多繞一趟。\n<b>真的想拍日出日落</b>，有效的作法不是住 Misurina，而是<b>在 Rifugio Locatelli 住一晚</b>——那是唯一能在光線最好時待在山上的方式。二月開放訂房、秒殺，通鋪一床約 €100 起。" },
+    note: "<b>今天回來拿 6/10 寄放的大行李。</b>Dobbiaco 是普斯特里亞線的車站小鎮，後天往 Ortisei 的火車從這裡發車。\n<b>考慮過改住 Misurina</b>（離 Tre Cime 與 Cadini 都近得多）<b>，但沒有車的話優勢有限</b>：接駁首班約 07:40，從 Dobbiaco 搭 444 也差不多同時間到登山口。而且 Misurina 在威尼托省、<b>Guest Pass 不適用</b>，小村落沒有壞天氣的備案，行李也得多繞一趟。\n<b>⭐ 更好的替代案：6/17 改住 Rifugio Auronzo（登山口山屋）。</b>Cadini 觀景台走 117 號步道單程只要 30–45 分，住上面才能在日出或日落站在那裡；接駁車也只需搭一趟。<b>成立的話 Dobbiaco 改成只住 6/10 與 6/18 兩晚</b>——詳見待辦頁，<b>先確認山屋訂得到再改旅館</b>。\n（原本想過 Rifugio Locatelli，北壁角度最好，但有來源說它<b>六月底才開</b>，6/17 很可能沒開。）" },
   warn: ["Tre Cime 接駁與停車需預約（trecime.it），旺季名額有限", "環線海拔 2,300–2,450m，午後易起霧，早點上山"] },
 
 { day: 16, date: "6/18 週五", phase: "🏔 Dobbiaco", title: "米蘇里納湖 ＋ Cadini 山群（魔戒之路）", areas: ["Dobbiaco / Tre Cime"],
