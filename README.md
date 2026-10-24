@@ -106,14 +106,14 @@ italy2027/
 | 梵蒂岡 | Day 5 | 12 |
 | 佛羅倫斯 | Day 5–7 | 26 |
 | 比薩 | Day 6 | 10 |
-| 波爾扎諾 | Day 7–8 | 8 |
+| 波爾扎諾 | Day 7–8 | 7 |
 | Alta Via 1（Braies → Falzarego，含一戰遺跡） | Day 8–12（6/10–6/14） | 18 |
 | Cortina（Sorapis + Tofana di Mezzo） | Day 12–14 | 9 |
 | Dobbiaco / Tre Cime / Misurina | Day 15–16 | 13 |
 | Val di Funes 富內斯山谷 | Day 17 | 4 |
 | Val Gardena（Seceda / Alpe di Siusi / Sassolungo） | Day 17–20 | 10 |
 | 卡雷扎湖 / Rosengarten 薔薇園（Day 20 替代方案） | Day 20 | 5 |
-| 慕尼黑 | Day 21–22（6/23–6/24） | 14 |
+| 慕尼黑 | Day 21–22（6/23–6/24） | 15 |
 
 > 山屋與步道點位（Alta Via 1、Tre Cime 等）座標為近似值，觸發半徑建議調大；
 > 想修改或新增景點，直接編輯 `js/pois.js` 即可，格式一看就懂。

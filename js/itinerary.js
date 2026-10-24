@@ -120,12 +120,12 @@ var DAYS = [
     note: "住老城中心，車站步行 5 分鐘，明早搭巴士方便" },
   warn: ["兩館都要提前預約指定時段（b-ticket 官方系統），排 09:00＋11:00 剛好接得上"] },
 
-{ day: 8, date: "6/10 週四", phase: "🏔 東多洛米蒂", title: "冰人博物館 → 進駐布萊耶斯湖", areas: ["波爾扎諾", "Alta Via 1"],
+{ day: 8, date: "6/10 週四", phase: "🏔 東多洛米蒂", title: "東行進駐布萊耶斯湖", areas: ["波爾扎諾", "Alta Via 1"],
   transport: [
     { icon: "🚆", route: "波爾扎諾 → Fortezza → Dobbiaco（普斯特里亞線）", time: "約 2 小時", gm: ["Bolzano", "Dobbiaco"], note: "Fortezza 轉車" },
     { icon: "🚌", route: "Dobbiaco → Lago di Braies（442 號巴士）", time: "約 20 分", gm: ["Dobbiaco", "Lago di Braies"], note: "旺季 09:30–16:00 管制自駕，搭巴士最單純" }
   ],
-  plan: ["09:00 南蒂羅爾考古博物館看冰人奧茨（約 1.5 小時）", "中午前東行，午餐在 Dobbiaco 解決", "下午進駐布萊耶斯湖，環湖一圈約 1 小時", "傍晚日歸遊客散去後湖面最平靜——拍倒影的黃金時段", "早睡：明天開始揹包上山"],
+  plan: ["<b>早上直接東行</b>（不排博物館了，可以搭更早的車）", "午餐在 Dobbiaco 解決", "下午進駐布萊耶斯湖，環湖一圈約 1 小時", "傍晚日歸遊客散去後湖面最平靜——拍倒影的黃金時段", "早睡：明天開始揹包上山"],
   stay: { city: "布萊耶斯湖／Villabassa", status: "suggested", name: "Hotel Lago di Braies（湖畔，AV1 起登點）或 Hotel Adler Villabassa",
     note: "住湖畔最省事，隔天出門就是登山口；訂不到就住 Villabassa／Dobbiaco，搭首班巴士上來" },
   warn: ["明天起連走四天：今晚把大行李寄放山下旅館，只帶上山必需品（山屋有寢具，需自備睡袋內襯）", "Rifugio Biella（明晚）尚未訂房——六月中旬山屋才陸續開門，請盡快確認 2027 開放日並訂位"] },
