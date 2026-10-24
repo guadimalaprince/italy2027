@@ -136,7 +136,7 @@ var DAYS = [
 
 { day: 9, date: "6/11 週五", phase: "🥾 Alta Via 1", title: "AV1 第一天：布萊耶斯湖 → Sennes 山屋", areas: ["Alta Via 1"],
   transport: [
-    { icon: "🚌", route: "Dobbiaco → Lago di Braies（442 號巴士）", time: "約 20 分", gm: ["Dobbiaco", "Lago di Braies"], note: "<b>搭首班車上山</b>，趕在日歸遊客之前到湖邊。旺季 09:30–16:00 管制自駕，巴士最單純——出發前查 2027 首班時刻" },
+    { icon: "🚌", route: "Dobbiaco → Lago di Braies（442 號巴士）", time: "約 20 分", gm: ["Dobbiaco", "Lago di Braies"], note: "<b>2026 年首班 06:00，之後每半小時一班</b>（2027 年出發前再確認）。\n<b>搭 06:00 或 06:30 那班</b>：06:20 到湖邊，日歸遊客還沒上來，5 小時／爬升 1,000m 的行程也有充裕時間。旺季 09:30–16:00 管制自駕，巴士最單純" },
     { icon: "🥾", route: "Lago di Braies → Forcella Sora Forno → Biella → Sennes", time: "約 5 小時，爬升 1,000m" }
   ],
   plan: ["首班巴士到湖邊，<b>清晨的湖面最平靜、人最少</b>——這就是你們看布萊耶斯湖的時段",
@@ -195,11 +195,11 @@ var DAYS = [
 { day: 15, date: "6/17 週四", phase: "🏔 Dobbiaco", title: "移動到 Dobbiaco → Tre Cime 三尖峰環線", areas: ["Dobbiaco / Tre Cime"],
   transport: [
     { icon: "🚌", route: "Cortina → Dobbiaco（Cortina Express／445 號巴士）", time: "約 1 小時", gm: ["Cortina d'Ampezzo", "Dobbiaco"], note: "Cortina 沒有火車站，北上 Dobbiaco 接鐵路是唯一出口——順路不繞" },
-    { icon: "🚌", route: "Dobbiaco → Auronzo 山屋（Tre Cime 接駁）", time: "約 50 分", gm: ["Dobbiaco", "Rifugio Auronzo"] }
+    { icon: "🚌", route: "Dobbiaco → Auronzo 山屋（Tre Cime 接駁，444 號）", time: "約 50 分", gm: ["Dobbiaco", "Rifugio Auronzo"], note: "⚠️ <b>2026 年整季接駁巴士與 Auronzo 停車場都要線上預約</b>，2027 年極可能比照——<b>出發前先訂</b>，不要當天碰運氣。\n另有 Misurina Genzianella ↔ Auronzo 的接駁（經 Antorno 湖），約 €10／人／日，首班約 07:40，車上只收感應支付不收現金。各來源的路線編號說法不一（31／50／444），以當地公告為準" }
   ],
   plan: ["上午移動並 check-in、寄放行李", "下午 Tre Cime 環線（10 公里，約 4 小時，順時針走）", "Lavaredo 埡口看三尖峰經典角度 → Locatelli 山屋看北壁", "夕陽時三座岩塔會燒成橘紅色"],
-  stay: { city: "Dobbiaco（2 晚）", status: "suggested", name: "Hotel Santer 或 Hotel Laurin",
-    note: "Dobbiaco 是普斯特里亞線的車站小鎮，後天往 Ortisei 的火車從這裡發車" },
+  stay: { city: "Dobbiaco（2 晚）", status: "suggested", name: "Hotel Santer 或 Hotel Laurin（同 6/10 那間）",
+    note: "<b>今天回來拿 6/10 寄放的大行李。</b>Dobbiaco 是普斯特里亞線的車站小鎮，後天往 Ortisei 的火車從這裡發車。\n<b>考慮過改住 Misurina</b>（離 Tre Cime 與 Cadini 都近得多）<b>，但沒有車的話優勢有限</b>：接駁首班約 07:40，從 Dobbiaco 搭 444 也差不多同時間到登山口。而且 Misurina 在威尼托省、<b>Guest Pass 不適用</b>，小村落沒有壞天氣的備案，行李也得多繞一趟。\n<b>真的想拍日出日落</b>，有效的作法不是住 Misurina，而是<b>在 Rifugio Locatelli 住一晚</b>——那是唯一能在光線最好時待在山上的方式。二月開放訂房、秒殺，通鋪一床約 €100 起。" },
   warn: ["Tre Cime 接駁與停車需預約（trecime.it），旺季名額有限", "環線海拔 2,300–2,450m，午後易起霧，早點上山"] },
 
 { day: 16, date: "6/18 週五", phase: "🏔 Dobbiaco", title: "米蘇里納湖 ＋ Cadini 山群（魔戒之路）", areas: ["Dobbiaco / Tre Cime"],
