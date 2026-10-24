@@ -120,21 +120,28 @@ var DAYS = [
     note: "住老城中心，車站步行 5 分鐘，明早搭巴士方便" },
   warn: ["兩館都要提前預約指定時段（b-ticket 官方系統），排 09:00＋11:00 剛好接得上"] },
 
-{ day: 8, date: "6/10 週四", phase: "🏔 東多洛米蒂", title: "東行進駐布萊耶斯湖", areas: ["波爾扎諾", "Alta Via 1"],
+{ day: 8, date: "6/10 週四", phase: "🏔 東多洛米蒂", title: "東行進駐 Dobbiaco（上山前的緩衝日）", areas: ["波爾扎諾", "Alta Via 1"],
   transport: [
-    { icon: "🚆", route: "波爾扎諾 → Fortezza → Dobbiaco（普斯特里亞線）", time: "約 2 小時", gm: ["Bolzano", "Dobbiaco"], note: "Fortezza 轉車" },
-    { icon: "🚌", route: "Dobbiaco → Lago di Braies（442 號巴士）", time: "約 20 分", gm: ["Dobbiaco", "Lago di Braies"], note: "旺季 09:30–16:00 管制自駕，搭巴士最單純" }
+    { icon: "🚆", route: "波爾扎諾 → Fortezza → Dobbiaco（普斯特里亞線）", time: "約 2 小時", gm: ["Bolzano", "Dobbiaco"], note: "Fortezza 轉車。不趕時間，上午出發即可" }
   ],
-  plan: ["<b>早上直接東行</b>（不排博物館了，可以搭更早的車）", "午餐在 Dobbiaco 解決", "下午進駐布萊耶斯湖，環湖一圈約 1 小時", "傍晚日歸遊客散去後湖面最平靜——拍倒影的黃金時段", "早睡：明天開始揹包上山"],
-  stay: { city: "布萊耶斯湖／Villabassa", status: "suggested", name: "Hotel Lago di Braies（湖畔，AV1 起登點）或 Hotel Adler Villabassa",
-    note: "住湖畔最省事，隔天出門就是登山口；訂不到就住 Villabassa／Dobbiaco，搭首班巴士上來" },
-  warn: ["明天起連走四天：今晚把大行李寄放山下旅館，只帶上山必需品（山屋有寢具，需自備睡袋內襯）", "Rifugio Biella（明晚）尚未訂房——六月中旬山屋才陸續開門，請盡快確認 2027 開放日並訂位"] },
+  plan: ["<b>上午搭車東行，中午前後到 Dobbiaco</b>", "<b>入住、把大行李整理好寄放</b>——6/17 回來同一間拿",
+    "下午整裝：分裝上山四天的東西、確認睡袋內襯與頭燈、藥局補給",
+    "<b>行程刻意留白</b>：想走動的話，Dobbiaco 湖（Lago di Dobbiaco）步行可達，環湖平緩約 1 小時",
+    "超市採買四天的行動糧與現金（山屋多半只收現金）", "早睡：明天開始揹包上山"],
+  stay: { city: "Dobbiaco（1 晚，之後 6/17–18 再住 2 晚）", status: "suggested", name: "Hotel Santer 或 Hotel Laurin — 與 Day 15–16 訂同一間",
+    note: "<b>⭐ 關鍵：行李寄放在 Dobbiaco，不要寄在布萊耶斯湖。</b>AV1 從布萊耶斯湖往南走，<b>結束在 Falzarego／Cortina，不會回到湖邊</b>——行李留在湖畔就得專程north 折返。\n<b>6/17（Day 15）行程本來就會回到 Dobbiaco 住 2 晚</b>，所以<b>訂同一間旅館</b>，請他們代為保管這 7 晚的行李。山區旅館對健行客做這件事是常態，訂房時先寫信確認。\n⚠️ 布萊耶斯湖那晚的住宿因此<b>不需要訂了</b>（原本最難訂的 Hotel Lago di Braies 可以放棄）。" },
+  warn: ["<b>今天刻意排得很鬆</b>——原本安排下午去布萊耶斯湖，但改住 Dobbiaco 後那會變成多餘的一趟來回。湖明早上山時本來就會走到，而且是從湖東岸一路走到南岸登山口，看得比觀光客還久",
+    "明天起連走四天：<b>大行李寄放 Dobbiaco 旅館</b>，只帶上山必需品（山屋有寢具，需自備睡袋內襯）",
+    "山屋多半只收現金，今天在 Dobbiaco 把現金領足——Fanes 現場待付 €249.50、Lagazuoi €180，加上 Sennes 的費用"] },
 
 { day: 9, date: "6/11 週五", phase: "🥾 Alta Via 1", title: "AV1 第一天：布萊耶斯湖 → Sennes 山屋", areas: ["Alta Via 1"],
   transport: [
+    { icon: "🚌", route: "Dobbiaco → Lago di Braies（442 號巴士）", time: "約 20 分", gm: ["Dobbiaco", "Lago di Braies"], note: "<b>搭首班車上山</b>，趕在日歸遊客之前到湖邊。旺季 09:30–16:00 管制自駕，巴士最單純——出發前查 2027 首班時刻" },
     { icon: "🥾", route: "Lago di Braies → Forcella Sora Forno → Biella → Sennes", time: "約 5 小時，爬升 1,000m" }
   ],
-  plan: ["沿湖東岸走到南岸的 AV1 起登點", "之字坡陡上 Forcella Sora Forno 埡口（全天最硬的一段）", "Biella 山屋休息、補水（2,327m）", "續行穿越 Sennes 高原：喀斯特地形與放牧草原，平緩好走", "午後抵 Sennes 山屋（2,126m）"],
+  plan: ["首班巴士到湖邊，<b>清晨的湖面最平靜、人最少</b>——這就是你們看布萊耶斯湖的時段",
+    "沿湖東岸走到南岸的 AV1 起登點（等於把整個湖繞了半圈）",
+    "之字坡陡上 Forcella Sora Forno 埡口（全天最硬的一段）", "Biella 山屋休息、補水（2,327m）", "續行穿越 Sennes 高原：喀斯特地形與放牧草原，平緩好走", "午後抵 Sennes 山屋（2,126m）"],
   stay: { city: "Rifugio Sennes（2,126m）", status: "hut", name: "Rifugio Sennes / Senneshütte",
     note: "⚠️ 尚未訂房——店家表示 2026/11/4 開放訂房，當天就去訂" },
   warn: ["山屋需自備睡袋內襯；部分山屋不收信用卡，帶現金", "Biella 之前沒有水源，出發前在湖畔把水裝滿"] },

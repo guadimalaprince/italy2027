@@ -20,8 +20,8 @@ var MUST_BOOK = [
   { id: "bk-huts-other", cat: "山屋", title: "確認 Fanes／Lagazuoi 尾款與抵達方式", opens: "2027-01-15",
     note: "兩間已付訂金（Fanes €250／Lagazuoi €180）。出發前一個月再次來信確認訂房仍在、尾款金額與是否收卡。" },
 
-  { id: "bk-hotels-dolomiti", cat: "住宿", title: "多洛米蒂住宿：Braies／Cortina／Dobbiaco／Ortisei", opens: "2027-01-01",
-    note: "⚠️ Hotel Lago di Braies（湖畔唯一旅館）通常前一年就滿，想住湖畔要最早動手。Ortisei 連住 4 晚、Cortina 3 晚也要早訂。\n⚠️ <b>訂 Braies／Dobbiaco／Ortisei 時主動問旅館有沒有附 Südtirol Guest Pass</b>——免費、含南提洛全境大眾運輸，但<b>只能由住宿發放、不能自己買</b>，不問就拿不到。（Cortina 在威尼托省，不適用）" },
+  { id: "bk-hotels-dolomiti", cat: "住宿", title: "多洛米蒂住宿：Dobbiaco（3 晚，同一間）／Cortina／Ortisei", opens: "2027-01-01",
+    note: "<b>⭐ Dobbiaco 要訂 3 晚、而且訂同一間：6/10（上山前）＋ 6/17–6/18（Tre Cime 兩天）。</b>\nAV1 從布萊耶斯湖往南走，<b>結束在 Falzarego／Cortina，不會回到湖邊</b>——所以大行李要寄在 Dobbiaco，不是布萊耶斯湖。6/17 本來就會回 Dobbiaco，請旅館代管這 7 晚的行李，訂房時先寫信確認（山區旅館對健行客做這件事是常態）。\n<b>✅ 布萊耶斯湖的住宿不用訂了</b>——原本最難訂的 Hotel Lago di Braies 可以放棄，6/11 一早搭 442 號巴士首班車上山即可。\nOrtisei 連住 4 晚、Cortina 3 晚仍要早訂。\n⚠️ <b>訂 Dobbiaco／Ortisei 時主動問旅館有沒有附 Südtirol Guest Pass</b>——免費、含南提洛全境大眾運輸，但<b>只能由住宿發放、不能自己買</b>，不問就拿不到。（Cortina 在威尼托省，不適用）" },
 
   { id: "bk-munich-confirm", cat: "住宿", title: "慕尼黑 6/23 已訂——出發前要確認的事", opens: null,
     who: "3 人 1 晚",
