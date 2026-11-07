@@ -138,11 +138,12 @@
 
       var b = d.stay.booking;
       if (b && typeof b.total === "number") {
-        var due = b.total - (b.paid || 0);
-        body.appendChild(el("div", "st-money",
-          esc(b.room) + "　總額 €" + b.total +
-          (b.people ? "（" + b.people + " 人，每人 €" + Math.round(b.total / b.people) + "）" : "") +
-          "　已付 €" + (b.paid || 0) + '　<strong class="bk-due">待付 €' + due + "</strong>"));
+        var money = esc(b.room) + "　總額 €" + b.total +
+          (b.people ? "（" + b.people + " 人，每人 €" + Math.round(b.total / b.people) + "）" : "");
+        if (typeof b.paid === "number") {
+          money += "　已付 €" + b.paid + '　<strong class="bk-due">待付 €' + (b.total - b.paid) + "</strong>";
+        }
+        body.appendChild(el("div", "st-money", money));
       } else if (b) {
         // 確認單上沒有房費的訂房（Agoda 未印金額、或點數兌換）
         body.appendChild(el("div", "st-money", esc(b.room) +
@@ -157,9 +158,11 @@
     });
 
     // 山屋費用小計
-    // 只把有金額的訂房算進小計，否則總和會變成 NaN
+    // 只算山屋（booking.hut）且有金額的訂房。不加 hut 判斷的話，
+    // 旅館一旦填了金額也會被算進「山屋小計」。
     var bks = DAYS.filter(function (d) {
-      return d.stay && d.stay.booking && typeof d.stay.booking.total === "number";
+      return d.stay && d.stay.booking && d.stay.booking.hut &&
+             typeof d.stay.booking.total === "number";
     });
     if (bks.length) {
       var total = 0, paid = 0;

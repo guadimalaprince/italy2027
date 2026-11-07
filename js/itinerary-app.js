@@ -97,10 +97,13 @@
             '<div class="bk-row"><span class="bk-k">方案</span><span class="bk-v">' + esc(b.board) + "</span></div>";
           // 有些訂房確認單上沒有金額（例如 Agoda 的那一張），這時就不要印出 €undefined
           if (typeof b.total === "number") {
-            var due = b.total - (b.paid || 0);
             var perHead = b.people ? "（每人 €" + Math.round(b.total / b.people) + "）" : "";
-            rows += '<div class="bk-row"><span class="bk-k">費用</span><span class="bk-v">總額 €' + b.total + perHead +
-              "　已付 €" + (b.paid || 0) + '　<strong class="bk-due">現場待付 €' + due + "</strong></span></div>";
+            var money = "總額 €" + b.total + perHead;
+            // 只有知道付了多少訂金時才拆「已付／待付」，否則別亂宣稱是現場付
+            if (typeof b.paid === "number") {
+              money += "　已付 €" + b.paid + '　<strong class="bk-due">現場待付 €' + (b.total - b.paid) + "</strong>";
+            }
+            rows += '<div class="bk-row"><span class="bk-k">費用</span><span class="bk-v">' + money + "</span></div>";
           }
           // 房費以外、一定要在現場付的錢（例如點數兌換仍須自付的城市稅）
           if (b.onsite) {
