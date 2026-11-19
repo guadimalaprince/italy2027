@@ -8,11 +8,6 @@ var TRIP_DEPART = "2027-06-02";
 
 /* ---------- 必訂項目 ---------- */
 var MUST_BOOK = [
-  { id: "bk-sennes", cat: "山屋", title: "Rifugio Sennes（6/11 住）", opens: "2026-11-04", prio: 1,
-    who: "3 人 1 晚",
-    note: "店家明講 11/4 開放訂房。AV1 第一晚，六月中旬山屋床位極少，開放當天就訂。",
-    url: "https://www.sennes.com/" },
-
   { id: "bk-trains-de", cat: "火車", title: "Ortisei → 慕尼黑 EC 車票（6/23）", opens: "2026-12-23",
     note: "ÖBB Sparschiene 早鳥票約出發前 180 天開賣，€29 起；晚訂會貴 3–4 倍。這是回程前最後一段，訂有座位的班次。",
     url: "https://www.oebb.at/" },

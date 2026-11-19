@@ -143,8 +143,9 @@ var DAYS = [
   plan: ["首班巴士到湖邊，<b>清晨的湖面最平靜、人最少</b>——這就是你們看布萊耶斯湖的時段",
     "沿湖東岸走到南岸的 AV1 起登點（等於把整個湖繞了半圈）",
     "之字坡陡上 Forcella Sora Forno 埡口（全天最硬的一段）", "Biella 山屋休息、補水（2,327m）", "續行穿越 Sennes 高原：喀斯特地形與放牧草原，平緩好走", "午後抵 Sennes 山屋（2,126m）"],
-  stay: { city: "Rifugio Sennes（2,126m）", status: "hut", name: "Rifugio Sennes / Senneshütte",
-    note: "⚠️ 尚未訂房——店家表示 2026/11/4 開放訂房，當天就去訂" },
+  stay: { city: "Rifugio Sennes（2,126m）", status: "confirmed", name: "Rifugio Sennes / Senneshütte",
+    booking: { room: "山屋床位", people: 3, nights: 1, total: 207, paid: 90, board: "含早餐（每人每晚 €69）", hut: true },
+    note: "<b>⚠️ 這間只含早餐，不是半食宿</b>——Fanes 與 Lagazuoi 都含晚餐，這晚的晚餐要另外在山屋點。\n現場待付 €117，山屋多半只收現金。" },
   warn: ["山屋需自備睡袋內襯；部分山屋不收信用卡，帶現金", "Biella 之前沒有水源，出發前在湖畔把水裝滿"] },
 
 { day: 10, date: "6/12 週六", phase: "🥾 Alta Via 1", title: "AV1 第二天：高原牧場 → Fanes", areas: ["Alta Via 1"],
